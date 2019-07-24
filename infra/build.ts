@@ -94,7 +94,7 @@ class BuilderPool {
     console.log(result);
     console.log(
       `Total: ${output.length}, ${chalk.green(
-        'Succeeded: ' + totalSuccess
+        'Success: ' + totalSuccess
       )}, ${chalk.red('Failed: ' + (output.length - totalSuccess))}`
     );
   }
