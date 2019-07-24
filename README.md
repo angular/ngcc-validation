@@ -46,7 +46,7 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
-## Should I add tests?
+## My library is there, should I add tests?
 
 Yes! The above instructions will only validate that your application could be successfully compiled with `ngcc`. To validate it actually works, it'll be great to add unit or e2e tests.
 

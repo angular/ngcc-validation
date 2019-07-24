@@ -1,12 +1,27 @@
-import { readdirSync, statSync } from "fs";
-import { execSync } from "child_process";
+import { readdirSync, statSync } from 'fs';
+import { execSync } from 'child_process';
+import chalk from 'chalk';
 
 const ignore = new Set(['infra', 'node_modules', '.git', '.', '..']);
 
-const all = readdirSync('.').filter((dir: string) => !ignore.has(dir) && statSync(dir).isDirectory());
+const all = readdirSync('.').filter(
+  (dir: string) => !ignore.has(dir) && statSync(dir).isDirectory()
+);
+
+const failures: string[] = [];
 
 all.forEach(dir => {
-  execSync(`cd ${dir} && ./node_modules/.bin/ng build`, {
-    stdio: 'inherit'
-  });
+  console.log('');
+  const project = dir.replace(/-ngcc$/, '');
+  console.log(chalk.bold(chalk.yellow('#### Validating', project, '####')));
+  try {
+    execSync(`cd ${dir} && ./node_modules/.bin/ng build`, {
+      stdio: 'inherit'
+    });
+  } catch (e) {
+    console.error(chalk.bold(chalk.red('Failed for project', project)));
+    failures.push(project);
+  }
 });
+
+console.error('Failed for the following projects', failures.join(', '));

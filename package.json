@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "description": "Validation of Angular libraries working with ngcc.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "ts-node infra/build.ts"
+  },
   "author": "Minko Gechev <mgechev@google.com>",
   "license": "MIT",
   "devDependencies": {
@@ -11,5 +13,9 @@
     "@types/node": "^12.6.8",
     "ts-node": "^8.3.0",
     "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "@types/chalk": "^2.2.0",
+    "chalk": "^2.4.2"
   }
 }
