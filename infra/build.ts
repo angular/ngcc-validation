@@ -1,28 +1,95 @@
 import { readdirSync, statSync } from 'fs';
-import { execSync } from 'child_process';
 import chalk from 'chalk';
+import { join } from 'path';
+import { Worker } from 'worker_threads';
 
-const ignore = new Set(['infra', 'node_modules', '.git', '.', '..']);
+const ignore = new Set([
+  'infra',
+  'node_modules',
+  '.git',
+  '.',
+  '..',
+  '.circleci'
+]);
 
 const all = readdirSync('.').filter(
   (dir: string) => !ignore.has(dir) && statSync(dir).isDirectory()
 );
 
-const failures: string[] = [];
+interface Output {
+  project: string;
+  message: {
+    success: boolean;
+    out: string;
+  };
+}
 
-all.forEach(dir => {
-  console.log('');
-  const project = dir.replace(/-ngcc$/, '');
-  console.log(chalk.bold(chalk.yellow('#### Validating', project, '####')));
-  try {
-    execSync(`cd ${dir} && npm i && ./node_modules/.bin/ng build`, {
-      stdio: 'inherit'
-    });
-  } catch (e) {
-    console.log('');
-    console.error(chalk.bold(chalk.red('Failed for project', project)));
-    failures.push(project);
+class BuilderPool {
+  private _active = 0;
+  private _queue: string[] = [];
+  private _outputs: Output[] = [];
+
+  constructor(private _size: number) {}
+
+  schedule(project: string) {
+    console.log(chalk.gray('Scheduling: ' + project));
+    this._queue.push(project);
+    if (this._active >= this._size - 1) {
+      return;
+    }
+    this._next();
   }
-});
 
-console.error('Failed for the following projects', failures.join(', '));
+  private _next() {
+    const project = this._queue.shift();
+    if (!project) {
+      if (!this._active) {
+        this._report();
+      }
+      return;
+    }
+    console.log(chalk.gray('Executing: ' + project));
+    const worker = new Worker(join(__dirname, 'build-project.js'), {
+      workerData: project
+    });
+    this._active++;
+    worker.on('message', message =>
+      this._outputs.push({
+        project,
+        message
+      })
+    );
+    worker.on('exit', () => {
+      this._active--;
+      this._next();
+    });
+    worker.on('error', err => {
+      console.error(err);
+      this._active--;
+      this._next();
+    });
+  }
+
+  private _report() {
+    const output = this._outputs.sort((a, b) => {
+      const ares = +a.message.success;
+      const bres = +b.message.success;
+      return bres - ares;
+    });
+    let result = '';
+    output.forEach(row => {
+      result += chalk.yellow('### ' + row.project + ' ###') + '\n';
+      result += 'Status: ' + (row.message.success ? chalk.green('success') : chalk.red('failure')) + '\n\n';
+      result += row.message.success ? row.message.out : chalk.red(row.message.out)
+      result += '\n\n';
+    });
+    console.log(result);
+  }
+}
+
+const pool = new BuilderPool(10);
+
+all.forEach((dir, idx) => {
+  if (idx >= 7) return;
+  pool.schedule(dir);
+});

@@ -9,5 +9,9 @@
     "downlevelIteration": true,
     "lib": ["es2015"],
     "types": ["node"]
-  }
+  },
+  "include": [
+    "infra/*",
+    "node_modules"
+  ]
 }
