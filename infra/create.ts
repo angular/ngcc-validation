@@ -26,7 +26,8 @@ interface Package {
 }
 
 const setup = (pkg: Package) => {
-  const projectName = `${pkg.name}-ngcc`;
+  // Validate project names;
+  const projectName = `${pkg.name}-ngcc`.replace(/\-\d+\-/, '2').replace(/[^A-Za-z0-9-]/, '');
   execSync(`./node_modules/.bin/ng new ${projectName} --enable-ivy --defaults=true`, {
     stdio: 'inherit'
   });
@@ -62,9 +63,10 @@ const setup = (pkg: Package) => {
   writeFileSync(packageJsonPath, JSON.stringify(tsconfig, null, 2));
 };
 
+const Min = 0;
 const Max = 91;
 
-for (let i = 0; i < Max; i += 1) {
+for (let i = Min; i < Max; i += 1) {
   const pkg = packages[i];
   setup(pkg);
 }
