@@ -77,13 +77,26 @@ class BuilderPool {
       return bres - ares;
     });
     let result = '';
+    console.log('\n');
+    let totalSuccess = 0;
     output.forEach(row => {
+      if (row.message.success) totalSuccess += 1;
       result += chalk.yellow('### ' + row.project + ' ###') + '\n';
-      result += 'Status: ' + (row.message.success ? chalk.green('success') : chalk.red('failure')) + '\n\n';
-      result += row.message.success ? row.message.out : chalk.red(row.message.out)
+      result +=
+        'Status: ' +
+        (row.message.success ? chalk.green('success') : chalk.red('failure')) +
+        '\n\n';
+      result += row.message.success
+        ? row.message.out
+        : chalk.red(row.message.out);
       result += '\n\n';
     });
     console.log(result);
+    console.log(
+      `Total: ${output.length}, ${chalk.green(
+        'Succeeded: ' + totalSuccess
+      )}, ${chalk.red('Failed: ' + (output.length - totalSuccess))}`
+    );
   }
 }
 
