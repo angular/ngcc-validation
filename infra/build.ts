@@ -15,10 +15,11 @@ all.forEach(dir => {
   const project = dir.replace(/-ngcc$/, '');
   console.log(chalk.bold(chalk.yellow('#### Validating', project, '####')));
   try {
-    execSync(`cd ${dir} && ./node_modules/.bin/ng build`, {
+    execSync(`cd ${dir} && npm i && ./node_modules/.bin/ng build`, {
       stdio: 'inherit'
     });
   } catch (e) {
+    console.log('');
     console.error(chalk.bold(chalk.red('Failed for project', project)));
     failures.push(project);
   }
