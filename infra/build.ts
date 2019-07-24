@@ -89,7 +89,4 @@ class BuilderPool {
 
 const pool = new BuilderPool(10);
 
-all.forEach((dir, idx) => {
-  if (idx >= 7) return;
-  pool.schedule(dir);
-});
+all.forEach(dir => pool.schedule(dir));
