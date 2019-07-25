@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import 'ag-grid-angular';
+import {AgGridModule} from 'ag-grid-angular';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +10,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AgGridModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
