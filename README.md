@@ -10,26 +10,45 @@ To add your library, follow the next simple 4 steps:
 
 **Clone the repository**:
 
-```
+```bash
 git clone git@github.com:angular/ngcc-validation
 ```
 
-Inside of the root directory **create a new project with `--enable-ivy` option** set. Make sure you're using Angular CLI 8.1.2 or newer:
+**Install the top-level dependencies**:
 
-```
+```bash
 cd ngcc-validation
-ng new [my-library-name]-ngcc --enable-ivy
+npm i
 ```
 
-**Disable differential loading** by setting `target` to `es5` in `tsconfig.json` in the newly created project to speed up the build.
+**Create your project**:
 
-In `app.module.ts` **add a side-effect import** of your library. For example:
+Inside of the root directory create a new project:
+
+```bash
+npm run add-project [my-library-name]
+```
+
+This will create a new CLI application in `[my-library-name]-ngcc`:
+
+* using the latest CLI
+* with Ivy enabled
+* Angular dependencies overridden to pull in the latest built versions
+* `target` to `es5` in `tsconfig.json` to speed up the build
+
+
+**Import your library**:
+
+In `app.module.ts` **add an import** of your library.
+Ideally import the library's `NgModule` into the `AppModule`.
+
+For example:
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import 'ag-grid-angular';
+import {AgGridModule} from 'ag-grid-angular';
 
 import { AppComponent } from './app.component';
 
@@ -38,7 +57,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AgGridModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
