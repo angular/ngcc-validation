@@ -1,5 +1,5 @@
 import { execSync } from "child_process";
-import { writeFileSync, readFileSync, readFile, writeFile } from "fs";
+import { writeFileSync, readFileSync, readFile, writeFile, existsSync } from "fs";
 
 const overrideDeps: {[name: string]: string} = {
   "@angular/animations": "angular/animations-builds#master",
@@ -25,9 +25,17 @@ interface Package {
   deps: Package[]
 }
 
+const getProjectName = (name: string) => {
+  return `${name}-ngcc`.replace(/\-\d+\-/, '2').replace(/[^A-Za-z0-9-]/, '').replace(/\//, '');
+};
+
 const setup = (pkg: Package) => {
   // Validate project names;
-  const projectName = `${pkg.name}-ngcc`.replace(/\-\d+\-/, '2').replace(/[^A-Za-z0-9-]/, '');
+  const projectName = getProjectName(pkg.name);
+  if (existsSync(projectName)) {
+    console.log(`${projectName} already exists`);
+    return;
+  }
   execSync(`./node_modules/.bin/ng new ${projectName} --enable-ivy --defaults=true`, {
     stdio: 'inherit'
   });
@@ -64,7 +72,7 @@ const setup = (pkg: Package) => {
 };
 
 const Min = 0;
-const Max = 91;
+const Max = packages.length;
 
 for (let i = Min; i < Max; i += 1) {
   const pkg = packages[i];

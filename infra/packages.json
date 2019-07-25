@@ -1,5 +1,651 @@
 [
   {
+    "name": "@agm/core",
+    "version": "1.0.0-beta.7",
+    "deps": []
+  },
+  {
+    "name": "@alfresco/adf-core",
+    "version": "3.3.0",
+    "deps": [
+      {
+        "name": "@mat-datetimepicker/core",
+        "version": ">=2.0.1"
+      },
+      {
+        "name": "@mat-datetimepicker/moment",
+        "version": ">=2.0.1"
+      },
+      {
+        "name": "@alfresco/js-api",
+        "version": "3.3.0"
+      },
+      {
+        "name": "@ngx-translate/core",
+        "version": ">=11.0.0"
+      },
+      {
+        "name": "core-js",
+        "version": ">=2.5.4"
+      },
+      {
+        "name": "hammerjs",
+        "version": ">=2.0.8"
+      },
+      {
+        "name": "minimatch-browser",
+        "version": ">=1.0.0"
+      },
+      {
+        "name": "moment",
+        "version": ">=2.22.2"
+      },
+      {
+        "name": "pdfjs-dist",
+        "version": ">=2.0.303"
+      },
+      {
+        "name": "reflect-metadata",
+        "version": ">=0.1.12"
+      }
+    ]
+  },
+  {
+    "name": "@angular/cdk",
+    "version": "8.1.1",
+    "deps": []
+  },
+  {
+    "name": "@angular/elements",
+    "version": "8.1.2",
+    "deps": []
+  },
+  {
+    "name": "@angular/fire",
+    "version": "5.2.1",
+    "deps": [
+      {
+        "name": "firebase",
+        "version": ">= 5.5.7 <7"
+      }
+    ]
+  },
+  {
+    "name": "@angular/flex-layout",
+    "version": "8.0.0-beta.26",
+    "deps": []
+  },
+  {
+    "name": "@angular/material",
+    "version": "8.1.1",
+    "deps": []
+  },
+  {
+    "name": "@angular/material-experimental",
+    "version": "8.1.1",
+    "deps": [
+      {
+        "name": "material-components-web",
+        "version": "^3.0.0"
+      }
+    ]
+  },
+  {
+    "name": "@angular/material-moment-adapter",
+    "version": "8.1.1",
+    "deps": [
+      {
+        "name": "moment",
+        "version": "^2.18.1"
+      }
+    ]
+  },
+  {
+    "name": "@angular/service-worker",
+    "version": "8.1.2",
+    "deps": []
+  },
+  {
+    "name": "@angular/upgrade",
+    "version": "8.1.2",
+    "deps": []
+  },
+  {
+    "name": "@angular-redux/store",
+    "version": "10.0.0",
+    "deps": [
+      {
+        "name": "redux",
+        "version": "^4.0.0"
+      }
+    ]
+  },
+  {
+    "name": "@ant-design/icons-angular",
+    "version": "8.0.2",
+    "deps": []
+  },
+  {
+    "name": "@asymmetrik/ngx-leaflet",
+    "version": "6.0.1",
+    "deps": [
+      {
+        "name": "leaflet",
+        "version": "1"
+      }
+    ]
+  },
+  {
+    "name": "@auth0/angular-jwt",
+    "version": "3.0.0",
+    "deps": []
+  },
+  {
+    "name": "@azure/msal-angular",
+    "version": "0.1.2",
+    "deps": []
+  },
+  {
+    "name": "@carbon/icons-angular",
+    "version": "10.4.0",
+    "deps": []
+  },
+  {
+    "name": "@covalent/core",
+    "version": "2.1.0",
+    "deps": []
+  },
+  {
+    "name": "@covalent/dynamic-forms",
+    "version": "2.1.0",
+    "deps": []
+  },
+  {
+    "name": "@covalent/highlight",
+    "version": "2.1.0",
+    "deps": []
+  },
+  {
+    "name": "@covalent/markdown",
+    "version": "2.1.0",
+    "deps": []
+  },
+  {
+    "name": "@datorama/akita",
+    "version": "4.8.0",
+    "deps": []
+  },
+  {
+    "name": "@delon/abc",
+    "version": "8.2.0",
+    "deps": []
+  },
+  {
+    "name": "@delon/acl",
+    "version": "8.2.0",
+    "deps": []
+  },
+  {
+    "name": "@delon/auth",
+    "version": "8.2.0",
+    "deps": []
+  },
+  {
+    "name": "@delon/form",
+    "version": "8.2.0",
+    "deps": []
+  },
+  {
+    "name": "@delon/theme",
+    "version": "8.2.0",
+    "deps": []
+  },
+  {
+    "name": "@delon/util",
+    "version": "8.2.0",
+    "deps": []
+  },
+  {
+    "name": "@fortawesome/angular-fontawesome",
+    "version": "0.4.0",
+    "deps": [
+      {
+        "name": "@fortawesome/fontawesome-svg-core",
+        "version": "^1.2.0"
+      }
+    ]
+  },
+  {
+    "name": "@harbor/ui",
+    "version": "1.7.4-rc2",
+    "deps": [
+      {
+        "name": "@ngx-translate/core",
+        "version": "^6.0.0"
+      },
+      {
+        "name": "@ngx-translate/http-loader",
+        "version": "0.0.3"
+      },
+      {
+        "name": "@webcomponents/custom-elements",
+        "version": "^1.0.0"
+      },
+      {
+        "name": "@clr/angular",
+        "version": "^0.12.0"
+      },
+      {
+        "name": "@clr/ui",
+        "version": "^0.12.0"
+      },
+      {
+        "name": "@clr/icons",
+        "version": "^0.12.0"
+      },
+      {
+        "name": "core-js",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "intl",
+        "version": "^1.2.5"
+      },
+      {
+        "name": "mutationobserver-shim",
+        "version": "^0.3.2"
+      },
+      {
+        "name": "ngx-cookie",
+        "version": "^1.0.0"
+      },
+      {
+        "name": "ngx-markdown",
+        "version": "^1.5.1"
+      },
+      {
+        "name": "ts-helpers",
+        "version": "^1.1.1"
+      },
+      {
+        "name": "web-animations-js",
+        "version": "^2.2.1"
+      },
+      {
+        "name": "tslib",
+        "version": "^1.9.0"
+      }
+    ]
+  },
+  {
+    "name": "@ionic/angular",
+    "version": "4.6.2",
+    "deps": [
+      {
+        "name": "@angular-devkit/core",
+        "version": "^7.2.1"
+      },
+      {
+        "name": "@angular-devkit/schematics",
+        "version": "^7.2.1"
+      }
+    ]
+  },
+  {
+    "name": "@ionic/storage",
+    "version": "2.2.0",
+    "deps": []
+  },
+  {
+    "name": "@nebular/auth",
+    "version": "4.1.2",
+    "deps": [
+      {
+        "name": "@nebular/theme",
+        "version": "4.1.2"
+      }
+    ]
+  },
+  {
+    "name": "@nebular/date-fns",
+    "version": "4.1.2",
+    "deps": [
+      {
+        "name": "@nebular/theme",
+        "version": "4.1.2"
+      },
+      {
+        "name": "date-fns",
+        "version": ">=2.0.0-alpha.16 <=2.0.0-alpha.27"
+      }
+    ]
+  },
+  {
+    "name": "@nebular/eva-icons",
+    "version": "4.1.2",
+    "deps": [
+      {
+        "name": "@nebular/theme",
+        "version": "4.1.2"
+      },
+      {
+        "name": "eva-icons",
+        "version": "^1.1.1"
+      }
+    ]
+  },
+  {
+    "name": "@nebular/moment",
+    "version": "4.1.2",
+    "deps": [
+      {
+        "name": "@nebular/theme",
+        "version": "4.1.2"
+      },
+      {
+        "name": "moment",
+        "version": "^2.22.2"
+      }
+    ]
+  },
+  {
+    "name": "@nebular/security",
+    "version": "4.1.2",
+    "deps": []
+  },
+  {
+    "name": "@nebular/theme",
+    "version": "4.1.2",
+    "deps": []
+  },
+  {
+    "name": "@netbasal/spectator",
+    "version": "3.9.4",
+    "deps": [
+      {
+        "name": "typescript",
+        "version": ">= 2.8.0"
+      }
+    ]
+  },
+  {
+    "name": "@ng-bootstrap/ng-bootstrap",
+    "version": "5.1.0",
+    "deps": []
+  },
+  {
+    "name": "@ng-dynamic-forms/core",
+    "version": "8.1.0",
+    "deps": [
+      {
+        "name": "core-js",
+        "version": "^3.1.3"
+      }
+    ]
+  },
+  {
+    "name": "@ng-idle/core",
+    "version": "8.0.0-beta.2",
+    "deps": []
+  },
+  {
+    "name": "@ng-select/ng-select",
+    "version": "3.0.3",
+    "deps": []
+  },
+  {
+    "name": "@ngrx/data",
+    "version": "8.1.0",
+    "deps": [
+      {
+        "name": "@ngrx/store",
+        "version": "8.1.0"
+      },
+      {
+        "name": "@ngrx/effects",
+        "version": "8.1.0"
+      },
+      {
+        "name": "@ngrx/entity",
+        "version": "8.1.0"
+      }
+    ]
+  },
+  {
+    "name": "@ngrx/effects",
+    "version": "8.1.0",
+    "deps": [
+      {
+        "name": "@ngrx/store",
+        "version": "8.1.0"
+      }
+    ]
+  },
+  {
+    "name": "@ngrx/entity",
+    "version": "8.1.0",
+    "deps": [
+      {
+        "name": "@ngrx/store",
+        "version": "8.1.0"
+      }
+    ]
+  },
+  {
+    "name": "@ngrx/router-store",
+    "version": "8.1.0",
+    "deps": [
+      {
+        "name": "@ngrx/store",
+        "version": "8.1.0"
+      }
+    ]
+  },
+  {
+    "name": "@ngrx/store",
+    "version": "8.1.0",
+    "deps": []
+  },
+  {
+    "name": "@ngrx/store-devtools",
+    "version": "8.1.0",
+    "deps": [
+      {
+        "name": "@ngrx/store",
+        "version": "8.1.0"
+      }
+    ]
+  },
+  {
+    "name": "@ngui/auto-complete",
+    "version": "2.0.0",
+    "deps": []
+  },
+  {
+    "name": "@nguniversal/aspnetcore-engine",
+    "version": "8.1.1",
+    "deps": []
+  },
+  {
+    "name": "@nguniversal/common",
+    "version": "8.1.1",
+    "deps": []
+  },
+  {
+    "name": "@nguniversal/express-engine",
+    "version": "8.1.1",
+    "deps": [
+      {
+        "name": "express",
+        "version": "^4.15.2"
+      }
+    ]
+  },
+  {
+    "name": "@ngx-formly/bootstrap",
+    "version": "5.2.0",
+    "deps": [
+      {
+        "name": "@ngx-formly/core",
+        "version": "5.2.0"
+      },
+      {
+        "name": "bootstrap",
+        "version": "^4.0.0"
+      }
+    ]
+  },
+  {
+    "name": "@ngx-formly/core",
+    "version": "5.2.0",
+    "deps": []
+  },
+  {
+    "name": "@ngx-formly/material",
+    "version": "5.2.0",
+    "deps": [
+      {
+        "name": "@ngx-formly/core",
+        "version": "5.2.0"
+      }
+    ]
+  },
+  {
+    "name": "@ngx-pwa/local-storage",
+    "version": "8.0.2",
+    "deps": []
+  },
+  {
+    "name": "@ngx-translate/core",
+    "version": "11.0.1",
+    "deps": []
+  },
+  {
+    "name": "@ngx-translate/http-loader",
+    "version": "4.0.0",
+    "deps": [
+      {
+        "name": "@ngx-translate/core",
+        "version": ">=11.0.0"
+      }
+    ]
+  },
+  {
+    "name": "@ngxs/devtools-plugin",
+    "version": "3.5.0",
+    "deps": [
+      {
+        "name": "@ngxs/store",
+        "version": "^3.5.0 || ^3.5.0-dev"
+      }
+    ]
+  },
+  {
+    "name": "@ngxs/form-plugin",
+    "version": "3.5.0",
+    "deps": [
+      {
+        "name": "@ngxs/store",
+        "version": "^3.5.0 || ^3.5.0-dev"
+      }
+    ]
+  },
+  {
+    "name": "@ngxs/hmr-plugin",
+    "version": "3.5.0",
+    "deps": [
+      {
+        "name": "@angularclass/hmr",
+        "version": ">=2.1.3 <3.0.0"
+      }
+    ]
+  },
+  {
+    "name": "@ngxs/logger-plugin",
+    "version": "3.5.0",
+    "deps": [
+      {
+        "name": "@ngxs/store",
+        "version": "^3.5.0 || ^3.5.0-dev"
+      }
+    ]
+  },
+  {
+    "name": "@ngxs/router-plugin",
+    "version": "3.5.0",
+    "deps": [
+      {
+        "name": "@ngxs/store",
+        "version": "^3.5.0 || ^3.5.0-dev"
+      }
+    ]
+  },
+  {
+    "name": "@ngxs/storage-plugin",
+    "version": "3.5.0",
+    "deps": [
+      {
+        "name": "@ngxs/store",
+        "version": "^3.5.0 || ^3.5.0-dev"
+      }
+    ]
+  },
+  {
+    "name": "@ngxs/store",
+    "version": "3.5.0",
+    "deps": []
+  },
+  {
+    "name": "@nrwl/angular",
+    "version": "8.3.0",
+    "deps": [
+      {
+        "name": "@nrwl/workspace",
+        "version": "8.3.0"
+      }
+    ]
+  },
+  {
+    "name": "@swimlane/ngx-charts",
+    "version": "12.0.1",
+    "deps": []
+  },
+  {
+    "name": "@swimlane/ngx-datatable",
+    "version": "15.0.2",
+    "deps": []
+  },
+  {
+    "name": "@swimlane/ngx-dnd",
+    "version": "8.0.0",
+    "deps": []
+  },
+  {
+    "name": "@types/js-beautify",
+    "version": "0.0.28",
+    "deps": []
+  },
+  {
+    "name": "@types/json5",
+    "version": "0.0.29",
+    "deps": []
+  },
+  {
+    "name": "@types/q",
+    "version": "0.0.32",
+    "deps": []
+  },
+  {
+    "name": "@uirouter/angular",
+    "version": "4.0.0",
+    "deps": []
+  },
+  {
+    "name": "@uirouter/core",
+    "version": "5.0.23",
+    "deps": []
+  },
+  {
     "name": "ag-grid-angular",
     "version": "21.1.0",
     "deps": [
@@ -286,16 +932,6 @@
         "version": "~3.4.5"
       }
     ]
-  },
-  {
-    "name": "ng-bootstrap-fork",
-    "version": "2.0.1",
-    "deps": []
-  },
-  {
-    "name": "ng-bootstrap-fork2",
-    "version": "2.0.2",
-    "deps": []
   },
   {
     "name": "ng-click-outside",
