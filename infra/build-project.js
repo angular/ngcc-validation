@@ -6,7 +6,7 @@ if (!isMainThread) {
     throw new Error("workerData must be a string");
   }
   try {
-    const res = execSync(`cd ${workerData} && npm i && ./node_modules/.bin/ng build`, { stdio: 'pipe' });
+    const res = execSync(`cd ${workerData} && npm i && ./node_modules/.bin/ivy-ngcc -l debug`, { stdio: 'pipe' });
     parentPort.postMessage({
       success: true,
       out: res.toString()
