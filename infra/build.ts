@@ -53,12 +53,17 @@ class BuilderPool {
       workerData: project
     });
     this._active++;
-    worker.on('message', message =>
+    worker.on('message', message => {
       this._outputs.push({
         project,
         message
-      })
-    );
+      });
+      console.log(
+        'Execution of',
+        project,
+        message.success ? chalk.green('successful') : chalk.red('failed')
+      );
+    });
     worker.on('exit', () => {
       this._active--;
       this._next();
