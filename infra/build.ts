@@ -105,6 +105,6 @@ class BuilderPool {
   }
 }
 
-const pool = new BuilderPool(3);
+const pool = new BuilderPool(4);
 
 all.forEach(dir => pool.schedule(dir));
