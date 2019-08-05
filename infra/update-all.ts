@@ -1,4 +1,5 @@
 import {execSync} from "child_process";
+import {resolve} from "path";
 import {readdirSync, statSync} from "fs";
 import {updateDeps} from './update-deps';
 
@@ -25,7 +26,7 @@ const projects = readdirSync('.').filter(
 console.log('Updating Angular dependencies for all the projects');
 projects.forEach(project => {
   updateDeps(project);
-  execSync(`npm i -C ${project} --package-lock-only`, {
+  execSync(`cd ${resolve(__dirname, '..', project)} && npm i --package-lock-only`, {
     stdio: 'inherit'
   });
 });

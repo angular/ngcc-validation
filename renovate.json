@@ -1,5 +1,35 @@
 {
   "extends": [
     "config:base"
+  ],
+  "timezone": "America/Tijuana",
+  "schedule": [
+    "after 10pm every weekday",
+    "before 4am every weekday",
+    "every weekend"
+  ],
+  "packageRules": [
+    {
+      "packagePatterns": [
+        "^@angular.*"
+      ],
+      "groupName": "angular"
+    },
+    {
+      "packageNames": [
+        "typescript"
+      ],
+      "separateMinorPatch": true
+    },
+    {
+      "packageNames": [
+        "typescript"
+      ],
+      "updateTypes": [
+        "minor",
+        "major"
+      ],
+      "enabled": false
+    }
   ]
 }
