@@ -12,6 +12,8 @@ const ignore = new Set([
   '.circleci'
 ]);
 
+const passing = new Set(require('./passing.json'));
+
 const all = readdirSync('.').filter(
   (dir: string) => !ignore.has(dir) && statSync(dir).isDirectory()
 );
@@ -84,8 +86,12 @@ class BuilderPool {
     let result = '';
     console.log('\n');
     let totalSuccess = 0;
+    let exitCode = 0;
     output.forEach(row => {
       if (row.message.success) totalSuccess += 1;
+      if (passing.has(row.project) && !row.message.success) {
+        exitCode = 1;
+      }
       result += chalk.yellow('### ' + row.project + ' ###') + '\n';
       result +=
         'Status: ' +
@@ -102,6 +108,7 @@ class BuilderPool {
         'Success: ' + totalSuccess
       )}, ${chalk.red('Failed: ' + (output.length - totalSuccess))}`
     );
+    process.exit(exitCode);
   }
 }
 
