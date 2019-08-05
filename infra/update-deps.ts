@@ -1,24 +1,8 @@
 import { writeFileSync, readFileSync } from "fs";
 
+const { devDependencies: overrideDevDeps, dependencies: overrideDeps } = require('./package.json');
+
 export function updateDeps(projectName: string) {
-  const overrideDeps: {[name: string]: string} = {
-    "@angular/animations": "angular/animations-builds#master",
-    "@angular/common": "angular/common-builds#master",
-    "@angular/compiler": "angular/compiler-builds#master",
-    "@angular/core": "angular/core-builds#master",
-    "@angular/forms": "angular/forms-builds#master",
-    "@angular/platform-browser": "angular/platform-browser-builds#master",
-    "@angular/platform-browser-dynamic": "angular/platform-browser-dynamic-builds#master",
-    "@angular/router": "angular/router-builds#master"
-  };
-
-  const overrideDevDeps: {[name: string]: string} = {
-    "@angular-devkit/build-angular": "angular/angular-devkit-build-angular-builds#master",
-    "@angular/cli": "angular/cli-builds#master",
-    "@angular/compiler-cli": "angular/compiler-cli-builds#master",
-    "@angular/language-service": "angular/language-service-builds#master"
-  };
-
   console.log(` - Loading package.json for ${projectName}`);
   const packagePath = `./${projectName}/package.json`;
   const workspacePackage = JSON.parse(readFileSync(packagePath).toString());

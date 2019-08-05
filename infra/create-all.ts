@@ -1,22 +1,7 @@
 import { execSync } from "child_process";
-import { writeFileSync, readFileSync, readFile, writeFile, existsSync } from "fs";
+import { writeFileSync, readFileSync, existsSync } from "fs";
 
-const overrideDeps: {[name: string]: string} = {
-  "@angular/animations": "angular/animations-builds#master",
-  "@angular/common": "angular/common-builds#master",
-  "@angular/compiler": "angular/compiler-builds#master",
-  "@angular/core": "angular/core-builds#master",
-  "@angular/forms": "angular/forms-builds#master",
-  "@angular/platform-browser": "angular/platform-browser-builds#master",
-  "@angular/platform-browser-dynamic": "angular/platform-browser-dynamic-builds#master",
-  "@angular/router": "angular/router-builds#master"
-};
-
-const overrideDevDeps: {[name: string]: string} = {
-  "@angular/compiler-cli": "angular/compiler-cli-builds#master",
-  "@angular/language-service": "angular/language-service-builds#master"
-};
-
+const { devDependencies: overrideDevDeps, dependencies: overrideDeps } = require('./package.json');
 const packages = require('./packages.json');
 
 interface Package {

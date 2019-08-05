@@ -102,6 +102,8 @@ class BuilderPool {
         'Success: ' + totalSuccess
       )}, ${chalk.red('Failed: ' + (output.length - totalSuccess))}`
     );
+
+    process.exitCode = output.length === totalSuccess ? 0 : 1;
   }
 }
 
