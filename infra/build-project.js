@@ -6,7 +6,9 @@ if (!isMainThread) {
     throw new Error("workerData must be a string");
   }
   try {
-    const res = execSync(`cd ${workerData} && npm ci && npm run build -- --noSourceMap --noProgress`, { stdio: 'pipe' });
+    // todo: the below should be npm ci instead of npm i, so that we use frozen lock files
+    // However currently the lock files are outdated and we need to update them.
+    const res = execSync(`cd ${workerData} && npm i && npm run build -- --noSourceMap --noProgress`, { stdio: 'pipe' });
     parentPort.postMessage({
       success: true,
       out: res.toString()
