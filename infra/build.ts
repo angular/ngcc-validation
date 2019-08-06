@@ -84,13 +84,13 @@ class BuilderPool {
       return bres - ares;
     });
     let result = '';
-    console.log('\n');
     let totalSuccess = 0;
-    let exitCode = 0;
+    const regressed: string[] = [];
+
     output.forEach(row => {
       if (row.message.success) totalSuccess += 1;
       if (passing.has(row.project) && !row.message.success) {
-        exitCode = 1;
+        regressed.push(row.project);
       }
       result += chalk.yellow('### ' + row.project + ' ###') + '\n';
       result +=
@@ -102,13 +102,19 @@ class BuilderPool {
         : chalk.red(row.message.out);
       result += '\n\n';
     });
+
+    console.log('\n');
     console.log(result);
     console.log(
       `Total: ${output.length}, ${chalk.green(
         'Success: ' + totalSuccess
       )}, ${chalk.red('Failed: ' + (output.length - totalSuccess))}`
     );
-    process.exit(exitCode);
+
+    if (regressed.length) {
+      console.log(chalk.red('Regressions: ' + regressed.join(', ')));
+    }
+    process.exit(regressed.length > 0 ? 1 : 0);
   }
 }
 
