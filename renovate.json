@@ -1,13 +1,13 @@
 {
   "extends": [
-    "config:base"
+    "schedule:nonOfficeHours"
   ],
+  "semanticCommits": true,
+  "semanticPrefix": "build",
+  "commitMessage": "{{semanticPrefix}} update {{depName}} to version {{newVersion}}",
+  "separateMajorMinor": false,
+  "prHourlyLimit": 2,
   "timezone": "America/Tijuana",
-  "schedule": [
-    "after 10pm every weekday",
-    "before 4am every weekday",
-    "every weekend"
-  ],
   "packageRules": [
     {
       "packagePatterns": [
