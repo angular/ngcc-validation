@@ -2,6 +2,7 @@
   "extends": [
     "schedule:nonOfficeHours"
   ],
+  "masterIssue": true,
   "semanticCommits": true,
   "semanticPrefix": "build",
   "commitMessage": "{{semanticPrefix}} update {{depName}} to version {{newVersion}}",
