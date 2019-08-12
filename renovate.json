@@ -4,12 +4,16 @@
   ],
   "masterIssue": true,
   "semanticCommits": true,
-  "semanticPrefix": "build",
-  "commitMessage": "{{semanticPrefix}} update {{depName}} to version {{newVersion}}",
+  "semanticCommitType": "build",
   "separateMajorMinor": false,
   "prHourlyLimit": 2,
   "timezone": "America/Tijuana",
   "packageRules": [
+    {
+      "managers": ["npm"],
+      "updateTypes": ["digest"],
+      "enabled": false
+    },
     {
       "packagePatterns": [
         "^@angular.*"
@@ -30,7 +34,7 @@
         "minor",
         "major"
       ],
-      "enabled": false
+      "masterIssueApproval": true
     }
   ]
 }
