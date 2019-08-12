@@ -75,11 +75,14 @@ class BuilderPool {
     let result = '';
     let totalSuccess = 0;
     const regressed: string[] = [];
+    const newPasses: string[] = [];
 
     output.forEach(row => {
       if (row.message.success) totalSuccess += 1;
       if (passing.has(row.project) && !row.message.success) {
         regressed.push(row.project);
+      } else if (!passing.has(row.project) && row.message.success) {
+        newPasses.push(row.project);
       }
       result += chalk.yellow('### ' + row.project + ' ###') + '\n';
       result +=
@@ -102,6 +105,9 @@ class BuilderPool {
 
     if (regressed.length) {
       console.log(chalk.red('Regressions: ' + regressed.join(', ')));
+    }
+    if (newPasses.length) {
+      console.log(chalk.green('New successes: ' + newPasses.join(', ')));
     }
     process.exit(regressed.length > 0 ? 1 : 0);
   }
