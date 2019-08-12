@@ -134,12 +134,12 @@ Below you can find the status of the packages validated by this repository:
 | ng-pick-datetime                  | ❌    |        |
 | ng2-ckeditor                      | ❌    |        |
 | ng-zorro-antd                     | ❌    |        |
-| ng2-translate                     | ❌    |        |
-| ng2-pdf-viewer                    | ❌    |        |
+| ng2-translate                     | ✅    |        |
+| ng2-pdf-viewer                    | ✅    |        |
 | ng2-validation                    | ❌    |        |
 | nguniversalaspnetcore-engine      | ❌    |        |
 | nguniversalexpress-engine         | ❌    |        |
-| ngx-cookie                        | ❌    |        |
+| ngx-cookie                        | ✅    |        |
 | ngx-highlightjs                   | ❌    |        |
 | ngx-image-cropper                 | ❌    |        |
 | ngx-mat-select-search             | ❌    |        |
