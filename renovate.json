@@ -2,6 +2,10 @@
   "extends": [
     "schedule:nonOfficeHours"
   ],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
   "masterIssue": true,
   "semanticCommits": true,
   "semanticCommitType": "build",
