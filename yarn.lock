@@ -1147,10 +1147,10 @@
     "@babel/preset-env" "^7.0.0"
     babel-loader "^8.0.2"
 
-"@datorama/akita@4.8.0":
-  version "4.8.0"
-  resolved "https://registry.yarnpkg.com/@datorama/akita/-/akita-4.8.0.tgz#6625fc37b2185069f786d7ada9413086df127478"
-  integrity sha512-uaqvWZY09VrD6c25xyVTooqECz3eEKNMfmZTKuxm0623RrvnjG5ShQfsJAKgSbm/1S58d/OthmD+oZ91q6nA9A==
+"@datorama/akita@4.9.4":
+  version "4.9.4"
+  resolved "https://registry.yarnpkg.com/@datorama/akita/-/akita-4.9.4.tgz#7ccf58f944c691989c1a1993e4b888f0f7926609"
+  integrity sha512-lwvsOKwcJzx2/WSlnW+uU4sMoRSgHWuof50XZXaszim6wpUEdz5TzQ0PlVqq9PiJyJknsuknWjG/t5JyIORYdw==
   dependencies:
     schematics-utilities "^1.1.1"
     tslib "^1.9.0"
@@ -1434,20 +1434,20 @@
   dependencies:
     tslib "^1.9.0"
 
-"@ionic/angular@4.6.2":
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/@ionic/angular/-/angular-4.6.2.tgz#4448b63d3bb9c055789b96c567da02192d62b34e"
-  integrity sha512-BUtT4ve6ThRaSRHX+YrkVyhcZP1FWY8P31/S/Hj7bWNCFTIdfB21dEAFzFx9SfGPfBCVYfDj5OoLYtKc1LUJQA==
+"@ionic/angular@4.7.4":
+  version "4.7.4"
+  resolved "https://registry.yarnpkg.com/@ionic/angular/-/angular-4.7.4.tgz#ec26f6cca68e6eef67201b381e5a337382aa9f95"
+  integrity sha512-UCSxzYWLs9JkP07ggp/o6lLh/cQo4NHcr9LH7fcoMMGQA+i+p4X1m8qPkoiFhfK+ekMSpLiJnUkm+7wNS7+RGg==
   dependencies:
-    "@ionic/core" "4.6.2"
+    "@ionic/core" "4.7.4"
     tslib "^1.9.3"
 
-"@ionic/core@4.6.2":
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-4.6.2.tgz#c14da14ecacfd10a835adb5120d5c1ffb5a1a852"
-  integrity sha512-JThYU8YnEtxlByNm+77nNtQDMOBE496eye25b4WbCpKNHEIw2g6V0TMxx4vSP0ynAw6Mgu/hAo8EdUO3XvNcKw==
+"@ionic/core@4.7.4":
+  version "4.7.4"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-4.7.4.tgz#73f9726c2099bed2b1a7c946360e62fb0a6ea4b6"
+  integrity sha512-zvRN5zGhecZnT1jxi0ZG9Lq1kQG89RBrRaizM+pvHH984o7ywcPLQfbRme8G8hBvzK/WU1g1BEt9Hq6qIvG0ug==
   dependencies:
-    ionicons "4.6.1"
+    ionicons "^4.6.2"
     tslib "^1.10.0"
 
 "@ionic/storage@2.2.0":
@@ -1978,6 +1978,11 @@
   dependencies:
     "@material/feature-targeting" "^3.1.0"
 
+"@mobiscroll/angular-lite@^4.7.3":
+  version "4.7.3"
+  resolved "https://registry.yarnpkg.com/@mobiscroll/angular-lite/-/angular-lite-4.7.3.tgz#796472099d14ab8049097e4f9147e94cb9cac12b"
+  integrity sha512-nrZri7wDxpcz53T0sXlkaqWTN4ksyay//rJVwVBOBif2/1wv8FerDQkH2tGMesUSwcUqsNryOvCjYAcjJUCCew==
+
 "@nebular/auth@4.1.3":
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/@nebular/auth/-/auth-4.1.3.tgz#b5663be02d6c16de680fabfc688ee2e3518025ca"
@@ -2010,10 +2015,10 @@
   dependencies:
     intersection-observer "0.5.0"
 
-"@netbasal/spectator@3.9.4":
-  version "3.9.4"
-  resolved "https://registry.yarnpkg.com/@netbasal/spectator/-/spectator-3.9.4.tgz#981b0eafa3a6ae1421d256436282633874c6cec4"
-  integrity sha512-7YejBvDYB773ODL7EeMmhv+Vps83ot6MQpXiq2I6Rt4dw+yLTTLpv8TG0MjJ1ZkY79669qI2mDHQz4jlP1H28A==
+"@netbasal/spectator@3.11.1":
+  version "3.11.1"
+  resolved "https://registry.yarnpkg.com/@netbasal/spectator/-/spectator-3.11.1.tgz#dc8d347ae58ed92cb3100f8eb7749f83e46cf6f4"
+  integrity sha512-L27IcD9Uz8gi1NoJL2ry7EkwKn/EZLx8/QcSSaiCQ0pJ4g9IWHwBIACN1iv9U475tAbYh5Hvpo6bFgAi/FIunw==
   dependencies:
     dom-testing-library "3.16.0"
     jquery "3.4.1"
@@ -2458,15 +2463,10 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
-"@types/jasmine@*":
+"@types/jasmine@*", "@types/jasmine@~3.4.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.4.0.tgz#018c56db42400c092aae47de21f710b7f04e4b06"
   integrity sha512-6pUnBg6DuSB55xnxJ5+gW9JOkFrPsXkYAuqqEE8oyrpgDiPQ+TZ+1Zt4S+CHcRJcxyNYXeIXG4vHSzdF6y9Uvw==
-
-"@types/jasmine@~3.3.8":
-  version "3.3.16"
-  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.3.16.tgz#7c84074f5d7f84da9a14f816ccfb9aeb4da13f27"
-  integrity sha512-Nveep4zKGby8uIvG2AEUyYOwZS8uVeHK9TgbuWYSawUDDdIgfhCKz28QzamTo//Jk7Ztt9PO3f+vzlB6a4GV1Q==
 
 "@types/jasminewd2@~2.0.3":
   version "2.0.6"
@@ -2973,10 +2973,10 @@ angular-in-memory-web-api@0.8.0:
   resolved "https://registry.yarnpkg.com/angular-in-memory-web-api/-/angular-in-memory-web-api-0.8.0.tgz#6cb63c9e8e22c59383dfcccaf0512791400bf4e1"
   integrity sha512-2n0YtCLFxZo4JePHvH6q8b7JmBmhZq44Ic8VaBPRSXE4vAmlKXHU+kI2quNa612EAETDRkZcvLOU8K8CkhIZgQ==
 
-angular-l10n@8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/angular-l10n/-/angular-l10n-8.1.0.tgz#a29363a33f230b30976a36af888c143d7c320334"
-  integrity sha512-+9qBxrVPhXnR/5YoC6lHDTPcTVCNtClAWwhUJt4O7aolPfGLcJNYAEUyYRjWz6LIsEjuhesGKt9EEiIko0AqvA==
+angular-l10n@8.1.1:
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/angular-l10n/-/angular-l10n-8.1.1.tgz#48549906866e1c7194a8b0c918e49f51751861ab"
+  integrity sha512-Deg3HgLR36sA5la3yPS06Crycuy1f3Hl34Mjvz1IkeLXw+nR/a+ZroOOHh8JbZ4/sqUepPP5Qf5YZAMBlzwR2A==
   dependencies:
     tslib "^1.9.0"
 
@@ -6921,10 +6921,10 @@ ionic-angular@3.9.8:
   resolved "https://registry.yarnpkg.com/ionic-angular/-/ionic-angular-3.9.8.tgz#2b00e46a94b753afe8e22182eefdbaa0612be84e"
   integrity sha512-PVo5mii3nqdEIBP5aVQMn58iIH8VkLDEuGnnMtJi1le4nwzfep2V4jOcru9zDKhCclsD5lqSRBpuQHfoHdRBgQ==
 
-ionicons@4.6.1:
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-4.6.1.tgz#62515439ea54ae84dcc0fa0bfeb43076b2d5d64d"
-  integrity sha512-HIT6nAozXnM5yO9an0QpqABM4QFs1xtOjTz4Neyqbs0+fbPqN3p2PwJuh99WR9YaYGrFPzSCW6/n+LLL6C+xeg==
+ionicons@^4.6.2:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-4.6.2.tgz#5a835b4faf9ba602b3315b9649df0750715b0f6d"
+  integrity sha512-OGQO/GCKFwHh5lX9wYzgfLjuj2rnQavixVgK3iv8nm7tcgYQVHw7MNNwNHY4H97ZlKiVx3qj4X5Txv9fx95oBw==
 
 ip-regex@^2.1.0:
   version "2.1.0"
@@ -8403,10 +8403,10 @@ ng-inline-svg@8.5.1:
   resolved "https://registry.yarnpkg.com/ng-inline-svg/-/ng-inline-svg-8.5.1.tgz#3be9dbbadc1df451b187cc6a6c3b822fb580aeed"
   integrity sha512-JdwyAfqgNpgtJA3lKRb4K/b8ufpPTof3ZxPeJ0MqJDyvXNlYwCT3wYAOKxqInNqU9ido6iXH27dFZzpmHl2J1w==
 
-ng-lazyload-image@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/ng-lazyload-image/-/ng-lazyload-image-6.0.0.tgz#d70ca6bd767c1ea0c6b80b9266fb47a93bb803da"
-  integrity sha512-oatEf5Aq8abjTMxldSypm863B3BJElefBNnmVPEf09KNdYIm1dSrZP6/70CSsxNUhRYsfR+T9Q1SVPaZkwYZ0w==
+ng-lazyload-image@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/ng-lazyload-image/-/ng-lazyload-image-6.1.0.tgz#adb012ca6acb68a0565b38417819259c13669b2a"
+  integrity sha512-Ejibt5TGecZXLFTn+rk4liygC9x1fT0wrVXGXkpoTZdUiuK6NqCyApKyJ5kGGh3YBVBHbCl/p06HtRccQtABfg==
   dependencies:
     tslib "^1.9.0"
 
@@ -8529,10 +8529,10 @@ ng2-validation@4.2.0:
   dependencies:
     libphonenumber-js "^0.4.5"
 
-ngx-bootstrap@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/ngx-bootstrap/-/ngx-bootstrap-5.1.0.tgz#4a3d1b9ab099a4f8c01e8760c947873cb8505569"
-  integrity sha512-gHmIH1dZcZgbgu9Y88iPa8JaMkSM1QrU1zPDSJIw5TUNXVbwhvi5bzh2ttjvL88agyVWmTHM0mgyntPAgULxCQ==
+ngx-bootstrap@5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/ngx-bootstrap/-/ngx-bootstrap-5.1.1.tgz#aab63b218611eeeaed0c9e224f2033a992ac6e57"
+  integrity sha512-++6+YHbIWTR/3sHH9C0aelIP25KMKhylWSEet6HonZfVr8quzEUjq6xEzTnDbZpnxlly2j58Gg0O9DWXu0UCxA==
 
 ngx-chips@2.0.2:
   version "2.0.2"
@@ -10369,7 +10369,7 @@ rw@1:
   resolved "https://registry.yarnpkg.com/rw/-/rw-1.3.3.tgz#3f862dfa91ab766b14885ef4d01124bfda074fb4"
   integrity sha1-P4Yt+pGrdmsUiF700BEkv9oHT7Q=
 
-rxjs-compat@^6.2.2:
+rxjs-compat@^6.2.2, rxjs-compat@^6.5.2:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/rxjs-compat/-/rxjs-compat-6.5.2.tgz#e469070adf6260bdad195e9d4a39f444ae28b458"
   integrity sha512-TRMkTp4FgSxE2HtGvxmgRukh3JqdFM7ejAj1Ti/VdodbPGfWvZR5+KdLKRV9jVDFyu2SknM8RD+PR54KGnoLjg==
