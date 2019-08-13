@@ -4,17 +4,87 @@
   ],
   "masterIssue": true,
   "semanticCommits": true,
-  "semanticPrefix": "build",
-  "commitMessage": "{{semanticPrefix}} update {{depName}} to version {{newVersion}}",
+  "semanticCommitType": "build",
   "separateMajorMinor": false,
   "prHourlyLimit": 2,
   "timezone": "America/Tijuana",
   "packageRules": [
     {
+      "managers": ["npm"],
+      "updateTypes": ["digest"],
+      "enabled": false
+    },
+    {
       "packagePatterns": [
         "^@angular.*"
       ],
       "groupName": "angular"
+    },
+    {
+      "packagePatterns": [
+        "^@nrwl/*"
+      ],
+      "groupName": "nrwl"
+    },
+    {
+      "packagePatterns": [
+        "^@ngx-formly/*"
+      ],
+      "groupName": "ngx-formly"
+    },
+    {
+      "packagePatterns": [
+        "^@swimlane/*"
+      ],
+      "groupName": "swimlane"
+    },
+    {
+      "packagePatterns": [
+        "^@delon/*"
+      ],
+      "groupName": "delon"
+    },
+    {
+      "packagePatterns": [
+        "^@ngxs/*"
+      ],
+      "groupName": "ngxs"
+    },
+    {
+      "packagePatterns": [
+        "^@nebular/*"
+      ],
+      "groupName": "nebular"
+    },
+    {
+      "packagePatterns": [
+        "^@firebase/*"
+      ],
+      "groupName": "firebase"
+    },
+    {
+      "packagePatterns": [
+        "^@alfresco/*"
+      ],
+      "groupName": "alfresco"
+    },
+    {
+      "packagePatterns": [
+        "^@covalent/*"
+      ],
+      "groupName": "covalent"
+    },
+    {
+      "packagePatterns": [
+        "^@clr/*"
+      ],
+      "groupName": "clr"
+    },
+    {
+      "packagePatterns": [
+        "^@ngrx/*"
+      ],
+      "groupName": "ngrx"
     },
     {
       "packageNames": [
@@ -30,7 +100,7 @@
         "minor",
         "major"
       ],
-      "enabled": false
+      "masterIssueApproval": true
     }
   ]
 }
