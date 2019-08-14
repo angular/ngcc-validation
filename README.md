@@ -18,7 +18,7 @@ git clone git@github.com:angular/ngcc-validation
 
 ```bash
 cd ngcc-validation
-npm i
+yarn install
 ```
 
 **Create your project**:
@@ -33,8 +33,6 @@ This will create a new CLI application in `[my-library-name]-ngcc`:
 
 * using the latest CLI
 * with Ivy enabled
-* Angular dependencies overridden to pull in the latest built versions
-* `target` to `es5` in `tsconfig.json` to speed up the build
 
 
 **Import your library**:
