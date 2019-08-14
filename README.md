@@ -18,7 +18,7 @@ git clone git@github.com:angular/ngcc-validation
 
 ```bash
 cd ngcc-validation
-npm i
+yarn install
 ```
 
 **Create your project**:
