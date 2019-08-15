@@ -2441,7 +2441,7 @@
     "@types/dragula" "^2.1.34"
     tslib "^1.9.0"
 
-"@tweenjs/tween.js@17.4.0":
+"@tweenjs/tween.js@17.4.0", "@tweenjs/tween.js@^17.4.0":
   version "17.4.0"
   resolved "https://registry.yarnpkg.com/@tweenjs/tween.js/-/tween.js-17.4.0.tgz#2e9ab3f2111906b30dfe1ef3259a9781dd211d35"
   integrity sha512-J3fzl1F6wvh8KXVVcIuHN12xi1ZDcPA/0Vix+ZcJYwZWVHUwfIqfvzYXXEw7ybeev6477KCTt9fKydU+ajUqcg==
@@ -3058,11 +3058,12 @@ angular2-moment@1.9.0:
   dependencies:
     moment "^2.19.3"
 
-angular2-multiselect-dropdown@4.2.7:
-  version "4.2.7"
-  resolved "https://registry.yarnpkg.com/angular2-multiselect-dropdown/-/angular2-multiselect-dropdown-4.2.7.tgz#23cc2dbc68537dbc4c5365bebd953599babbcfcc"
-  integrity sha512-g+ryXHmyn0CPa0zyZtVYbLdnMA7h8ZLeqxgqkFY/vxiODwWWACS1LowEHbVIzHquK9pAxw9R5WNdlg5dwXb6Jg==
+angular2-multiselect-dropdown@4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/angular2-multiselect-dropdown/-/angular2-multiselect-dropdown-4.5.0.tgz#397e9dabdf3181d9da79485fd41063bc1bd1aa68"
+  integrity sha512-FwhPW8xLJeRRgQ0UUH/3KztLMD6KEb+m6O0IXuIJK7uqq6zeoI7zmIfbgKiCpDNy2X07AG5SwO8noSUA8Aj1PA==
   dependencies:
+    "@tweenjs/tween.js" "^17.4.0"
     tslib "^1.9.0"
 
 angular2-notifications@2.0.0:
