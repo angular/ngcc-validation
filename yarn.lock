@@ -2226,30 +2226,31 @@
   dependencies:
     tslib "^1.9.0"
 
-"@nrwl/angular@8.3.0":
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/angular/-/angular-8.3.0.tgz#3ef2036a164b0df8cc1f725461453ae0a35bd409"
-  integrity sha512-po9zMhK+NHroygn2gUfYrgVWWPSozcK0LVF6by9Ww7bGqpDiziAAOfX8qxeUfcoGtemEosjx2Ze5NcTvbd2anw==
+"@nrwl/angular@8.4.10":
+  version "8.4.10"
+  resolved "https://registry.yarnpkg.com/@nrwl/angular/-/angular-8.4.10.tgz#7336c7a0bbb172e322f4ca73c39a1665cd67e3eb"
+  integrity sha512-87W7ySdVWq26JhBnM8ZGD2EsgGkEeiJ2R+72Lj4LoTUaMZoNEF4WHGQrOlK6t477EABcO5gsm7nIiqLbBvsRaA==
   dependencies:
     "@angular-devkit/schematics" "8.1.1"
-    "@nrwl/cypress" "8.3.0"
-    "@nrwl/jest" "8.3.0"
+    "@nrwl/cypress" "8.4.10"
+    "@nrwl/jest" "8.4.10"
     "@schematics/angular" "8.1.1"
     jasmine-marbles "~0.6.0"
 
-"@nrwl/cli@8.3.0":
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-8.3.0.tgz#7871adc3df773c75ad48b460131da456adae20b1"
-  integrity sha512-CSZC5gRU+PrGsSewlC7hAVNrIZ811Qvcj96gdM7ahzoVGhBCH/+padVh9Y5XDiKRwY3TEyjDx2ZkvCIWfAATyg==
+"@nrwl/cli@8.4.10":
+  version "8.4.10"
+  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-8.4.10.tgz#c19d329106a0b28e719b88632776c9b0b4a28172"
+  integrity sha512-t4yjvt+1nlISHEnpVDfBYT58hvqF3d3WInZ4xHbqpqBYLiKOWY4Pls0lDd6QAQiDlbfKcUH6wDYM0G0Y9Drdqg==
   dependencies:
+    "@nrwl/tao" "8.4.10"
     tmp "0.0.33"
     yargs "^11.0.0"
     yargs-parser "10.0.0"
 
-"@nrwl/cypress@8.3.0":
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-8.3.0.tgz#b67dab8c0335d7b1f336bb46d0a646daf6ddf3b0"
-  integrity sha512-LBilNUEZRVvQyRaUKB9twaIHxb7oDk5ZP6xIZe4fKqXMIkcRUDkJs/hmTxvq/uazWig0Or9189VHRSz+qzByBg==
+"@nrwl/cypress@8.4.10":
+  version "8.4.10"
+  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-8.4.10.tgz#b51caec803fc1f33da5c939564e1a0e8f6ddb9cc"
+  integrity sha512-kR7N0mKGHY391AI0R1vgoGFE93MZRiZJ+ag8qKErfSP13dCFG1qTiVVpCAVm6AEzfvBDhmu3yRsoTXm2DjuqfQ==
   dependencies:
     "@angular-devkit/architect" "0.801.1"
     "@angular-devkit/core" "8.1.1"
@@ -2259,23 +2260,35 @@
     tsconfig-paths-webpack-plugin "3.2.0"
     webpack-node-externals "1.7.2"
 
-"@nrwl/jest@8.3.0":
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-8.3.0.tgz#486c5d712e43c607d304ca3b08df08276aa16992"
-  integrity sha512-VyzOrgJGeb52llEQL4YKxvjF34PdWfpgdcNMa83rJsUByHyCnLt/LkPfaggb4o8AQcntjIRskwC7sxYq2ThyvA==
+"@nrwl/jest@8.4.10":
+  version "8.4.10"
+  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-8.4.10.tgz#468da7f9781e2be4688d7dfea443d87b9b7d1f67"
+  integrity sha512-BRUG9o7eopDdEMfwOiNXKXqk9y6ZXYNjRxi4ocr0WT+GEN1aDOcqU3q8ZqoBDgTPsXSaRecAVZEuU+M+fFofxA==
   dependencies:
     "@angular-devkit/architect" "0.801.1"
     "@angular-devkit/core" "8.1.1"
     "@angular-devkit/schematics" "8.1.1"
 
-"@nrwl/workspace@8.3.0":
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-8.3.0.tgz#f6aee79e9db4b295bdbd2d8f14d9bd6c4db37016"
-  integrity sha512-N2SxJpaXT9ndTRL06ZS7W1+R21f4Majy45ChSg3hV+ZUnB56ktxklVXNak2xN+2SDPEffQ8o3kOgRNk/zQF01Q==
+"@nrwl/tao@8.4.10":
+  version "8.4.10"
+  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-8.4.10.tgz#0fefcd30fc713c04e2c22c984ed036f9f1d09d7a"
+  integrity sha512-9r5PmisRo1l0VHQf31iTGjAIfEcRb45kRBCqZeddX30ojw7rZOMTMaeFSe4u/BXS9CHq8KvfoaA10nMR9T/chw==
+  dependencies:
+    "@angular-devkit/architect" "0.801.1"
+    "@angular-devkit/core" "8.1.1"
+    "@angular-devkit/schematics" "8.1.1"
+    inquirer "^6.3.1"
+    minimist "^1.2.0"
+
+"@nrwl/workspace@8.4.10":
+  version "8.4.10"
+  resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-8.4.10.tgz#3744ef7907bf98bf92ba9d22ab73f2f8ad6b11cb"
+  integrity sha512-t+JanLhOUcxvTR3n7R5xZnVfou+0tv8aAnWOBklSMXbsvaQ1RDOrHR4eOwX8ego/3n9Ls3D0GQy2+qKNxVE4fg==
   dependencies:
     "@angular-devkit/core" "8.1.1"
     "@angular-devkit/schematics" "8.1.1"
-    "@nrwl/cli" "8.3.0"
+    "@nrwl/cli" "8.4.10"
+    chalk "2.4.2"
     cosmiconfig "4.0.0"
     fs-extra "6.0.0"
     graphviz "0.0.8"
@@ -4020,6 +4033,15 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
+chalk@2.4.2, chalk@^2.0.0, chalk@^2.0.1, chalk@^2.3.0, chalk@^2.4.1, chalk@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
+  integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
+  dependencies:
+    ansi-styles "^3.2.1"
+    escape-string-regexp "^1.0.5"
+    supports-color "^5.3.0"
+
 chalk@^1.1.1, chalk@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-1.1.3.tgz#a8115c55e4a702fe4d150abd3872822a7e09fc98"
@@ -4030,15 +4052,6 @@ chalk@^1.1.1, chalk@^1.1.3:
     has-ansi "^2.0.0"
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
-
-chalk@^2.0.0, chalk@^2.0.1, chalk@^2.3.0, chalk@^2.4.1, chalk@^2.4.2:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
-  integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
-  dependencies:
-    ansi-styles "^3.2.1"
-    escape-string-regexp "^1.0.5"
-    supports-color "^5.3.0"
 
 chardet@^0.7.0:
   version "0.7.0"
@@ -6882,7 +6895,7 @@ inquirer@6.5.0:
     strip-ansi "^5.1.0"
     through "^2.3.6"
 
-inquirer@6.5.1:
+inquirer@6.5.1, inquirer@^6.3.1:
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-6.5.1.tgz#8bfb7a5ac02dac6ff641ac4c5ff17da112fcdb42"
   integrity sha512-uxNHBeQhRXIoHWTSNYUFhQVrHYFThIt6IVo2fFmSe8aBwdR3/w6b58hJpiL/fMukFkvGzjg+hSxFtwvVmKZmXw==
