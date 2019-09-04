@@ -4690,6 +4690,11 @@ css-selector-tokenizer@^0.7.1:
     fastparse "^1.1.1"
     regexpu-core "^1.0.0"
 
+css-unit-converter@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/css-unit-converter/-/css-unit-converter-1.1.1.tgz#d9b9281adcfd8ced935bdbaba83786897f64e996"
+  integrity sha1-2bkoGtz9jO2TW9urqDeGiX9k6ZY=
+
 css@^2.0.0:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/css/-/css-2.2.4.tgz#c646755c73971f2bba6a601e2cf2fd71b1298929"
@@ -9755,7 +9760,7 @@ postcss-loader@3.0.0:
     postcss-load-config "^2.0.0"
     schema-utils "^1.0.0"
 
-postcss-value-parser@^3.2.3:
+postcss-value-parser@^3.2.3, postcss-value-parser@^3.3.0:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.1.tgz#9ff822547e2893213cf1c30efa51ac5fd1ba8281"
   integrity sha512-pISE66AbVkp4fDQ7VHBwRNXzAAKJjw4Vw7nWI/+Q3vuly7SNfgYXvm6i5IgFylHGK5sP/xHAbB7N49OS4gWNyQ==
@@ -10192,6 +10197,14 @@ readdirp@^3.1.1:
   integrity sha512-XXdSXZrQuvqoETj50+JAitxz1UPdt5dupjT6T5nVB+WvjMv2XKYj+s7hPeAVCXvmJrL36O4YYyWlIC3an2ePiQ==
   dependencies:
     picomatch "^2.0.4"
+
+reduce-css-calc@^2.1.6:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/reduce-css-calc/-/reduce-css-calc-2.1.6.tgz#050fe6ee7d98a1d70775d2e93ce0b713cee394d2"
+  integrity sha512-+l5/qlQmdsbM9h6JerJ/y5vR5Ci0k93aszLNpCmbadC3nBcbRGmIBm0s9Nj59i22LvCjTGftWzdQRwdknayxhw==
+  dependencies:
+    css-unit-converter "^1.1.1"
+    postcss-value-parser "^3.3.0"
 
 redux-devtools-extension@2.13.8:
   version "2.13.8"
@@ -11481,17 +11494,18 @@ tmp@0.0.33, tmp@0.0.x, tmp@^0.0.33:
   dependencies:
     os-tmpdir "~1.0.2"
 
-tns-core-modules-widgets@6.0.7:
-  version "6.0.7"
-  resolved "https://registry.yarnpkg.com/tns-core-modules-widgets/-/tns-core-modules-widgets-6.0.7.tgz#a2f6905994d1240df0bbdf1109441cc5930d2a85"
-  integrity sha512-4E5B4/etIi/YlMnaDfCbxdBhkOkzvewQq/tK37yXQBHjtGzduqXXE5zra0MrUhyNrka4mqqX0T/CBqqe4HSzKw==
+tns-core-modules-widgets@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/tns-core-modules-widgets/-/tns-core-modules-widgets-6.1.0.tgz#75351b6dec4c151603df5f0176286f360ddc2614"
+  integrity sha512-h/xBTVsGgr5Qhni3EM1D87MmCikPARarxaOGLibxRHaNzNqpJeuy7kTZP/tI/u2DAJJcNwXSjCm1p5spzrhF2w==
 
-tns-core-modules@6.0.7:
-  version "6.0.7"
-  resolved "https://registry.yarnpkg.com/tns-core-modules/-/tns-core-modules-6.0.7.tgz#81db44b69e096f665519c9b3d465ef3c92f42f14"
-  integrity sha512-lhiz5Ilt3l0SgIgE6YrYGrz6qbMyefoanT5TxeeAZXwxrxVS0ITh1a8pq2B+5a3RA/GRq/z3dKI+Rw1hcSDDJw==
+tns-core-modules@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/tns-core-modules/-/tns-core-modules-6.1.0.tgz#37e0705fa3460f02e51f92c6f035729992af38dc"
+  integrity sha512-dWwmjGmG65uDI76IJS2FmXnuoe6HDCSD+L2LvPyO4TX2R9LftiJMW+81JDhsDStgiFAFevTZgbmMjo5pfNYZog==
   dependencies:
-    tns-core-modules-widgets "6.0.7"
+    reduce-css-calc "^2.1.6"
+    tns-core-modules-widgets "6.1.0"
     tslib "^1.9.3"
 
 to-array@0.1.4:
