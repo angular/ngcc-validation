@@ -1,0 +1,21 @@
+nav {
+  padding: 30px 15px;
+  display: flex;
+}
+
+nav a {
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  background-color: rgb(255, 99, 88);
+}
+
+nav a:hover {
+  background-color: rgb(238, 82, 69);
+  transition: .3s background-color;
+}
+
+nav a:visited {
+  text-decoration: none;
+}
