@@ -5653,28 +5653,28 @@
         }
       }
     },
-    "apollo-angular-link-http-common-ngcc": {
+    "apollo-angular-link-http-batch-ngcc": {
       "projectType": "application",
       "schematics": {},
-      "root": "projects/apollo-angular-link-http-common-ngcc",
-      "sourceRoot": "projects/apollo-angular-link-http-common-ngcc/src",
+      "root": "projects/apollo-angular-link-http-batch-ngcc",
+      "sourceRoot": "projects/apollo-angular-link-http-batch-ngcc/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/apollo-angular-link-http-common-ngcc",
-            "index": "projects/apollo-angular-link-http-common-ngcc/src/index.html",
-            "main": "projects/apollo-angular-link-http-common-ngcc/src/main.ts",
-            "polyfills": "projects/apollo-angular-link-http-common-ngcc/src/polyfills.ts",
-            "tsConfig": "projects/apollo-angular-link-http-common-ngcc/tsconfig.app.json",
+            "outputPath": "dist/apollo-angular-link-http-batch-ngcc",
+            "index": "projects/apollo-angular-link-http-batch-ngcc/src/index.html",
+            "main": "projects/apollo-angular-link-http-batch-ngcc/src/main.ts",
+            "polyfills": "projects/apollo-angular-link-http-batch-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/apollo-angular-link-http-batch-ngcc/tsconfig.app.json",
             "aot": true,
             "assets": [
-              "projects/apollo-angular-link-http-common-ngcc/src/favicon.ico",
-              "projects/apollo-angular-link-http-common-ngcc/src/assets"
+              "projects/apollo-angular-link-http-batch-ngcc/src/favicon.ico",
+              "projects/apollo-angular-link-http-batch-ngcc/src/assets"
             ],
             "styles": [
-              "projects/apollo-angular-link-http-common-ngcc/src/styles.css"
+              "projects/apollo-angular-link-http-batch-ngcc/src/styles.css"
             ],
             "scripts": []
           },
@@ -5682,8 +5682,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/apollo-angular-link-http-common-ngcc/src/environments/environment.ts",
-                  "with": "projects/apollo-angular-link-http-common-ngcc/src/environments/environment.prod.ts"
+                  "replace": "projects/apollo-angular-link-http-batch-ngcc/src/environments/environment.ts",
+                  "with": "projects/apollo-angular-link-http-batch-ngcc/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -5708,33 +5708,33 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "apollo-angular-link-http-common-ngcc:build"
+            "browserTarget": "apollo-angular-link-http-batch-ngcc:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "apollo-angular-link-http-common-ngcc:build:production"
+              "browserTarget": "apollo-angular-link-http-batch-ngcc:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "apollo-angular-link-http-common-ngcc:build"
+            "browserTarget": "apollo-angular-link-http-batch-ngcc:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/apollo-angular-link-http-common-ngcc/src/test.ts",
-            "polyfills": "projects/apollo-angular-link-http-common-ngcc/src/polyfills.ts",
-            "tsConfig": "projects/apollo-angular-link-http-common-ngcc/tsconfig.spec.json",
-            "karmaConfig": "projects/apollo-angular-link-http-common-ngcc/karma.conf.js",
+            "main": "projects/apollo-angular-link-http-batch-ngcc/src/test.ts",
+            "polyfills": "projects/apollo-angular-link-http-batch-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/apollo-angular-link-http-batch-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/apollo-angular-link-http-batch-ngcc/karma.conf.js",
             "assets": [
-              "projects/apollo-angular-link-http-common-ngcc/src/favicon.ico",
-              "projects/apollo-angular-link-http-common-ngcc/src/assets"
+              "projects/apollo-angular-link-http-batch-ngcc/src/favicon.ico",
+              "projects/apollo-angular-link-http-batch-ngcc/src/assets"
             ],
             "styles": [
-              "projects/apollo-angular-link-http-common-ngcc/src/styles.css"
+              "projects/apollo-angular-link-http-batch-ngcc/src/styles.css"
             ],
             "scripts": []
           }
@@ -5743,9 +5743,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/apollo-angular-link-http-common-ngcc/tsconfig.app.json",
-              "projects/apollo-angular-link-http-common-ngcc/tsconfig.spec.json",
-              "projects/apollo-angular-link-http-common-ngcc/e2e/tsconfig.json"
+              "projects/apollo-angular-link-http-batch-ngcc/tsconfig.app.json",
+              "projects/apollo-angular-link-http-batch-ngcc/tsconfig.spec.json",
+              "projects/apollo-angular-link-http-batch-ngcc/e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -5755,12 +5755,12 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/apollo-angular-link-http-common-ngcc/e2e/protractor.conf.js",
-            "devServerTarget": "apollo-angular-link-http-common-ngcc:serve"
+            "protractorConfig": "projects/apollo-angular-link-http-batch-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "apollo-angular-link-http-batch-ngcc:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "apollo-angular-link-http-common-ngcc:serve:production"
+              "devServerTarget": "apollo-angular-link-http-batch-ngcc:serve:production"
             }
           }
         }

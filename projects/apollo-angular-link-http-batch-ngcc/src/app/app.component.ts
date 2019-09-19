@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'apollo-angular-link-http-common-ngcc';
+  title = 'apollo-angular-link-http-batch-ngcc';
 }
