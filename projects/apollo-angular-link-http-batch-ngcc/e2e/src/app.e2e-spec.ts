@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to apollo-angular-link-http-common-ngcc!');
+    expect(page.getTitleText()).toEqual('Welcome to apollo-angular-link-http-batch-ngcc!');
   });
 
   afterEach(async () => {

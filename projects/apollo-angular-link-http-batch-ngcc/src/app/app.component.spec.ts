@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'apollo-angular-link-http-common-ngcc'`, () => {
+  it(`should have as title 'apollo-angular-link-http-batch-ngcc'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('apollo-angular-link-http-common-ngcc');
+    expect(app.title).toEqual('apollo-angular-link-http-batch-ngcc');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to apollo-angular-link-http-common-ngcc!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to apollo-angular-link-http-batch-ngcc!');
   });
 });
