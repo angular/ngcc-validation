@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/angular/ngcc-validation.svg?style=svg)](https://circleci.com/gh/angular/ngcc-validation)
+[![CircleCI](https://circleci.com/gh/mgcehev/ngcc-validation.svg?style=svg)](https://circleci.com/gh/mgechev/ngcc-validation)
 
 # ngcc validation
 
@@ -14,7 +14,7 @@ To add your library, follow the next simple 4 steps:
 **Clone the repository**:
 
 ```bash
-git clone git@github.com:angular/ngcc-validation
+git clone git@github.com:mgechev/ngcc-validation
 ```
 
 **Install the top-level dependencies**:
