@@ -3,6 +3,14 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2
+
+# Run a step to setup an environment variable.
+var_1: &setup_env_variables
+  run:
+    name: "Setup custom environment variables"
+    command: |
+      echo 'export CHROMEDRIVER_VERSION_ARG="--versions.chrome 75.0.3770.90"' >> $BASH_ENV # Redirect into $BASH_ENV
+
 jobs:
   build:
     docker:

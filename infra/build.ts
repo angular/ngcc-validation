@@ -4,8 +4,10 @@ import { Worker } from 'worker_threads';
 
 import * as passingData from './passing.json';
 import { projects } from '../angular.json';
+import * as e2eProjectsList from './e2e-projects.json';
 
 const passing = new Set(passingData);
+const e2eProjects = new Set(e2eProjectsList);
 
 interface Output {
   project: string;
@@ -14,6 +16,13 @@ interface Output {
     out: string;
   };
 }
+
+const getProjectCommand = (project: string) => {
+  if (e2eProjects.has(project)) {
+    return `npm run ng -- e2e ${project} --webdriver-update=false`;
+  }
+  return `npm run ng -- build ${project} --noSourceMap --noProgress`;
+};
 
 class BuilderPool {
   private _active = 0;
@@ -41,7 +50,7 @@ class BuilderPool {
     }
     console.log(chalk.gray('Executing: ' + project));
     const worker = new Worker(join(__dirname, 'build-project.js'), {
-      workerData: project
+      workerData: getProjectCommand(project)
     });
     this._active++;
     worker.on('message', message => {
@@ -115,4 +124,9 @@ class BuilderPool {
 
 const pool = new BuilderPool(2);
 
-Object.keys(projects).forEach(dir => pool.schedule(dir));
+Object.keys(projects).forEach(dir => {
+  console.log(e2eProjects.has(dir));
+  if (e2eProjects.has(dir)) {
+    pool.schedule(dir);
+  }
+});

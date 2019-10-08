@@ -5,7 +5,8 @@
   "scripts": {
     "ng": "ng",
     "build": "ts-node --project infra/tsconfig.json infra/build.ts",
-    "add-project": "ts-node --project infra/tsconfig.json infra/create-proj.ts"
+    "add-project": "ts-node --project infra/tsconfig.json infra/create-proj.ts",
+    "postinstall": "webdriver-manager update --gecko false --standalone false $CHROMEDRIVER_VERSION_ARG"
   },
   "author": "Minko Gechev <mgechev@google.com>",
   "license": "MIT",
