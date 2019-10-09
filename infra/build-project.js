@@ -16,7 +16,7 @@ if (!isMainThread) {
   } catch (e) {
     parentPort.postMessage({
       success: false,
-      out: e.stderr.toString()
+      out: `stderr: ${e.stderr.toString()}\nstdout: ${e.stdout.toString()}\n`
     });
   }
 }
