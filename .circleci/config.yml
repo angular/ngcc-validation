@@ -2,29 +2,23 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-version: 2
+version: 2.1
 
-# Run a step to setup an environment variable.
-var_1: &setup_env_variables
-  run:
-    name: "Setup custom environment variables"
-    command: |
-      echo 'export CHROMEDRIVER_VERSION_ARG="--versions.chrome 75.0.3770.90"' >> $BASH_ENV # Redirect into $BASH_ENV
+var_1: &working_directory ~/repo
+
+# Executor Definitions
+# https://circleci.com/docs/2.0/reusing-config/#authoring-reusable-executors
+executors:
+  action-executor:
+    docker:
+      - image: circleci/node:12.11
+    working_directory: *working_directory
 
 jobs:
-  build:
-    docker:
-      # specify the version you desire here
-      - image: circleci/node:12.11
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
-
-    working_directory: ~/repo
-
+  setup:
+    executor: action-executor
     steps:
+      # Checkout, Download and cache dependencies
       - checkout
       - restore_cache:
           name: Restore Yarn Package Cache
@@ -44,5 +38,25 @@ jobs:
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
+      - persist_to_workspace:
+          root: *working_directory
+          paths:
+            - ./*
+  build:
+    executor: action-executor
+    resource_class: xlarge
+    parallelism: 4
+    steps:
+      - attach_workspace:
+          at: *working_directory
       # run tests!
-      - run: npm run build
+      - run: yarn build --nb-shards=${CIRCLE_NODE_TOTAL} --shard=${CIRCLE_NODE_INDEX}
+
+workflows:
+  version: 2
+  default_workflow:
+    jobs:
+      - setup
+      - build:
+          requires:
+            - setup
