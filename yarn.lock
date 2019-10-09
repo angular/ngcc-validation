@@ -8338,6 +8338,13 @@ karma@~4.3.0:
     tmp "0.0.33"
     useragent "2.3.0"
 
+katex@^0.11.1:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/katex/-/katex-0.11.1.tgz#df30ca40c565c9df01a466a00d53e079e84ffaa2"
+  integrity sha512-5oANDICCTX0NqYIyAiFCCwjQ7ERu3DQG2JFHLbYOf+fXaMoH8eg/zOq5WSYJsKMi/QebW+Eh3gSM+oss1H/bww==
+  dependencies:
+    commander "^2.19.0"
+
 keycloak-angular@7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/keycloak-angular/-/keycloak-angular-7.0.1.tgz#54e9a968480f91647540bef5aba1a2a8db0b202e"
@@ -9387,12 +9394,13 @@ ngx-logger@4.0.5:
     tslib "^1.9.0"
     vlq "^1.0.0"
 
-ngx-markdown@8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/ngx-markdown/-/ngx-markdown-8.1.0.tgz#ce25f00063e6d0504dd2db12e0112517678a704a"
-  integrity sha512-baEQJlcl9AD+V9UR1QBOBaWwCNzB6iSpFGQI/RQb3fuQPzE/+Um80/AgLSHPo+Vth4ZsaiyMoAXp7Oz+SlFR8Q==
+ngx-markdown@8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/ngx-markdown/-/ngx-markdown-8.2.0.tgz#4ad622d8222946735f107942015a8a2c80e4a192"
+  integrity sha512-4sWz08Hjqvz35OGtSUcfnO9grkkC7+agRlsVZxi2xpYbkmFiRk7cMKGVfRFe+tqzjOxKi1j3BwUG+x2tAGpVlA==
   dependencies:
     "@types/marked" "^0.6.5"
+    katex "^0.11.1"
     marked "^0.7.0"
     prismjs "^1.16.0"
     tslib "^1.9.0"
