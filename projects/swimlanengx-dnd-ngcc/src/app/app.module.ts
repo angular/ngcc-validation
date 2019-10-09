@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import '@swimlane/ngx-dnd';
+import { NgxDnDModule } from '@swimlane/ngx-dnd';
 
 import { AppComponent } from './app.component';
 
@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
+    NgxDnDModule.forRoot(),
     BrowserModule
   ],
   providers: [],
