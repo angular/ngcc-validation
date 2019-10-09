@@ -32,7 +32,13 @@ jobs:
             - yarn-packages-{{ checksum "yarn.lock" }}
       - run:
           name: Install Dependencies
-          command: yarn install --frozen-lockfile
+          command: |
+            yarn install --frozen-lockfile
+            sudo apt-get install default-jre
+            curl https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add
+            sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+            sudo apt-get update
+            sudo apt-get install -y google-chrome-stable build-essential jq git openssh-server
       - save_cache:
           name: Save Yarn Package Cache
           key: yarn-packages-{{ checksum "yarn.lock" }}
