@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import '@swimlane/ngx-charts';
+import { AreaChartModule } from '@swimlane/ngx-charts';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +10,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AreaChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
