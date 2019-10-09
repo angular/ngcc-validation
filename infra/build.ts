@@ -94,9 +94,12 @@ class BuilderPool {
         newPasses.push(row.project);
       }
       result += chalk.yellow('### ' + row.project + ' ###') + '\n';
+      const operation = e2eProjects.has(row.project) ? 'e2e' : 'build';
       result +=
         'Status: ' +
-        (row.message.success ? chalk.green('success') : chalk.red('failure')) +
+        (row.message.success
+          ? chalk.green(operation + ' success')
+          : chalk.red(operation + ' failure')) +
         '\n\n';
       result += row.message.success
         ? row.message.out
@@ -124,9 +127,4 @@ class BuilderPool {
 
 const pool = new BuilderPool(2);
 
-Object.keys(projects).forEach(dir => {
-  console.log(e2eProjects.has(dir));
-  if (e2eProjects.has(dir)) {
-    pool.schedule(dir);
-  }
-});
+Object.keys(projects).forEach(dir => pool.schedule(dir));
