@@ -2,47 +2,65 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-version: 2
+version: 2.1
 
-# Run a step to setup an environment variable.
-var_1: &setup_env_variables
-  run:
-    name: "Setup custom environment variables"
-    command: |
-      echo 'export CHROMEDRIVER_VERSION_ARG="--versions.chrome 75.0.3770.90"' >> $BASH_ENV # Redirect into $BASH_ENV
+# Note that the browser docker image comes with Chrome and Firefox preinstalled.
+# **NOTE 1**: Pin to exact images using an ID (SHA). See https://circleci.com/docs/2.0/circleci-images/#using-a-docker-image-id-to-pin-an-image-to-a-fixed-version.
+#             (Using the tag in not necessary when pinning by ID, but include it anyway for documentation purposes.)
+# **NOTE 2**: If you change the version of the docker images, also change the `cache_key` suffix.
+var_1: &docker_image circleci/node:12.11-browsers@sha256:a799729b2e3997086313757470cc4cb70067affab9818eddeb5c9cc80150ea3c
+var_2: &cache_key v2-ngcc-validation-{{ checksum "yarn.lock" }}-node-12.9
+var_3: &working_directory ~/repo
+
+# Executor Definitions
+# https://circleci.com/docs/2.0/reusing-config/#authoring-reusable-executors
+executors:
+  action-executor:
+    docker:
+      - image: *docker_image
+    working_directory: *working_directory
 
 jobs:
-  build:
-    docker:
-      # specify the version you desire here
-      - image: circleci/node:12.11
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
-
-    working_directory: ~/repo
-
+  setup:
+    executor: action-executor
     steps:
+      # Checkout, Download and cache dependencies
       - checkout
       - restore_cache:
           name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
+          key: *cache_key
       - run:
           name: Install Dependencies
           command: |
             yarn install --frozen-lockfile
-            sudo apt-get install default-jre
-            curl https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add
-            sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-            sudo apt-get update
-            sudo apt-get install -y google-chrome-stable build-essential jq git openssh-server
+      - run:
+          name: Updating webdriver-manager
+          command: |
+            yarn webdriver-manager update --gecko false --standalone false --versions.chrome 75.0.3770.90
       - save_cache:
           name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
+          key: *cache_key
           paths:
             - ~/.cache/yarn
+      - persist_to_workspace:
+          root: *working_directory
+          paths:
+            - ./*
+  build:
+    executor: action-executor
+    resource_class: xlarge
+    parallelism: 4
+    steps:
+      - attach_workspace:
+          at: *working_directory
       # run tests!
-      - run: npm run build
+      - run: yarn build --nb-shards=${CIRCLE_NODE_TOTAL} --shard=${CIRCLE_NODE_INDEX}
+
+workflows:
+  version: 2
+  default_workflow:
+    jobs:
+      - setup
+      - build:
+          requires:
+            - setup
