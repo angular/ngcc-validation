@@ -4,14 +4,20 @@
 #
 version: 2.1
 
-var_1: &working_directory ~/repo
+# Note that the browser docker image comes with Chrome and Firefox preinstalled.
+# **NOTE 1**: Pin to exact images using an ID (SHA). See https://circleci.com/docs/2.0/circleci-images/#using-a-docker-image-id-to-pin-an-image-to-a-fixed-version.
+#             (Using the tag in not necessary when pinning by ID, but include it anyway for documentation purposes.)
+# **NOTE 2**: If you change the version of the docker images, also change the `cache_key` suffix.
+var_1: &docker_image circleci/node:12.11-browsers@sha256:a799729b2e3997086313757470cc4cb70067affab9818eddeb5c9cc80150ea3c
+var_2: &cache_key v2-ngcc-validation-{{ .Branch }}-{{ checksum "yarn.lock" }}-node-12.9
+var_3: &working_directory ~/repo
 
 # Executor Definitions
 # https://circleci.com/docs/2.0/reusing-config/#authoring-reusable-executors
 executors:
   action-executor:
     docker:
-      - image: circleci/node:12.11
+      - image: *docker_image
     working_directory: *working_directory
 
 jobs:
@@ -22,20 +28,18 @@ jobs:
       - checkout
       - restore_cache:
           name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
+          key: *cache_key
       - run:
           name: Install Dependencies
           command: |
             yarn install --frozen-lockfile
-            sudo apt-get install default-jre
-            curl https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add
-            sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-            sudo apt-get update
-            sudo apt-get install -y google-chrome-stable build-essential jq git openssh-server
+      - run:
+          name: Updating webdriver-manager
+          command: |
+            yarn webdriver-manager update --gecko false --standalone false --versions.chrome 75.0.3770.90
       - save_cache:
           name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
+          key: *cache_key
           paths:
             - ~/.cache/yarn
       - persist_to_workspace:
