@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/mgcehev/ngcc-validation.svg?style=svg)](https://circleci.com/gh/mgechev/ngcc-validation)
+[![CircleCI](https://circleci.com/gh/angular/ngcc-validation.svg?style=svg)](https://circleci.com/gh/angular/ngcc-validation)
 
 # ngcc validation
 
