@@ -1,6 +1,7 @@
 import chalk from 'chalk';
 import { join } from 'path';
 import { Worker } from 'worker_threads';
+import { argv } from 'yargs';
 
 import * as passingData from './passing.json';
 import { projects } from '../angular.json';
@@ -127,4 +128,12 @@ class BuilderPool {
 
 const pool = new BuilderPool(2);
 
-Object.keys(projects).forEach(dir => pool.schedule(dir));
+let projectNames = Object.keys(projects);
+if (argv.shard !== undefined) {
+  const shardId = argv.shard as string | number;
+  // Remove tests that are not part of this shard.
+  const nbShards = (argv['nb-shards'] || 2) as string | number;
+  projectNames = projectNames.filter((name, i) => i % +nbShards === +shardId);
+}
+
+projectNames.forEach(dir => pool.schedule(dir));
