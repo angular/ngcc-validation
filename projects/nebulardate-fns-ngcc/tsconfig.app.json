@@ -2,7 +2,11 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/app",
-    "types": []
+    "types": [],
+    "baseUrl": "../..",
+    "paths": {
+      "date-fns/*": ["node_modules/date-fns-2.x/*"]
+    }
   },
   "files": [
     "src/main.ts",
