@@ -3,11 +3,12 @@ import { join } from 'path';
 import { Worker } from 'worker_threads';
 import { argv } from 'yargs';
 
-import * as passingData from './passing.json';
+import * as passingProjectsList from './passing.json';
 import { projects } from '../angular.json';
 import * as e2eProjectsList from './e2e-projects.json';
 
-const passing = new Set(passingData);
+const allProjectNames = Object.keys(projects);
+const passingProjects = new Set(passingProjectsList);
 const e2eProjects = new Set(e2eProjectsList);
 
 interface Output {
@@ -89,9 +90,9 @@ class BuilderPool {
 
     output.forEach(row => {
       if (row.message.success) totalSuccess += 1;
-      if (passing.has(row.project) && !row.message.success) {
+      if (passingProjects.has(row.project) && !row.message.success) {
         regressed.push(row.project);
-      } else if (!passing.has(row.project) && row.message.success) {
+      } else if (!passingProjects.has(row.project) && row.message.success) {
         newPasses.push(row.project);
       }
       result += chalk.yellow('### ' + row.project + ' ###') + '\n';
@@ -122,18 +123,28 @@ class BuilderPool {
     if (newPasses.length) {
       console.log(chalk.green('New successes: ' + newPasses.join(', ')));
     }
-    process.exit(regressed.length > 0 ? 1 : 0);
+
+    // Additionally, ensure `passingProjectsList` does not contain non-existent projects.
+    const nonExistentPassingProjects =
+      passingProjectsList.filter(name => !allProjectNames.includes(name));
+    if (nonExistentPassingProjects.length > 0) {
+      console.log(chalk.red(
+        `\'passing.json\' contains ${nonExistentPassingProjects.length} non-existent project(s): ` +
+        nonExistentPassingProjects.join(', ')));
+    }
+
+    process.exit((regressed.length > 0 || nonExistentPassingProjects.length > 0) ? 1 : 0);
   }
 }
 
 const pool = new BuilderPool(2);
 
-let projectNames = Object.keys(projects);
+let shardProjectNames = allProjectNames;
 if (argv.shard !== undefined) {
   const shardId = argv.shard as string | number;
   // Remove tests that are not part of this shard.
   const nbShards = (argv['nb-shards'] || 2) as string | number;
-  projectNames = projectNames.filter((name, i) => i % +nbShards === +shardId);
+  shardProjectNames = allProjectNames.filter((name, i) => i % +nbShards === +shardId);
 }
 
-projectNames.forEach(dir => pool.schedule(dir));
+shardProjectNames.forEach(dir => pool.schedule(dir));
