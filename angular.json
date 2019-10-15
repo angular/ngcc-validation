@@ -1811,6 +1811,119 @@
         }
       }
     },
+    "angular-tree-component-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/angular-tree-component-ngcc",
+      "sourceRoot": "projects/angular-tree-component-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/angular-tree-component-ngcc",
+            "index": "projects/angular-tree-component-ngcc/src/index.html",
+            "main": "projects/angular-tree-component-ngcc/src/main.ts",
+            "polyfills": "projects/angular-tree-component-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/angular-tree-component-ngcc/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/angular-tree-component-ngcc/src/favicon.ico",
+              "projects/angular-tree-component-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/angular-tree-component-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/angular-tree-component-ngcc/src/environments/environment.ts",
+                  "with": "projects/angular-tree-component-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "angular-tree-component-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angular-tree-component-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "angular-tree-component-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-tree-component-ngcc/src/test.ts",
+            "polyfills": "projects/angular-tree-component-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/angular-tree-component-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-tree-component-ngcc/karma.conf.js",
+            "assets": [
+              "projects/angular-tree-component-ngcc/src/favicon.ico",
+              "projects/angular-tree-component-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/angular-tree-component-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-tree-component-ngcc/tsconfig.app.json",
+              "projects/angular-tree-component-ngcc/tsconfig.spec.json",
+              "projects/angular-tree-component-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/angular-tree-component-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "angular-tree-component-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angular-tree-component-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
     "angular2-multiselect-dropdown-ngcc": {
       "projectType": "application",
       "schematics": {},
@@ -7795,6 +7908,119 @@
           "configurations": {
             "production": {
               "devServerTarget": "mobx-angular-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "mydatepicker-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/mydatepicker-ngcc",
+      "sourceRoot": "projects/mydatepicker-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/mydatepicker-ngcc",
+            "index": "projects/mydatepicker-ngcc/src/index.html",
+            "main": "projects/mydatepicker-ngcc/src/main.ts",
+            "polyfills": "projects/mydatepicker-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/mydatepicker-ngcc/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/mydatepicker-ngcc/src/favicon.ico",
+              "projects/mydatepicker-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/mydatepicker-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/mydatepicker-ngcc/src/environments/environment.ts",
+                  "with": "projects/mydatepicker-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "mydatepicker-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "mydatepicker-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "mydatepicker-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/mydatepicker-ngcc/src/test.ts",
+            "polyfills": "projects/mydatepicker-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/mydatepicker-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/mydatepicker-ngcc/karma.conf.js",
+            "assets": [
+              "projects/mydatepicker-ngcc/src/favicon.ico",
+              "projects/mydatepicker-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/mydatepicker-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/mydatepicker-ngcc/tsconfig.app.json",
+              "projects/mydatepicker-ngcc/tsconfig.spec.json",
+              "projects/mydatepicker-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/mydatepicker-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "mydatepicker-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "mydatepicker-ngcc:serve:production"
             }
           }
         }
