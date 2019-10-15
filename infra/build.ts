@@ -3,13 +3,13 @@ import { join } from 'path';
 import { Worker } from 'worker_threads';
 import { argv } from 'yargs';
 
-import * as passingProjectsList from './passing.json';
 import { projects } from '../angular.json';
 import * as e2eProjectsList from './e2e-projects.json';
+import * as failingProjectsList from './failing-projects.json';
 
 const allProjectNames = Object.keys(projects);
-const passingProjects = new Set(passingProjectsList);
 const e2eProjects = new Set(e2eProjectsList);
+const failingProjects = new Set(failingProjectsList);
 
 interface Output {
   project: string;
@@ -90,10 +90,10 @@ class BuilderPool {
 
     output.forEach(row => {
       if (row.message.success) totalSuccess += 1;
-      if (passingProjects.has(row.project) && !row.message.success) {
-        regressed.push(row.project);
-      } else if (!passingProjects.has(row.project) && row.message.success) {
+      if (failingProjects.has(row.project) && row.message.success) {
         newPasses.push(row.project);
+      } else if (!failingProjects.has(row.project) && !row.message.success) {
+        regressed.push(row.project);
       }
       result += chalk.yellow('### ' + row.project + ' ###') + '\n';
       const operation = e2eProjects.has(row.project) ? 'e2e' : 'build';
@@ -124,16 +124,16 @@ class BuilderPool {
       console.log(chalk.green('New successes: ' + newPasses.join(', ')));
     }
 
-    // Additionally, ensure `passingProjectsList` does not contain non-existent projects.
-    const nonExistentPassingProjects =
-      passingProjectsList.filter(name => !allProjectNames.includes(name));
-    if (nonExistentPassingProjects.length > 0) {
+    // Additionally, ensure `failingProjectsList` does not contain non-existent projects.
+    const nonExistentFailingProjects =
+      failingProjectsList.filter(name => !allProjectNames.includes(name));
+    if (nonExistentFailingProjects.length > 0) {
       console.log(chalk.red(
-        `\'passing.json\' contains ${nonExistentPassingProjects.length} non-existent project(s): ` +
-        nonExistentPassingProjects.join(', ')));
+        `\'failing-projects.json\' contains ${nonExistentFailingProjects.length} non-existent project(s): ` +
+        nonExistentFailingProjects.join(', ')));
     }
 
-    process.exit((regressed.length > 0 || nonExistentPassingProjects.length > 0) ? 1 : 0);
+    process.exit((regressed.length > 0 || nonExistentFailingProjects.length > 0) ? 1 : 0);
   }
 }
 
