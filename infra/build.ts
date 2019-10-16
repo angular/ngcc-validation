@@ -4,11 +4,11 @@ import { Worker } from 'worker_threads';
 import { argv } from 'yargs';
 
 import { projects } from '../angular.json';
-import * as e2eProjectsList from './e2e-projects.json';
+import * as ngBuildProjects from './ng-build-projects.json';
 import * as failingProjectsList from './failing-projects.json';
 
 const allProjectNames = Object.keys(projects);
-const e2eProjects = new Set(e2eProjectsList);
+const buildProjects = new Set(ngBuildProjects);
 const failingProjects = new Set(failingProjectsList);
 
 interface Output {
@@ -20,10 +20,10 @@ interface Output {
 }
 
 const getProjectCommand = (project: string) => {
-  if (e2eProjects.has(project)) {
-    return `npm run ng -- e2e ${project} --webdriver-update=false`;
+  if (buildProjects.has(project)) {
+    return `npm run ng -- build ${project} --noSourceMap --noProgress`;
   }
-  return `npm run ng -- build ${project} --noSourceMap --noProgress`;
+  return `npm run ng -- e2e ${project} --webdriver-update=false`;
 };
 
 class BuilderPool {
@@ -96,7 +96,7 @@ class BuilderPool {
         regressed.push(row.project);
       }
       result += chalk.yellow('### ' + row.project + ' ###') + '\n';
-      const operation = e2eProjects.has(row.project) ? 'e2e' : 'build';
+      const operation = buildProjects.has(row.project) ? 'build' : 'e2e';
       result +=
         'Status: ' +
         (row.message.success
