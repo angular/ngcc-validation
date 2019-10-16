@@ -5,7 +5,11 @@
     "types": [
       "jasmine",
       "node"
-    ]
+    ],
+    "baseUrl": "../..",
+    "paths": {
+      "date-fns/*": ["node_modules/date-fns-2.x/*"]
+    }
   },
   "files": [
     "src/test.ts",
