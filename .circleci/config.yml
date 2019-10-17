@@ -20,6 +20,28 @@ executors:
       - image: *docker_image
     working_directory: *working_directory
 
+# Command Definitions
+# https://circleci.com/docs/2.0/reusing-config/#authoring-reusable-commands
+commands:
+  # Send a notification to the specified web-hook URL (e.g. for Slack), if this is a non-PR build.
+  # On PR builds, this is a no-op.
+  notify_webhook_on_fail:
+    description: Notify a webhook about failure
+    parameters:
+      # `webhook_url_env_var` are secret env vars defined in CircleCI project settings.
+      # The URLs come from https://angular-team.slack.com/apps/A0F7VRE7N-circleci.
+      webhook_url_env_var:
+        type: env_var_name
+    steps:
+      - run:
+          when: on_fail
+          command: >
+            if [[ -z "$CIRCLE_PR_NUMBER" ]]; then
+              lastCommitMsg=$(git show-branch --no-name $CIRCLE_SHA1);
+              notificationJson="{\"text\":\":x: \`$CIRCLE_JOB\` job for $CIRCLE_PROJECT_REPONAME#$CIRCLE_BRANCH branch failed on build $CIRCLE_BUILD_NUM: $CIRCLE_BUILD_URL :scream:\\n  - $lastCommitMsg (${CIRCLE_SHA1:0:7})\"}";
+              curl --request POST --header "Content-Type: application/json" --data "$notificationJson" ${<< parameters.webhook_url_env_var >>};
+            fi
+
 jobs:
   setup:
     executor: action-executor
@@ -51,6 +73,8 @@ jobs:
           at: *working_directory
       # run tests!
       - run: yarn build --nb-shards=${CIRCLE_NODE_TOTAL} --shard=${CIRCLE_NODE_INDEX}
+      - notify_webhook_on_fail:
+          webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
 
 workflows:
   version: 2
