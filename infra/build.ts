@@ -7,7 +7,7 @@ import { projects } from '../angular.json';
 import * as ngBuildProjects from './ng-build-projects.json';
 import * as failingProjectsList from './failing-projects.json';
 
-const allProjectNames = Object.keys(projects);
+const allProjectNames = Object.keys(projects).sort();
 const buildProjects = new Set(ngBuildProjects);
 const failingProjects = new Set(failingProjectsList);
 
