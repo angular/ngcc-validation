@@ -3164,13 +3164,13 @@ angular-bootstrap-datetimepicker@3.0.0:
   dependencies:
     tslib "^1.9.0"
 
-angular-calendar@0.27.19:
-  version "0.27.19"
-  resolved "https://registry.yarnpkg.com/angular-calendar/-/angular-calendar-0.27.19.tgz#52b87a5662ccdd2a4fa00d6fab5b6be04f212417"
-  integrity sha512-QW+QHgKi0Q1q8BuWnmAk6w3M+Uh9BlZCiL2RG9wde5euPYEMJIi96sku1SitHRSpW9YNKzDnpD4+psPpGU9wDw==
+angular-calendar@0.27.20:
+  version "0.27.20"
+  resolved "https://registry.yarnpkg.com/angular-calendar/-/angular-calendar-0.27.20.tgz#f4cdfb22d8e411b6448b0e47d0bfd406e5bc5829"
+  integrity sha512-Xa9x2Kax1IfNx1WDDbcSeeA0t3mlu+jSYu7gMi7OowipGXhB5pmvFkUe38efi0lpWlmmCrG6cQkS9Krhxyf8Zw==
   dependencies:
-    angular-draggable-droppable "^4.3.2"
-    angular-resizable-element "^3.2.4"
+    angular-draggable-droppable "^4.3.8"
+    angular-resizable-element "^3.2.6"
     calendar-utils "^0.3.3"
     positioning "^2.0.0"
     tslib "^1.9.0"
@@ -3182,18 +3182,10 @@ angular-datatables@8.0.0:
   dependencies:
     "@angular/cli" "^8.0.2"
 
-angular-draggable-droppable@4.3.8:
+angular-draggable-droppable@4.3.8, angular-draggable-droppable@^4.3.8:
   version "4.3.8"
   resolved "https://registry.yarnpkg.com/angular-draggable-droppable/-/angular-draggable-droppable-4.3.8.tgz#fb13a358015478152bd066c7099dd00d3201981f"
   integrity sha512-IIl3M+oXvaWPfLrbJdvdWcZLJb6/FqhImELNqBhbTlYMudyiJaLn1lUFYWz8xDti+b1eUoJpEPU3hliBYZmAvw==
-  dependencies:
-    dom-autoscroller "^2.3.4"
-    tslib "^1.9.0"
-
-angular-draggable-droppable@^4.3.2:
-  version "4.3.7"
-  resolved "https://registry.yarnpkg.com/angular-draggable-droppable/-/angular-draggable-droppable-4.3.7.tgz#0484a5068e7c1caabef7f9374a5d0de8eefd0709"
-  integrity sha512-m43oC0KFbC7qhEWJTin8OlmN+N1yq4OrfhR5OkIKSRlD3JnKuVL06m8ArAN0nkdkVtA7DNwa15nR3YvTevpxiQ==
   dependencies:
     dom-autoscroller "^2.3.4"
     tslib "^1.9.0"
@@ -3246,7 +3238,7 @@ angular-pipes@10.0.0:
   dependencies:
     tslib "^1.9.0"
 
-angular-resizable-element@^3.2.4:
+angular-resizable-element@^3.2.6:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/angular-resizable-element/-/angular-resizable-element-3.2.6.tgz#1df9b14853691e00b99c74492e729b7a35cf70a0"
   integrity sha512-8vp5w4YFIrZ2M8EmGpIt/yMwLBjkUJe7aPLPxDDQhi5HQWF0HLJ6lb4tXgEzW572roxNnHFg105EM6XGAMZDIg==
