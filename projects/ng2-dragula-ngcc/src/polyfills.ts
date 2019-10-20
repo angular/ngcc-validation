@@ -61,3 +61,6 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+
+// This assignment is because `dragula` uses `crossvent` which expects there to be a `global` object.
+(window as any).global = window;
