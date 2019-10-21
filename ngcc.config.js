@@ -15,5 +15,11 @@ module.exports = {
         },
       },
     },
+    'ng6-breadcrumbs': {
+      entryPoints: {
+        '.': {
+        },
+      },
+    },
   },
 };

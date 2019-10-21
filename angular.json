@@ -11324,6 +11324,124 @@
         }
       }
     },
+    "ng6-breadcrumbs-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/ng6-breadcrumbs-ngcc",
+      "sourceRoot": "projects/ng6-breadcrumbs-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/ng6-breadcrumbs-ngcc",
+            "index": "projects/ng6-breadcrumbs-ngcc/src/index.html",
+            "main": "projects/ng6-breadcrumbs-ngcc/src/main.ts",
+            "polyfills": "projects/ng6-breadcrumbs-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/ng6-breadcrumbs-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/ng6-breadcrumbs-ngcc/src/favicon.ico",
+              "projects/ng6-breadcrumbs-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/ng6-breadcrumbs-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/ng6-breadcrumbs-ngcc/src/environments/environment.ts",
+                  "with": "projects/ng6-breadcrumbs-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "ng6-breadcrumbs-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "ng6-breadcrumbs-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "ng6-breadcrumbs-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng6-breadcrumbs-ngcc/src/test.ts",
+            "polyfills": "projects/ng6-breadcrumbs-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/ng6-breadcrumbs-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/ng6-breadcrumbs-ngcc/karma.conf.js",
+            "assets": [
+              "projects/ng6-breadcrumbs-ngcc/src/favicon.ico",
+              "projects/ng6-breadcrumbs-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/ng6-breadcrumbs-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng6-breadcrumbs-ngcc/tsconfig.app.json",
+              "projects/ng6-breadcrumbs-ngcc/tsconfig.spec.json",
+              "projects/ng6-breadcrumbs-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/ng6-breadcrumbs-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "ng6-breadcrumbs-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "ng6-breadcrumbs-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
     "nguiauto-complete-ngcc": {
       "projectType": "application",
       "schematics": {},
