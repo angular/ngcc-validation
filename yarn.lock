@@ -2688,6 +2688,23 @@
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
   integrity sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
 
+"@types/gapi.auth2@^0.0.44":
+  version "0.0.44"
+  resolved "https://registry.yarnpkg.com/@types/gapi.auth2/-/gapi.auth2-0.0.44.tgz#75986149ce9ca2541a66a624173ba580c2cd395c"
+  integrity sha512-+GuLkz5pC7tuhB0s2mBlg2NxvRmQgh2ePTSB95rifWaVokkqh0CqEuWlwBWUUK4fCIH0kJ8Cm3jS2FunvGWUMg==
+  dependencies:
+    "@types/gapi" "*"
+
+"@types/gapi@*":
+  version "0.0.39"
+  resolved "https://registry.yarnpkg.com/@types/gapi/-/gapi-0.0.39.tgz#bc7fa8cd0cb175b36e3609790fb2ed73a33f6881"
+  integrity sha512-R1TZeZbvvbIC60DBJMhuOEivQHzOQtzl3uMDOOENTYQTSSDB6oEMpJo8HVPOTWivdUTbyEcB5qQOVr/JCKRlCQ==
+
+"@types/gapi@^0.0.35":
+  version "0.0.35"
+  resolved "https://registry.yarnpkg.com/@types/gapi/-/gapi-0.0.35.tgz#8e0d672d66d8c6ce8493f5e8e550344f7ff500dc"
+  integrity sha512-6E+WHil3a2+ZQXxa+2Fg9WMi1SwVx9KXT3P/7VmfTwK9Uqw2F+TQ97Ig2yJ7cOa0fUEk4qgdQNKP4rzKZfNMOQ==
+
 "@types/glob@^7.1.1":
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/@types/glob/-/glob-7.1.1.tgz#aa59a1c6e3fbc421e07ccd31a944c30eba521575"
@@ -8808,6 +8825,15 @@ ng-click-outside@5.1.1:
   resolved "https://registry.yarnpkg.com/ng-click-outside/-/ng-click-outside-5.1.1.tgz#68cf5a295ba43e7a3f3673c2c1294d3b5238fbff"
   integrity sha512-ZGBjbbah8i3iYtSefFgvcVV9eQ1va+T+r2r2FrnUFP8izu2BmVviCIE7IhS3UfyjuavDDh+nbRl3uziN1lfBZA==
 
+ng-gapi@^0.0.73:
+  version "0.0.73"
+  resolved "https://registry.yarnpkg.com/ng-gapi/-/ng-gapi-0.0.73.tgz#b8f4a5aea9e9b0b5eb8a7fd7ff6684a4c4578516"
+  integrity sha512-IKUQ8i41+JJrGiUZnG2/+3huyxCvKH+cPSvECkvNaxt9TjdHx8IOw+1hN9zhXOeyAJutpFtMVQaY1My2R9wNxg==
+  dependencies:
+    "@types/gapi" "^0.0.35"
+    "@types/gapi.auth2" "^0.0.44"
+    rxjs-compat "^6.1.0"
+
 ng-inline-svg@9.1.0:
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/ng-inline-svg/-/ng-inline-svg-9.1.0.tgz#28d77d2fcf7f63ba5cdf158314fd3c754e163bad"
@@ -10740,7 +10766,7 @@ rw@1:
   resolved "https://registry.yarnpkg.com/rw/-/rw-1.3.3.tgz#3f862dfa91ab766b14885ef4d01124bfda074fb4"
   integrity sha1-P4Yt+pGrdmsUiF700BEkv9oHT7Q=
 
-rxjs-compat@^6.2.2, rxjs-compat@^6.5.2:
+rxjs-compat@^6.1.0, rxjs-compat@^6.2.2, rxjs-compat@^6.5.2:
   version "6.5.3"
   resolved "https://registry.yarnpkg.com/rxjs-compat/-/rxjs-compat-6.5.3.tgz#18440949b2678bf87a78a754009676b2c49183dc"
   integrity sha512-BIJX2yovz3TBpjJoAZyls2QYuU6ZiCaZ+U96SmxQpuSP/qDUfiXPKOVLbThBB2WZijNHkdTTJXKRwvv5Y48H7g==
