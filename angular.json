@@ -5653,6 +5653,124 @@
         }
       }
     },
+    "bugsnagplugin-angular-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/bugsnagplugin-angular-ngcc",
+      "sourceRoot": "projects/bugsnagplugin-angular-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/bugsnagplugin-angular-ngcc",
+            "index": "projects/bugsnagplugin-angular-ngcc/src/index.html",
+            "main": "projects/bugsnagplugin-angular-ngcc/src/main.ts",
+            "polyfills": "projects/bugsnagplugin-angular-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/bugsnagplugin-angular-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/bugsnagplugin-angular-ngcc/src/favicon.ico",
+              "projects/bugsnagplugin-angular-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/bugsnagplugin-angular-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/bugsnagplugin-angular-ngcc/src/environments/environment.ts",
+                  "with": "projects/bugsnagplugin-angular-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "bugsnagplugin-angular-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "bugsnagplugin-angular-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "bugsnagplugin-angular-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/bugsnagplugin-angular-ngcc/src/test.ts",
+            "polyfills": "projects/bugsnagplugin-angular-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/bugsnagplugin-angular-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/bugsnagplugin-angular-ngcc/karma.conf.js",
+            "assets": [
+              "projects/bugsnagplugin-angular-ngcc/src/favicon.ico",
+              "projects/bugsnagplugin-angular-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/bugsnagplugin-angular-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/bugsnagplugin-angular-ngcc/tsconfig.app.json",
+              "projects/bugsnagplugin-angular-ngcc/tsconfig.spec.json",
+              "projects/bugsnagplugin-angular-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/bugsnagplugin-angular-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "bugsnagplugin-angular-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "bugsnagplugin-angular-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
     "carbonicons-angular-ngcc": {
       "projectType": "application",
       "schematics": {},
