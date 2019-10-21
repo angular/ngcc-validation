@@ -14154,6 +14154,124 @@
         }
       }
     },
+    "ngx-simple-modal-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/ngx-simple-modal-ngcc",
+      "sourceRoot": "projects/ngx-simple-modal-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/ngx-simple-modal-ngcc",
+            "index": "projects/ngx-simple-modal-ngcc/src/index.html",
+            "main": "projects/ngx-simple-modal-ngcc/src/main.ts",
+            "polyfills": "projects/ngx-simple-modal-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/ngx-simple-modal-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/ngx-simple-modal-ngcc/src/favicon.ico",
+              "projects/ngx-simple-modal-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/ngx-simple-modal-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/ngx-simple-modal-ngcc/src/environments/environment.ts",
+                  "with": "projects/ngx-simple-modal-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "ngx-simple-modal-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "ngx-simple-modal-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "ngx-simple-modal-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-simple-modal-ngcc/src/test.ts",
+            "polyfills": "projects/ngx-simple-modal-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/ngx-simple-modal-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-simple-modal-ngcc/karma.conf.js",
+            "assets": [
+              "projects/ngx-simple-modal-ngcc/src/favicon.ico",
+              "projects/ngx-simple-modal-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/ngx-simple-modal-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-simple-modal-ngcc/tsconfig.app.json",
+              "projects/ngx-simple-modal-ngcc/tsconfig.spec.json",
+              "projects/ngx-simple-modal-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/ngx-simple-modal-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "ngx-simple-modal-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "ngx-simple-modal-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
     "ngx-spinner-ngcc": {
       "projectType": "application",
       "schematics": {},
