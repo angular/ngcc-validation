@@ -54,7 +54,7 @@ jobs:
       - run:
           name: Install Dependencies
           command: |
-            CHROMEDRIVER_VERSION_ARG="--versions.chrome 75.0.3770.90" yarn install --frozen-lockfile
+            CHROMEDRIVER_VERSION_ARG="--versions.chrome 75.0.3770.90" yarn install --network-timeout 100000 --frozen-lockfile
       - save_cache:
           name: Save Yarn Package Cache
           key: *cache_key
