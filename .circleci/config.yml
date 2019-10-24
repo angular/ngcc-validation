@@ -88,6 +88,16 @@ jobs:
       - run: yarn build --nb-shards=${CIRCLE_NODE_TOTAL} --shard=${CIRCLE_NODE_INDEX}
       - notify_webhook_on_fail:
           webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
+  build_module:
+    executor: action-executor
+    resource_class: xlarge
+    steps:
+      - attach_workspace:
+          at: *working_directory
+      # Run tests!
+      - run: yarn ngcc --create-ivy-entry-points --first-only --properties module main
+      - notify_webhook_on_fail:
+          webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
 
 workflows:
   version: 2
@@ -98,5 +108,8 @@ workflows:
           requires:
             - setup
       - build_es2015:
+          requires:
+            - setup
+      - build_module:
           requires:
             - setup
