@@ -5884,6 +5884,123 @@
         }
       }
     },
+    "clrangular-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/clrangular-ngcc",
+      "sourceRoot": "projects/clrangular-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/clrangular-ngcc",
+            "index": "projects/clrangular-ngcc/src/index.html",
+            "main": "projects/clrangular-ngcc/src/main.ts",
+            "polyfills": "projects/clrangular-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/clrangular-ngcc/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/clrangular-ngcc/src/favicon.ico",
+              "projects/clrangular-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/clrangular-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/clrangular-ngcc/src/environments/environment.ts",
+                  "with": "projects/clrangular-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "clrangular-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "clrangular-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "clrangular-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/clrangular-ngcc/src/test.ts",
+            "polyfills": "projects/clrangular-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/clrangular-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/clrangular-ngcc/karma.conf.js",
+            "assets": [
+              "projects/clrangular-ngcc/src/favicon.ico",
+              "projects/clrangular-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/clrangular-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/clrangular-ngcc/tsconfig.app.json",
+              "projects/clrangular-ngcc/tsconfig.spec.json",
+              "projects/clrangular-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/clrangular-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "clrangular-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "clrangular-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
     "covalentcore-ngcc": {
       "projectType": "application",
       "schematics": {},
@@ -10415,6 +10532,124 @@
           "configurations": {
             "production": {
               "devServerTarget": "ng-zorro-antd-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "ng2-ace-editor-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/ng2-ace-editor-ngcc",
+      "sourceRoot": "projects/ng2-ace-editor-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/ng2-ace-editor-ngcc",
+            "index": "projects/ng2-ace-editor-ngcc/src/index.html",
+            "main": "projects/ng2-ace-editor-ngcc/src/main.ts",
+            "polyfills": "projects/ng2-ace-editor-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/ng2-ace-editor-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/ng2-ace-editor-ngcc/src/favicon.ico",
+              "projects/ng2-ace-editor-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/ng2-ace-editor-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/ng2-ace-editor-ngcc/src/environments/environment.ts",
+                  "with": "projects/ng2-ace-editor-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "ng2-ace-editor-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "ng2-ace-editor-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "ng2-ace-editor-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng2-ace-editor-ngcc/src/test.ts",
+            "polyfills": "projects/ng2-ace-editor-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/ng2-ace-editor-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/ng2-ace-editor-ngcc/karma.conf.js",
+            "assets": [
+              "projects/ng2-ace-editor-ngcc/src/favicon.ico",
+              "projects/ng2-ace-editor-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/ng2-ace-editor-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng2-ace-editor-ngcc/tsconfig.app.json",
+              "projects/ng2-ace-editor-ngcc/tsconfig.spec.json",
+              "projects/ng2-ace-editor-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/ng2-ace-editor-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "ng2-ace-editor-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "ng2-ace-editor-ngcc:serve:production"
             }
           }
         }
@@ -16640,124 +16875,6 @@
           "configurations": {
             "production": {
               "devServerTarget": "uiroutercore-ngcc:serve:production"
-            }
-          }
-        }
-      }
-    },
-    "ng2-ace-editor-ngcc": {
-      "projectType": "application",
-      "schematics": {},
-      "root": "projects/ng2-ace-editor-ngcc",
-      "sourceRoot": "projects/ng2-ace-editor-ngcc/src",
-      "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/ng2-ace-editor-ngcc",
-            "index": "projects/ng2-ace-editor-ngcc/src/index.html",
-            "main": "projects/ng2-ace-editor-ngcc/src/main.ts",
-            "polyfills": "projects/ng2-ace-editor-ngcc/src/polyfills.ts",
-            "tsConfig": "projects/ng2-ace-editor-ngcc/tsconfig.app.json",
-            "aot": false,
-            "assets": [
-              "projects/ng2-ace-editor-ngcc/src/favicon.ico",
-              "projects/ng2-ace-editor-ngcc/src/assets"
-            ],
-            "styles": [
-              "projects/ng2-ace-editor-ngcc/src/styles.css"
-            ],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
-              "fileReplacements": [
-                {
-                  "replace": "projects/ng2-ace-editor-ngcc/src/environments/environment.ts",
-                  "with": "projects/ng2-ace-editor-ngcc/src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
-                }
-              ]
-            }
-          }
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "ng2-ace-editor-ngcc:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "ng2-ace-editor-ngcc:build:production"
-            }
-          }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "ng2-ace-editor-ngcc:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/ng2-ace-editor-ngcc/src/test.ts",
-            "polyfills": "projects/ng2-ace-editor-ngcc/src/polyfills.ts",
-            "tsConfig": "projects/ng2-ace-editor-ngcc/tsconfig.spec.json",
-            "karmaConfig": "projects/ng2-ace-editor-ngcc/karma.conf.js",
-            "assets": [
-              "projects/ng2-ace-editor-ngcc/src/favicon.ico",
-              "projects/ng2-ace-editor-ngcc/src/assets"
-            ],
-            "styles": [
-              "projects/ng2-ace-editor-ngcc/src/styles.css"
-            ],
-            "scripts": []
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/ng2-ace-editor-ngcc/tsconfig.app.json",
-              "projects/ng2-ace-editor-ngcc/tsconfig.spec.json",
-              "projects/ng2-ace-editor-ngcc/e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "projects/ng2-ace-editor-ngcc/e2e/protractor.conf.js",
-            "devServerTarget": "ng2-ace-editor-ngcc:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "ng2-ace-editor-ngcc:serve:production"
             }
           }
         }
