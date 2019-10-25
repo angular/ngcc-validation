@@ -5610,10 +5610,15 @@ detect-node@^2.0.4:
   resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.0.4.tgz#014ee8f8f669c5c58023da64b8179c083a28c46c"
   integrity sha512-ZIzRpLJrOj7jjP2miAtgqIfmzbxa4ZOr5jJc601zklsfEx9oTzmmj2nVpIPRpNlRTIh8lc1kyViIY7BWSGNmKw==
 
-devexpress-diagram@0.0.30:
-  version "0.0.30"
-  resolved "https://registry.yarnpkg.com/devexpress-diagram/-/devexpress-diagram-0.0.30.tgz#7d595627f9fcaf72942525550e23863835dd9e6d"
-  integrity sha512-CqyhA5V5ef7kSddvSeG94kEDVKFoJOFNzSn5m23fvmL3AbKLbeEgRPRdO4KsAdsLm8TIRGpapL0rQQgAw8p6lg==
+devexpress-diagram@0.1.31:
+  version "0.1.31"
+  resolved "https://registry.yarnpkg.com/devexpress-diagram/-/devexpress-diagram-0.1.31.tgz#fc7686f1c44e5da2d24650fae956eff131bbc28f"
+  integrity sha512-JTjGGRqe02xPsleV3FkDk63itOk4mP/Au8LWHvxdj7/9rUa8q9/db48N7nWLe5zC32iAUVTipbM17dZh/ODrzw==
+
+devexpress-gantt@0.0.23:
+  version "0.0.23"
+  resolved "https://registry.yarnpkg.com/devexpress-gantt/-/devexpress-gantt-0.0.23.tgz#697ddce431f4185959a1e33b88ba4b7c392629c0"
+  integrity sha512-CBUjM00x1grc0aZnEpoaWP7qsRMdOwih/r66QhoUwYNpmw39ajG543PIL7Q1ziVMBegjk6aeVNngWyZDsexKIg==
 
 devextreme-angular@19.1.7:
   version "19.1.7"
@@ -5634,12 +5639,13 @@ devextreme-schematics@latest:
     rxjs "~6.4.0"
     typescript "3.5.3"
 
-devextreme@~19.1.4:
-  version "19.1.7"
-  resolved "https://registry.yarnpkg.com/devextreme/-/devextreme-19.1.7.tgz#75b17bc5b7e7d453eecc34f01cf9e5102d46fc50"
-  integrity sha512-gtIZQ+ooR6AHgjAbBuy77MW+oVy68q5pOa9Ajy9f5Gg5P/3YcJ/S9MIW1EaRqpC9vmsbFHw6LLk0bM9b24SMaA==
+devextreme@~19.2.0:
+  version "19.2.3"
+  resolved "https://registry.yarnpkg.com/devextreme/-/devextreme-19.2.3.tgz#a202c69eb57be24881d6e996d199ceedb1d34591"
+  integrity sha512-jQlBbXV1xnePwb+Hqu7N1uvzxj9R017v5++03yqdMlFUGHN0Edne1JwRZ5PrKucEOHzgz8nA6v14TtkwSfhu6w==
   dependencies:
-    devexpress-diagram "0.0.30"
+    devexpress-diagram "0.1.31"
+    devexpress-gantt "0.0.23"
     jszip "^2.0.0 || ^3.0.0"
     quill "^1.3.7"
     showdown "^1.8.6"
