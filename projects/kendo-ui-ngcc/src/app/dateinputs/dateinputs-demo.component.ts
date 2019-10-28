@@ -31,7 +31,6 @@ TypeError: el.setAttribute is not a function
     template: `
       <p>Uncomment the section below to see the following error:</p>
       <pre>{{ error }}</pre>
-      <!--
       <div class="row example-wrapper" style="min-height: 450px;">
           <div class="col-xs-12 col-md-6 example-col">
               <p>DateInput</p>
@@ -53,7 +52,6 @@ TypeError: el.setAttribute is not a function
               <kendo-calendar [value]="value"></kendo-calendar>
           </div>
       </div>
-      -->
     `
 })
 export class DateInputsDemoComponent {

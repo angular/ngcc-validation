@@ -35,9 +35,9 @@ import { GridDataResult, PageChangeEvent } from '@progress/kendo-angular-grid';
         <!--
         Uncomment this column to reproduce the error.
         The only difference with the previous one is that one has set "width" - an input defined on the ColumnBase class.
+        -->
 
         <kendo-grid-column field="id" [width]="80" title="ID"></kendo-grid-column>
-        -->
 
         <kendo-grid-column field="firstName" title="First Name"></kendo-grid-column>
         <kendo-grid-column field="lastName" title="Last Name"></kendo-grid-column>
