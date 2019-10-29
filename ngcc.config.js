@@ -21,5 +21,16 @@ module.exports = {
         },
       },
     },
+    // The `module` property (which is expected to point to an ESM5 format) points to the same file
+    // as the `main` property, which is in CommonJS format.
+    'ngx-simple-modal': {
+      entryPoints: {
+        '.': {
+          override: {
+            module: undefined,
+          },
+        },
+      },
+    },
   },
 };
