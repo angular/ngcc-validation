@@ -9,16 +9,17 @@ import { Employee } from './employee';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public data: Employee[];
-  public pageSize = 100;
-  public formGroup: FormGroup;
+  title = 'kendo-ui-grid-ngcc';
+  data: Employee[];
+  pageSize = 100;
+  formGroup: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {
     this.data = this.createRandomData(1000);
     this.createFormGroup = this.createFormGroup.bind(this);
   }
 
-  public createFormGroup(args: any): FormGroup {
+  createFormGroup(args: any): FormGroup {
     const item = args.isNew ? new Employee() : args.dataItem;
 
     this.formGroup = this.formBuilder.group({
@@ -33,7 +34,7 @@ export class AppComponent {
   }
 
   /* Generating example data */
-  private createRandomData(count: number): any[] {
+  createRandomData(count: number): any[] {
     const firstNames = ['Nancy', 'Andrew', 'Janet', 'Margaret', 'Steven', 'Michael', 'Robert', 'Laura', 'Anne', 'Nige'];
     const lastNames = ['Davolio', 'Fuller', 'Leverling', 'Peacock', 'Buchanan', 'Suyama', 'King', 'Callahan', 'Dodsworth', 'White'];
     const cities = ['Seattle', 'Tacoma', 'Kirkland', 'Redmond', 'London', 'Philadelphia', 'New York', 'Seattle', 'London', 'Boston'];

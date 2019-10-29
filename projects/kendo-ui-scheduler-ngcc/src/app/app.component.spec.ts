@@ -1,11 +1,13 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, async, fakeAsync } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { SchedulerModule } from '@progress/kendo-angular-scheduler';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        SchedulerModule
       ],
     }).compileComponents();
   }));
@@ -16,16 +18,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'kendo-ui-scheduler-ngcc'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('kendo-ui-scheduler-ngcc');
-  });
-
-  it('should render title in a h1 tag', () => {
+  it('should render kendo-scheduler', fakeAsync(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to kendo-ui-scheduler-ngcc!');
-  });
+    expect(compiled.querySelector('kendo-scheduler')).toBeDefined();
+  }));
 });

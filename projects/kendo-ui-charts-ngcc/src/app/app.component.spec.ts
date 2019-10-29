@@ -1,5 +1,8 @@
-import { TestBed, async } from '@angular/core/testing';
+import { async, TestBed } from '@angular/core/testing';
+import { ChartsModule } from '@progress/kendo-angular-charts';
 import { AppComponent } from './app.component';
+
+import 'hammerjs';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -7,6 +10,9 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      imports: [
+        ChartsModule
+      ]
     }).compileComponents();
   }));
 
@@ -16,16 +22,11 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'kendo-ui-charts-ngcc'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('kendo-ui-charts-ngcc');
-  });
-
-  it('should render title in a h1 tag', () => {
+  it('should render kendo-chart', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
+
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to kendo-ui-charts-ngcc!');
+    expect(compiled.querySelector('kendo-chart')).toBeDefined();
   });
 });

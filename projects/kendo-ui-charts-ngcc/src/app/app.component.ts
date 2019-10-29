@@ -5,8 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  public data: any[];
-  public maxDate: Date = new Date(2019, 9, 1);
+  title = 'kendo-ui-charts-ngcc';
+  data: any[];
+  maxDate: Date = new Date(2019, 9, 1);
 
   constructor() {
     const data = this.data = [];

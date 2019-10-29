@@ -6,8 +6,9 @@ import { SchedulerEvent } from '@progress/kendo-angular-scheduler';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  public selectedDate: Date = new Date('2018-10-22T00:00:00');
-  public events: SchedulerEvent[] = [{
+  title = 'kendo-ui-scheduler-ngcc';
+  selectedDate: Date = new Date('2018-10-22T00:00:00');
+  events: SchedulerEvent[] = [{
     id: 1,
     title: 'Breakfast',
     start: new Date('2018-10-22T09:00:00'),

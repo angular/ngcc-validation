@@ -6,11 +6,15 @@ describe('workspace-project App', () => {
 
   beforeEach(() => {
     page = new AppPage();
+    page.navigateTo();
   });
 
   it('should display welcome message', () => {
-    page.navigateTo();
     expect(page.getTitleText()).toEqual('Welcome to kendo-ui-charts-ngcc!');
+  });
+
+  it('should display chart canvas', () => {
+    expect(page.getCanvas().isPresent()).toBe(true);
   });
 
   afterEach(async () => {
