@@ -8,9 +8,15 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getTitleText()).toEqual('uirouterangular-hybrid-ngcc app is running!');
+  it('should display a link to a route', async () => {
+    await page.navigateTo();
+    expect(page.getAnchor()).toEqual('Link to Angular child route using UIRouterUpgradeModule.forChild');
+  });
+
+  it('should navigate to a route', async () => {
+    await page.navigateTo();
+    await page.clickAnchor();
+    expect(page.getChildMessage()).toEqual('This is the child view');
   });
 
   afterEach(async () => {
