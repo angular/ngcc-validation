@@ -16654,6 +16654,124 @@
         }
       }
     },
+    "uirouterangular-hybrid-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/uirouterangular-hybrid-ngcc",
+      "sourceRoot": "projects/uirouterangular-hybrid-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/uirouterangular-hybrid-ngcc",
+            "index": "projects/uirouterangular-hybrid-ngcc/src/index.html",
+            "main": "projects/uirouterangular-hybrid-ngcc/src/main.ts",
+            "polyfills": "projects/uirouterangular-hybrid-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/uirouterangular-hybrid-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/uirouterangular-hybrid-ngcc/src/favicon.ico",
+              "projects/uirouterangular-hybrid-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/uirouterangular-hybrid-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/uirouterangular-hybrid-ngcc/src/environments/environment.ts",
+                  "with": "projects/uirouterangular-hybrid-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "uirouterangular-hybrid-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "uirouterangular-hybrid-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "uirouterangular-hybrid-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/uirouterangular-hybrid-ngcc/src/test.ts",
+            "polyfills": "projects/uirouterangular-hybrid-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/uirouterangular-hybrid-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/uirouterangular-hybrid-ngcc/karma.conf.js",
+            "assets": [
+              "projects/uirouterangular-hybrid-ngcc/src/favicon.ico",
+              "projects/uirouterangular-hybrid-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/uirouterangular-hybrid-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/uirouterangular-hybrid-ngcc/tsconfig.app.json",
+              "projects/uirouterangular-hybrid-ngcc/tsconfig.spec.json",
+              "projects/uirouterangular-hybrid-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/uirouterangular-hybrid-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "uirouterangular-hybrid-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "uirouterangular-hybrid-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
     "uirouterangular-ngcc": {
       "projectType": "application",
       "schematics": {},
