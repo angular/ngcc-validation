@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Store } from './store';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `
+    <div *mobxAutorun>
+      {{ store.value }} - {{ store.computedValue }}
+      <button (click)="store.action">Action</button>
+    </div>
+  `
 })
 export class AppComponent {
-  title = 'mobx-angular-ngcc';
+    constructor(public store: Store) {}
 }
