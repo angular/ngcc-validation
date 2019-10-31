@@ -18,3 +18,10 @@
   </li>
 </ul>
 
+<dx-button text="Update title" (onClick)="title = title + ' - It works'"></dx-button>
+
+<dx-chart [dataSource]="fruits">
+  <dxo-common-series-settings type="bar" argumentField="fruit"></dxo-common-series-settings>
+  <dxi-series valueField="yield"></dxi-series>
+  <dxi-series valueField="consumed"></dxi-series>
+</dx-chart>

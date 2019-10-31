@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import 'devextreme-angular';
+import { DxButtonModule, DxChartModule } from 'devextreme-angular';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +10,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DxButtonModule,
+    DxChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
