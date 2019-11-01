@@ -8,9 +8,11 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should increment the counter', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to mobx-angular-ngcc!');
+    expect(page.getLabelText()).toEqual('0 - 10');
+    page.clickButton();
+    expect(page.getLabelText()).toEqual('1 - 11');
   });
 
   afterEach(async () => {

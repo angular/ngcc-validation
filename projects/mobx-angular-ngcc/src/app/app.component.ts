@@ -6,8 +6,8 @@ import { Store } from './store';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div *mobxAutorun>
-      {{ store.value }} - {{ store.computedValue }}
-      <button (click)="store.action">Action</button>
+      <span>{{ store.value }} - {{ store.computedValue }}</span>
+      <button (click)="store.action()">Action</button>
     </div>
   `
 })

@@ -5,11 +5,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class Store {
-  @observable value;
+  @observable value = 0;
 
   @computed
   get computedValue() {
-    return this.value + 1;
+    return this.value + 10;
   }
 
   @action
