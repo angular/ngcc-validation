@@ -8,9 +8,10 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should open the color picker', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to ngx-color-picker-ngcc!');
+    page.openColorPicker();
+    expect(page.getColorPickerVisibility()).toBeTruthy();
   });
 
   afterEach(async () => {

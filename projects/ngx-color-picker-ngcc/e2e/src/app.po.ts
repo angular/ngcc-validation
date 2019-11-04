@@ -5,7 +5,11 @@ export class AppPage {
     return browser.get(browser.baseUrl) as Promise<any>;
   }
 
-  getTitleText() {
-    return element(by.css('app-root h1')).getText() as Promise<string>;
+  openColorPicker() {
+    return element(by.css('body > app-root > input')).click();
+  }
+
+  getColorPickerVisibility() {
+    return element(by.css('body > app-root > color-picker > div')).isDisplayed() as Promise<boolean>;
   }
 }
