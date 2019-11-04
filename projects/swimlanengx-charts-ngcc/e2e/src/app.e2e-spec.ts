@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should render a chart', async () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to swimlanengx-charts-ngcc!');
+    expect((await page.getChartSize()).height).not.toBe(0);
   });
 
   afterEach(async () => {
