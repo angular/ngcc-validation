@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should sort table by name', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to swimlanengx-datatable-ngcc!');
+    expect(page.getTopLeftCell()).toBe('Austin');
   });
 
   afterEach(async () => {
