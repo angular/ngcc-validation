@@ -11790,6 +11790,124 @@
         }
       }
     },
+    "ngx-auth-firebaseui-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/ngx-auth-firebaseui-ngcc",
+      "sourceRoot": "projects/ngx-auth-firebaseui-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/ngx-auth-firebaseui-ngcc",
+            "index": "projects/ngx-auth-firebaseui-ngcc/src/index.html",
+            "main": "projects/ngx-auth-firebaseui-ngcc/src/main.ts",
+            "polyfills": "projects/ngx-auth-firebaseui-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/ngx-auth-firebaseui-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/ngx-auth-firebaseui-ngcc/src/favicon.ico",
+              "projects/ngx-auth-firebaseui-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/ngx-auth-firebaseui-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/ngx-auth-firebaseui-ngcc/src/environments/environment.ts",
+                  "with": "projects/ngx-auth-firebaseui-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "ngx-auth-firebaseui-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "ngx-auth-firebaseui-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "ngx-auth-firebaseui-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-auth-firebaseui-ngcc/src/test.ts",
+            "polyfills": "projects/ngx-auth-firebaseui-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/ngx-auth-firebaseui-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-auth-firebaseui-ngcc/karma.conf.js",
+            "assets": [
+              "projects/ngx-auth-firebaseui-ngcc/src/favicon.ico",
+              "projects/ngx-auth-firebaseui-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/ngx-auth-firebaseui-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-auth-firebaseui-ngcc/tsconfig.app.json",
+              "projects/ngx-auth-firebaseui-ngcc/tsconfig.spec.json",
+              "projects/ngx-auth-firebaseui-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/ngx-auth-firebaseui-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "ngx-auth-firebaseui-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "ngx-auth-firebaseui-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
     "ngx-bootstrap-ngcc": {
       "projectType": "application",
       "schematics": {},
