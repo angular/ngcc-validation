@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should visualize the spinner overlay', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to ngx-spinner-ngcc!');
+    expect(page.getOverlay()).not.toBeFalsy();
   });
 
   afterEach(async () => {
