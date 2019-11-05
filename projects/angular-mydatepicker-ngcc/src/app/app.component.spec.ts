@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'mydatepicker-ngcc'`, () => {
+  it(`should have as title 'angular-mydatepicker-ngcc'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('mydatepicker-ngcc');
+    expect(app.title).toEqual('angular-mydatepicker-ngcc');
   });
 
-  it('should render title in a h1 tag', () => {
+  it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to mydatepicker-ngcc!');
+    expect(compiled.querySelector('.content span').textContent).toContain('angular-mydatepicker-ngcc app is running!');
   });
 });

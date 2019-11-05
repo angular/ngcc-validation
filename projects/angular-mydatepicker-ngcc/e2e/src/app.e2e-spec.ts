@@ -8,9 +8,11 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display the current date when selected', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to mydatepicker-ngcc!');
+    page.selectCurrentDate();
+    const now = new Date();
+    expect(page.getDateText()).toEqual(`${now.getDate()}.${now.getMonth() + 1}.${now.getFullYear()}`);
   });
 
   afterEach(async () => {
