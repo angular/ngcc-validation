@@ -1359,6 +1359,124 @@
         }
       }
     },
+    "angular-mydatepicker-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/angular-mydatepicker-ngcc",
+      "sourceRoot": "projects/angular-mydatepicker-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/angular-mydatepicker-ngcc",
+            "index": "projects/angular-mydatepicker-ngcc/src/index.html",
+            "main": "projects/angular-mydatepicker-ngcc/src/main.ts",
+            "polyfills": "projects/angular-mydatepicker-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/angular-mydatepicker-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/angular-mydatepicker-ngcc/src/favicon.ico",
+              "projects/angular-mydatepicker-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/angular-mydatepicker-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/angular-mydatepicker-ngcc/src/environments/environment.ts",
+                  "with": "projects/angular-mydatepicker-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "angular-mydatepicker-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angular-mydatepicker-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "angular-mydatepicker-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-mydatepicker-ngcc/src/test.ts",
+            "polyfills": "projects/angular-mydatepicker-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/angular-mydatepicker-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-mydatepicker-ngcc/karma.conf.js",
+            "assets": [
+              "projects/angular-mydatepicker-ngcc/src/favicon.ico",
+              "projects/angular-mydatepicker-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/angular-mydatepicker-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-mydatepicker-ngcc/tsconfig.app.json",
+              "projects/angular-mydatepicker-ngcc/tsconfig.spec.json",
+              "projects/angular-mydatepicker-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/angular-mydatepicker-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "angular-mydatepicker-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angular-mydatepicker-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
     "angular-oauth2-oidc-ngcc": {
       "projectType": "application",
       "schematics": {},
