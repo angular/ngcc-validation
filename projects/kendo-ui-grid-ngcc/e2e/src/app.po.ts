@@ -5,7 +5,7 @@ export class AppPage {
     return browser.get(browser.baseUrl) as Promise<any>;
   }
 
-  getTitleText() {
-    return element(by.css('app-root h1')).getText() as Promise<string>;
+  getCell() {
+    return element(by.css('kendo-grid kendo-grid-list tr:nth-child(3) > td:nth-child(3)'));
   }
 }

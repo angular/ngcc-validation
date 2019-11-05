@@ -1,5 +1,5 @@
 import { AppPage } from './app.po';
-import { browser, logging } from 'protractor';
+import { browser, by, logging } from 'protractor';
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -8,9 +8,12 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to kendo-ui-grid-ngcc!');
+  it('should display a Kendo grid', async () => {
+    await page.navigateTo();
+    const cell = page.getCell();
+    const value = await cell.getText();
+    await cell.click();
+    await expect(cell.element(by.css('input')).getAttribute('value')).toEqual(value);
   });
 
   afterEach(async () => {
