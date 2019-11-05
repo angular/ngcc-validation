@@ -2078,6 +2078,17 @@
     nativescript-intl "^3.0.0"
     reflect-metadata "^0.1.8"
 
+"@nativescript/core@6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@nativescript/core/-/core-6.2.0.tgz#6bfd4306976b4e566cf26646667f5910d7335b5c"
+  integrity sha512-sStXeAhLhCc2kgU5NjquL5VEIKIMrlUZeFvhXfl91aYwBX5h40fVtb9WYS6MIHDYwBntR0V8ciJdCgQ2318zjg==
+  dependencies:
+    nativescript-hook "0.2.5"
+    reduce-css-calc "^2.1.6"
+    semver "6.3.0"
+    tns-core-modules-widgets "6.2.0"
+    tslib "1.10.0"
+
 "@nebular/auth@4.5.0":
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/@nebular/auth/-/auth-4.5.0.tgz#454d2a635f37a4244ae70acb5f81a64bee096308"
@@ -6814,6 +6825,17 @@ glob@7.1.5, glob@^7.0.3, glob@^7.0.5, glob@^7.0.6, glob@^7.1.1, glob@^7.1.2, glo
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
+glob@^6.0.1:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-6.0.4.tgz#0f08860f6a155127b2fadd4f9ce24b1aab6e4d22"
+  integrity sha1-DwiGD2oVUSey+t1PnOJLGqtuTSI=
+  dependencies:
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "2 || 3"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
+
 globals@^11.1.0:
   version "11.12.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-11.12.0.tgz#ab8795338868a0babd8525758018c2a7eb95c42e"
@@ -8717,7 +8739,7 @@ minimatch-browser@>=1.0.0:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimatch@3.0.4, minimatch@^3.0.2, minimatch@^3.0.3, minimatch@^3.0.4:
+"minimatch@2 || 3", minimatch@3.0.4, minimatch@^3.0.2, minimatch@^3.0.3, minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   integrity sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
@@ -8940,6 +8962,14 @@ nativescript-angular@8.20.0:
   integrity sha512-6Z2f0zlVTDBj0UZpMXFcfc4bPwTH0p7Di9H3AuvqTbJCvdS8h9ziiQ9/XJAFRSmKunIDy2F5DiSOnQHJ02/bnw==
   dependencies:
     "@nativescript/angular" "8.20.0"
+
+nativescript-hook@0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/nativescript-hook/-/nativescript-hook-0.2.5.tgz#ea85179ada2d619dcadc9dc32ec45bb5a3c6713e"
+  integrity sha512-ciGJtNbtMB2lGv8jAkUripkRjd3g8atX9VYPSt6e8PI6YPiOKeoma3xjcXoW66pFMYpHnfrbp6Mq9U/QtiQrVg==
+  dependencies:
+    glob "^6.0.1"
+    mkdirp "^0.5.1"
 
 nativescript-intl@^3.0.0:
   version "3.0.0"
@@ -12011,19 +12041,17 @@ tmp@0.0.33, tmp@0.0.x, tmp@^0.0.33:
   dependencies:
     os-tmpdir "~1.0.2"
 
-tns-core-modules-widgets@6.1.2:
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/tns-core-modules-widgets/-/tns-core-modules-widgets-6.1.2.tgz#ccdae20cda92e51f8e711cc3dbfa9e859bc70c38"
-  integrity sha512-GOeGlxJhbkly5WGILTLSQ80whPs07Jq/5si3+b5OL6xTBR/yPMWm5nJ66pwd3716TgafHUtRxpiyh5s4B+EO9g==
+tns-core-modules-widgets@6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/tns-core-modules-widgets/-/tns-core-modules-widgets-6.2.0.tgz#69840f637a508f8e607e6a5dad330a2d24c35728"
+  integrity sha512-p/b2W6ioBsqnn6O1oFJfJC6SxP7yk11Qh7OYb4Bwn/7TTKHxmEhTRyKNe+9CJwTOtZjMsO9nLHyHuUGzZOB0/g==
 
-tns-core-modules@6.1.2:
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/tns-core-modules/-/tns-core-modules-6.1.2.tgz#e27ec8b2be95507635dae888e473f963ab9e6c12"
-  integrity sha512-3PeYkA6daSp4FC+Ns4vLBJtoGpgfYJaMMsFPyWfOZiUBv+xtVSvoVWAaIaSWw2kOiUh0mtADQZJJjFhezvKjZg==
+tns-core-modules@6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/tns-core-modules/-/tns-core-modules-6.2.0.tgz#de034dfdf550657b20d95286e7f53832b1779930"
+  integrity sha512-uLBKqGItFTA8XqnUstzZ73lGMB35k3Y7JME122sRN5+uJZuIuW2AIBmuXs2HVBw3Caa1mAlvZ23coaIXKYpcEQ==
   dependencies:
-    reduce-css-calc "^2.1.6"
-    tns-core-modules-widgets "6.1.2"
-    tslib "1.10.0"
+    "@nativescript/core" "6.2.0"
 
 to-array@0.1.4:
   version "0.1.4"
