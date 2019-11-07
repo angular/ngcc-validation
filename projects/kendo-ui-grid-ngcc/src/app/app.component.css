@@ -1,0 +1,13 @@
+/*
+ * Set a fixed row height of 36px (20px line height, 2 * 8px padding)
+ *
+ * [row height] = [line height] + [padding] + [border]
+ *
+ * Note: If using the Kendo UI Material theme, add 1px to the row height
+ * to account for the bottom border width.
+ */
+.k-grid tbody td {
+    white-space: nowrap;
+    line-height: 20px;
+    padding: 8px 12px;
+}

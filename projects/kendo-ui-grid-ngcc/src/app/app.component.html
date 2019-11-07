@@ -1,0 +1,23 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<kendo-grid #grid
+    [kendoGridInCellEditing]="createFormGroup"
+    [kendoGridBinding]="data"
+    [pageSize]="pageSize"
+    scrollable="virtual"
+    [rowHeight]="36"
+    [height]="350"
+    [navigable]="true"
+  >
+  <kendo-grid-column field="id" title="ID"></kendo-grid-column>
+
+  <kendo-grid-column field="id" [width]="80" title="ID"></kendo-grid-column>
+
+  <kendo-grid-column field="firstName" title="First Name"></kendo-grid-column>
+  <kendo-grid-column field="lastName" title="Last Name"></kendo-grid-column>
+  <kendo-grid-column field="city" title="City"></kendo-grid-column>
+  <kendo-grid-column field="title" title="Title"></kendo-grid-column>
+</kendo-grid>
