@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import '@nebular/theme';
+import { NbThemeModule } from '@nebular/theme';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +10,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NbThemeModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
