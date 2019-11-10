@@ -75,12 +75,19 @@ jobs:
       - run: yarn build --nb-shards=${CIRCLE_NODE_TOTAL} --shard=${CIRCLE_NODE_INDEX}
       - notify_webhook_on_fail:
           webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
+  verify:
+    executor: action-executor
+    resource_class: xlarge
+    steps:
+      - attach_workspace:
+          at: *working_directory
+      - run: yarn verify
 
 workflows:
   version: 2
   default_workflow:
     jobs:
       - setup
-      - build:
+      - verify:
           requires:
             - setup
