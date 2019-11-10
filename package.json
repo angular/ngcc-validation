@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "ngcc": "ngcc",
-    "verify": "ngcc --async false && ts-node --project infra/tsconfig.json infra/verify.ts",
+    "verify": "ts-node --project infra/tsconfig.json infra/verify.ts",
     "build": "ts-node --project infra/tsconfig.json infra/build.ts",
     "add-project": "ts-node --project infra/tsconfig.json infra/create-proj.ts",
     "postinstall": "webdriver-manager update --gecko false --standalone false $CHROMEDRIVER_VERSION_ARG"

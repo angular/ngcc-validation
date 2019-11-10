@@ -18,6 +18,7 @@ const PROBLEMATIC = [
 ];
 
 export interface VerificationResult {
+  directory: AbsoluteFsPath;
   unprocessed: UnprocessedDecorator[];
 }
 
@@ -34,7 +35,7 @@ export function verifyCompiledDirectory(directory: AbsoluteFsPath, fileSystem: F
       ts.createSourceFile(jsFile, contents, ts.ScriptTarget.Latest, true, ts.ScriptKind.JS);
     visitNode(sf);
   }
-  return {unprocessed};
+  return {directory, unprocessed};
 
   function visitNode(node: ts.Node): void {
     if (ts.isCallExpression(node) && isDunderDecorate(node.expression)) {
@@ -58,7 +59,7 @@ export function verifyCompiledDirectory(directory: AbsoluteFsPath, fileSystem: F
 function isDunderDecorate(node: ts.Expression): boolean {
   if (ts.isIdentifier(node) && node.text === '__decorate') {
     return true;
-  } else if (ts.isPropertyAccessExpression(node) && node.name.text === '__decorate') {
+  } else if (ts.isPropertyAccessExpression(node) && /^__decorate(?:\$\d+)?$/.test(node.name.text)) {
     return true;
   } else {
     return false;
@@ -143,11 +144,10 @@ function collectJsFiles(dir: AbsoluteFsPath, fileSystem: FileSystem): AbsoluteFs
   const jsFiles: AbsoluteFsPath[] = [];
   for (const file of fileSystem.readdir(dir)) {
     const properPath = fileSystem.join(dir, file);
-    if (file.endsWith('.js')) {
-      jsFiles.push(properPath);
-    }
     if (fileSystem.stat(properPath).isDirectory()) {
       jsFiles.push(...collectJsFiles(properPath, fileSystem));
+    } else if (file.endsWith('.js')) {
+      jsFiles.push(properPath);
     }
   }
   return jsFiles;
