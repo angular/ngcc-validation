@@ -14,7 +14,7 @@ To add your library, follow the next simple 4 steps:
 **Clone the repository**:
 
 ```bash
-git clone git@github.com:mgechev/ngcc-validation
+git clone git@github.com:angular/ngcc-validation.git
 ```
 
 **Install the top-level dependencies**:
