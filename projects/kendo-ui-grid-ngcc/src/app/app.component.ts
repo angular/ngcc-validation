@@ -11,7 +11,7 @@ import { Employee } from './employee';
 export class AppComponent {
   title = 'kendo-ui-grid-ngcc';
   data: Employee[];
-  pageSize = 100;
+  pageSize = 10;
   formGroup: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {
