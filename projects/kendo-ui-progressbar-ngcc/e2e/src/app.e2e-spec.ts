@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should render a ProgressBar', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('kendo-ui-progressbar-ngcc app is running!');
+    expect(page.getProgressBar().isPresent()).toBe(true);
   });
 
   afterEach(async () => {
