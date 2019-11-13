@@ -8517,6 +8517,125 @@
         }
       }
     },
+    "kendo-ui-progressbar-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-progressbar-ngcc",
+      "sourceRoot": "projects/kendo-ui-progressbar-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-progressbar-ngcc",
+            "index": "projects/kendo-ui-progressbar-ngcc/src/index.html",
+            "main": "projects/kendo-ui-progressbar-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-progressbar-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-progressbar-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-progressbar-ngcc/src/favicon.ico",
+              "projects/kendo-ui-progressbar-ngcc/src/assets"
+            ],
+            "styles": [
+              "node_modules/@progress/kendo-theme-default/dist/all.css",
+              "projects/kendo-ui-progressbar-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-progressbar-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-progressbar-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-progressbar-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-progressbar-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-progressbar-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-progressbar-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-progressbar-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-progressbar-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-progressbar-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-progressbar-ngcc/src/favicon.ico",
+              "projects/kendo-ui-progressbar-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-progressbar-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-progressbar-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-progressbar-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-progressbar-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-progressbar-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-progressbar-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-progressbar-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
     "kendo-ui-scheduler-ngcc": {
       "projectType": "application",
       "schematics": {},
