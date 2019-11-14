@@ -5,7 +5,13 @@ export class AppPage {
     return browser.get(browser.baseUrl) as Promise<any>;
   }
 
-  getTitleText() {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
+  getEditorElement() {
+    return element(by.css('kendo-editor'));
+  }
+  getToolbarElement() {
+    return element(by.css('kendo-editor kendo-toolbar-renderer'));
+  }
+  getToolbarButtonGroups() {
+    return element.all(by.css('kendo-editor kendo-toolbar-renderer kendo-buttongroup'));
   }
 }
