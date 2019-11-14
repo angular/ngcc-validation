@@ -1,0 +1,13 @@
+  <div>
+  <p>All tools</p>
+  <kendo-editor #editor id="first" [iframe]="true" (valueChange)="handleValueChange('valueChanged')" [value]="value" style="height: 300px;">
+      <kendo-toolbar>
+         <kendo-toolbar-buttongroup>
+              <kendo-toolbar-button kendoEditorBoldButton></kendo-toolbar-button>
+              <kendo-toolbar-button kendoEditorItalicButton></kendo-toolbar-button>
+              <kendo-toolbar-button kendoEditorUnderlineButton></kendo-toolbar-button>
+              <kendo-toolbar-button kendoEditorStrikethroughButton></kendo-toolbar-button>
+          </kendo-toolbar-buttongroup>
+      </kendo-toolbar>
+  </kendo-editor>
+</div>
