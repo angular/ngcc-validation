@@ -12,6 +12,6 @@ export class AppPage {
     return element(by.css('kendo-editor kendo-toolbar-renderer'));
   }
   getToolbarButtonGroups() {
-    return element.all(by.css('kendo-editor kendo-toolbar-renderer kendo-buttongroup'));
+    return element(by.css('kendo-editor kendo-toolbar-renderer:first-child kendo-buttongroup'));
   }
 }

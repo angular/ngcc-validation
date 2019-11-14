@@ -1,16 +1,20 @@
 import { AppPage } from './app.po';
 import { browser, logging } from 'protractor';
 
-describe('workspace-project App', () => {
+describe('kendo-toolbar', () => {
   let page: AppPage;
 
   beforeEach(() => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getTitleText()).toEqual('kendo-ui-toolbar-ngcc app is running!');
+  it('should render toolbar', async () => {
+    await page.navigateTo();
+    await expect(await page.getToolbarElement().isPresent()).toBe(true);
+  });
+  it('should render buttons', async () => {
+    await page.navigateTo();
+    expect(await page.getFirstButton().isPresent()).toBe(true);
   });
 
   afterEach(async () => {

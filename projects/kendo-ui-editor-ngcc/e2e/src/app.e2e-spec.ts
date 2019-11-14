@@ -9,15 +9,15 @@ describe('kendo-angular-editor', () => {
   });
 
   it('should render editor', async () => {
-    page.navigateTo();
+    await page.navigateTo();
     expect(await page.getEditorElement().isPresent()).toBe(true);
   });
   it('should render toolbar', async () => {
-    page.navigateTo();
+    await page.navigateTo();
     expect(await page.getToolbarElement().isPresent()).toBe(true);
   });
   it('should render toolbar buttongroups', async () => {
-    page.navigateTo();
+    await page.navigateTo();
     expect(await page.getToolbarButtonGroups().isPresent()).toBe(true);
   });
 
