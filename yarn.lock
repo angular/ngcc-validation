@@ -7058,10 +7058,20 @@ highcharts@>=6.0.0:
   resolved "https://registry.yarnpkg.com/highcharts/-/highcharts-7.2.0.tgz#d6bd00240767cfab67210ead47c6cd015384e74d"
   integrity sha512-jOlMzj3oRuqNBoJg+rqHZI9vnlLHipwVfceJr00gAreXu8268UwahEh7yBGI/m1wa6Uc/XoBMIuzMpXUFMvFdg==
 
+highlight.js@*:
+  version "9.16.2"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.16.2.tgz#68368d039ffe1c6211bcc07e483daf95de3e403e"
+  integrity sha512-feMUrVLZvjy0oC7FVJQcSQRqbBq9kwqnYE4+Kj9ZjbHh3g+BisiPgF49NyQbVLNdrL/qqZr3Ca9yOKwgn2i/tw==
+
 highlight.js@^9.13.1, highlight.js@^9.15.9:
   version "9.15.10"
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.15.10.tgz#7b18ed75c90348c045eef9ed08ca1319a2219ad2"
   integrity sha512-RoV7OkQm0T3os3Dd2VHLNMoaoDVx77Wygln3n9l5YV172XonWG6rgQD3XnF/BuFFZw9A0TJgmMSO8FEWQgvcXw==
+
+highlightjs-line-numbers.js@*:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/highlightjs-line-numbers.js/-/highlightjs-line-numbers.js-2.7.0.tgz#b202f7dc547cb9ab64d8b3ad571d834817815bdf"
+  integrity sha512-2kgZkfGy3TB6rF1o1XJtUThDyraLAFd6iiAIE1MEH89om8VwyHsal6BBnIOP2yOuq2TCuuGd0YD6aGHa6iq3/g==
 
 hmac-drbg@^1.0.0:
   version "1.0.1"
@@ -9267,11 +9277,13 @@ ngx-file-drop@8.0.8:
   dependencies:
     tslib "^1.9.0"
 
-ngx-highlightjs@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/ngx-highlightjs/-/ngx-highlightjs-3.0.3.tgz#06105191fbd29abbc0b7ea1446c87fa4547e445b"
-  integrity sha512-/Eh+uJL9CiePWXzyT7VpLaQoWQyyNEUQaHhJ4faUBQZLBpachCBY55iDX0mi50zG9dapTiiapH5Vz/sL2GDxlg==
+ngx-highlightjs@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/ngx-highlightjs/-/ngx-highlightjs-4.0.0.tgz#22312519aea132cb7ca1e2a7532a0c8843a2288f"
+  integrity sha512-9RuY7hCtQdRtz3Auo5Bv858IlJm16zcTD4HBtvj8jrqGf0nQBgE/PDFmUsYSRTkC1vDvJvPs0LQbXN1VuVtjYA==
   dependencies:
+    highlight.js "*"
+    highlightjs-line-numbers.js "*"
     tslib "^1.9.0"
 
 ngx-infinite-scroll@8.0.1:
