@@ -1,0 +1,25 @@
+
+<button (click)="pdf.saveAs('table.pdf')">
+Save As PDF...
+</button>
+
+<kendo-pdf-export #pdf paperSize="A4" margin="2cm" [repeatHeaders]="true">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Unit Price</th>
+        <th>Qty</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of data">
+        <td>{{ row.productName }}</td>
+        <td>{{ row.unitPrice }}</td>
+        <td>{{ row.qty }}</td>
+        <td>{{ row.total }}</td>
+      </tr>
+    </tbody>
+  </table>
+</kendo-pdf-export>
