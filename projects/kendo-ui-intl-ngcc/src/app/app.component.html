@@ -1,0 +1,20 @@
+<div class="example-config">
+    <label>
+        Locale
+        <select [value]="localeId" (change)="onLocaleChange($event.target.value)">
+            <option value="en-US">en-US</option>
+            <option value="bg-BG">bg-BG</option>
+            <option value="de-DE">de-DE</option>
+        </select>
+    </label>
+</div>
+<h3>Numbers</h3>
+<ul>
+  <li>{{ number | kendoNumber:'c':localeId }}</li>
+  <li>{{ intlService.formatNumber(number, 'c') }}</li>
+</ul>
+<h3>Dates</h3>
+<ul>
+  <li>{{date | kendoDate:'d':localeId }}</li>
+  <li>{{ intlService.formatDate(date, 'd') }}</li>
+</ul>
