@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@progress/kendo-angular-layout';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { AppComponent } from './app.component';
+import { ContentComponent } from './content.component';
 
 @NgModule({
     imports: [
@@ -12,7 +13,7 @@ import { AppComponent } from './app.component';
         LayoutModule,
         ButtonsModule
     ],
-    declarations: [ AppComponent ],
+    declarations: [ AppComponent, ContentComponent ],
     bootstrap:    [ AppComponent ]
 })
 export class AppModule {}

@@ -1,97 +1,135 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { DrawerItem } from '@progress/kendo-angular-layout';
+import { DrawerItem, DrawerSelectEvent, PanelBarExpandMode } from '@progress/kendo-angular-layout';
 
 @Component({
     selector: 'app-root',
     template: `
-    <div>
-        <button kendoButton icon="menu" look="flat" styles="font-size: 18px;" (click)="drawer.toggle()">Drawer
-        </button>
-    </div>
+      <!-- Overlay mini, not expanded drawer with items and selection -->
+      <button class="drawer-btn" kendoButton icon="menu" look="flat" (click)="overlayDrawer.toggle()">Overlay Mini Drawer
+      </button>
 
-    <kendo-drawer-container>
-        <kendo-drawer #drawer
-            [items]="items"
-            [mode]="'overlay'">
+      <kendo-drawer-container>
+          <kendo-drawer #overlayDrawer
+              [items]="items"
+              [mini]="true"
+              [expanded]="false"
+              (select)="onSelect($event)"
+              [mode]="'overlay'">
+          </kendo-drawer>
+
+          <kendo-drawer-content>
+            <my-content [selectedItem]="selected"></my-content>
+          </kendo-drawer-content>
+      </kendo-drawer-container>
+
+      <!-- Push expanded drawer in mini mode -->
+      <kendo-drawer-container>
+        <kendo-drawer #pushDrawer
+            [mode]="'push'"
+            [(expanded)]="expanded">
+            <ng-template kendoDrawerTemplate>
+                <form class="k-form" *ngIf="expanded">
+                    <label class="k-form-field">
+                        <span>First Name</span>
+                        <input class="k-textbox" placeholder="Your Name" />
+                    </label>
+                    <label class="k-form-field">
+                        <button type="button" class="k-button" (click)="pushDrawer.toggle()">Submit</button>
+                    </label>
+                </form>
+            </ng-template>
         </kendo-drawer>
+          <kendo-drawer-content>
+              <button class="k-button" (click)="pushDrawer.toggle()">Toggle the Drawer</button>
+          </kendo-drawer-content>
+      </kendo-drawer-container>
 
-        <kendo-drawer-content>
-            <div class="example-wrapper container-fluid">
-                <div class="row">
-                <div class="col-xs-12 col-sm-12 example-col">
-                    <p style="text-align: center;">Splitter</p>
-                    <kendo-splitter orientation="horizontal" style="height: 360px;">
-                        <kendo-splitter-pane size="50%" min="40%">
-                            <p>PanelBar</p>
-                            <kendo-panelbar>
-                            <kendo-panelbar-item title="Invasion Games">
-                                <kendo-panelbar-item title="Hockey"></kendo-panelbar-item>
-                                <kendo-panelbar-item title="Soccer"></kendo-panelbar-item>
-                                <kendo-panelbar-item title="Rugby"></kendo-panelbar-item>
-                                <kendo-panelbar-item title="Basketball"></kendo-panelbar-item>
-                                <kendo-panelbar-item title="Water polo"></kendo-panelbar-item>
-                                <kendo-panelbar-item title="Netball"></kendo-panelbar-item>
-                            </kendo-panelbar-item>
-                            <kendo-panelbar-item title="Striking & Fielding Games">
-                                <kendo-panelbar-item title="Cricket"></kendo-panelbar-item>
-                                <kendo-panelbar-item title="Softball"></kendo-panelbar-item>
-                                <kendo-panelbar-item title="Baseball"></kendo-panelbar-item>
-                            </kendo-panelbar-item>
-                            <kendo-panelbar-item title="Net & Court Games" [expanded]="true">
-                                <kendo-panelbar-item title="Badminton"></kendo-panelbar-item>
-                                <kendo-panelbar-item title="Squash"></kendo-panelbar-item>
-                                <kendo-panelbar-item title="Tennis" [selected]="true"></kendo-panelbar-item>
-                                <kendo-panelbar-item title="Table Tennis"></kendo-panelbar-item>
-                                <kendo-panelbar-item title="Volleyball"></kendo-panelbar-item>
-                            </kendo-panelbar-item>
-                            <kendo-panelbar-item title="Target Games">
-                                <kendo-panelbar-item title="Golf"></kendo-panelbar-item>
-                                <kendo-panelbar-item title="Lawn bowls"></kendo-panelbar-item>
-                                <kendo-panelbar-item title="Tenpin bowling"></kendo-panelbar-item>
-                            </kendo-panelbar-item>
-                            </kendo-panelbar>
-                        </kendo-splitter-pane>
+      <!-- PanelBar with items -->
+      <kendo-panelbar [items]="panelBarItems">
+        <ng-template kendoPanelBarItemTemplate let-dataItem>
+            <p>Custom template</p>
+            <p>{{dataItem.content}}</p>
+        </ng-template>
+      </kendo-panelbar>
 
-                        <kendo-splitter-pane min="40%">
-                            <p>TabStrip</p>
-                            <kendo-tabstrip>
-                            <kendo-tabstrip-tab [title]="'Baseball'" [selected]="true">
-                                <ng-template kendoTabContent>
-                                <p>
-                                    Baseball is a bat-and-ball game played between two teams of nine players each, who take turns batting and fielding.
-                                </p>
-                                <p>
-                                    The batting team attempts to score runs by hitting a ball that is thrown by the pitcher with a bat swung by the batter, then running counter-clockwise around a series of four bases: first, second, third, and home plate. A run is scored when a player advances around the bases and returns to home plate.
-                                </p>
-                                </ng-template>
-                            </kendo-tabstrip-tab>
-                            <kendo-tabstrip-tab [title]="'Basketball'">
-                                <ng-template kendoTabContent>
-                                <p>
-                                    Basketball is a sport that is played by two teams of five players on a rectangular court. The objective is to shoot a ball through a hoop 18 inches (46 cm) in diameter and mounted at a height of 10 feet (3.048 m) to backboards at each end of the court. The game was invented in 1891 by Dr. James Naismith, who would be the first basketball coach of the Kansas Jayhawks, one of the most successful programs in the game's history.
-                                </p>
-                                </ng-template>
-                            </kendo-tabstrip-tab>
-                            <kendo-tabstrip-tab [title]="'Football'">
-                                <ng-template kendoTabContent>
-                                <p>
-                                    Football is a family of team sports that involve, to varying degrees, kicking a ball with the foot to score a goal. Unqualified, the word football is understood to refer to whichever form of football is the most popular in the regional context in which the word appears.
-                                </p>
-                                </ng-template>
-                            </kendo-tabstrip-tab>
-                            </kendo-tabstrip>
-                        </kendo-splitter-pane>
-                    </kendo-splitter>
-                </div>
-                </div>
-            </div>
-        </kendo-drawer-content>
-    </kendo-drawer-container>
+      <!-- PanelBar with full expanded mode of items -->
+      <kendo-panelbar
+        [expandMode]="expandMode"
+        [height]="height + 'px'"
+        (stateChange)="onPanelChange($event)">
+        <kendo-panelbar-item [title]="'Invasion Games'" [expanded]="true">
+          <kendo-panelbar-item [title]="'Hockey'"></kendo-panelbar-item>
+          <kendo-panelbar-item [title]="'Netball'"></kendo-panelbar-item>
+      </kendo-panelbar-item>
+      <kendo-panelbar-item [title]="'Invasion Games'">
+        <kendo-panelbar-item [title]="'Rugby'"></kendo-panelbar-item>
+        <kendo-panelbar-item [title]="'Basketball'"></kendo-panelbar-item>
+      </kendo-panelbar-item>
+      </kendo-panelbar>
+
+      <!-- Splitter with different orientations -->
+      <kendo-splitter orientation="horizontal" style="height: 200px;">
+        <kendo-splitter-pane size="20%"> <h3>Left pane</h3> </kendo-splitter-pane>
+        <kendo-splitter-pane> <h3>Middle pane</h3> </kendo-splitter-pane>
+        <kendo-splitter-pane size="20%"> <h3>Right pane</h3> </kendo-splitter-pane>
+      </kendo-splitter>
+
+      <kendo-splitter orientation="vertical" style="height: 200px;">
+        <kendo-splitter-pane> <h3>Top pane</h3> </kendo-splitter-pane>
+        <kendo-splitter-pane> <h3>Bottom pane</h3> </kendo-splitter-pane>
+      </kendo-splitter>
+
+      <!-- Splitter with perisiting pane sizes -->
+      <kendo-splitter style="height: 200px;">
+        <kendo-splitter-pane [(size)]="sidebarSize" min="5%">
+            <h3>Sidebar</h3>
+        </kendo-splitter-pane>
+
+        <kendo-splitter-pane>
+            <h3>Main pane</h3>
+        </kendo-splitter-pane>
+      </kendo-splitter>
+
+      <!-- Tabstrib with selected tab initially -->
+      <kendo-tabstrip>
+        <kendo-tabstrip-tab [title]="'Tab 1'">
+          <ng-template kendoTabContent>
+            <p>Tab 1 Content</p>
+          </ng-template>
+        </kendo-tabstrip-tab>
+        <kendo-tabstrip-tab [title]="'Tab 2'" [selected]="true">
+          <ng-template kendoTabContent>
+            <p>Tab 2 Content</p>
+          </ng-template>
+        </kendo-tabstrip-tab>
+        <kendo-tabstrip-tab [title]="'Tab 3'">
+          <ng-template kendoTabContent>
+            <p>Tab 3 Content</p>
+          </ng-template>
+        </kendo-tabstrip-tab>
+      </kendo-tabstrip>
+
+      <!-- Tabstrib with ngFor rendered tabs -->
+      <kendo-tabstrip [ngStyle]="{'width': '400px'}">
+        <kendo-tabstrip-tab
+          *ngFor="let item of tabstribItems let i=index"
+          [title]="item.city"
+          [selected]="i == selectedTab"
+          [disabled]="item.disabled"
+        >
+            <ng-template kendoTabContent>
+              <div class="weather">
+                <h4>{{item.temp}}<span>&ordm;C</span></h4>
+                <p>Weather in {{item.city}} is {{item.weather}}.</p>
+              </div>
+            </ng-template>
+        </kendo-tabstrip-tab>
+      </kendo-tabstrip>
       `,
-      encapsulation: ViewEncapsulation.None,
-      styles: [`
+    encapsulation: ViewEncapsulation.None,
+    styles: [`
         my-app { padding: 0; }
-
+        .k-button.k-flat.drawer-btn { border: 2px solid; border-color: red !important; }
         kendo-tabstrip p {
             margin: 0;
             padding: 8px;
@@ -103,7 +141,53 @@ import { DrawerItem } from '@progress/kendo-angular-layout';
       `]
 })
 export class AppComponent {
+    public expanded = true;
+    public selected = 'Inbox';
     public baseImageUrl = 'https://demos.telerik.com/kendo-ui/content/web/panelbar/';
+    public expandMode: number = PanelBarExpandMode.Full;
+    public kendoPanelBarExpandMode: any = PanelBarExpandMode;
+    public height = 320;
+
+    public selectedTab = 1;
+    public tabstribItems: any = [{
+        disabled: true,
+        city: 'Paris',
+        temp: 17,
+        weather: 'rainy'
+    }, {
+        disabled: false,
+        city: 'New York',
+        temp: 29,
+        weather: 'sunny'
+    }, {
+        disabled: false,
+        city: 'Sofia',
+        temp: 23,
+        weather: 'cloudy'
+    }, {
+        disabled: false,
+        city: 'London',
+        temp: 19,
+        weather: 'cloudy'
+    }]
+
+    public panelBarItems: Array<any> = [
+        { title: 'First item', content: 'First item content', expanded: true },
+        {
+            title: 'Second item', children: [
+                { title: 'Child item' }
+            ]
+        }
+    ];
+
+    private sidebarSizing: string = localStorage.getItem('sidebarSize') || '20%';
+    public get sidebarSize(): string {
+        return this.sidebarSizing;
+    }
+    public set sidebarSize(newSize: string) {
+        this.sidebarSizing = newSize;
+        localStorage.setItem('sidebarSize', newSize);
+    }
 
     public items: Array<DrawerItem> = [
         { text: 'Inbox', icon: 'k-i-inbox', selected: true },
@@ -115,7 +199,18 @@ export class AppComponent {
         { text: 'Favourites', icon: 'k-i-star-outline' }
     ];
 
-    public imageUrl(imageName: string): string {
-        return this.baseImageUrl + imageName + '.jpg';
+    public onSelect(ev: DrawerSelectEvent): void {
+        this.selected = ev.item.text;
     }
-  }
+
+
+    public onChange(event: any): void {
+        this.expandMode = parseInt(event.target.value, 10);
+    }
+
+    public onHeightChange(event: any): void {
+        this.height = parseInt(event.target.value, 10);
+    }
+
+    public onPanelChange(event: any): void { console.log('stateChange: ', event); }
+}
