@@ -1,4 +1,109 @@
-<kendo-upload
+<div style="border: 2px solid red; padding: 5px; margin: 5px;">
+  <h1>Basic Usage</h1>
+  <kendo-upload
+      [saveUrl]="uploadSaveUrl"
+      [removeUrl]="uploadRemoveUrl">
+  </kendo-upload>
+</div>
+
+<div style="border: 2px solid blue; padding: 5px; margin: 5px;">
+  <h1>Auto Upload False</h1>
+  <kendo-upload
+      [autoUpload]="false"
+      [saveUrl]="uploadSaveUrl"
+      [removeUrl]="uploadRemoveUrl">
+  </kendo-upload>
+</div>
+
+<div style="border: 2px solid red; padding: 5px; margin: 5px;">
+  <h1>Templates Usage</h1>
+  <kendo-upload
+    #myUpload="kendoUpload"
+    [autoUpload]="false"
     [saveUrl]="uploadSaveUrl"
     [removeUrl]="uploadRemoveUrl">
-</kendo-upload>
+      <ng-template kendoUploadFileTemplate let-files let-state="state">
+        <div>Name: {{files[0].name}} Size: {{files[0].size}} bytes</div>
+        <button *ngIf="showButton(state)"
+            (click)="remove(myUpload, files[0].uid)"
+            class="k-button" style="position: absolute; right: .2em;">
+            Remove
+        </button>
+      </ng-template>
+  </kendo-upload>
+</div>
+
+<div style="border: 2px solid blue; padding: 5px; margin: 5px;">
+<h1>Template Form</h1>
+<form #myTemplateForm="ngForm" novalidate (ngSubmit)="saveTemplateForm(myTemplateForm)" class="example-wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <label style="display: block; margin: .8em 0 .2em">Username:</label>
+        <input type="text" name="uName" #uName="ngModel"
+            [(ngModel)]="userName" required minlength="4"
+            class="k-textbox" style="width: 100%" />
+        <p style="color: red; font-size: .8em; margin-top: .5em;"
+            [hidden]="uName.valid || (uName.pristine && !myTemplateForm.submitted)">
+            Username is required and should be minimum 4 characters.
+        </p>
+        <label style="display: block; margin: .8em 0 .2em">Avatar:</label>
+        <kendo-upload 
+          name="myUpload" #myUpload="ngModel"
+          [(ngModel)]="userImages" required
+          [saveUrl]="uploadSaveUrl"
+          [removeUrl]="uploadRemoveUrl"
+          [restrictions]="myRestrictions">
+        </kendo-upload>
+        <p style="color: red; font-size: .8em; margin-top: .5em;"
+              [hidden]="myUpload.valid || (myUpload.pristine && !myTemplateForm.submitted)">
+              Uploading an avatar is required.
+        </p>
+        <p>Username valid: {{uName.valid}}</p>
+        <p>Username pristine: {{uName.pristine}}</p>
+        <p>Upload valid: {{ myUpload.valid }}</p>
+        <p>Upload pristine: {{ myUpload.pristine }}</p>
+        <p>Form valid: {{ myTemplateForm.valid }}</p>
+        <p>Form submitted: {{ myTemplateForm.submitted }}</p>
+        <button type="submit" class="k-button k-primary" style="margin: 1em 0;">Submit</button>
+      </div>
+    </div>
+  </div>
+</form>
+</div>
+
+<div style="border: 2px solid red; padding: 5px; margin: 5px;">
+<h1>Reactive Form</h1>
+<form [formGroup]="myForm" novalidate (ngSubmit)="saveReactiveForm(myForm)">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <label style="display: block; margin: .8em 0 .2em">Username:</label>
+        <input type="text" formControlName="uName" class="k-textbox" style="width: 100%" />
+        <p style="color: red; font-size: .8em; margin-top: .5em;"
+            [hidden]="myForm.controls.uName.valid || (myForm.controls.uName.pristine && !submitted)">
+            Username is required and should be minimum 4 characters.
+        </p>
+        <label style="display: block; margin: .8em 0 .2em">Avatar:</label>
+        <kendo-upload
+          formControlName="myUpload"
+          [saveUrl]="uploadSaveUrl"
+          [removeUrl]="uploadRemoveUrl"
+          [restrictions]="myRestrictions">
+        </kendo-upload>
+        <p style="color: red; font-size: .8em; margin-top: .5em;"
+            [hidden]="myForm.controls.myUpload.valid || (myForm.controls.myUpload.pristine && !submitted)">
+            Uploading an avatar is required.
+        </p>
+        <p>Username valid: {{ myForm.controls.uName.valid }}</p>
+        <p>Username pristine: {{ myForm.controls.uName.pristine }}</p>
+        <p>Upload valid: {{ myForm.controls.myUpload.valid }}</p>
+        <p>Upload pristine: {{ myForm.controls.myUpload.pristine }}</p>
+        <p>Form valid: {{ myForm.valid }}</p>
+        <p>Form submitted: {{ submitted }}</p>
+        <button type="submit" class="k-button k-primary" style="margin: 1em 0;">Submit</button>
+      </div>
+    </div>
+  </div>
+</form>
+</div>

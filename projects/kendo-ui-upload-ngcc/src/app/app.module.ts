@@ -5,6 +5,8 @@ import { UploadModule } from '@progress/kendo-angular-upload';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppComponent, UploadInterceptor } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,10 @@ import { AppComponent, UploadInterceptor } from './app.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     UploadModule
   ],
   providers: [

@@ -2,6 +2,8 @@ import { Component, Injectable } from '@angular/core';
 import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent, HttpProgressEvent, HttpEventType, HttpResponse } from '@angular/common/http';
 import { Observable, of, concat } from 'rxjs';
 import { delay } from 'rxjs/operators';
+import { FileRestrictions, FileInfo } from '@progress/kendo-angular-upload';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +13,40 @@ import { delay } from 'rxjs/operators';
 export class AppComponent {
   uploadSaveUrl = 'saveUrl'; // should represent an actual API endpoint
   uploadRemoveUrl = 'removeUrl'; // should represent an actual API endpoint
+
+  public myRestrictions: FileRestrictions = {
+    allowedExtensions: ['jpg', 'jpeg', 'png']
+  };
+
+  public userName: string;
+  public userImages: Array<FileInfo> = [];
+
+  public myForm: FormGroup;
+  public submitted = false;
+
+  saveTemplateForm(form: any) {
+    console.log(form);
+  }
+
+  saveReactiveForm(form: any) {
+    this.submitted = true;
+    console.log(form);
+  }
+
+  constructor(private fb: FormBuilder) { }
+
+  ngOnInit() {
+    this.myForm = this.fb.group({
+      uName: [this.userName, [Validators.required, Validators.minLength(4)]],
+      myUpload: [this.userImages, [Validators.required]]
+    });
+
+    this.myForm.valueChanges.subscribe(data => this.onValueChanged(data));
+  }
+
+  onValueChanged(_data?: any) {
+    // handle model changes
+  }
 }
 
 @Injectable()
