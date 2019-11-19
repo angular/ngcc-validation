@@ -2,7 +2,7 @@ import { Component, Injectable } from '@angular/core';
 import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent, HttpProgressEvent, HttpEventType, HttpResponse } from '@angular/common/http';
 import { Observable, of, concat } from 'rxjs';
 import { delay } from 'rxjs/operators';
-import { FileRestrictions, FileInfo } from '@progress/kendo-angular-upload';
+import { FileRestrictions, FileInfo, FileState } from '@progress/kendo-angular-upload';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
@@ -23,6 +23,14 @@ export class AppComponent {
 
   public myForm: FormGroup;
   public submitted = false;
+
+  public remove(upload, uid: string) {
+    upload.removeFilesByUid(uid);
+  }
+
+  public showButton(state: FileState): boolean {
+    return (state === FileState.Uploaded) ? true : false;
+  }
 
   saveTemplateForm(form: any) {
     console.log(form);
