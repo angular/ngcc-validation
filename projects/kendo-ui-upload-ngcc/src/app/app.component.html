@@ -1,4 +1,4 @@
-<div style="border: 2px solid red; padding: 5px; margin: 5px;">
+<div style="border: 2px solid #000; padding: 5px; margin: 5px;">
   <h1>Basic Usage</h1>
   <kendo-upload
       [saveUrl]="uploadSaveUrl"
@@ -6,7 +6,7 @@
   </kendo-upload>
 </div>
 
-<div style="border: 2px solid blue; padding: 5px; margin: 5px;">
+<div style="border: 2px solid #000; padding: 5px; margin: 5px;">
   <h1>Auto Upload False</h1>
   <kendo-upload
       [autoUpload]="false"
@@ -15,7 +15,7 @@
   </kendo-upload>
 </div>
 
-<div style="border: 2px solid red; padding: 5px; margin: 5px;">
+<div style="border: 2px solid #000; padding: 5px; margin: 5px;">
   <h1>Templates Usage</h1>
   <kendo-upload
     #myUpload="kendoUpload"
@@ -33,7 +33,7 @@
   </kendo-upload>
 </div>
 
-<div style="border: 2px solid blue; padding: 5px; margin: 5px;">
+<div style="border: 2px solid #000; padding: 5px; margin: 5px;">
 <h1>Template Form</h1>
 <form #myTemplateForm="ngForm" novalidate (ngSubmit)="saveTemplateForm(myTemplateForm)" class="example-wrapper">
   <div class="container-fluid">
@@ -72,7 +72,7 @@
 </form>
 </div>
 
-<div style="border: 2px solid red; padding: 5px; margin: 5px;">
+<div style="border: 2px solid #000; padding: 5px; margin: 5px;">
 <h1>Reactive Form</h1>
 <form [formGroup]="myForm" novalidate (ngSubmit)="saveReactiveForm(myForm)">
   <div class="container-fluid">
