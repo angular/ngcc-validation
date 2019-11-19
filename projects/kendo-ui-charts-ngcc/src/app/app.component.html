@@ -17,3 +17,26 @@
     </kendo-chart-value-axis-item>
   </kendo-chart-value-axis>
 </kendo-chart>
+
+<kendo-stockchart>
+    <kendo-chart-title text="The Boeing Company\nNYSE:BA">
+    </kendo-chart-title>
+    <kendo-chart-series>
+        <kendo-chart-series-item
+            type="line"
+            [data]="data"
+            field="value"
+            categoryField="category">
+        </kendo-chart-series-item>
+    </kendo-chart-series>
+    <kendo-chart-navigator>
+      <kendo-chart-navigator-series>
+        <kendo-chart-navigator-series-item type="area" [data]="data" field="value" categoryField="category">
+        </kendo-chart-navigator-series-item>
+     </kendo-chart-navigator-series>
+    </kendo-chart-navigator>
+</kendo-stockchart>
+
+
+<kendo-sparkline [data]="data">
+</kendo-sparkline>
