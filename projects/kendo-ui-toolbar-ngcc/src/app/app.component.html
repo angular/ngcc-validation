@@ -1,18 +1,275 @@
+<span class="row">
+  Default behavior:
+</span>
 <kendo-toolbar>
-            <kendo-toolbar-button [text]="'Button'"></kendo-toolbar-button>
-            <kendo-toolbar-button [text]="'Toggle'" [toggleable]="true"></kendo-toolbar-button>
-            <kendo-toolbar-splitbutton
-                [text]="'Split Button'"
-                [data]="splitButtonData">
-            </kendo-toolbar-splitbutton>
-            <kendo-toolbar-dropdownbutton
-                [text]="'DropDownButton'"
-                [data]="dropdownButtonData">
-            </kendo-toolbar-dropdownbutton>
-            <kendo-toolbar-buttongroup [selection]="'single'">
-                <kendo-toolbar-button [toggleable]="true" [icon]="'align-left'"></kendo-toolbar-button>
-                <kendo-toolbar-button [toggleable]="true" [icon]="'align-center'"></kendo-toolbar-button>
-                <kendo-toolbar-button [toggleable]="true" [icon]="'align-right'"></kendo-toolbar-button>
-                <kendo-toolbar-button [toggleable]="true" [icon]="'align-justify'"></kendo-toolbar-button>
-            </kendo-toolbar-buttongroup>
-            </kendo-toolbar>
+    <kendo-toolbar-button [text]="'Button'" (click)="onClick('Button')"></kendo-toolbar-button>
+    <kendo-toolbar-button [text]="'Toggle'" [toggleable]="true" (click)="onClick('Toggleable button')"></kendo-toolbar-button>
+    <kendo-toolbar-splitbutton [text]="'Split Button'" [data]="splitButtonData" (buttonClick)="onClick('Splitbutton')">
+    </kendo-toolbar-splitbutton>
+    <kendo-toolbar-separator></kendo-toolbar-separator>
+    <kendo-toolbar-dropdownbutton [text]="'DropDownButton'" [data]="dropdownButtonData"> </kendo-toolbar-dropdownbutton>
+    <kendo-toolbar-buttongroup>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'bold'"
+            (click)="onClick('Multiple selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'italic'"
+            (click)="onClick('Multiple selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'underline'"
+            (click)="onClick('Multiple selection buttongroup button')"
+        ></kendo-toolbar-button>
+    </kendo-toolbar-buttongroup>
+    <kendo-toolbar-separator></kendo-toolbar-separator>
+    <kendo-toolbar-buttongroup [selection]="'single'">
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-left'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-center'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-right'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-justify'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+    </kendo-toolbar-buttongroup>
+    <app-toolbar-dropdownlist></app-toolbar-dropdownlist>
+</kendo-toolbar>
+<hr />
+
+Responsive toolbar with fixed width:
+<kendo-toolbar [overflow]="true" style="width: 200px;">
+    <kendo-toolbar-button [text]="'Button'" (click)="onClick('Button')"></kendo-toolbar-button>
+    <kendo-toolbar-button [text]="'Toggle'" [toggleable]="true" (click)="onClick('Toggleable button')"></kendo-toolbar-button>
+    <kendo-toolbar-splitbutton [text]="'Split Button'" [data]="splitButtonData" (buttonClick)="onClick('Splitbutton')">
+    </kendo-toolbar-splitbutton>
+    <kendo-toolbar-separator></kendo-toolbar-separator>
+    <kendo-toolbar-dropdownbutton [text]="'DropDownButton'" [data]="dropdownButtonData"> </kendo-toolbar-dropdownbutton>
+    <kendo-toolbar-buttongroup>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'bold'"
+            (click)="onClick('Multiple selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'italic'"
+            (click)="onClick('Multiple selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'underline'"
+            (click)="onClick('Multiple selection buttongroup button')"
+        ></kendo-toolbar-button>
+    </kendo-toolbar-buttongroup>
+    <kendo-toolbar-separator></kendo-toolbar-separator>
+    <kendo-toolbar-buttongroup [selection]="'single'">
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-left'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-center'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-right'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-justify'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+    </kendo-toolbar-buttongroup>
+    <app-toolbar-dropdownlist></app-toolbar-dropdownlist>
+</kendo-toolbar>
+<hr />
+
+Non-responsive toolbar with fixed width:
+<kendo-toolbar style="width: 200px;">
+    <kendo-toolbar-button [text]="'Button'" (click)="onClick('Button')"></kendo-toolbar-button>
+    <kendo-toolbar-button [text]="'Toggle'" [toggleable]="true" (click)="onClick('Toggleable button')"></kendo-toolbar-button>
+    <kendo-toolbar-splitbutton [text]="'Split Button'" [data]="splitButtonData" (buttonClick)="onClick('Splitbutton')">
+    </kendo-toolbar-splitbutton>
+    <kendo-toolbar-separator></kendo-toolbar-separator>
+    <kendo-toolbar-dropdownbutton [text]="'DropDownButton'" [data]="dropdownButtonData"> </kendo-toolbar-dropdownbutton>
+    <kendo-toolbar-buttongroup>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'bold'"
+            (click)="onClick('Multiple selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'italic'"
+            (click)="onClick('Multiple selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'underline'"
+            (click)="onClick('Multiple selection buttongroup button')"
+        ></kendo-toolbar-button>
+    </kendo-toolbar-buttongroup>
+    <kendo-toolbar-separator></kendo-toolbar-separator>
+    <kendo-toolbar-buttongroup [selection]="'single'">
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-left'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-center'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-right'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-justify'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+    </kendo-toolbar-buttongroup>
+    <app-toolbar-dropdownlist></app-toolbar-dropdownlist>
+</kendo-toolbar>
+<hr />
+
+Dynamic width:
+<input
+    #range
+    style="width: 100%; display: block;"
+    type="range"
+    value="100"
+    min="0"
+    max="100"
+    step="1"
+    (input)="toolbarWidth = range.value"
+/>
+Responsive toolbar:
+<kendo-toolbar [overflow]="true" [style.width.%]="toolbarWidth">
+    <kendo-toolbar-button [text]="'Button'" (click)="onClick('Button')"></kendo-toolbar-button>
+    <kendo-toolbar-button [text]="'Toggle'" [toggleable]="true" (click)="onClick('Toggleable button')"></kendo-toolbar-button>
+    <kendo-toolbar-splitbutton [text]="'Split Button'" [data]="splitButtonData" (buttonClick)="onClick('Splitbutton')">
+    </kendo-toolbar-splitbutton>
+    <kendo-toolbar-separator></kendo-toolbar-separator>
+    <kendo-toolbar-dropdownbutton [text]="'DropDownButton'" [data]="dropdownButtonData"> </kendo-toolbar-dropdownbutton>
+    <kendo-toolbar-buttongroup>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'bold'"
+            (click)="onClick('Multiple selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'italic'"
+            (click)="onClick('Multiple selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'underline'"
+            (click)="onClick('Multiple selection buttongroup button')"
+        ></kendo-toolbar-button>
+    </kendo-toolbar-buttongroup>
+    <kendo-toolbar-separator></kendo-toolbar-separator>
+    <kendo-toolbar-buttongroup [selection]="'single'">
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-left'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-center'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-right'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-justify'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+    </kendo-toolbar-buttongroup>
+    <app-toolbar-dropdownlist></app-toolbar-dropdownlist>
+</kendo-toolbar>
+
+Non-responsive toolbar:
+<kendo-toolbar [style.width.%]="toolbarWidth">
+    <kendo-toolbar-button [text]="'Button'" (click)="onClick('Button')"></kendo-toolbar-button>
+    <kendo-toolbar-button [text]="'Toggle'" [toggleable]="true" (click)="onClick('Toggleable button')"></kendo-toolbar-button>
+    <kendo-toolbar-splitbutton [text]="'Split Button'" [data]="splitButtonData" (buttonClick)="onClick('Splitbutton')">
+    </kendo-toolbar-splitbutton>
+    <kendo-toolbar-separator></kendo-toolbar-separator>
+    <kendo-toolbar-dropdownbutton [text]="'DropDownButton'" [data]="dropdownButtonData"> </kendo-toolbar-dropdownbutton>
+    <kendo-toolbar-buttongroup>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'bold'"
+            (click)="onClick('Multiple selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'italic'"
+            (click)="onClick('Multiple selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'underline'"
+            (click)="onClick('Multiple selection buttongroup button')"
+        ></kendo-toolbar-button>
+    </kendo-toolbar-buttongroup>
+    <kendo-toolbar-separator></kendo-toolbar-separator>
+    <kendo-toolbar-buttongroup [selection]="'single'">
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-left'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-center'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-right'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+        <kendo-toolbar-button
+            [toggleable]="true"
+            [icon]="'align-justify'"
+            (click)="onClick('Single selection buttongroup button')"
+        ></kendo-toolbar-button>
+    </kendo-toolbar-buttongroup>
+    <app-toolbar-dropdownlist></app-toolbar-dropdownlist>
+</kendo-toolbar>
+<hr />
+
+<div style="float: right;">
+    {{ lastAction }}
+</div>
