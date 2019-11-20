@@ -21,7 +21,7 @@ describe('workspace-project App', () => {
     expect(page.getCalendar().isPresent()).toBe(true);
   });
 
-  it('should navigate to calendar upper view', async () => {
+  it('should not throw on calendar view change when switching between a view with a template and one without', async () => {
     const initialTitle = await page.getCalendarTitle().getText();
     await page.getCalendarTitle().click();
     const currentTitle = await page.getCalendarTitle().getText();
@@ -40,8 +40,17 @@ describe('workspace-project App', () => {
     expect(page.getActivePopup().isPresent()).toBe(true);
   });
 
-  it('should use the provided navigation title template in the datepicker', async () => {
+  it('should navigate to an upper view when the title is clicked', async () => {
     await page.openDatePicker();
+    const initialTitle = await page.getPopupCalendarTitle().getText();
+    await page.getPopupCalendarTitle().click();
+    const currentTitle = await page.getPopupCalendarTitle().getText();
+
+    expect(currentTitle).not.toEqual(initialTitle);
+  });
+
+  it('should use the provided navigation title template in the datetimepicker', async () => {
+    await page.openDateTimePicker();
     const title = await page.getPopupCalendarTitle().getText();
 
     expect(title).toContain('!');
