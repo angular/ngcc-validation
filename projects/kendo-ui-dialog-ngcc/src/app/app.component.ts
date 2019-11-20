@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import {
   DialogService,
-  DialogRef,
-  DialogCloseResult,
   WindowService,
   WindowRef,
   WindowCloseResult
 } from '@progress/kendo-angular-dialog';
+import { UserInfoComponent } from './user-info.component';
 
 @Component({
   selector: 'app-root',
@@ -14,64 +13,41 @@ import {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public dialogOpened = true;
+  constructor(private dialogService: DialogService, private windowService: WindowService) { }
   public windowOpened = true;
-  public result;
 
-  constructor(
-    private dialogService: DialogService,
-    private windowService: WindowService
-  ) { }
+  public openDialogForm() {
+    const dialogRef = this.dialogService.open({
+      content: UserInfoComponent,
+    });
 
-  public close(component) {
-    this[component + 'Opened'] = false;
-  }
+    const userInfo = dialogRef.content.instance;
+    userInfo.name = 'admin';
+    userInfo.age = 42;
 
-  public open(component) {
-    this[component + 'Opened'] = true;
-  }
-
-  public action(status) {
-    console.log(`Dialog result: ${status}`);
-    this.dialogOpened = false;
+    dialogRef.result.subscribe((r: any) => {
+      if (r.primary) {
+        console.log(`Form: ${JSON.stringify(userInfo.formGroup.value)}`);
+      }
+    });
   }
 
   public openWindow() {
     const window: WindowRef = this.windowService.open({
-        title: 'My Window',
-        content: 'My Content!',
-        width: 450,
-        height: 200
+      title: 'My Window',
+      content: 'My Content!',
+      width: 450,
+      height: 200
     });
 
     window.result.subscribe((result) => {
-        if (result instanceof WindowCloseResult) {
-            console.log('Window was closed!');
-        }
+      if (result instanceof WindowCloseResult) {
+        console.log('Window was closed!');
+      }
     });
   }
 
-  public openDialog() {
-    const dialog: DialogRef = this.dialogService.open({
-        title: 'Please confirm',
-        content: 'Are you sure?',
-        actions: [
-            { text: 'No' },
-            { text: 'Yes', primary: true }
-        ],
-        width: 450,
-        height: 200,
-        minWidth: 250
-    });
-
-    dialog.result.subscribe((result) => {
-        if (result instanceof DialogCloseResult) {
-            console.log('close');
-        } else {
-            console.log('action', result);
-        }
-
-        this.result = JSON.stringify(result);
-    });
+  public close(component) {
+    this[component + 'Opened'] = false;
   }
 }
