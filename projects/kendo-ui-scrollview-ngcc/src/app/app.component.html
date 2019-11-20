@@ -1,11 +1,29 @@
-  <kendo-scrollview
-    [data]="items"
-    [width]="width"
-    [height]="height"
-    [arrows]="true"
-    [pageable]="true">
-      <ng-template let-item="item">
-          <h2 class="demo-title">{{item.title}}</h2>
-          <img src='{{item.url}}' alt='{{item.title}}' [ngStyle]="{minWidth: width}" draggable="false" />
-      </ng-template>
-  </kendo-scrollview>
+<kendo-scrollview
+  [data]="items"
+  [width]="width"
+  [height]="height"
+  [arrows]="true"
+  [pageable]="true"
+  [animate]="true"
+  [endless]="true"
+  [activeIndex]="1">
+    <ng-template let-item="item">
+        <h2 class="demo-title">{{item.title}}</h2>
+        <img src='{{item.url}}' alt='{{item.title}}' [ngStyle]="{minWidth: width}" draggable="false" />
+    </ng-template>
+</kendo-scrollview>
+
+<kendo-scrollview
+  [data]="items"
+  [width]="width"
+  [height]="height"
+  [arrows]="false"
+  [pageable]="true"
+  [animate]="false"
+  [endless]="false"
+  [activeIndex]="1">
+    <ng-template let-item="item">
+        <h2 class="demo-title">{{item.title}}</h2>
+        <img src='{{item.url}}' alt='{{item.title}}' [ngStyle]="{minWidth: width}" draggable="false" />
+    </ng-template>
+</kendo-scrollview>
