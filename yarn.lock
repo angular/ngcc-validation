@@ -2434,10 +2434,10 @@
     prosemirror-view "1.13.4"
     tslib "^1.9.0"
 
-"@progress/kendo-angular-excel-export@ivy":
-  version "3.0.1-ivy.1"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-excel-export/-/kendo-angular-excel-export-3.0.1-ivy.1.tgz#48528750e991d000ff3cfea5f4b429dc480ff157"
-  integrity sha512-gNt8xSvaXSlHh+aSH5rTpx81Sim2/I+EIeDC1/clo+UoqIh9YAiyVgvYq8vvI/6FXn0XgTi7VNAkuz62JEgPBw==
+"@progress/kendo-angular-excel-export@dev":
+  version "3.0.2-dev.201911190714"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-excel-export/-/kendo-angular-excel-export-3.0.2-dev.201911190714.tgz#8e4bcb7029f8c61408a3cfe007a804dc6cd3ac1f"
+  integrity sha512-MJmHZsNsuHiZ+if2UC2JbRNbuDJmPaxteZwQznbr6xSDGZllqOn71spdLIudtSRjDDdRTiyyC6eqsFiwM+5Dlg==
   dependencies:
     "@progress/kendo-file-saver" "^1.0.0"
     "@progress/kendo-ooxml" "^1.3.0"
@@ -2453,11 +2453,12 @@
     "@progress/kendo-schematics" "^1.0.0"
     tslib "^1.9.0"
 
-"@progress/kendo-angular-grid@ivy":
-  version "4.2.2-ivy.1"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-grid/-/kendo-angular-grid-4.2.2-ivy.1.tgz#c0e8b4585ac2c8daa0da3a2ecc260eb529bc6000"
-  integrity sha512-nuH4bFqy5Hk19c+XZbpTXgV2buW/SJ91THrskQFnMmvfWnSanitAJu3Nz9DFn3ZkYLOYIiB03k+3Ajg2hpNhIQ==
+"@progress/kendo-angular-grid@dev":
+  version "4.5.0-dev.201911191710"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-grid/-/kendo-angular-grid-4.5.0-dev.201911191710.tgz#8e94b059b34a4bdb3e8bb51e9a933d31bb4163be"
+  integrity sha512-z43q+YeEx7p4aPrvFg4FQOYIljVAOjoEhHPeKdycxTAnKZFGzjcjJPIP9tjYEbxVGS4XcZ2s07YYOmOMJBiOcQ==
   dependencies:
+    "@progress/kendo-common" "^0.2.0"
     "@progress/kendo-file-saver" "^1.0.0"
     "@progress/kendo-schematics" "^1.0.0"
     tslib "^1.9.0"
@@ -2529,10 +2530,10 @@
     "@progress/kendo-schematics" dev
     tslib "^1.9.0"
 
-"@progress/kendo-angular-popup@^3.0.2-dev.201911141245":
-  version "3.0.2-dev.201911141245"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-popup/-/kendo-angular-popup-3.0.2-dev.201911141245.tgz#2bff56829b8c545334a0b8897c3258e09b2139ea"
-  integrity sha512-DNcqrDqFYFdqnrW0ysEm8kaUR0dD8CoS5pCfSIzKFAXblDDA17MnMzrXqrtqlMGEpdfgUN/iksvraUGVW4V3KQ==
+"@progress/kendo-angular-popup@dev":
+  version "3.0.3-dev.201911180616"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-popup/-/kendo-angular-popup-3.0.3-dev.201911180616.tgz#ec6b13297f8b5255ad72b92d101f6e9a05cb36ab"
+  integrity sha512-JIypbjJws3cslS9TRzC+79Owr+dSJSZ3JUEqSoptoYYZlf9KKZFk+X0YbGIxDKtVplTUrQEOujvx1MxiggKSlw==
   dependencies:
     "@progress/kendo-popup-common" "^1.7.0"
     "@progress/kendo-schematics" "^1.0.0"
@@ -2629,6 +2630,13 @@
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@progress/kendo-common/-/kendo-common-0.1.1.tgz#bb588007b6027e9a4e6c93b8c60c38e27ae3fe74"
   integrity sha512-ekEjcFsL3eBHWjh+cO+I/d2RVN7P2pDBI903jmp/dj0ojV3eu+V0u/AYWmvrNEqjeax4sx+qhSnO5iJNB391iQ==
+  dependencies:
+    tslib "^1.7.0"
+
+"@progress/kendo-common@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-common/-/kendo-common-0.2.0.tgz#8c747c1ec587248b60445e5fa865c53e2fec3b62"
+  integrity sha512-v8acKKNogeIxayOeRYSiZjJPGVq7TPz/by3PJPZbyRVWZ0evQKFqA9t0aCsdbQdGspS2xacQ+e0D2Uz7wZSBZw==
   dependencies:
     tslib "^1.7.0"
 
