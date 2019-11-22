@@ -8,9 +8,13 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should focus composite component when clicking label', async() => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('kendo-ui-label-ngcc app is running!');
+    await page.getLabelAt(0).click();
+
+    const dropDown = page.getDropDownWrap();
+    const activeElement = browser.driver.switchTo().activeElement();
+    expect(await dropDown.getId()).toBe(await activeElement.getId());
   });
 
   afterEach(async () => {

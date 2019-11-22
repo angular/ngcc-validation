@@ -5,7 +5,11 @@ export class AppPage {
     return browser.get(browser.baseUrl) as Promise<any>;
   }
 
-  getTitleText() {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
+  getLabelAt(index: number) {
+    return element.all(by.css('app-root label')).get(index);
+  }
+
+  getDropDownWrap() {
+    return element(by.css('app-root .k-dropdown-wrap'));
   }
 }
