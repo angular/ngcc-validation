@@ -5,11 +5,7 @@ export class AppPage {
     return browser.get(browser.baseUrl) as Promise<any>;
   }
 
-  getTitleText() {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
-  }
-
-  getDialogComponent() {
-    return element(by.css('.k-dialog'));
+  getWindowComponent() {
+    return element(by.css('.k-window'));
   }
 }

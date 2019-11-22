@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should render a Dialog component', () => {
+  it('should render a Window component', async() => {
     page.navigateTo();
-    expect(page.getDialogComponent().isPresent()).toBe(true);
+    expect(await page.getWindowComponent().isPresent()).toBe(true);
   });
 
   afterEach(async () => {
