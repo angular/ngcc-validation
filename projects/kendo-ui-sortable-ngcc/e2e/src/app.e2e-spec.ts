@@ -8,9 +8,10 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should render item', async() => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('kendo-ui-sortable-ngcc app is running!');
+    const item = page.getItemAt(0);
+    expect(await item.getText()).toEqual('Item 1');
   });
 
   afterEach(async () => {
