@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should render title', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('kendo-ui-scrollview-ngcc app is running!');
+    expect(page.getTitleText()).toEqual('Flower');
   });
 
   afterEach(async () => {
