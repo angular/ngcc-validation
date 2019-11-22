@@ -5,7 +5,11 @@ export class AppPage {
     return browser.get(browser.baseUrl) as Promise<any>;
   }
 
-  getTitleText() {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
+  getButtonAt(index: number) {
+    return element(by.css('app-root button'));
+  }
+
+  getNotificationText() {
+    return element(by.css('.k-notification-content')).getText() as Promise<string>;
   }
 }

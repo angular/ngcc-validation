@@ -8,9 +8,11 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display notification', async() => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('kendo-ui-notification-ngcc app is running!');
+    await page.getButtonAt(0).click();
+    await browser.sleep(500);
+    expect(await page.getNotificationText()).toEqual('Your data has been saved. Time for tea!');
   });
 
   afterEach(async () => {
