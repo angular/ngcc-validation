@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should render pdf export component', async() => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('kendo-ui-pdf-ngcc app is running!');
+    expect(await page.getComponent().isPresent()).toBe(true);
   });
 
   afterEach(async () => {
