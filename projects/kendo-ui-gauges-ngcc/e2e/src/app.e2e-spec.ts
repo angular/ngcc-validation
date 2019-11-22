@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should render linear gauge component', async() => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('kendo-ui-gauges-ngcc app is running!');
+    expect(await page.getLinearGauge().isPresent()).toBe(true);
   });
 
   afterEach(async () => {
