@@ -1,0 +1,9 @@
+<ul class="list">
+  <li class="list-item inactive"
+      inViewport
+      [inViewportOptions]="{ threshold: [0] }"
+      (inViewportAction)="onIntersection($event)"
+      *ngFor="let item of items;">
+    <span>{{item}}</span>
+  </li>
+</ul>
