@@ -5,7 +5,7 @@ export class AppPage {
     return browser.get(browser.baseUrl) as Promise<any>;
   }
 
-  getTitleText() {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
+  getMessageText() {
+    return element(by.css('app-root .k-message .k-bubble')).getText() as Promise<string>;
   }
 }

@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should render chat message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('kendo-ui-conversational-ngcc app is running!');
+    expect(page.getMessageText()).toContain('Hello');
   });
 
   afterEach(async () => {
