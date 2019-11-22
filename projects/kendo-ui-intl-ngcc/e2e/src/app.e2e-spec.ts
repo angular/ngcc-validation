@@ -8,9 +8,14 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should format numbers', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('kendo-ui-intl-ngcc app is running!');
+    expect(page.getFormattedNumber()).toEqual('42,12 лв.');
+  });
+
+  it('should format dates', async() => {
+    page.navigateTo();
+    expect(page.getFormattedDate()).toEqual('22.11.2019 г.');
   });
 
   afterEach(async () => {

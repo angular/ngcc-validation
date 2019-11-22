@@ -5,7 +5,11 @@ export class AppPage {
     return browser.get(browser.baseUrl) as Promise<any>;
   }
 
-  getTitleText() {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
+  getFormattedNumber() {
+    return element(by.css('app-root .number')).getText() as Promise<string>;
+  }
+
+  getFormattedDate() {
+    return element(by.css('app-root .date')).getText() as Promise<string>;
   }
 }

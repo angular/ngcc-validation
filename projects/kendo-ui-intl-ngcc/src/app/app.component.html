@@ -10,11 +10,11 @@
 </div>
 <h3>Numbers</h3>
 <ul>
-  <li>{{ number | kendoNumber:'c':localeId }}</li>
+  <li class="number">{{ number | kendoNumber:'c':localeId }}</li>
   <li>{{ intlService.formatNumber(number, 'c') }}</li>
 </ul>
 <h3>Dates</h3>
 <ul>
-  <li>{{date | kendoDate:'d':localeId }}</li>
+  <li class="date">{{date | kendoDate:'d':localeId }}</li>
   <li>{{ intlService.formatDate(date, 'd') }}</li>
 </ul>

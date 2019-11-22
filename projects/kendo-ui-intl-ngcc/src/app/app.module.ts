@@ -15,7 +15,7 @@ import '@progress/kendo-angular-intl/locales/de/all';
   bootstrap:    [ AppComponent ],
   providers: [{
       provide: LOCALE_ID,
-      useValue: 'en-US'
+      useValue: 'bg-BG'
   }]
 })
 
