@@ -27,7 +27,7 @@ describe('kendo-angular-inputs', () => {
 
   it('should render colorgradient', async () => {
     await page.navigateTo();
-    expect(await element(by.css('kendo-colorgradient table tr')).isPresent()).toBe(true);
+    expect(await element(by.css('kendo-colorgradient .k-hsv-rectangle')).isPresent()).toBe(true);
   });
 
   it('should render colorpalette', async () => {
