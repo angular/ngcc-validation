@@ -5,7 +5,11 @@ export class AppPage {
     return browser.get(browser.baseUrl) as Promise<any>;
   }
 
-  getTitleText() {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
+  getButtonAt(index: number) {
+    return element(by.css('app-root button'));
+  }
+
+  getRippleOverlay() {
+    return element(by.css('app-root .k-ripple'));
   }
 }

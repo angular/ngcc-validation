@@ -8,9 +8,10 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('adds ripple overlay on button click', async() => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('kendo-ui-ripple-ngcc app is running!');
+    await page.getButtonAt(0).click();
+    expect(await page.getRippleOverlay().isPresent()).toBe(true);
   });
 
   afterEach(async () => {
