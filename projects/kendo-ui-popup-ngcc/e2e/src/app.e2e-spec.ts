@@ -8,9 +8,30 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getTitleText()).toEqual('kendo-ui-popup-ngcc app is running!');
+  it('should open popup', async () => {
+    await page.navigateTo();
+    await page.togglePopup();
+    expect(await page.getContent().getText()).toEqual('Popup content.');
+  });
+
+  it('should close popup', async () => {
+    await page.navigateTo();
+    await page.togglePopup();
+    await page.togglePopup();
+    expect(await page.getContent().isPresent()).toBe(false);
+  });
+
+  it('should open popup using service', async () => {
+    await page.navigateTo();
+    await page.togglePopup();
+    expect(await page.getTemplate().getText()).toEqual('Popup template.');
+  });
+
+  it('should close popup using service', async () => {
+    await page.navigateTo();
+    await page.togglePopup();
+    await page.togglePopup();
+    expect(await page.getTemplate().isPresent()).toBe(false);
   });
 
   afterEach(async () => {
