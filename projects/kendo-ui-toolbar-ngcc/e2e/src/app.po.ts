@@ -9,6 +9,6 @@ export class AppPage {
     return element(by.css('kendo-toolbar'));
   }
   getFirstButton() {
-    return element(by.css('kendo-toolbar-rendereri:first-child button'));
+    return element(by.css('kendo-toolbar-renderer:first-child button'));
   }
 }
