@@ -8,9 +8,10 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should render menu item', async() => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('kendo-ui-menu-ngcc app is running!');
+    const item = page.getMenuItemAt(0);
+    expect(await item.getText()).toEqual('Item1');
   });
 
   afterEach(async () => {
