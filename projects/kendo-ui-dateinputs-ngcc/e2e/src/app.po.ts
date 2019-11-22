@@ -10,7 +10,7 @@ export class AppPage {
   }
 
   getCalendarTitle(): ElementFinder {
-    return element(by.css('.k-calendar .k-calendar-header .k-title'));
+    return element.all(by.css('.k-calendar .k-calendar-header .k-title')).get(0);
   }
 
   getDateInput(): ElementFinder {
