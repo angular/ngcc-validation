@@ -8,7 +8,7 @@ import { IntlService, CldrIntlService } from '@progress/kendo-angular-intl';
 })
 export class AppComponent {
     public number = 42.123;
-    public date = new Date();
+    public date = new Date(2019, 10, 22, 10, 0);
 
     constructor(@Inject(LOCALE_ID) public localeId: string, public intlService: IntlService) {
     }
