@@ -1,1 +1,120 @@
-<kendo-multiviewcalendar></kendo-multiviewcalendar>
+<kendo-calendar
+  [value]="value"
+  [focusedDate]="focusedDate"
+  [min]="min"
+  [max]="max"
+  [topView]="'year'"
+>
+  <ng-template kendoCalendarMonthCellTemplate let-date>
+    <span>{{date.getDate()}} !!</span>
+  </ng-template>
+  <ng-template kendoCalendarNavigationItemTemplate let-title>
+    {{title}} !!
+  </ng-template>
+</kendo-calendar>
+
+<kendo-dateinput
+  [value]="value"
+  [format]="dateTimeFormat"
+  [min]="min"
+  [max]="max"
+  [spinners]="true"
+  [steps]="{ year: 10, day: 5, hour: 2, minute: 15 }"
+  [placeholder]="'Pick a date...'"
+>
+  <kendo-dateinput-messages
+    [increment]="'+'"
+    [decrement]="'-'"
+  >
+  </kendo-dateinput-messages>
+</kendo-dateinput>
+
+<kendo-datepicker
+  [value]="value"
+  [activeView]="'decade'"
+  [bottomView]="'year'"
+>
+  <kendo-datepicker-messages
+    [today]="'Hoy'"
+    [toggle]="'Cambiar calendario'"
+  >
+  </kendo-datepicker-messages>
+</kendo-datepicker>
+
+<kendo-daterange>
+  <kendo-dateinput
+    kendoDateRangeStartInput
+    [autoCorrectOn]="'change'"
+    [(value)]="range.start"
+  >
+  </kendo-dateinput>
+  <kendo-dateinput
+    kendoDateRangeEndInput
+    [autoCorrectOn]="'change'"
+    [(value)]="range.end"
+  >
+  </kendo-dateinput>
+  <kendo-daterange-popup
+    [animate]="false"
+    [appendTo]="'component'"
+    [anchorAlign]="{ horizontal: 'center', vertical: 'top' }"
+    [popupAlign]="{ horizontal: 'center', vertical: 'bottom' }"
+  >
+    <ng-template kendoDateRangePopupTemplate>
+      <kendo-multiviewcalendar kendoDateRangeSelection>
+        <kendo-multiviewcalendar-messages
+          [today]="'simera'"
+        >
+        </kendo-multiviewcalendar-messages>
+      </kendo-multiviewcalendar>
+    </ng-template>
+  </kendo-daterange-popup>
+</kendo-daterange>
+
+<kendo-datetimepicker
+  [value]="value"
+  [weekNumber]="true"
+  [cancelButton]="false"
+>
+  <ng-template kendoCalendarMonthCellTemplate let-date>
+    <span>{{date.getDate()}} !!</span>
+  </ng-template>
+  <ng-template kendoCalendarYearCellTemplate let-context="cellContext">
+    <span>{{context.formattedValue}} !!</span>
+  </ng-template>
+  <ng-template kendoCalendarDecadeCellTemplate let-context="cellContext">
+    <span>{{context.formattedValue}} !!</span>
+  </ng-template>
+  <ng-template kendoCalendarCenturyCellTemplate let-context="cellContext">
+    <span>{{context.formattedValue}} !!</span>
+  </ng-template>
+  <ng-template kendoCalendarHeaderTitleTemplate let-title>
+    {{title}} !!
+  </ng-template>
+  <ng-template kendoCalendarWeekNumberCellTemplate let-context="cellContext">
+    <span>{{context.formattedValue}} !!</span>
+  </ng-template>
+</kendo-datetimepicker>
+
+<kendo-timepicker
+  [value]="value"
+  [format]="timeFormat"
+  [steps]="{ hour: 2, minute: 15, second: 30 }"
+  [popupSettings]="{
+    appendTo: 'component',
+    animate: false,
+    popupClass: 'custom'
+  }"
+>
+</kendo-timepicker>
+
+<kendo-multiviewcalendar
+  [value]="value"
+  [min]="min"
+  [max]="max"
+>
+  <kendo-multiviewcalendar-messages
+    [today]="'kalitera aurio'"
+  >
+  </kendo-multiviewcalendar-messages>
+</kendo-multiviewcalendar>

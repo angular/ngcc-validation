@@ -1,0 +1,14 @@
+<div class="example-config">
+    <h6>Items: {{items | json}}</h6>
+</div>
+<div class="container-fluid">
+    <kendo-sortable
+        [kendoSortableBinding]="items"
+        [navigatable]="true"
+        [animation] = "true"
+        class="row"
+        itemClass="item col-xs-6 col-sm-3"
+        activeItemClass="item col-xs-6 col-sm-3 active"
+    >
+    </kendo-sortable>
+</div>

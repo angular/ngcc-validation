@@ -1,0 +1,19 @@
+   <div class="example-config">
+     Click on the label text to focus the associated input.
+   </div>
+   <div class="row example-wrapper" style="min-height: 450px;">
+     <div class="col-xs-12 col-md-4 example-col">
+       <label [for]="dropdown">DropDownList: </label>
+       <kendo-dropdownlist #dropdown [data]="['A', 'B', 'C']"></kendo-dropdownlist>
+     </div>
+
+    <div class="col-xs-12 col-md-4 example-col">
+      <label [for]="'input'">Input: </label>
+      <input id="input" />
+    </div>
+
+    <div class="col-xs-12 col-md-4 example-col">
+      <label for="inputString">Input: </label>
+      <input id="inputString" />
+    </div>
+  </div>

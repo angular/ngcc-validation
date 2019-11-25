@@ -1,0 +1,12 @@
+<div>
+    <button #anchor (click)="togglePopup(template)" class="k-button">{{toggleText}} Popup</button>
+</div>
+<kendo-popup [anchor]="anchor" (anchorViewportLeave)="show = false" *ngIf="show">
+  <div class="content">
+      <!-- User-defined content -->
+      Popup content.
+  </div>
+</kendo-popup>
+<ng-template #template>
+  <div class="template" style="margin: 30px;">Popup template.</div>
+</ng-template>

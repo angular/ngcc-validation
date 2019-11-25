@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "DejaVu Sans";
+  src: url("https://kendo.cdn.telerik.com/2018.2.620/styles/fonts/DejaVu/DejaVuSans.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DejaVu Sans";
+  font-weight: bold;
+  src: url("https://kendo.cdn.telerik.com/2018.2.620/styles/fonts/DejaVu/DejaVuSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DejaVu Sans";
+  font-style: italic;
+  src: url("https://kendo.cdn.telerik.com/2018.2.620/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DejaVu Sans";
+  font-weight: bold;
+  font-style: italic;
+  src: url("https://kendo.cdn.telerik.com/2018.2.620/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf") format("truetype");
+}
+
+.table {
+  font-family: "DejaVu Sans", "Arial", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+kendo-pdf-export {
+  font-family: "DejaVu Sans", "Arial", sans-serif;
+}

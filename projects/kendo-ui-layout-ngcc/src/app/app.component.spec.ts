@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'kendo-ui-dateinputs-ngcc'`, () => {
+  it(`should have as title 'kendo-ui-layout-ngcc'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('kendo-ui-dateinputs-ngcc');
+    expect(app.title).toEqual('kendo-ui-layout-ngcc');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('kendo-ui-dateinputs-ngcc app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('kendo-ui-layout-ngcc app is running!');
   });
 });

@@ -8061,7 +8061,8 @@
               "projects/kendo-ui-buttons-ngcc/src/assets"
             ],
             "styles": [
-              "projects/kendo-ui-buttons-ngcc/src/styles.css"
+              "projects/kendo-ui-buttons-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
             ],
             "scripts": []
           },
@@ -8126,7 +8127,8 @@
               "projects/kendo-ui-buttons-ngcc/src/assets"
             ],
             "styles": [
-              "projects/kendo-ui-buttons-ngcc/src/styles.css"
+              "projects/kendo-ui-buttons-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
             ],
             "scripts": []
           }
@@ -8278,6 +8280,125 @@
         }
       }
     },
+    "kendo-ui-conversational-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-conversational-ngcc",
+      "sourceRoot": "projects/kendo-ui-conversational-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-conversational-ngcc",
+            "index": "projects/kendo-ui-conversational-ngcc/src/index.html",
+            "main": "projects/kendo-ui-conversational-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-conversational-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-conversational-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-conversational-ngcc/src/favicon.ico",
+              "projects/kendo-ui-conversational-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-conversational-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-conversational-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-conversational-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-conversational-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-conversational-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-conversational-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-conversational-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-conversational-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-conversational-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-conversational-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-conversational-ngcc/src/favicon.ico",
+              "projects/kendo-ui-conversational-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-conversational-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-conversational-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-conversational-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-conversational-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-conversational-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-conversational-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-conversational-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
     "kendo-ui-dateinputs-ngcc": {
       "projectType": "application",
       "schematics": {},
@@ -8365,7 +8486,8 @@
               "projects/kendo-ui-dateinputs-ngcc/src/assets"
             ],
             "styles": [
-              "projects/kendo-ui-dateinputs-ngcc/src/styles.css"
+              "projects/kendo-ui-dateinputs-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
             ],
             "scripts": []
           }
@@ -8392,6 +8514,599 @@
           "configurations": {
             "production": {
               "devServerTarget": "kendo-ui-dateinputs-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-dialog-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-dialog-ngcc",
+      "sourceRoot": "projects/kendo-ui-dialog-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-dialog-ngcc",
+            "index": "projects/kendo-ui-dialog-ngcc/src/index.html",
+            "main": "projects/kendo-ui-dialog-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-dialog-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-dialog-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-dialog-ngcc/src/favicon.ico",
+              "projects/kendo-ui-dialog-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-dialog-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-dialog-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-dialog-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-dialog-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-dialog-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-dialog-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-dialog-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-dialog-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-dialog-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-dialog-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-dialog-ngcc/src/favicon.ico",
+              "projects/kendo-ui-dialog-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-dialog-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-dialog-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-dialog-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-dialog-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-dialog-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-dialog-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-dialog-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-dropdowns-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-dropdowns-ngcc",
+      "sourceRoot": "projects/kendo-ui-dropdowns-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-dropdowns-ngcc",
+            "index": "projects/kendo-ui-dropdowns-ngcc/src/index.html",
+            "main": "projects/kendo-ui-dropdowns-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-dropdowns-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-dropdowns-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-dropdowns-ngcc/src/favicon.ico",
+              "projects/kendo-ui-dropdowns-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-dropdowns-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-dropdowns-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-dropdowns-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-dropdowns-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-dropdowns-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-dropdowns-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-dropdowns-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-dropdowns-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-dropdowns-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-dropdowns-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-dropdowns-ngcc/src/favicon.ico",
+              "projects/kendo-ui-dropdowns-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-dropdowns-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-dropdowns-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-dropdowns-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-dropdowns-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-dropdowns-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-dropdowns-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-dropdowns-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-editor-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-editor-ngcc",
+      "sourceRoot": "projects/kendo-ui-editor-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-editor-ngcc",
+            "index": "projects/kendo-ui-editor-ngcc/src/index.html",
+            "main": "projects/kendo-ui-editor-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-editor-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-editor-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-editor-ngcc/src/favicon.ico",
+              "projects/kendo-ui-editor-ngcc/src/assets"
+            ],
+            "styles": [
+              "node_modules/@progress/kendo-theme-default/dist/all.css",
+              "projects/kendo-ui-editor-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-editor-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-editor-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-editor-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-editor-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-editor-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-editor-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-editor-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-editor-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-editor-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-editor-ngcc/src/favicon.ico",
+              "projects/kendo-ui-editor-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-editor-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-editor-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-editor-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-editor-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-editor-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-editor-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-editor-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-excel-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-excel-ngcc",
+      "sourceRoot": "projects/kendo-ui-excel-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-excel-ngcc",
+            "index": "projects/kendo-ui-excel-ngcc/src/index.html",
+            "main": "projects/kendo-ui-excel-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-excel-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-excel-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-excel-ngcc/src/favicon.ico",
+              "projects/kendo-ui-excel-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-excel-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-excel-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-excel-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-excel-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-excel-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-excel-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-excel-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-excel-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-excel-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-excel-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-excel-ngcc/src/favicon.ico",
+              "projects/kendo-ui-excel-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-excel-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-excel-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-excel-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-excel-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-excel-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-excel-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-excel-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-gauges-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-gauges-ngcc",
+      "sourceRoot": "projects/kendo-ui-gauges-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-gauges-ngcc",
+            "index": "projects/kendo-ui-gauges-ngcc/src/index.html",
+            "main": "projects/kendo-ui-gauges-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-gauges-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-gauges-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-gauges-ngcc/src/favicon.ico",
+              "projects/kendo-ui-gauges-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-gauges-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-gauges-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-gauges-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-gauges-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-gauges-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-gauges-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-gauges-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-gauges-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-gauges-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-gauges-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-gauges-ngcc/src/favicon.ico",
+              "projects/kendo-ui-gauges-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-gauges-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-gauges-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-gauges-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-gauges-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-gauges-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-gauges-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-gauges-ngcc:serve:production"
             }
           }
         }
@@ -8512,6 +9227,1195 @@
           "configurations": {
             "production": {
               "devServerTarget": "kendo-ui-grid-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-inputs-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-inputs-ngcc",
+      "sourceRoot": "projects/kendo-ui-inputs-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-inputs-ngcc",
+            "index": "projects/kendo-ui-inputs-ngcc/src/index.html",
+            "main": "projects/kendo-ui-inputs-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-inputs-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-inputs-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-inputs-ngcc/src/favicon.ico",
+              "projects/kendo-ui-inputs-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-inputs-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-inputs-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-inputs-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-inputs-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-inputs-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-inputs-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-inputs-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-inputs-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-inputs-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-inputs-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-inputs-ngcc/src/favicon.ico",
+              "projects/kendo-ui-inputs-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-inputs-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-inputs-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-inputs-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-inputs-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-inputs-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-inputs-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-inputs-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-intl-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-intl-ngcc",
+      "sourceRoot": "projects/kendo-ui-intl-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-intl-ngcc",
+            "index": "projects/kendo-ui-intl-ngcc/src/index.html",
+            "main": "projects/kendo-ui-intl-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-intl-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-intl-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-intl-ngcc/src/favicon.ico",
+              "projects/kendo-ui-intl-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-intl-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-intl-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-intl-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-intl-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-intl-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-intl-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-intl-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-intl-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-intl-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-intl-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-intl-ngcc/src/favicon.ico",
+              "projects/kendo-ui-intl-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-intl-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-intl-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-intl-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-intl-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-intl-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-intl-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-intl-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-label-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-label-ngcc",
+      "sourceRoot": "projects/kendo-ui-label-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-label-ngcc",
+            "index": "projects/kendo-ui-label-ngcc/src/index.html",
+            "main": "projects/kendo-ui-label-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-label-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-label-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-label-ngcc/src/favicon.ico",
+              "projects/kendo-ui-label-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-label-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-label-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-label-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-label-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-label-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-label-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-label-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-label-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-label-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-label-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-label-ngcc/src/favicon.ico",
+              "projects/kendo-ui-label-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-label-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-label-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-label-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-label-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-label-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-label-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-label-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-layout-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-layout-ngcc",
+      "sourceRoot": "projects/kendo-ui-layout-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-layout-ngcc",
+            "index": "projects/kendo-ui-layout-ngcc/src/index.html",
+            "main": "projects/kendo-ui-layout-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-layout-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-layout-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-layout-ngcc/src/favicon.ico",
+              "projects/kendo-ui-layout-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-layout-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-layout-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-layout-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-layout-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-layout-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-layout-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-layout-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-layout-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-layout-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-layout-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-layout-ngcc/src/favicon.ico",
+              "projects/kendo-ui-layout-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-layout-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-layout-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-layout-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-layout-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-layout-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-layout-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-layout-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-menu-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-menu-ngcc",
+      "sourceRoot": "projects/kendo-ui-menu-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-menu-ngcc",
+            "index": "projects/kendo-ui-menu-ngcc/src/index.html",
+            "main": "projects/kendo-ui-menu-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-menu-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-menu-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-menu-ngcc/src/favicon.ico",
+              "projects/kendo-ui-menu-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-menu-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-menu-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-menu-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-menu-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-menu-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-menu-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-menu-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-menu-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-menu-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-menu-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-menu-ngcc/src/favicon.ico",
+              "projects/kendo-ui-menu-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-menu-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-menu-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-menu-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-menu-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-menu-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-menu-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-menu-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-notification-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-notification-ngcc",
+      "sourceRoot": "projects/kendo-ui-notification-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-notification-ngcc",
+            "index": "projects/kendo-ui-notification-ngcc/src/index.html",
+            "main": "projects/kendo-ui-notification-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-notification-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-notification-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-notification-ngcc/src/favicon.ico",
+              "projects/kendo-ui-notification-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-notification-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
+
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-notification-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-notification-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-notification-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-notification-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-notification-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-notification-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-notification-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-notification-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-notification-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-notification-ngcc/src/favicon.ico",
+              "projects/kendo-ui-notification-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-notification-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-notification-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-notification-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-notification-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-notification-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-notification-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-notification-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-pdf-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-pdf-ngcc",
+      "sourceRoot": "projects/kendo-ui-pdf-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-pdf-ngcc",
+            "index": "projects/kendo-ui-pdf-ngcc/src/index.html",
+            "main": "projects/kendo-ui-pdf-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-pdf-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-pdf-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-pdf-ngcc/src/favicon.ico",
+              "projects/kendo-ui-pdf-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-pdf-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-pdf-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-pdf-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-pdf-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-pdf-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-pdf-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-pdf-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-pdf-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-pdf-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-pdf-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-pdf-ngcc/src/favicon.ico",
+              "projects/kendo-ui-pdf-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-pdf-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-pdf-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-pdf-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-pdf-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-pdf-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-pdf-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-pdf-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-popup-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-popup-ngcc",
+      "sourceRoot": "projects/kendo-ui-popup-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-popup-ngcc",
+            "index": "projects/kendo-ui-popup-ngcc/src/index.html",
+            "main": "projects/kendo-ui-popup-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-popup-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-popup-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-popup-ngcc/src/favicon.ico",
+              "projects/kendo-ui-popup-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-popup-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-popup-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-popup-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-popup-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-popup-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-popup-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-popup-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-popup-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-popup-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-popup-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-popup-ngcc/src/favicon.ico",
+              "projects/kendo-ui-popup-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-popup-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-popup-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-popup-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-popup-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-popup-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-popup-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-popup-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-progressbar-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-progressbar-ngcc",
+      "sourceRoot": "projects/kendo-ui-progressbar-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-progressbar-ngcc",
+            "index": "projects/kendo-ui-progressbar-ngcc/src/index.html",
+            "main": "projects/kendo-ui-progressbar-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-progressbar-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-progressbar-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-progressbar-ngcc/src/favicon.ico",
+              "projects/kendo-ui-progressbar-ngcc/src/assets"
+            ],
+            "styles": [
+              "node_modules/@progress/kendo-theme-default/dist/all.css",
+              "projects/kendo-ui-progressbar-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-progressbar-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-progressbar-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-progressbar-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-progressbar-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-progressbar-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-progressbar-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-progressbar-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-progressbar-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-progressbar-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-progressbar-ngcc/src/favicon.ico",
+              "projects/kendo-ui-progressbar-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-progressbar-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-progressbar-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-progressbar-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-progressbar-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-progressbar-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-progressbar-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-progressbar-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-ripple-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-ripple-ngcc",
+      "sourceRoot": "projects/kendo-ui-ripple-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-ripple-ngcc",
+            "index": "projects/kendo-ui-ripple-ngcc/src/index.html",
+            "main": "projects/kendo-ui-ripple-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-ripple-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-ripple-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-ripple-ngcc/src/favicon.ico",
+              "projects/kendo-ui-ripple-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-ripple-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-ripple-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-ripple-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-ripple-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-ripple-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-ripple-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-ripple-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-ripple-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-ripple-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-ripple-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-ripple-ngcc/src/favicon.ico",
+              "projects/kendo-ui-ripple-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-ripple-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-ripple-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-ripple-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-ripple-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-ripple-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-ripple-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-ripple-ngcc:serve:production"
             }
           }
         }
@@ -8663,6 +10567,719 @@
           "configurations": {
             "production": {
               "devServerTarget": "kendo-ui-scheduler-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-scrollview-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-scrollview-ngcc",
+      "sourceRoot": "projects/kendo-ui-scrollview-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-scrollview-ngcc",
+            "index": "projects/kendo-ui-scrollview-ngcc/src/index.html",
+            "main": "projects/kendo-ui-scrollview-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-scrollview-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-scrollview-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-scrollview-ngcc/src/favicon.ico",
+              "projects/kendo-ui-scrollview-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-scrollview-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-scrollview-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-scrollview-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-scrollview-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-scrollview-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-scrollview-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-scrollview-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-scrollview-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-scrollview-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-scrollview-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-scrollview-ngcc/src/favicon.ico",
+              "projects/kendo-ui-scrollview-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-scrollview-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-scrollview-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-scrollview-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-scrollview-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-scrollview-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-scrollview-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-scrollview-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-sortable-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-sortable-ngcc",
+      "sourceRoot": "projects/kendo-ui-sortable-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-sortable-ngcc",
+            "index": "projects/kendo-ui-sortable-ngcc/src/index.html",
+            "main": "projects/kendo-ui-sortable-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-sortable-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-sortable-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-sortable-ngcc/src/favicon.ico",
+              "projects/kendo-ui-sortable-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-sortable-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-sortable-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-sortable-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-sortable-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-sortable-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-sortable-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-sortable-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-sortable-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-sortable-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-sortable-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-sortable-ngcc/src/favicon.ico",
+              "projects/kendo-ui-sortable-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-sortable-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-sortable-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-sortable-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-sortable-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-sortable-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-sortable-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-sortable-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-toolbar-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-toolbar-ngcc",
+      "sourceRoot": "projects/kendo-ui-toolbar-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-toolbar-ngcc",
+            "index": "projects/kendo-ui-toolbar-ngcc/src/index.html",
+            "main": "projects/kendo-ui-toolbar-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-toolbar-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-toolbar-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-toolbar-ngcc/src/favicon.ico",
+              "projects/kendo-ui-toolbar-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-toolbar-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-toolbar-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-toolbar-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-toolbar-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-toolbar-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-toolbar-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-toolbar-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-toolbar-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-toolbar-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-toolbar-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-toolbar-ngcc/src/favicon.ico",
+              "projects/kendo-ui-toolbar-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-toolbar-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-toolbar-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-toolbar-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-toolbar-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-toolbar-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-toolbar-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-toolbar-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-tooltip-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-tooltip-ngcc",
+      "sourceRoot": "projects/kendo-ui-tooltip-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-tooltip-ngcc",
+            "index": "projects/kendo-ui-tooltip-ngcc/src/index.html",
+            "main": "projects/kendo-ui-tooltip-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-tooltip-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-tooltip-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-tooltip-ngcc/src/favicon.ico",
+              "projects/kendo-ui-tooltip-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-tooltip-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-tooltip-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-tooltip-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-tooltip-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-tooltip-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-tooltip-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-tooltip-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-tooltip-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-tooltip-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-tooltip-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-tooltip-ngcc/src/favicon.ico",
+              "projects/kendo-ui-tooltip-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-tooltip-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-tooltip-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-tooltip-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-tooltip-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-tooltip-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-tooltip-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-tooltip-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-treeview-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-treeview-ngcc",
+      "sourceRoot": "projects/kendo-ui-treeview-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-treeview-ngcc",
+            "index": "projects/kendo-ui-treeview-ngcc/src/index.html",
+            "main": "projects/kendo-ui-treeview-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-treeview-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-treeview-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-treeview-ngcc/src/favicon.ico",
+              "projects/kendo-ui-treeview-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-treeview-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-treeview-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-treeview-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-treeview-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-treeview-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-treeview-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-treeview-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-treeview-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-treeview-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-treeview-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-treeview-ngcc/src/favicon.ico",
+              "projects/kendo-ui-treeview-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-treeview-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-treeview-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-treeview-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-treeview-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-treeview-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-treeview-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-treeview-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kendo-ui-upload-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/kendo-ui-upload-ngcc",
+      "sourceRoot": "projects/kendo-ui-upload-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-ui-upload-ngcc",
+            "index": "projects/kendo-ui-upload-ngcc/src/index.html",
+            "main": "projects/kendo-ui-upload-ngcc/src/main.ts",
+            "polyfills": "projects/kendo-ui-upload-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-upload-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kendo-ui-upload-ngcc/src/favicon.ico",
+              "projects/kendo-ui-upload-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-upload-ngcc/src/styles.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-ui-upload-ngcc/src/environments/environment.ts",
+                  "with": "projects/kendo-ui-upload-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-ui-upload-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-ui-upload-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-ui-upload-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-ui-upload-ngcc/src/test.ts",
+            "polyfills": "projects/kendo-ui-upload-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/kendo-ui-upload-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-ui-upload-ngcc/karma.conf.js",
+            "assets": [
+              "projects/kendo-ui-upload-ngcc/src/favicon.ico",
+              "projects/kendo-ui-upload-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/kendo-ui-upload-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-ui-upload-ngcc/tsconfig.app.json",
+              "projects/kendo-ui-upload-ngcc/tsconfig.spec.json",
+              "projects/kendo-ui-upload-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kendo-ui-upload-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "kendo-ui-upload-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kendo-ui-upload-ngcc:serve:production"
             }
           }
         }

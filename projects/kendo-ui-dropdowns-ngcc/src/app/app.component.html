@@ -1,0 +1,26 @@
+<kendo-autocomplete
+  [data]="primitiveData"
+  kendoDropDownFilter
+>
+</kendo-autocomplete>
+
+<kendo-combobox
+  [data]="largeListData"
+  [virtual]="true"
+>
+</kendo-combobox>
+
+<kendo-dropdownlist
+  [data]="groupedData"
+  [valueField]="'value'"
+  [textField]="'text'"
+>
+</kendo-dropdownlist>
+
+<kendo-multiselect
+  [data]="objectData"
+  [valueField]="'value'"
+  [textField]="'text'"
+  [valuePrimitive]="true"
+>
+</kendo-multiselect>
