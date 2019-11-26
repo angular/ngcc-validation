@@ -3575,22 +3575,12 @@
   resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.0.tgz#8b63ab7f1aa5321248aad5ac890a485656dcea4d"
   integrity sha512-te5lMAWii1uEJ4FwLjzdlbw3+n0FZNOvFXHxQDKeT0dilh7HOzdMzV2TrJVUzq8ep7J4Na8OUYPRLSQkJHAlrg==
 
-"@uirouter/angular-hybrid@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@uirouter/angular-hybrid/-/angular-hybrid-9.0.0.tgz#27cfe576cc66f63c5b2f6cd6edf799672f8f161a"
-  integrity sha512-zaEfYwdfW1TARpsbnvTxlX9b6RfTWpbdhvz7mEHtvreWf/bd4u6rf4GgWUaI5wm10KyMhut1kXYCMEgRBfLo2Q==
+"@uirouter/angular-hybrid@^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@uirouter/angular-hybrid/-/angular-hybrid-10.0.0.tgz#cfec9eefdf3d22771479f99b32e10591001b3fdb"
+  integrity sha512-x1aD6eN4FSvCeODBOTCIz9NFXgAyLeu+SRw+qG0sH84J6cTQFWjm6V79kLwLiY7kHxwDBITMgcyKKO3YsPdZyg==
   dependencies:
-    "@uirouter/angular" "5.0.0"
-    "@uirouter/angularjs" "1.0.23"
-    "@uirouter/core" "6.0.1"
-
-"@uirouter/angular@5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@uirouter/angular/-/angular-5.0.0.tgz#621e552c7688078363c297b407b589e570bd6154"
-  integrity sha512-H59jDcHtz9J4qGMNvx73O55pYm2Edx6fhRpBmRlDSi7ugHOB4aWUk7m6d74OzJgYYXteE1r5Zr77TVDv0mv1uA==
-  dependencies:
-    "@uirouter/core" "^6.0.1"
-    "@uirouter/rx" "^0.6.0"
+    tslib "^1.9.0"
 
 "@uirouter/angular@6.0.1":
   version "6.0.1"
@@ -3599,14 +3589,7 @@
   dependencies:
     tslib "^1.9.0"
 
-"@uirouter/angularjs@1.0.23":
-  version "1.0.23"
-  resolved "https://registry.yarnpkg.com/@uirouter/angularjs/-/angularjs-1.0.23.tgz#aeec0f96b0c42187c5044ef244ba6ccb75a5d835"
-  integrity sha512-r4hLSw7R3mwXGC5Sq7yxNlBK1sSzQUm/1MzigwwYRHoMO5uKcBPUhxFYx5U7kufP2Xl1165KeZvRsLCh0/Z1ng==
-  dependencies:
-    "@uirouter/core" "6.0.1"
-
-"@uirouter/core@6.0.1", "@uirouter/core@^6.0.1":
+"@uirouter/core@6.0.1":
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/@uirouter/core/-/core-6.0.1.tgz#93b02a5d178a7ab7313f34b7b3f019a000d23396"
   integrity sha512-mHCutiHtDDRKYmrJ92XPKDoSb2bgqaDyUpHdF4hUE+riwgkCvGdBjL8u+VDTcV3slBAk6B0LBIOIajjWkkObbQ==
