@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import '@ngxs/store';
+import { NgxsModule } from '@ngxs/store';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +10,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgxsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
