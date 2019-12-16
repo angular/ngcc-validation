@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import '@ngxs/storage-plugin';
+import { NgxsModule } from '@ngxs/store';
+import { NgxsStoragePluginModule } from '@ngxs/storage-plugin';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +11,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgxsModule.forRoot(),
+    NgxsStoragePluginModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
