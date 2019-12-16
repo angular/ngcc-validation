@@ -8,10 +8,21 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('adds ripple overlay on button click', async() => {
-    page.navigateTo();
-    await page.getButtonAt(0).click();
-    expect(await page.getRippleOverlay().isPresent()).toBe(true);
+  it('adds ripple overlay on button click', async () => {
+    const firstButton = page.getButtonAt(0);
+    const secondButton = page.getButtonAt(1);
+
+    await page.navigateTo();
+    expect(page.isRippleTarget(firstButton)).toBe(false);
+    expect(page.isRippleTarget(secondButton)).toBe(false);
+
+    await firstButton.click();
+    expect(page.isRippleTarget(firstButton)).toBe(true);
+    expect(page.isRippleTarget(secondButton)).toBe(false);
+
+    await secondButton.click();
+    expect(page.isRippleTarget(firstButton)).toBe(false);
+    expect(page.isRippleTarget(secondButton)).toBe(true);
   });
 
   afterEach(async () => {
