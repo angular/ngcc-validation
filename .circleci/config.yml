@@ -95,7 +95,7 @@ jobs:
       - attach_workspace:
           at: *working_directory
       # Run tests!
-      - run: yarn ngcc --create-ivy-entry-points --first-only --properties module main
+      - run: yarn ngcc --no-async --create-ivy-entry-points --first-only --properties module main
       - notify_webhook_on_fail:
           webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
 
