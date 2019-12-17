@@ -11,6 +11,6 @@ export class AppPage {
   }
 
   getChartSize() {
-    return element(by.css(('.chart.line-chart.ng-tns-c15-1'))).getSize() as Promise<ISize>;
+    return element(by.css(('svg.ngx-charts'))).getSize() as Promise<ISize>;
   }
 }

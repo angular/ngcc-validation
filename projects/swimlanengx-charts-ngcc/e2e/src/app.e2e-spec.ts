@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should render a chart', async () => {
     page.navigateTo();
-    expect((await page.getChartSize()).height).not.toBe(0);
+    expect((await page.getChartSize()).height).toBeGreaterThan(390);
   });
 
   afterEach(async () => {
