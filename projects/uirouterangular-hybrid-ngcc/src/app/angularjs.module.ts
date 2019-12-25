@@ -1,10 +1,12 @@
-import * as angular from "angular";
-import uiRouter from "@uirouter/angularjs";
-import { upgradeModule } from "@uirouter/angular-hybrid";
+import * as angular from 'angular';
+import { UrlService } from '@uirouter/core';
 
-export const sampleAppModuleAngularJS = angular.module("sampleapp", [
-  uiRouter,
-  upgradeModule.name
-]);
-
-sampleAppModuleAngularJS.config([ '$urlServiceProvider', ($urlService) => $urlService.deferIntercept() ]);
+export const sampleAppModuleAngularJS = angular
+    .module('sampleapp', [
+      'ui.router',
+      'ui.router.upgrade',
+    ])
+    .config([
+      '$urlServiceProvider',
+      ($urlService: UrlService) => $urlService.deferIntercept(),
+    ]);
