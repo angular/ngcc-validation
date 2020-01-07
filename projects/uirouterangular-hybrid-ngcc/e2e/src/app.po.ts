@@ -3,18 +3,18 @@ import { browser, by, element } from 'protractor';
 export class AppPage {
   async navigateTo() {
     await browser.waitForAngularEnabled(false);
-    return browser.get(browser.baseUrl) as Promise<any>;
+    await browser.get(browser.baseUrl);
   }
 
-  getAnchor() {
-    return element(by.css('a')).getText() as Promise<string>;
+  async getAnchor() {
+    return element(by.css('a')).getText();
   }
 
   async clickAnchor() {
     await element(by.css('a')).click();
   }
 
-  getChildMessage() {
-    return element(by.css('p#child')).getText(); 
+  async getChildMessage() {
+    return element(by.css('p#child')).getText();
   }
 }

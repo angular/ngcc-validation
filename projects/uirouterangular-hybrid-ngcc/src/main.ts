@@ -1,7 +1,4 @@
-import * as angular from "angular";
-import 'zone.js';
-import { enableProdMode } from '@angular/core';
-import { NgZone } from '@angular/core';
+import { enableProdMode, NgZone } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { UIRouter, UrlService } from '@uirouter/core';
 
