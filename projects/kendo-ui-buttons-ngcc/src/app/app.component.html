@@ -1,2 +1,51 @@
 <h1>{{title}} app is running!</h1>
-<button id="button1" kendoButton (click)="onButtonClick()" [primary]="true">My Kendo UI Button</button>
+<div class="example-wrapper">
+  <div class="example-col">
+    <p>Button</p>
+    <button kendoButton (click)="onButtonClick()">Default</button>
+    <button kendoButton (click)="onButtonClick()" [primary]="true">Primary</button>
+    <button kendoButton (click)="onButtonClick()" [disabled]="true">Disabled</button>
+  </div>
+  <div class="example-col">
+    <p>ButtonGroup</p>
+    <kendo-buttongroup>
+      <button kendoButton [toggleable]="true">
+        Option A
+      </button>
+      <button kendoButton [toggleable]="true">
+        Option B
+      </button>
+      <button kendoButton [toggleable]="true">
+        Option C
+      </button>
+    </kendo-buttongroup>
+  </div>
+  <div class="example-col">
+      <p>DropDownButton</p>
+      <kendo-dropdownbutton
+          [data]="dropDownButtonItems"
+          [icon]="'cog'"
+          (itemClick)="onSplitButtonItemClick($event)">
+          User Settings
+      </kendo-dropdownbutton>
+  </div>
+  <div class="example-col">
+      <p>SplitButton</p>
+      <kendo-splitbutton
+          [data]="splitButtonItems"
+          [icon]="'paste'"
+          (itemClick)="onSplitButtonItemClick($event)"
+          (buttonClick)="onSplitButtonClick()">
+          Paste
+      </kendo-splitbutton>
+  </div>
+  <div class="example-col">
+      <p>Chip</p>
+      <kendo-chip-list [selection]="'multiple'">
+          <kendo-chip
+              *ngFor="let chip of chips"
+              [label]="chip"
+          ></kendo-chip>
+      </kendo-chip-list>
+  </div>
+</div>

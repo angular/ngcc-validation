@@ -10,6 +10,6 @@ export class AppPage {
   }
 
   getButton() {
-    return element(by.id('button1'));
+    return element(by.css('button'));
   }
 }

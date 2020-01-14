@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'kendo-ui-misc-ngcc';
   onButtonClick() {}
+  chips = [ "Chips", "Snack", "Smack"];
 }
