@@ -5771,6 +5771,158 @@
         }
       }
     },
+    "barista-components-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/barista-components-ngcc",
+      "sourceRoot": "projects/barista-components-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/barista-components-ngcc",
+            "index": "projects/barista-components-ngcc/src/index.html",
+            "main": "projects/barista-components-ngcc/src/main.ts",
+            "polyfills": "projects/barista-components-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/barista-components-ngcc/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/barista-components-ngcc/src/favicon.ico",
+              "projects/barista-components-ngcc/src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/@dynatrace/barista-fonts/fonts/",
+                "output": "/fonts"
+              },
+              {
+                "glob": "metadata.json",
+                "input": "node_modules/@dynatrace/barista-icons",
+                "output": "/assets/icons"
+              },
+              {
+                "glob": "*.svg",
+                "input": "node_modules/@dynatrace/barista-icons",
+                "output": "/assets/icons"
+              }
+            ],
+            "styles": [
+              "node_modules/@dynatrace/barista-fonts/typography.scss",
+              "node_modules/@dynatrace/barista-components/style/index.scss",
+              "projects/barista-components-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/barista-components-ngcc/src/environments/environment.ts",
+                  "with": "projects/barista-components-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "barista-components-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "barista-components-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "barista-components-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/barista-components-ngcc/src/test.ts",
+            "polyfills": "projects/barista-components-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/barista-components-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/barista-components-ngcc/karma.conf.js",
+            "assets": [
+              "projects/barista-components-ngcc/src/favicon.ico",
+              "projects/barista-components-ngcc/src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/@dynatrace/barista-fonts/fonts/",
+                "output": "/fonts"
+              },
+              {
+                "glob": "metadata.json",
+                "input": "node_modules/@dynatrace/barista-icons",
+                "output": "/assets/icons"
+              },
+              {
+                "glob": "*.svg",
+                "input": "node_modules/@dynatrace/barista-icons",
+                "output": "/assets/icons"
+              }
+            ],
+            "styles": [
+              "node_modules/@dynatrace/barista-fonts/typography.scss",
+              "node_modules/@dynatrace/barista-components/style/index.scss",
+              "projects/barista-components-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/barista-components-ngcc/tsconfig.app.json",
+              "projects/barista-components-ngcc/tsconfig.spec.json",
+              "projects/barista-components-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/barista-components-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "barista-components-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "barista-components-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
     "bugsnagplugin-angular-ngcc": {
       "projectType": "application",
       "schematics": {},
