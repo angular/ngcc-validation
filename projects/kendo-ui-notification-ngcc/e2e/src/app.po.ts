@@ -6,7 +6,7 @@ export class AppPage {
   }
 
   getButtonAt(index: number) {
-    return element(by.css('app-root button'));
+    return element.all(by.css('app-root button')).get(index);
   }
 
   getNotificationText() {
