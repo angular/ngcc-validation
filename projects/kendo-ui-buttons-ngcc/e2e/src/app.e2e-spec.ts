@@ -1,5 +1,5 @@
 import { AppPage } from './app.po';
-import { browser, logging } from 'protractor';
+import { browser, logging, element, by } from 'protractor';
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -11,9 +11,16 @@ describe('workspace-project App', () => {
   it('should display welcome message', () => {
     page.navigateTo();
     expect(page.getTitleText()).toEqual('kendo-ui-misc-ngcc app is running!');
-    expect(page.getButton().getText()).toEqual('My Kendo UI Button');
+    expect(page.getButton().getText()).toEqual('Default');
     expect(page.getButton().getAttribute('class')).toContain('k-button');
-    expect(page.getButton().getAttribute('class')).toContain('k-primary');
+  });
+  it('should render buttons components', async () => {
+    await page.navigateTo();
+    expect(await element(by.css("kendo-buttongroup")).isPresent()).toBe(true);
+    expect(await element(by.css("kendo-chip")).isPresent()).toBe(true);
+    expect(await element(by.css("kendo-chip-list")).isPresent()).toBe(true);
+    expect(await element(by.css("kendo-dropdownbutton")).isPresent()).toBe(true);
+    expect(await element(by.css("kendo-splitbutton")).isPresent()).toBe(true);
   });
 
   afterEach(async () => {
