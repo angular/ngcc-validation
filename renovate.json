@@ -21,9 +21,29 @@
     },
     {
       "packagePatterns": [
-        "^@angular.*"
+        "^@angular/"
       ],
-      "groupName": "angular"
+      "excludePackagePatterns": [
+        "^@angular-devkit/",
+        "^@angular/cli$",
+        "^@angular/cdk$",
+        "^@angular/material$"
+      ],
+      "groupName": "angular-framework"
+    },
+    {
+      "packagePatterns": [
+        "^@angular-devkit/",
+        "^@angular/cli$"
+      ],
+      "groupName": "angular-cli"
+    },
+    {
+      "packagePatterns": [
+        "^@angular/cdk$",
+        "^@angular/material$"
+      ],
+      "groupName": "angular-components"
     },
     {
       "packagePatterns": [
