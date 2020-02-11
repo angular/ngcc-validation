@@ -10529,12 +10529,12 @@ ngx-spinner@8.1.0:
   dependencies:
     tslib "^1.9.0"
 
-ngx-swiper-wrapper@8.0.2:
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/ngx-swiper-wrapper/-/ngx-swiper-wrapper-8.0.2.tgz#780329e2493e9be26478aee623c67e38a6f66f3e"
-  integrity sha512-rL1h1x1bYpRx1nTyJquCVdgwhQXqProIHb8hfC2oElJEYBO/fOqCbdmNG5NfkFOtKCrIVVfH9n0rc7whLQCmhQ==
+ngx-swiper-wrapper@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/ngx-swiper-wrapper/-/ngx-swiper-wrapper-9.0.0.tgz#13dc6281f2d12264e35806b5c0e413d37dd6c591"
+  integrity sha512-mvDZl+Z6oYGH0algnfU+zwIr7XmiSREmmK+PcCdq7sho+mwdjySOFMxkQ0dblFBWGy+OM2YzWDh9yh1HQpPYcg==
   dependencies:
-    swiper "^4.5.0"
+    swiper "^5.3.0"
 
 ngx-toastr@12.0.0:
   version "12.0.0"
@@ -13735,18 +13735,18 @@ svgo@^1.0.0:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
-swiper@^4.5.0:
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-4.5.1.tgz#ed43998e780ceb478610079c8d23fd425eca636f"
-  integrity sha512-se6I7PWWu950NAMXXT+ENtF/6SVb8mPyO+bTfNxbQBILSeLqsYp3Ndap+YOA0EczOIUlea274PKejT6gKZDseA==
-  dependencies:
-    dom7 "^2.1.3"
-    ssr-window "^1.0.1"
-
 swiper@^5.0.0:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/swiper/-/swiper-5.2.1.tgz#72070777b9efb1318546ba48d7154939cd170196"
   integrity sha512-K9OGzPCkoER3j+Er9uaj8Tj89MBUex8gANX747FdzN6STG2WFuG3EhsX/05dCd2X4bewIooluoZHVgOagfR/nQ==
+  dependencies:
+    dom7 "^2.1.3"
+    ssr-window "^1.0.1"
+
+swiper@^5.3.0:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-5.3.1.tgz#05a8e989daec0bf2841779f4f0d6fce9db259b9e"
+  integrity sha512-H44Wf9hu1o1xtexSqjP+toGwAapUyQMt1hy/77ZRFURdWI1oOwGUCUdZCc8a1Zuh1Ud16u3Th+NdFJI3HIRNrw==
   dependencies:
     dom7 "^2.1.3"
     ssr-window "^1.0.1"
