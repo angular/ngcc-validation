@@ -6,8 +6,6 @@ if (!isMainThread) {
     throw new Error('workerData must be a string');
   }
   try {
-    // todo: the below should be npm ci instead of npm i, so that we use frozen lock files
-    // However currently the lock files are outdated and we need to update them.
     const res = execSync(workerData, { stdio: 'pipe' });
     parentPort.postMessage({
       success: true,
