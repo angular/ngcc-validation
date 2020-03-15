@@ -26,7 +26,7 @@ function runCmd(cmd, retryAttempts = 1) {
   } catch (err) {
     if (retryAttempts > 0) {
       console.log(`Retrying command '${cmd}'...`);
-      return runCmd(cmd, --retryAttempts);
+      return runCmd(cmd, retryAttempts - 1);
     } else {
       throw err;
     }
