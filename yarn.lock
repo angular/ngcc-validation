@@ -2131,36 +2131,31 @@
   resolved "https://registry.yarnpkg.com/@clr/ui/-/ui-3.0.1.tgz#a296257094bd6a2bdd8a4d25fa78bbac58aa1a04"
   integrity sha512-/g7ohS68dHFcz9FQSjy2MmcGQlKT7T/nK14sY+maSLUB8f1ht5fM4WJ/PGv2mPm7US4Ag8BXTQnWdXR6P/BMUw==
 
-"@covalent/core@2.1.1", "@covalent/core@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@covalent/core/-/core-2.1.1.tgz#6fc63bb001fbf67d6b4ec2ef0658e6f89477dbb1"
-  integrity sha512-3qswAHp4nQhwI+zA2B5g7zxHe0b/EVvJBo9UF6ggevy03CmKOPs5wJFzEsKwCFBtArIGbwKwhpVNwfW5D2j0mA==
-  dependencies:
-    tslib "^1.9.0"
+"@covalent/core@3.0.0", "@covalent/core@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@covalent/core/-/core-3.0.0.tgz#eb0e9c7456dd9eba139fcd5aa3d71da475334cc1"
+  integrity sha512-2e2wS7IzPkwuXbfYYqov83pkFaVeA29oGj11AncbFrXdG3qUH/QSUsaVoWO8utgsIMqBGJaq6s5xi3DFYjIQiQ==
 
-"@covalent/dynamic-forms@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@covalent/dynamic-forms/-/dynamic-forms-2.1.1.tgz#ec4a2628ee259489b345e47ae5a48654ae300dfb"
-  integrity sha512-0PNKBlMdrNEZnv5p8O0C3l4ymxnLmhRKCFIICTrqWrzHMiZzk6fi8q0B5vVjfqU1yjU17qHlPYyDbRuRFeEF2A==
+"@covalent/dynamic-forms@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@covalent/dynamic-forms/-/dynamic-forms-3.0.0.tgz#f65acabd2c42beacc304a8b8f5c78b0fd3e70a27"
+  integrity sha512-bqY6PWt/Vbc8JXAUSHgT9QZH7hWUgkgU9GQZPFCztXguurS1lZs38mfm1discnKVrUK66dNsucLVwBzxge8xAQ==
   dependencies:
-    "@covalent/core" "^2.1.1"
-    tslib "^1.9.0"
+    "@covalent/core" "^3.0.0"
 
-"@covalent/highlight@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@covalent/highlight/-/highlight-2.1.1.tgz#0c29fce8211d84a86f37620d89161c8965375d9f"
-  integrity sha512-TWgQ3AT6CGdUfGySBdMZBDqktuSzgw23eswCU7Tphcsja/9JH63v+L05BgXeTPfOv6Jd9V0fQ9WxrWFDGU40xg==
+"@covalent/highlight@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@covalent/highlight/-/highlight-3.0.0.tgz#2e2f31d1a6135ca529d841a11239c9940d056ff8"
+  integrity sha512-PZxIXwzX7aSzS+A0iNtJpApRhHt92aUJQLfWLLs/2xzkDOPVnx7AnuSbPZp7NYJbXSx4UpGpuWqeuQLmL8wJDA==
   dependencies:
     highlight.js "^9.13.1"
-    tslib "^1.9.0"
 
-"@covalent/markdown@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@covalent/markdown/-/markdown-2.1.1.tgz#1ede0280c1ff9fd3263114a2d2edd54710272112"
-  integrity sha512-FHd1rbXWvT74IgEyuPAoKOWThFnw8Upgr6I+UTRHppcoacJXEU5svJ6QfNLBwFUWggF8MeLrgtnysiTe4qn+8Q==
+"@covalent/markdown@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@covalent/markdown/-/markdown-3.0.0.tgz#b6b99e2815ab5f7b025f5f19adde471f3e17abd4"
+  integrity sha512-RfOrnrxp96Zxc2406AAP+uhbWc7O3WA/VRT/F95kjHQTCYBqsFC4LnrIrnDUzO6HZPi+WzIHOIBe/3ZfFLnL1Q==
   dependencies:
-    showdown "^1.9.0"
-    tslib "^1.9.0"
+    showdown "^1.9.1"
 
 "@cypress/webpack-preprocessor@~4.1.2":
   version "4.1.2"
@@ -13530,7 +13525,7 @@ shell-quote@^1.6.1:
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
   integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
 
-showdown@^1.8.6, showdown@^1.9.0:
+showdown@^1.8.6, showdown@^1.9.1:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/showdown/-/showdown-1.9.1.tgz#134e148e75cd4623e09c21b0511977d79b5ad0ef"
   integrity sha512-9cGuS382HcvExtf5AHk7Cb4pAeQQ+h0eTr33V1mu+crYWV4KvWAw6el92bDrqGEk5d46Ai/fhbEUwqJ/mTCNEA==
