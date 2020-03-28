@@ -46,7 +46,7 @@ jobs:
   setup:
     executor: action-executor
     steps:
-      # Checkout, Download and cache dependencies
+      # Checkout, download and cache dependencies
       - checkout
       - restore_cache:
           name: Restore Yarn Package Cache
@@ -64,14 +64,27 @@ jobs:
           root: *working_directory
           paths:
             - ./*
-  build:
+  build_es5:
     executor: action-executor
     resource_class: xlarge
     parallelism: 4
     steps:
       - attach_workspace:
           at: *working_directory
-      # run tests!
+      # Run tests!
+      - run: yarn build --nb-shards=${CIRCLE_NODE_TOTAL} --shard=${CIRCLE_NODE_INDEX}
+      - notify_webhook_on_fail:
+          webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
+  build_es2015:
+    executor: action-executor
+    resource_class: xlarge
+    parallelism: 4
+    steps:
+      - attach_workspace:
+          at: *working_directory
+      # Switch `tsconfig.json` to target es2015.
+      - run: node --eval "const tsCfgPath = './tsconfig.json', tsCfg = require(tsCfgPath); tsCfg.compilerOptions.target = 'es2015'; fs.writeFileSync(tsCfgPath, JSON.stringify(tsCfg))"
+      # Run tests!
       - run: yarn build --nb-shards=${CIRCLE_NODE_TOTAL} --shard=${CIRCLE_NODE_INDEX}
       - notify_webhook_on_fail:
           webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
@@ -81,6 +94,9 @@ workflows:
   default_workflow:
     jobs:
       - setup
-      - build:
+      - build_es5:
+          requires:
+            - setup
+      - build_es2015:
           requires:
             - setup
