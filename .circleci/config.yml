@@ -64,7 +64,7 @@ jobs:
           root: *working_directory
           paths:
             - ./*
-  build_es5:
+  build_es5_cli:
     executor: action-executor
     resource_class: xlarge
     parallelism: 4
@@ -75,7 +75,7 @@ jobs:
       - run: yarn build --nb-shards=${CIRCLE_NODE_TOTAL} --shard=${CIRCLE_NODE_INDEX}
       - notify_webhook_on_fail:
           webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
-  build_es2015:
+  build_es2015_cli:
     executor: action-executor
     resource_class: xlarge
     parallelism: 4
@@ -88,15 +88,57 @@ jobs:
       - run: yarn build --nb-shards=${CIRCLE_NODE_TOTAL} --shard=${CIRCLE_NODE_INDEX}
       - notify_webhook_on_fail:
           webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
+  build_main_standalone:
+    executor: action-executor
+    resource_class: xlarge
+    steps:
+      - attach_workspace:
+          at: *working_directory
+      # Run tests!
+      - run: mv ngcc.config.standalone.js ngcc.config.js
+      - run: yarn ngcc --create-ivy-entry-points --error-on-failed-entry-point --first-only --properties main module
+      - notify_webhook_on_fail:
+          webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
+  build_es5_standalone:
+    executor: action-executor
+    resource_class: xlarge
+    steps:
+      - attach_workspace:
+          at: *working_directory
+      # Run tests!
+      - run: mv ngcc.config.standalone.js ngcc.config.js
+      - run: yarn ngcc --create-ivy-entry-points --error-on-failed-entry-point --first-only --properties browser module main
+      - notify_webhook_on_fail:
+          webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
+  build_es2015_standalone:
+    executor: action-executor
+    resource_class: xlarge
+    steps:
+      - attach_workspace:
+          at: *working_directory
+      # Run tests!
+      - run: mv ngcc.config.standalone.js ngcc.config.js
+      - run: yarn ngcc --create-ivy-entry-points --error-on-failed-entry-point --first-only --properties es2015 browser module main
+      - notify_webhook_on_fail:
+          webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
 
 workflows:
   version: 2
   default_workflow:
     jobs:
       - setup
-      - build_es5:
+      - build_es5_cli:
           requires:
             - setup
-      - build_es2015:
+      - build_es2015_cli:
+          requires:
+            - setup
+      - build_main_standalone:
+          requires:
+            - setup
+      - build_es5_standalone:
+          requires:
+            - setup
+      - build_es2015_standalone:
           requires:
             - setup
