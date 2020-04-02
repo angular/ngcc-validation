@@ -1,4 +1,4 @@
-import chalk from 'chalk';
+import * as chalk from 'chalk';
 import { join } from 'path';
 import { Worker } from 'worker_threads';
 import { argv } from 'yargs';
