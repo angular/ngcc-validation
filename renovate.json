@@ -27,6 +27,7 @@
         "^@angular-devkit/",
         "^@angular/cli$",
         "^@angular/cdk$",
+        "^@angular/fire$",
         "^@angular/material"
       ],
       "groupName": "angular-framework"
@@ -44,6 +45,12 @@
         "^@angular/material"
       ],
       "groupName": "angular-components"
+    },
+    {
+      "packagePatterns": [
+        "^@angular/fire$"
+      ],
+      "groupName": "angular-fire"
     },
     {
       "packagePatterns": [
