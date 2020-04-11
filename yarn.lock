@@ -4741,15 +4741,15 @@ anymatch@~3.1.1:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-apollo-angular-link-http-batch@1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/apollo-angular-link-http-batch/-/apollo-angular-link-http-batch-1.7.0.tgz#7e17240f53c48f82dae27fc6bb24d13dde8224f7"
-  integrity sha512-waK/0CwVuAZfegqIzv+S/r5JKeHXj6cBe1djfm8fIl8rer4A+qJYCX/lf9Lxqjzk/EQtsxxi1j6FO9t/UpEtMg==
+apollo-angular-link-http-batch@1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/apollo-angular-link-http-batch/-/apollo-angular-link-http-batch-1.8.0.tgz#80cc442944e97d00de70445bc3eadcef5cb29782"
+  integrity sha512-wb2QJrqvtLmBaBRYFPAZH5NIvFva4IvrR3XQBegYZjLhBrcTpPSs4kggVLC5XMyUTrx9VNM5yVEDH20mPB7O7Q==
   dependencies:
-    apollo-angular-link-http-common "~1.8.0"
+    apollo-angular-link-http-common "~1.9.0"
     apollo-link "^1.0.0"
     apollo-link-batch "^1.1.2"
-    tslib "^1.9.0"
+    tslib "^1.11.0"
 
 apollo-angular-link-http-common@~1.8.0:
   version "1.8.0"
@@ -4757,6 +4757,13 @@ apollo-angular-link-http-common@~1.8.0:
   integrity sha512-Dx/OXIOT8RBIIxr9cUSbes1Qnolqgy678o5qT/oDE3/pHcBLiJhTph57Nqhr1/zRYU6fnhKJ6E50wFX7/5LI5g==
   dependencies:
     tslib "^1.9.0"
+
+apollo-angular-link-http-common@~1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/apollo-angular-link-http-common/-/apollo-angular-link-http-common-1.9.0.tgz#d3162509d73d6c3c070c6a69fa30ceec9d6a1179"
+  integrity sha512-71jtDYaWyADyVUhNmrWjamJG0ZA/Vcztjc9d8TO7Eea7puIxYlJjGc+u1wBNSdvhLosFCq40kv7BYIPohnGE0A==
+  dependencies:
+    tslib "^1.11.0"
 
 apollo-angular-link-http@1.9.0:
   version "1.9.0"
@@ -14557,7 +14564,7 @@ tslib@1.10.0, tslib@>=1.9.0, tslib@^1.10.0, tslib@^1.7.0, tslib@^1.7.1, tslib@^1
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
 
-tslib@1.11.1:
+tslib@1.11.1, tslib@^1.11.0:
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.11.1.tgz#eb15d128827fbee2841549e171f45ed338ac7e35"
   integrity sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA==
