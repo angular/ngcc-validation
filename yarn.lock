@@ -3077,6 +3077,17 @@
   dependencies:
     "@material/feature-targeting" "^5.0.0"
 
+"@mattlewis92/dom-autoscroller@^2.3.7":
+  version "2.3.7"
+  resolved "https://registry.yarnpkg.com/@mattlewis92/dom-autoscroller/-/dom-autoscroller-2.3.7.tgz#9b1c79947c99a8f3237d86971acd89d75af4ef54"
+  integrity sha512-pmEjUTdrhKlo9IMSJMBQNtdo86qayjElTh3mhTtJG0sIdIOVMptlw3stdGffYeHFPOiwJTvqwQNKur2zH68ilA==
+  dependencies:
+    create-point-cb "^1.0.0"
+    dom-mousemove-dispatcher "^1.0.1"
+    dom-plane "^1.0.1"
+    dom-set "^1.0.1"
+    type-func "^1.0.1"
+
 "@mobiscroll/angular-lite@^4.7.3":
   version "4.9.0"
   resolved "https://registry.yarnpkg.com/@mobiscroll/angular-lite/-/angular-lite-4.9.0.tgz#d9ed0b734b4bf7d8ca6feadf0295094930e778ff"
@@ -4527,12 +4538,12 @@ angular-bootstrap-datetimepicker@4.0.2:
   dependencies:
     tslib "^1.9.0"
 
-angular-calendar@0.28.6:
-  version "0.28.6"
-  resolved "https://registry.yarnpkg.com/angular-calendar/-/angular-calendar-0.28.6.tgz#5bb501ff50782be41b441d81d901738e4476dbab"
-  integrity sha512-p9m4jMYAzALEHxsSK52K2tO8hN24soRwo8Sn+xWSphrtSiDJOshcB8t2b3OX+lP8tgZDuOdmUxTQQw8FIhlE6g==
+angular-calendar@0.28.7:
+  version "0.28.7"
+  resolved "https://registry.yarnpkg.com/angular-calendar/-/angular-calendar-0.28.7.tgz#82561b4a533424bd71ae581cb309f2fd1856dabf"
+  integrity sha512-QtU+osqgPV1qyh+zSdgLZVFcmLg+WPp2njpxbtWr1q0BMA3zNdiRxWbeUJrxpML6iURExfmAftuLmO+o/ngMqg==
   dependencies:
-    angular-draggable-droppable "^4.3.10"
+    angular-draggable-droppable "^4.3.12"
     angular-resizable-element "^3.3.0"
     calendar-utils "^0.7.0"
     positioning "^2.0.1"
@@ -4545,12 +4556,20 @@ angular-datatables@9.0.1:
   dependencies:
     "@angular/cli" "^9.0.6"
 
-angular-draggable-droppable@4.3.10, angular-draggable-droppable@^4.3.10:
+angular-draggable-droppable@4.3.10:
   version "4.3.10"
   resolved "https://registry.yarnpkg.com/angular-draggable-droppable/-/angular-draggable-droppable-4.3.10.tgz#41e05b0c29a4b830a6a75d3a2cdbf6b3c1905928"
   integrity sha512-T/s+xtmBsTgvVnxx+sWugi/dFqmIZftg859JeBtVK+JNgsd0DmBHNu03a3FZ6jl1PuJKncnCwHgRIGNdki12Tg==
   dependencies:
     dom-autoscroller "^2.3.4"
+    tslib "^1.9.0"
+
+angular-draggable-droppable@^4.3.12:
+  version "4.3.12"
+  resolved "https://registry.yarnpkg.com/angular-draggable-droppable/-/angular-draggable-droppable-4.3.12.tgz#6c7d360cfe815563e745a2d95b342340f123433a"
+  integrity sha512-E9p9AHgb8uzp4Rsg4e/I9bw0W9iWerxHeIvOU3cRY0XlZwepJhycFNF8y9hUMTE7WM0AjzHs3Bv/gi0ig2x4QQ==
+  dependencies:
+    "@mattlewis92/dom-autoscroller" "^2.3.7"
     tslib "^1.9.0"
 
 angular-froala-wysiwyg@3.1.0:
