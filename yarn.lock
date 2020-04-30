@@ -4018,22 +4018,17 @@
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
   integrity sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
 
-"@types/gapi.auth2@^0.0.44":
-  version "0.0.44"
-  resolved "https://registry.yarnpkg.com/@types/gapi.auth2/-/gapi.auth2-0.0.44.tgz#75986149ce9ca2541a66a624173ba580c2cd395c"
-  integrity sha512-+GuLkz5pC7tuhB0s2mBlg2NxvRmQgh2ePTSB95rifWaVokkqh0CqEuWlwBWUUK4fCIH0kJ8Cm3jS2FunvGWUMg==
+"@types/gapi.auth2@^0.0.51":
+  version "0.0.51"
+  resolved "https://registry.yarnpkg.com/@types/gapi.auth2/-/gapi.auth2-0.0.51.tgz#01410ccff41ec0eb744635d806557de9393c76a7"
+  integrity sha512-j66GKDjxM01HLBpwFlii0E3Bsn7+dn1qabgosGSWhuM0/waHZ8ooT/T3M5U9mdx6BQ4sk+gzW1HDux00yZVWRw==
   dependencies:
     "@types/gapi" "*"
 
-"@types/gapi@*":
+"@types/gapi@*", "@types/gapi@^0.0.39":
   version "0.0.39"
   resolved "https://registry.yarnpkg.com/@types/gapi/-/gapi-0.0.39.tgz#bc7fa8cd0cb175b36e3609790fb2ed73a33f6881"
   integrity sha512-R1TZeZbvvbIC60DBJMhuOEivQHzOQtzl3uMDOOENTYQTSSDB6oEMpJo8HVPOTWivdUTbyEcB5qQOVr/JCKRlCQ==
-
-"@types/gapi@^0.0.35":
-  version "0.0.35"
-  resolved "https://registry.yarnpkg.com/@types/gapi/-/gapi-0.0.35.tgz#8e0d672d66d8c6ce8493f5e8e550344f7ff500dc"
-  integrity sha512-6E+WHil3a2+ZQXxa+2Fg9WMi1SwVx9KXT3P/7VmfTwK9Uqw2F+TQ97Ig2yJ7cOa0fUEk4qgdQNKP4rzKZfNMOQ==
 
 "@types/glob@^7.1.1":
   version "7.1.1"
@@ -10652,14 +10647,14 @@ ng-click-outside@6.0.0:
   resolved "https://registry.yarnpkg.com/ng-click-outside/-/ng-click-outside-6.0.0.tgz#9c4ae02ecf5001582fa15d1614bdce8bce7d6b28"
   integrity sha512-jOUidlFthMz0yI7Aey3fTmThduUIFG0h3kYgqD1uFO0rRvHWF0Cp5g9/fsJrBRFNEzdADRPoZnapyKzjv7m7Ig==
 
-ng-gapi@^0.0.73:
-  version "0.0.73"
-  resolved "https://registry.yarnpkg.com/ng-gapi/-/ng-gapi-0.0.73.tgz#b8f4a5aea9e9b0b5eb8a7fd7ff6684a4c4578516"
-  integrity sha512-IKUQ8i41+JJrGiUZnG2/+3huyxCvKH+cPSvECkvNaxt9TjdHx8IOw+1hN9zhXOeyAJutpFtMVQaY1My2R9wNxg==
+ng-gapi@^0.0.91:
+  version "0.0.91"
+  resolved "https://registry.yarnpkg.com/ng-gapi/-/ng-gapi-0.0.91.tgz#9882f78141b8566f0f3c0346858332a2b8dfb55a"
+  integrity sha512-+fq6VF21PQUJpAaFl5pHhBBHbrBMSaelXbKIsrt94z7yNArWe/d1a7I+kNWgDMkoUx6b+TSQ4O/odmByhFvtyg==
   dependencies:
-    "@types/gapi" "^0.0.35"
-    "@types/gapi.auth2" "^0.0.44"
-    rxjs-compat "^6.1.0"
+    "@types/gapi" "^0.0.39"
+    "@types/gapi.auth2" "^0.0.51"
+    tslib "^1.11.1"
 
 ng-in-viewport@^6.0.3:
   version "6.0.3"
@@ -13353,7 +13348,7 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs-compat@^6.1.0, rxjs-compat@^6.5.2:
+rxjs-compat@^6.5.2:
   version "6.5.3"
   resolved "https://registry.yarnpkg.com/rxjs-compat/-/rxjs-compat-6.5.3.tgz#18440949b2678bf87a78a754009676b2c49183dc"
   integrity sha512-BIJX2yovz3TBpjJoAZyls2QYuU6ZiCaZ+U96SmxQpuSP/qDUfiXPKOVLbThBB2WZijNHkdTTJXKRwvv5Y48H7g==
@@ -14741,7 +14736,7 @@ tslib@1.10.0, tslib@>=1.9.0, tslib@^1.10.0, tslib@^1.7.0, tslib@^1.7.1, tslib@^1
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
 
-tslib@1.11.1, tslib@^1.11.0:
+tslib@1.11.1, tslib@^1.11.0, tslib@^1.11.1:
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.11.1.tgz#eb15d128827fbee2841549e171f45ed338ac7e35"
   integrity sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA==
