@@ -32,6 +32,23 @@ module.exports = {
       },
     },
 
+    // `@carbon/icons-angular` v11 (currently v11.0.0 and v11.0.1) has incorrect values for
+    // `package.json > main`, pointing to a non-existent file
+    // (`bundles/carbon-components-angular.js`) instead of the correct one:
+    // `bundles/carbon-icons-angular.umd.js`
+    //
+    // TODO: Remove this once https://github.com/carbon-design-system/carbon-icons-angular/issues/15
+    //       has been fixed.
+    '@carbon/icons-angular@>=11.0.0': {
+      entryPoints: {
+        '.': {
+          override: {
+            main: './bundles/carbon-icons-angular.umd.js',
+          },
+        },
+      },
+    },
+
     // `angular-draggable-droppable` uses Rollup with the
     // [rollup-commonjs](https://github.com/rollup/plugins/tree/master/packages/commonjs) plugin,
     // which results in UMD format that ngcc cannot understand. The Angular code is not contained
