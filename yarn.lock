@@ -221,7 +221,7 @@
   version "10.0.0-next.4"
   resolved "https://codeload.github.com/angular/animations-builds/tar.gz/ab586a074d1ab824ae3f314d616e6dbf7e28df86"
 
-"@angular/cdk@9.2.2":
+"@angular/cdk@9.2.2", "@angular/cdk@^9.0.0":
   version "9.2.2"
   resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-9.2.2.tgz#776be85aa55146f00dcd4909b81c67da47286c75"
   integrity sha512-VNd+KuMN6cBcy4/8OyMxqYaxdjPP6IyCqIVijB2JREkc5Sg4VWmPgx2L3rHt/DzjsVBVRgx35uqOMymDezG3jQ==
@@ -409,7 +409,7 @@
   dependencies:
     tinycolor2 "^1.4.1"
 
-"@ant-design/icons-angular@9.0.1":
+"@ant-design/icons-angular@9.0.1", "@ant-design/icons-angular@^9.0.0":
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/@ant-design/icons-angular/-/icons-angular-9.0.1.tgz#5ac8bec5bc34d23120820c93f8511b59aa117bc5"
   integrity sha512-bWdHOmO4LSQ3wpmivwTI7EWiRUMGSVA+fyfiGZ9IrQqoccg9XjGcWqT/VA9A45OV0QTKweo4hp3xaTzRBKsc+g==
@@ -6799,7 +6799,7 @@ datatables.net@^1.10.19:
   dependencies:
     jquery ">=1.7"
 
-"date-fns-2.x@npm:date-fns@2.12.0":
+"date-fns-2.x@npm:date-fns@2.12.0", date-fns@^2.10.0:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.12.0.tgz#01754c8a2f3368fc1119cf4625c3dad8c1845ee6"
   integrity sha512-qJgn99xxKnFgB1qL4jpxU7Q2t0LOn1p8KMIveef3UZD7kqjT3tpFNNdXJelEHhE+rUgffriXriw/sOSU+cS1Hw==
@@ -10641,7 +10641,17 @@ ng-sidebar@9.2.1:
   resolved "https://registry.yarnpkg.com/ng-sidebar/-/ng-sidebar-9.2.1.tgz#20d508ab6b8dd1a77c5098b7266168831beb8e07"
   integrity sha512-wYAh8ff4P6nzVDz06hBSMjt+1lwfVY2+0WNuMg5NUiaQBwdJdXq71vgtjtDmYfcrrfYcc6hQ/AJ9Lldcuujjgg==
 
-ng-zorro-antd@8.5.2, ng-zorro-antd@^8.5.2:
+ng-zorro-antd@9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/ng-zorro-antd/-/ng-zorro-antd-9.1.0.tgz#83afda582f73b75f71836e9ad3f2a7444e205daa"
+  integrity sha512-eLi9rq4lfsHR8gZd1+o+9YA/HwB9MOSukB9nIuifFUZEv3zRRPbNx6jXZpXhcrb6HCgUeMujmi6P6w3acic4Zg==
+  dependencies:
+    "@angular/cdk" "^9.0.0"
+    "@ant-design/icons-angular" "^9.0.0"
+    date-fns "^2.10.0"
+    resize-observer-polyfill "^1.5.1"
+
+ng-zorro-antd@^8.5.2:
   version "8.5.2"
   resolved "https://registry.yarnpkg.com/ng-zorro-antd/-/ng-zorro-antd-8.5.2.tgz#575ea85a75df7bfcc8712e82f819b355fade6b2b"
   integrity sha512-x+QJULyU1IXiAbf/lFPxYC/JUJvBGzU9UXnXSyLnMPZpdtEXodaF/L1N1CpSUr5SimLiHRe/jsVHDWkg0HqfYg==
