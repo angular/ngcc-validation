@@ -98,20 +98,5 @@ module.exports = {
         },
       },
     },
-
-    // `ng-zorro-antd/core/addon` has its own `package.json` and is detected as an independent
-    // entry-point, but it is also part of the `ng-zorro-antd/core` entry-point (as are all other
-    // `ng-zorro-antd/core/` subdirectories). Ignore the `core/addon` entry-point, since it will be
-    // compiled as part of `core`.
-    //
-    // Note 1: It seems like an oversight that `core/addon` has its own `package.json`.
-    // Note 2: In version 9.x the layout is different and there is no `core/addon/` directory.
-    'ng-zorro-antd': {
-      entryPoints: {
-        './core/addon': {
-          ignore: true,
-        },
-      },
-    },
   },
 };
