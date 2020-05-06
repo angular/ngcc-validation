@@ -10,7 +10,12 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('ngx-auth-firebaseui-ngcc app is running!');
+    expect(page.getTitleText()).toEqual('Welcome to ngx-auth-firebaseui-ngcc!');
+  });
+
+  it('should display the user auth state', () => {
+    page.navigateTo();
+    expect(page.getAuthStateText()).toContain('You are not logged in');
   });
 
   afterEach(async () => {

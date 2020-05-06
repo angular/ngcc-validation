@@ -1,11 +1,15 @@
 import { browser, by, element } from 'protractor';
 
 export class AppPage {
-  navigateTo() {
-    return browser.get(browser.baseUrl) as Promise<any>;
+  navigateTo(): PromiseLike<void> {
+    return browser.get(browser.baseUrl);
   }
 
-  getTitleText() {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
+  getTitleText(): PromiseLike<string> {
+    return element(by.css('app-root h1')).getText();
+  }
+
+  getAuthStateText(): PromiseLike<string> {
+    return element(by.css('ngx-auth-firebaseui-user')).getText();
   }
 }
