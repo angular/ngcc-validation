@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngx-auth-firebaseui-ngcc';
+  status = 'pending';
+
+  printStatus(newStatus: string): void {
+    this.status = newStatus;
+  }
 }
