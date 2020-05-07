@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { Download20Module } from '@carbon/icons-angular/lib/download/20';
+import { DownloadModule } from '@carbon/icons-angular';
 
 import { AppComponent } from './app.component';
 
@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    Download20Module,
+    DownloadModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
