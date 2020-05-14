@@ -7,7 +7,8 @@ import Bugsnag from '@bugsnag/js';
 import { AppComponent } from './app.component';
 
 export function errorHandlerFactory() {
-  Bugsnag.start('API_KEY');
+  // The API key must be a string of 32 hexadecimal characters.
+  Bugsnag.start('0123456789ABCDEF0123456789ABCDEF');
   return new BugsnagErrorHandler();
 }
 
