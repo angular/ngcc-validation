@@ -15,23 +15,6 @@ module.exports = {
       },
     },
 
-    // The UMD bundle of the primary entry-point of `@angular/flex-layout` includes all secondary
-    // entry-points (`core`, `extended`, `flex`, and `grid`), resulting in trying to process the
-    // typings twice (once when processing each secondary entry-point and once when processing the
-    // primary one).
-    //
-    // Skip processing the UMD format for the primary entry-point to avoid the error. The code will
-    // be processed anyway as part of the secondary entry-points.
-    '@angular/flex-layout': {
-      entryPoints: {
-        '.': {
-          override: {
-            main: undefined,
-          },
-        },
-      },
-    },
-
     // `@carbon/icons-angular` v11 (currently v11.0.0 and v11.0.1) has incorrect values for
     // `package.json > main`, pointing to a non-existent file
     // (`bundles/carbon-components-angular.js`) instead of the correct one:
