@@ -8669,16 +8669,23 @@ iferr@^0.1.5:
   resolved "https://registry.yarnpkg.com/iferr/-/iferr-0.1.5.tgz#c60eed69e6d8fdb6b3104a1fcbca1c192dc5b501"
   integrity sha1-xg7taebY/bazEEofy8ocGS3FtQE=
 
-igniteui-angular@9.0.16:
-  version "9.0.16"
-  resolved "https://registry.yarnpkg.com/igniteui-angular/-/igniteui-angular-9.0.16.tgz#4f3d6e4cfbbc2ef62ff8d2197413fd755ba5bba1"
-  integrity sha512-C7zTov3rBjijPuNxLDMneAPMQOGZN7lIFYU5S9DYkyTjMh1jzBewW/UawzlkfOrPp/2tEPrHL2lYqLPTDbJVAg==
+igniteui-angular@9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/igniteui-angular/-/igniteui-angular-9.1.0.tgz#731bc2ae09045f64771ce3324dcd455c3a18fdbd"
+  integrity sha512-l+BhFoV1D9YGJxIqZnkAJgNN2z56ozzDiAD84FZtyOl/F3AEtrnkvUiR1lKx5PHcg1TGKmyRNuiQzIi35BEYuw==
   dependencies:
     "@types/hammerjs" "^2.0.36"
     "@types/jszip" "^3.1.7"
     hammerjs "^2.0.8"
+    igniteui-trial-watermark "^1.0.3"
     jszip "^3.3.0"
     resize-observer-polyfill "^1.5.1"
+    tslib "^1.10.0"
+
+igniteui-trial-watermark@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/igniteui-trial-watermark/-/igniteui-trial-watermark-1.0.3.tgz#6f7b8628144dd848c32b6d863f6e0b37d5ce9956"
+  integrity sha512-q6thtu+7R6MOB+i9GorFPCcWeOImW43BzCAtKnDAYWwaoueb8Lg1EhBkIhAyfEIH+yZ/9c5lnZdU61/GRPoP+g==
 
 ignore-walk@^3.0.1, ignore-walk@^3.0.3:
   version "3.0.3"
