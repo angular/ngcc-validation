@@ -3122,16 +3122,16 @@
     nativescript-intl "^3.0.0"
     reflect-metadata "^0.1.8"
 
-"@nativescript/core@6.5.2":
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/@nativescript/core/-/core-6.5.2.tgz#b8512a9163381574ce2741cbcc074c6f1f63e9df"
-  integrity sha512-Gld3SXdX/wEJlWTy+YMevuBumxVLfJwwvRDNnE2il+ooWuI5ePuqmjy1VRWJzMTXn4UgP2oT4nCJgdDM2NZRxg==
+"@nativescript/core@*":
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/@nativescript/core/-/core-6.5.3.tgz#d0fa046ce4c943daf8712eddc35cb1dd1b97b4d0"
+  integrity sha512-1Zi7yaYGzKv6pRcFj/PxBwFJc1k3yBI3AV440YRwLQ38IKNCeBKIkLuZenOTxYpISZRL/nayWMWUc5rgd+7LPQ==
   dependencies:
     css-tree "^1.0.0-alpha.37"
     nativescript-hook "0.2.5"
     reduce-css-calc "^2.1.6"
     semver "6.3.0"
-    tns-core-modules-widgets "6.5.0"
+    tns-core-modules-widgets next
     tslib "1.10.0"
 
 "@nebular/auth@5.0.0":
@@ -14603,17 +14603,17 @@ tmp@0.0.33, tmp@^0.0.33:
   dependencies:
     os-tmpdir "~1.0.2"
 
-tns-core-modules-widgets@6.5.0:
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/tns-core-modules-widgets/-/tns-core-modules-widgets-6.5.0.tgz#482df5f82fd423a225932b18574ed3e41e928e20"
-  integrity sha512-aSftTLvWZ8jRmM4IttuEd1Y04HlDZNYDLY6e/brt0wcrugihGgxdb3Ia85b8DRP0+WXbNyKitKVHgbCFLiABRw==
+tns-core-modules-widgets@next:
+  version "6.6.0-next-2020-05-08-112112-01"
+  resolved "https://registry.yarnpkg.com/tns-core-modules-widgets/-/tns-core-modules-widgets-6.6.0-next-2020-05-08-112112-01.tgz#0a7cc30d223ebb64589828175cfb23d9c6503e6e"
+  integrity sha512-aW30j6gKiXP48XOs6qdO2SiPx61pUYOlMmQVovQbG6vBB8WbUR9k9UviY1cY/DExNUBOSh3cMe8uLOpDWiR49A==
 
-tns-core-modules@6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/tns-core-modules/-/tns-core-modules-6.5.2.tgz#cf6b5cc4a67357d954b1d30d61b364834cf1e97e"
-  integrity sha512-0OO83GZqWeQ5jVgdbU8nI4hKzFYQ0Lkelu6doQL/8XGX37B2Br+u2Gu4Cy5JZ9YR96QdiUIzr+/26fFALGGxww==
+tns-core-modules@6.5.3:
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/tns-core-modules/-/tns-core-modules-6.5.3.tgz#e83a5ccb1368c2590a1fc5fe6778d5851627163d"
+  integrity sha512-uSApesTL3j2UIYQQY8oPxt4z6tPk6Lx+clSLq+BN+KnsyYDWw43HR6QWIJ3J1QaS4prTooH8dELJLjXiIN53wg==
   dependencies:
-    "@nativescript/core" "6.5.2"
+    "@nativescript/core" "*"
 
 to-array@0.1.4:
   version "0.1.4"
