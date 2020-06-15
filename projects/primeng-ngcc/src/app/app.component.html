@@ -21,17 +21,17 @@
   </ng-template>
 </p-table>
 
-<p-dialog header="Car Details" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true" [closable]="true" [width]="300">
+<p-dialog header="Car Details" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true" [closable]="true" [preMaximizeContainerWidth]="300">
   <div class="ui-g ui-fluid" *ngIf="car">
       <div class="ui-g-4"><label for="vin">Vin</label></div>
       <div class="ui-g-8"><input pInputText id="vin" [(ngModel)]="car.vin" /></div>
-      
+
       <div class="ui-g-4"><label for="year">Year</label></div>
       <div class="ui-g-8"><input pInputText id="year" [(ngModel)]="car.year" /></div>
-      
+
       <div class="ui-g-4"><label for="brand">Brand</label></div>
       <div class="ui-g-8"><input pInputText id="brand" [(ngModel)]="car.brand" /></div>
-      
+
       <div class="ui-g-4"><label for="color">Color</label></div>
       <div class="ui-g-8"><input pInputText id="color" [(ngModel)]="car.color" /></div>
   </div>
