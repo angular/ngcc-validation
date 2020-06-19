@@ -3288,6 +3288,17 @@
     dom-set "^1.0.1"
     type-func "^1.0.1"
 
+"@mattlewis92/dom-autoscroller@^2.4.0":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@mattlewis92/dom-autoscroller/-/dom-autoscroller-2.4.1.tgz#d697ff921daa8bc93e3627496fcf5e743abce197"
+  integrity sha512-MJWWzX7rKrrmLVGWildaSu2sHMWrwP+cpKD2axZnP1a3helTUO0abZz4B9gdKdRrwDfUN4JvqmiWANHYCASDKg==
+  dependencies:
+    create-point-cb "^1.0.0"
+    dom-mousemove-dispatcher "^1.0.1"
+    dom-plane "^1.0.1"
+    dom-set "^1.0.1"
+    type-func "^1.0.1"
+
 "@mobiscroll/angular-lite@^4.7.3":
   version "4.9.0"
   resolved "https://registry.yarnpkg.com/@mobiscroll/angular-lite/-/angular-lite-4.9.0.tgz#d9ed0b734b4bf7d8ca6feadf0295094930e778ff"
@@ -4918,7 +4929,15 @@ angular-datatables@9.0.2:
   dependencies:
     "@angular/cli" "^9.0.6"
 
-angular-draggable-droppable@4.4.6, angular-draggable-droppable@^4.4.6:
+angular-draggable-droppable@4.5.1:
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/angular-draggable-droppable/-/angular-draggable-droppable-4.5.1.tgz#4561620571653102e47e716905016b879ff4ca01"
+  integrity sha512-J60YF/Kypxi6AitYQV23fsciYHZJPSqcPkqmcFzb2FJyWlfrKcryYT3WzO7bzguvT69g273LTDlGLmuShL68gw==
+  dependencies:
+    "@mattlewis92/dom-autoscroller" "^2.4.0"
+    tslib "^1.9.0"
+
+angular-draggable-droppable@^4.4.6:
   version "4.4.6"
   resolved "https://registry.yarnpkg.com/angular-draggable-droppable/-/angular-draggable-droppable-4.4.6.tgz#712bc1f6b598237603b932f2d3bfd43ee9b8dcf8"
   integrity sha512-FVi+1C47ApiDftTCXT44RDwQLc49YJp73qU2ZzeMiEb0SAGuM6nLQgqsxKYTzOEei8oUHaGAwPlSRp/iIMlypA==
