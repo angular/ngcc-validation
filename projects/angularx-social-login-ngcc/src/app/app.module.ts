@@ -1,10 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { SocialLoginModule, AuthServiceConfig, GoogleLoginProvider } from 'angularx-social-login';
+import { SocialLoginModule, SocialAuthServiceConfig, GoogleLoginProvider } from 'angularx-social-login';
 import { AppComponent } from './app.component';
-
-const config = new AuthServiceConfig([]);
 
 @NgModule({
   declarations: [
@@ -15,7 +13,7 @@ const config = new AuthServiceConfig([]);
     SocialLoginModule,
   ],
   providers: [{
-    provide: AuthServiceConfig, useFactory: () => config,
+    provide: 'SocialAuthServiceConfig', useFactory: () => ({autoLogin: false, providers: []}),
   }],
   bootstrap: [AppComponent]
 })

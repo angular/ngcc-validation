@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AuthService } from 'angularx-social-login';
+import { SocialAuthService } from 'angularx-social-login';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,7 @@ import { AuthService } from 'angularx-social-login';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(public authService: AuthService) {
+  constructor(public authService: SocialAuthService) {
   }
   title = 'angularx-social-login-ngcc';
 }
