@@ -3423,17 +3423,20 @@
   resolved "https://registry.yarnpkg.com/@ngui/auto-complete/-/auto-complete-3.0.0.tgz#961cd1bacb03a1c592310a788afbb6a6f8d23c28"
   integrity sha512-cEJHTuta1ZEAgWMTZNmFhVqTcuWIqCLUUBJWIWuIwZgVBcnM/ctn5GSyu/lP2iCV+VG34kHE8NrvTnAztagYxA==
 
-"@nguniversal/common@9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-9.0.0.tgz#11e8f050b4add11dc808d62726ce77b58e6a105b"
-  integrity sha512-tiTklXiXqRad2fvcH4Rar8AofHeiBNkYuwXobGxnC9Xzmc2gG9DaNF5hC8wxT2FkbYAS1+NA/bpS4R7t6DfYfw==
-
-"@nguniversal/express-engine@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@nguniversal/express-engine/-/express-engine-9.0.0.tgz#06badf0ac8e2a1d9d210d8077a1e5ae3539ae593"
-  integrity sha512-2HOzC7Jb9kxAskXkvH6BO+u3PqmCCkNjoZBpwrM4zoXjuVdlwSl7YAXLpg24pXhYmto7m7j7P+lvpRXYxV2Zjw==
+"@nguniversal/common@10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-10.0.0.tgz#a920a0abfe2efad2a8958f4901401ce000e1c2e9"
+  integrity sha512-Tfk3rXR+vRbSrnTLhdOHjnbUOFuA3m8Sy/YL9aAmvOZDJblZojEnRyAcmZmTaXiSSgZL88PeJOkncdjqntaqGw==
   dependencies:
-    "@nguniversal/common" "9.0.0"
+    tslib "^2.0.0"
+
+"@nguniversal/express-engine@^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/express-engine/-/express-engine-10.0.0.tgz#4bc6e5e90650a809d96ec0bbffad948b11ee3cdd"
+  integrity sha512-qI6eMcfPHlZJmE+opTMZ3LMCFR7ngkioZcTSIT2OCGKlI70cre6Flxa67jfpWPulpqw4Bga7U7Tzq0m6RL3xTg==
+  dependencies:
+    "@nguniversal/common" "10.0.0"
+    tslib "^2.0.0"
 
 "@ngx-formly/bootstrap@5.8.0":
   version "5.8.0"
