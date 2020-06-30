@@ -5,12 +5,23 @@ module.exports = {
     // files (that are in ESM5 format), but this might break in the future, if for example `ngcc`
     // needs to add re-exports (which will be in CommonJS format and break webpack bundling, due to
     // mixing ES module exports and CommonJS exports in the same file).
-    'ng-gapi': {
+    'ng-gapi@<0.0.93': {
       entryPoints: {
         '.': {
           override: {
             main: undefined,
             module: './lib/index.js',
+          },
+        },
+      },
+    },
+    'ng-gapi@0.0.93': {
+      entryPoints: {
+        '.': {
+          override: {
+            main: undefined,
+            module: './lib/src/index.js',
+            typings: './lib/src/index.d.ts',
           },
         },
       },
