@@ -4335,10 +4335,10 @@
   resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.0.tgz#719551d2352d301ac8b81db732acb6bdc28dbdef"
   integrity sha512-1w52Nyx4Gq47uuu0EVcsHBxZFJgurQ+rTKS3qMHxR1GY2T8c2AJYd6vZoZ9q1rupaDjU0yT+Jc2XTyXkjeMA+Q==
 
-"@types/marked@^0.7.4":
-  version "0.7.4"
-  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-0.7.4.tgz#607685669bb1bbde2300bc58ba43486cbbee1f0a"
-  integrity sha512-fdg0NO4qpuHWtZk6dASgsrBggY+8N4dWthl1bAQG9ceKUNKFjqpHaDKCAhRUI6y8vavG7hLSJ4YBwJtZyZEXqw==
+"@types/marked@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-1.1.0.tgz#53509b5f127e0c05c19176fcf1d743a41e00ff19"
+  integrity sha512-j8XXj6/l9kFvCwMyVqozznqpd/nk80krrW+QiIJN60Uu9gX5Pvn4/qPJ2YngQrR3QREPwmrE1f9/EWKVTFzoEw==
 
 "@types/minimatch@*":
   version "3.0.3"
@@ -11185,16 +11185,17 @@ ngx-logger@4.1.9:
     tslib "^1.9.0"
     vlq "^1.0.0"
 
-ngx-markdown@9.1.1:
-  version "9.1.1"
-  resolved "https://registry.yarnpkg.com/ngx-markdown/-/ngx-markdown-9.1.1.tgz#d55c9a95ca02b1b9fbd4c3b71129ff976a2d2d5b"
-  integrity sha512-dEuR1KBa/Ivb1HT+DvSW1p6wLSx79EZz8/WpgDxiEZfL1PADTQUziNLgmtwAEgBTDjsXFhZ/Af7Zq5J9dQf6KQ==
+ngx-markdown@10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/ngx-markdown/-/ngx-markdown-10.0.0.tgz#c4ab8da058fef4934e4faff32ac5fbe79187457b"
+  integrity sha512-ShBzCbV8iFBafAm8pfXa41Q8WaXvuDoiGPLol+X6mU3bfJBLo2BUKUcm0LokgelEXRfNtTIy4UW5iuMimWdmYA==
   dependencies:
-    "@types/marked" "^0.7.4"
+    "@types/marked" "^1.1.0"
     emoji-toolkit "^5.5.0"
     katex "^0.11.0"
     marked "^1.1.0"
     prismjs "^1.20.0"
+    tslib "^2.0.0"
 
 ngx-mask@9.1.2:
   version "9.1.2"
