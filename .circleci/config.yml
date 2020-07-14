@@ -82,8 +82,8 @@ jobs:
     steps:
       - attach_workspace:
           at: *working_directory
-      # Switch `tsconfig.json` to target es2015.
-      - run: node --eval "const tsCfgPath = './tsconfig.json', tsCfg = require(tsCfgPath); tsCfg.compilerOptions.target = 'es2015'; fs.writeFileSync(tsCfgPath, JSON.stringify(tsCfg))"
+      # Switch `tsconfig.base.json` to target es2015.
+      - run: node --eval "const tsCfgPath = './tsconfig.base.json', tsCfg = require(tsCfgPath); tsCfg.compilerOptions.target = 'es2015'; fs.writeFileSync(tsCfgPath, JSON.stringify(tsCfg))"
       # Run tests!
       - run: yarn build --nb-shards=${CIRCLE_NODE_TOTAL} --shard=${CIRCLE_NODE_INDEX}
       - notify_webhook_on_fail:
