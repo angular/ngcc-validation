@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     public lastAction = '';
+    public toolbarWidth = 0;
 
     public splitButtonData: Array<any> = [
         {
