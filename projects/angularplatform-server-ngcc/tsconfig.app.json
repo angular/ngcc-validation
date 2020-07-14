@@ -2,14 +2,10 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/app",
-    // Ensure that the project is transpiled to `es5` and targets CommonJS format, even if the root
-    // `tsconfig.json` has different settings.
-    // `@angular/platform-server` is not correctly compiled when targeting `es2015`. In real apps,
-    // it is only used on the server, with the compilation targeting the `main` and `module`
-    // `package.json` properties (which map to `commonjs` and `esm5` respectively).
-    "module": "commonjs",
-    "target": "es5",
-    "types": ["node"]
+    "target": "es2016",
+    "types": [
+      "node"
+    ]
   },
   "files": [
     "src/main.ts",

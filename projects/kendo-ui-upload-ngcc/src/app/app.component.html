@@ -18,14 +18,14 @@
 <div style="border: 2px solid #000; padding: 5px; margin: 5px;">
   <h1>Templates Usage</h1>
   <kendo-upload
-    #myUpload="kendoUpload"
+    #myUpload1="kendoUpload"
     [autoUpload]="false"
     [saveUrl]="uploadSaveUrl"
     [removeUrl]="uploadRemoveUrl">
       <ng-template kendoUploadFileTemplate let-files let-state="state">
         <div>Name: {{files[0].name}} Size: {{files[0].size}} bytes</div>
         <button *ngIf="showButton(state)"
-            (click)="remove(myUpload, files[0].uid)"
+            (click)="remove(myUpload1, files[0].uid)"
             class="k-button" style="position: absolute; right: .2em;">
             Remove
         </button>
@@ -48,21 +48,21 @@
             Username is required and should be minimum 4 characters.
         </p>
         <label style="display: block; margin: .8em 0 .2em">Avatar:</label>
-        <kendo-upload 
-          name="myUpload" #myUpload="ngModel"
+        <kendo-upload
+          name="myUpload2" #myUpload2="ngModel"
           [(ngModel)]="userImages" required
           [saveUrl]="uploadSaveUrl"
           [removeUrl]="uploadRemoveUrl"
           [restrictions]="myRestrictions">
         </kendo-upload>
         <p style="color: red; font-size: .8em; margin-top: .5em;"
-              [hidden]="myUpload.valid || (myUpload.pristine && !myTemplateForm.submitted)">
+              [hidden]="myUpload2.valid || (myUpload2.pristine && !myTemplateForm.submitted)">
               Uploading an avatar is required.
         </p>
         <p>Username valid: {{uName.valid}}</p>
         <p>Username pristine: {{uName.pristine}}</p>
-        <p>Upload valid: {{ myUpload.valid }}</p>
-        <p>Upload pristine: {{ myUpload.pristine }}</p>
+        <p>Upload valid: {{ myUpload2.valid }}</p>
+        <p>Upload pristine: {{ myUpload2.pristine }}</p>
         <p>Form valid: {{ myTemplateForm.valid }}</p>
         <p>Form submitted: {{ myTemplateForm.submitted }}</p>
         <button type="submit" class="k-button k-primary" style="margin: 1em 0;">Submit</button>
