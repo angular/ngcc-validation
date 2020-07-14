@@ -1,27 +1,1667 @@
+/*
+  This is a "Solution Style" tsconfig.json file, and is used by editors and TypeScript’s language server to improve development experience.
+  It is not intended to be used to perform a compilation.
+
+  To learn more about this file see: https://angular.io/config/solution-tsconfig.
+*/
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
-    "downlevelIteration": true,
-    "experimentalDecorators": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2018",
-      "dom"
-    ]
-  },
-  "angularCompilerOptions": {
-    "enableIvy": true,
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
-  }
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/ag-grid-angular-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ag-grid-angular-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ag-grid-angular-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/agmcore-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/agmcore-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/agmcore-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/alfrescoadf-core-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/alfrescoadf-core-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/alfrescoadf-core-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular-bootstrap-datetimepicker-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular-bootstrap-datetimepicker-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-bootstrap-datetimepicker-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular-calendar-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular-calendar-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-calendar-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular-datatables-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular-datatables-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-datatables-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular-draggable-droppable-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular-draggable-droppable-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-draggable-droppable-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular-froala-wysiwyg-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular-froala-wysiwyg-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-froala-wysiwyg-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular-gridster2-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular-gridster2-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-gridster2-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular-highcharts-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular-highcharts-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-highcharts-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular-in-memory-web-api-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular-in-memory-web-api-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-in-memory-web-api-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular-l10n-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular-l10n-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-l10n-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular-mydatepicker-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular-mydatepicker-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-mydatepicker-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular-oauth2-oidc-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular-oauth2-oidc-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-oauth2-oidc-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular-pipes-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular-pipes-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-pipes-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular-reduxstore-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular-reduxstore-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-reduxstore-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular-router-yg-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular-router-yg-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-router-yg-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular-tree-component-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular-tree-component-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-tree-component-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular2-multiselect-dropdown-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular2-multiselect-dropdown-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular2-multiselect-dropdown-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular2-notifications-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular2-notifications-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular2-notifications-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular2-text-mask-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular2-text-mask-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular2-text-mask-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular2-toaster-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular2-toaster-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular2-toaster-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angular2dropdown-multiselect-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular2dropdown-multiselect-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular2dropdown-multiselect-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularanimations-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularanimations-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularanimations-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularcdk-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularcdk-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularcdk-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularcommon-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularcommon-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularcommon-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularcompiler-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularcompiler-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularcompiler-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularcore-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularcore-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularcore-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularelements-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularelements-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularelements-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularfire-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularfire-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularfire-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularflex-layout-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularflex-layout-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularflex-layout-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularforms-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularforms-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularforms-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularhttp-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularhttp-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularhttp-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularmaterial-experimental-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularmaterial-experimental-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularmaterial-experimental-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularmaterial-moment-adapter-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularmaterial-moment-adapter-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularmaterial-moment-adapter-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularmaterial-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularmaterial-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularmaterial-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularplatform-browser-dynamic-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularplatform-browser-dynamic-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularplatform-browser-dynamic-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularplatform-browser-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularplatform-browser-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularplatform-browser-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularplatform-server-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularplatform-server-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularplatform-server-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularrouter-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularrouter-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularrouter-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularservice-worker-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularservice-worker-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularservice-worker-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angulartics2-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angulartics2-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angulartics2-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularupgrade-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularupgrade-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularupgrade-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/angularx-social-login-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angularx-social-login-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angularx-social-login-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ant-designicons-angular-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ant-designicons-angular-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ant-designicons-angular-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/apollo-angular-link-http-batch-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/apollo-angular-link-http-batch-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/apollo-angular-link-http-batch-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/apollo-angular-link-http-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/apollo-angular-link-http-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/apollo-angular-link-http-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/apollo-angular-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/apollo-angular-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/apollo-angular-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/asymmetrikngx-leaflet-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/asymmetrikngx-leaflet-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/asymmetrikngx-leaflet-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/auth0angular-jwt-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/auth0angular-jwt-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/auth0angular-jwt-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/azuremsal-angular-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/azuremsal-angular-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/azuremsal-angular-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/bugsnagplugin-angular-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/bugsnagplugin-angular-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/bugsnagplugin-angular-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/carbonicons-angular-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/carbonicons-angular-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/carbonicons-angular-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/clrangular-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/clrangular-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/clrangular-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/covalentcore-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/covalentcore-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/covalentcore-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/covalentdynamic-forms-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/covalentdynamic-forms-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/covalentdynamic-forms-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/covalenthighlight-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/covalenthighlight-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/covalenthighlight-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/covalentmarkdown-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/covalentmarkdown-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/covalentmarkdown-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/datoramaakita-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/datoramaakita-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/datoramaakita-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/delonabc-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/delonabc-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/delonabc-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/delonacl-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/delonacl-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/delonacl-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/delonauth-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/delonauth-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/delonauth-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/delonform-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/delonform-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/delonform-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/delontheme-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/delontheme-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/delontheme-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/delonutil-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/delonutil-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/delonutil-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/devextreme-angular-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/devextreme-angular-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/devextreme-angular-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/fortawesomeangular-fontawesome-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/fortawesomeangular-fontawesome-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/fortawesomeangular-fontawesome-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/highcharts-angular-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/highcharts-angular-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/highcharts-angular-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/igniteui-angular-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/igniteui-angular-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/igniteui-angular-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ionicangular-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ionicangular-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ionicangular-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ionicstorage-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ionicstorage-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ionicstorage-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-buttons-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-buttons-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-buttons-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-charts-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-charts-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-charts-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-conversational-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-conversational-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-conversational-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-dateinputs-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-dateinputs-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-dateinputs-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-dialog-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-dialog-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-dialog-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-dropdowns-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-dropdowns-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-dropdowns-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-editor-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-editor-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-editor-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-excel-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-excel-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-excel-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-gauges-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-gauges-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-gauges-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-grid-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-grid-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-grid-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-inputs-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-inputs-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-inputs-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-intl-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-intl-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-intl-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-label-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-label-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-label-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-layout-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-layout-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-layout-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-menu-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-menu-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-menu-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-notification-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-notification-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-notification-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-pdf-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-pdf-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-pdf-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-popup-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-popup-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-popup-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-progressbar-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-progressbar-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-progressbar-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-ripple-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-ripple-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-ripple-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-scheduler-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-scheduler-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-scheduler-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-scrollview-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-scrollview-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-scrollview-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-sortable-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-sortable-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-sortable-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-toolbar-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-toolbar-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-toolbar-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-tooltip-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-tooltip-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-tooltip-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-treeview-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-treeview-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-treeview-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/kendo-ui-upload-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/kendo-ui-upload-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/kendo-ui-upload-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/keycloak-angular-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/keycloak-angular-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/keycloak-angular-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/mobx-angular-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/mobx-angular-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/mobx-angular-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/nativescript-angular-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/nativescript-angular-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/nativescript-angular-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/nebularauth-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/nebularauth-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/nebularauth-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/nebulardate-fns-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/nebulardate-fns-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/nebulardate-fns-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/nebulareva-icons-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/nebulareva-icons-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/nebulareva-icons-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/nebularmoment-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/nebularmoment-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/nebularmoment-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/nebularsecurity-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/nebularsecurity-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/nebularsecurity-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/nebulartheme-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/nebulartheme-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/nebulartheme-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/netbasalspectator-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/netbasalspectator-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/netbasalspectator-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng-bootstrapng-bootstrap-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng-bootstrapng-bootstrap-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng-bootstrapng-bootstrap-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng-click-outside-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng-click-outside-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng-click-outside-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng-dynamic-formscore-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng-dynamic-formscore-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng-dynamic-formscore-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng-gapi-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng-gapi-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng-gapi-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng-idlecore-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng-idlecore-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng-idlecore-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng-in-viewport-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng-in-viewport-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng-in-viewport-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng-inline-svg-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng-inline-svg-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng-inline-svg-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng-lazyload-image-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng-lazyload-image-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng-lazyload-image-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng-pick-datetime-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng-pick-datetime-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng-pick-datetime-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng-select-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng-select-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng-select-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng-selectng-select-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng-selectng-select-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng-selectng-select-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng-zorro-antd-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng-zorro-antd-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng-zorro-antd-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng2-ace-editor-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng2-ace-editor-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng2-ace-editor-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng2-charts-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng2-charts-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng2-charts-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng2-ckeditor-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng2-ckeditor-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng2-ckeditor-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng2-completer-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng2-completer-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng2-completer-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng2-dnd-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng2-dnd-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng2-dnd-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng2-dragula-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng2-dragula-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng2-dragula-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng2-file-upload-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng2-file-upload-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng2-file-upload-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng2-material-dropdown-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng2-material-dropdown-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng2-material-dropdown-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng2-pdfjs-viewer-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng2-pdfjs-viewer-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng2-pdfjs-viewer-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng2-validation-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng2-validation-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng2-validation-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ng6-breadcrumbs-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ng6-breadcrumbs-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ng6-breadcrumbs-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngrxstore-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngrxstore-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngrxstore-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/nguiauto-complete-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/nguiauto-complete-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/nguiauto-complete-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-auth-firebaseui-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-auth-firebaseui-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-auth-firebaseui-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-bootstrap-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-bootstrap-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-bootstrap-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-chips-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-chips-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-chips-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-clipboard-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-clipboard-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-clipboard-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-color-picker-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-color-picker-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-color-picker-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-cookie-service-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-cookie-service-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-cookie-service-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-countdown-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-countdown-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-countdown-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-echarts-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-echarts-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-echarts-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-file-drop-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-file-drop-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-file-drop-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-formlybootstrap-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-formlybootstrap-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-formlybootstrap-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-formlycore-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-formlycore-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-formlycore-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-formlymaterial-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-formlymaterial-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-formlymaterial-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-highlightjs-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-highlightjs-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-highlightjs-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-infinite-scroll-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-infinite-scroll-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-infinite-scroll-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-loading-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-loading-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-loading-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-logger-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-logger-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-logger-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-markdown-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-markdown-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-markdown-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-mask-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-mask-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-mask-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-moment-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-moment-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-moment-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-pagination-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-pagination-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-pagination-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-perfect-scrollbar-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-perfect-scrollbar-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-perfect-scrollbar-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-permissions-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-permissions-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-permissions-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-pipes-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-pipes-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-pipes-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-pwalocal-storage-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-pwalocal-storage-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-pwalocal-storage-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-quill-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-quill-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-quill-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-simple-modal-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-simple-modal-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-simple-modal-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-smart-modal-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-smart-modal-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-smart-modal-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-spinner-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-spinner-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-spinner-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-swiper-wrapper-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-swiper-wrapper-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-swiper-wrapper-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-toastr-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-toastr-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-toastr-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-translatecore-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-translatecore-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-translatecore-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-translatehttp-loader-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-translatehttp-loader-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-translatehttp-loader-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-ui-loader-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-ui-loader-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-ui-loader-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-wig-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-wig-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-wig-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngx-window-token-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngx-window-token-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-window-token-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngxsdevtools-plugin-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngxsdevtools-plugin-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngxsdevtools-plugin-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngxsform-plugin-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngxsform-plugin-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngxsform-plugin-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngxshmr-plugin-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngxshmr-plugin-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngxshmr-plugin-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngxslogger-plugin-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngxslogger-plugin-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngxslogger-plugin-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngxsrouter-plugin-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngxsrouter-plugin-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngxsrouter-plugin-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngxsstorage-plugin-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngxsstorage-plugin-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngxsstorage-plugin-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/ngxsstore-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ngxsstore-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngxsstore-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/perfumejs-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/perfumejs-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/perfumejs-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/preboot-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/preboot-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/preboot-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/primeng-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/primeng-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/primeng-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/swimlanengx-charts-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/swimlanengx-charts-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/swimlanengx-charts-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/swimlanengx-datatable-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/swimlanengx-datatable-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/swimlanengx-datatable-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/swimlanengx-dnd-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/swimlanengx-dnd-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/swimlanengx-dnd-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/uirouterangular-hybrid-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/uirouterangular-hybrid-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/uirouterangular-hybrid-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/uirouterangular-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/uirouterangular-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/uirouterangular-ngcc/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/uiroutercore-ngcc/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/uiroutercore-ngcc/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/uiroutercore-ngcc/e2e/tsconfig.json"
+    }
+  ]
 }
