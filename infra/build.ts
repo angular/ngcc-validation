@@ -1,14 +1,13 @@
 import * as chalk from 'chalk';
+import { existsSync } from 'fs';
 import { join } from 'path';
 import { Worker } from 'worker_threads';
 import { argv } from 'yargs';
 
 import { projects } from '../angular.json';
-import * as ngBuildProjects from './ng-build-projects.json';
 import * as failingProjectsList from './failing-projects.json';
 
 const allProjectNames = Object.keys(projects).sort();
-const buildProjects = new Set(ngBuildProjects);
 const failingProjects = new Set(failingProjectsList);
 
 interface Output {
@@ -19,11 +18,12 @@ interface Output {
   };
 }
 
-const getProjectCommand = (project: string) => {
-  if (buildProjects.has(project)) {
-    return `npm run ng -- build ${project} --noSourceMap --noProgress`;
-  }
-  return `npm run ng -- e2e ${project} --webdriver-update=false`;
+const getTestCommand = (project: string) => {
+  const customTestScript = `projects/${project}/custom-test.js`;
+
+  return existsSync(customTestScript) ?
+    `node ${customTestScript}` :
+    `npm run ng -- e2e ${project} --no-webdriver-update`;
 };
 
 class BuilderPool {
@@ -52,7 +52,7 @@ class BuilderPool {
     }
     console.log(chalk.gray('Executing: ' + project));
     const worker = new Worker(join(__dirname, 'build-project.js'), {
-      workerData: getProjectCommand(project)
+      workerData: getTestCommand(project)
     });
     this._active++;
     worker.on('message', message => {
@@ -96,12 +96,9 @@ class BuilderPool {
         regressed.push(row.project);
       }
       result += chalk.yellow('### ' + row.project + ' ###') + '\n';
-      const operation = buildProjects.has(row.project) ? 'build' : 'e2e';
       result +=
         'Status: ' +
-        (row.message.success
-          ? chalk.green(operation + ' success')
-          : chalk.red(operation + ' failure')) +
+        (row.message.success ? chalk.green('Tests passed') : chalk.red('Tests failed')) +
         '\n\n';
       result += row.message.success
         ? row.message.out
