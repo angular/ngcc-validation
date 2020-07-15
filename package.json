@@ -6,7 +6,11 @@
     "ng": "ng",
     "build": "ts-node --project infra/tsconfig.json infra/build.ts",
     "add-project": "ts-node --project infra/tsconfig.json infra/create-proj.ts",
-    "postinstall": "webdriver-manager update --gecko false --standalone false $CHROMEDRIVER_VERSION_ARG"
+    "postinstall": "webdriver-manager update --gecko false --standalone false $CHROMEDRIVER_VERSION_ARG",
+    "angularplatform-server-ngcc:dev:ssr": "ng run angularplatform-server-ngcc:serve-ssr",
+    "angularplatform-server-ngcc:serve:ssr": "node dist/angularplatform-server-ngcc/server/main.js",
+    "angularplatform-server-ngcc:build:ssr": "ng build --prod angularplatform-server-ngcc && ng run angularplatform-server-ngcc:server:production",
+    "angularplatform-server-ngcc:prerender": "ng run angularplatform-server-ngcc:prerender"
   },
   "author": "Minko Gechev <mgechev@google.com>",
   "license": "MIT",
@@ -279,7 +283,9 @@
     "@angular/cli": "github:angular/cli-builds#8227cfd56ba97d8dca0136d6962855dc081d8c2c",
     "@angular/compiler-cli": "github:angular/compiler-cli-builds#6186b7eb87507303371d834729850a8b4264d113",
     "@angular/language-service": "github:angular/language-service-builds#1e91794eec007523a8e9a2e630e88a8da865d253",
+    "@nguniversal/builders": "^10.0.1",
     "@types/datatables.net": "^1.10.17",
+    "@types/express": "^4.17.0",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "14.0.23",
