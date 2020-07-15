@@ -4422,7 +4422,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angularplatform-server-ngcc",
+            "outputPath": "dist/angularplatform-server-ngcc/browser",
             "index": "projects/angularplatform-server-ngcc/src/index.html",
             "main": "projects/angularplatform-server-ngcc/src/main.ts",
             "polyfills": "projects/angularplatform-server-ngcc/src/polyfills.ts",
@@ -4507,7 +4507,8 @@
             "tsConfig": [
               "projects/angularplatform-server-ngcc/tsconfig.app.json",
               "projects/angularplatform-server-ngcc/tsconfig.spec.json",
-              "projects/angularplatform-server-ngcc/e2e/tsconfig.json"
+              "projects/angularplatform-server-ngcc/e2e/tsconfig.json",
+              "projects/angularplatform-server-ngcc/tsconfig.server.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -4524,6 +4525,53 @@
             "production": {
               "devServerTarget": "angularplatform-server-ngcc:serve:production"
             }
+          }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/angularplatform-server-ngcc/server",
+            "main": "projects/angularplatform-server-ngcc/server.ts",
+            "tsConfig": "projects/angularplatform-server-ngcc/tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media",
+              "fileReplacements": [
+                {
+                  "replace": "projects/angularplatform-server-ngcc/src/environments/environment.ts",
+                  "with": "projects/angularplatform-server-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "sourceMap": false,
+              "optimization": true
+            }
+          }
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "options": {
+            "browserTarget": "angularplatform-server-ngcc:build",
+            "serverTarget": "angularplatform-server-ngcc:server"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angularplatform-server-ngcc:build:production",
+              "serverTarget": "angularplatform-server-ngcc:server:production"
+            }
+          }
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "browserTarget": "angularplatform-server-ngcc:build:production",
+            "serverTarget": "angularplatform-server-ngcc:server:production",
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {}
           }
         }
       }
