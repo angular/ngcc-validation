@@ -94,7 +94,7 @@ jobs:
           at: *working_directory
       # Run tests!
       - run: mv ngcc.config.standalone.js ngcc.config.js
-      - run: yarn ngcc --create-ivy-entry-points --error-on-failed-entry-point --first-only --properties << parameters.properties >>
+      - run: yarn ngcc --create-ivy-entry-points --error-on-failed-entry-point --first-only --properties << parameters.properties >> --no-tsconfig
       - notify_webhook_on_fail:
           webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
 
