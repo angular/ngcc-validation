@@ -64,7 +64,7 @@ jobs:
           root: *working_directory
           paths:
             - ./*
-  build_cli:
+  run_ngcc_via_cli:
     parameters:
       target:
         description: The ECMAScript target version for the TS compiler.
@@ -82,7 +82,7 @@ jobs:
       - run: yarn build --nb-shards=${CIRCLE_NODE_TOTAL} --shard=${CIRCLE_NODE_INDEX}
       - notify_webhook_on_fail:
           webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
-  build_standalone:
+  run_ngcc_standalone:
     parameters:
       properties:
         description: The value to use for the ngcc `--properties` argument.
@@ -103,28 +103,28 @@ workflows:
   default_workflow:
     jobs:
       - setup
-      - build_cli:
-          name: build_cli_es5
+      - run_ngcc_via_cli:
+          name: cli_es5
           target: es5
           requires:
             - setup
-      - build_cli:
-          name: build_cli_es2015
+      - run_ngcc_via_cli:
+          name: cli_es2015
           target: es2015
           requires:
             - setup
-      - build_standalone:
-          name: build_standalone_main
+      - run_ngcc_standalone:
+          name: ngcc_main
           properties: main module
           requires:
             - setup
-      - build_standalone:
-          name: build_standalone_es5
+      - run_ngcc_standalone:
+          name: ngcc_es5
           properties: browser module main
           requires:
             - setup
-      - build_standalone:
-          name: build_standalone_es2015
+      - run_ngcc_standalone:
+          name: ngcc_es2015
           properties: es2015 browser module main
           requires:
             - setup
