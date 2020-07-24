@@ -64,31 +64,29 @@ jobs:
           root: *working_directory
           paths:
             - ./*
-  build_es5_cli:
+  build_cli:
+    parameters:
+      target:
+        description: The ECMAScript target version for the TS compiler.
+        type: enum
+        enum: ["es5", "es2015"]
     executor: action-executor
     resource_class: xlarge
     parallelism: 4
     steps:
       - attach_workspace:
           at: *working_directory
+      # Switch `tsconfig.base.json` to the specified target.
+      - run: node --eval "const tsCfgPath = './tsconfig.base.json', tsCfg = require(tsCfgPath); tsCfg.compilerOptions.target = '<< parameters.target >>'; fs.writeFileSync(tsCfgPath, JSON.stringify(tsCfg))"
       # Run tests!
       - run: yarn build --nb-shards=${CIRCLE_NODE_TOTAL} --shard=${CIRCLE_NODE_INDEX}
       - notify_webhook_on_fail:
           webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
-  build_es2015_cli:
-    executor: action-executor
-    resource_class: xlarge
-    parallelism: 4
-    steps:
-      - attach_workspace:
-          at: *working_directory
-      # Switch `tsconfig.base.json` to target es2015.
-      - run: node --eval "const tsCfgPath = './tsconfig.base.json', tsCfg = require(tsCfgPath); tsCfg.compilerOptions.target = 'es2015'; fs.writeFileSync(tsCfgPath, JSON.stringify(tsCfg))"
-      # Run tests!
-      - run: yarn build --nb-shards=${CIRCLE_NODE_TOTAL} --shard=${CIRCLE_NODE_INDEX}
-      - notify_webhook_on_fail:
-          webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
-  build_main_standalone:
+  build_standalone:
+    parameters:
+      properties:
+        description: The value to use for the ngcc `--properties` argument.
+        type: string
     executor: action-executor
     resource_class: xlarge
     steps:
@@ -96,29 +94,7 @@ jobs:
           at: *working_directory
       # Run tests!
       - run: mv ngcc.config.standalone.js ngcc.config.js
-      - run: yarn ngcc --create-ivy-entry-points --error-on-failed-entry-point --first-only --properties main module
-      - notify_webhook_on_fail:
-          webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
-  build_es5_standalone:
-    executor: action-executor
-    resource_class: xlarge
-    steps:
-      - attach_workspace:
-          at: *working_directory
-      # Run tests!
-      - run: mv ngcc.config.standalone.js ngcc.config.js
-      - run: yarn ngcc --create-ivy-entry-points --error-on-failed-entry-point --first-only --properties browser module main
-      - notify_webhook_on_fail:
-          webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
-  build_es2015_standalone:
-    executor: action-executor
-    resource_class: xlarge
-    steps:
-      - attach_workspace:
-          at: *working_directory
-      # Run tests!
-      - run: mv ngcc.config.standalone.js ngcc.config.js
-      - run: yarn ngcc --create-ivy-entry-points --error-on-failed-entry-point --first-only --properties es2015 browser module main
+      - run: yarn ngcc --create-ivy-entry-points --error-on-failed-entry-point --first-only --properties << parameters.properties >>
       - notify_webhook_on_fail:
           webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
 
@@ -127,18 +103,28 @@ workflows:
   default_workflow:
     jobs:
       - setup
-      - build_es5_cli:
+      - build_cli:
+          name: build_cli_es5
+          target: es5
           requires:
             - setup
-      - build_es2015_cli:
+      - build_cli:
+          name: build_cli_es2015
+          target: es2015
           requires:
             - setup
-      - build_main_standalone:
+      - build_standalone:
+          name: build_standalone_main
+          properties: main module
           requires:
             - setup
-      - build_es5_standalone:
+      - build_standalone:
+          name: build_standalone_es5
+          properties: browser module main
           requires:
             - setup
-      - build_es2015_standalone:
+      - build_standalone:
+          name: build_standalone_es2015
+          properties: es2015 browser module main
           requires:
             - setup
