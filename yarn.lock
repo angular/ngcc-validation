@@ -4625,13 +4625,6 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
-"@types/jszip@^3.1.7":
-  version "3.1.7"
-  resolved "https://registry.yarnpkg.com/@types/jszip/-/jszip-3.1.7.tgz#c45bd72b448b3fb002125282c57c36190247cb34"
-  integrity sha512-+XQKNI5zpxutK05hO67huUTw/2imXCuJWjnFdU63tRES/xXSX1yVR9cv/QAdO6Rii2y2tTHbzjQ4i2apLfuK0Q==
-  dependencies:
-    "@types/node" "*"
-
 "@types/long@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.0.tgz#719551d2352d301ac8b81db732acb6bdc28dbdef"
@@ -9924,17 +9917,16 @@ iferr@^0.1.5:
   resolved "https://registry.yarnpkg.com/iferr/-/iferr-0.1.5.tgz#c60eed69e6d8fdb6b3104a1fcbca1c192dc5b501"
   integrity sha1-xg7taebY/bazEEofy8ocGS3FtQE=
 
-igniteui-angular@10.0.5:
-  version "10.0.5"
-  resolved "https://registry.yarnpkg.com/igniteui-angular/-/igniteui-angular-10.0.5.tgz#356ef3d7431bbd0daadd21959803f1755bc9091e"
-  integrity sha512-L2SpjQSAERGJyTbOszuVodzMkMYfubimXfkezYZQC37f/4+Hm3IveOihJ7adHS2m4zCxIqYFMvuoDNHC+YvfZw==
+igniteui-angular@10.0.6:
+  version "10.0.6"
+  resolved "https://registry.yarnpkg.com/igniteui-angular/-/igniteui-angular-10.0.6.tgz#b83f9f20fecef3528096f69c62368a13b1e87526"
+  integrity sha512-l7+KInPFlwtWZUMlNJt/9/F1myvUMM8lUaAlobxfedEmHwKTcghNG8kvZBwXPbuu9V1i79LnXOYkbDvuayyoDA==
   dependencies:
     "@types/hammerjs" "^2.0.36"
-    "@types/jszip" "^3.1.7"
     core-js-pure "^3.6.5"
     hammerjs "^2.0.8"
     igniteui-trial-watermark "^1.0.3"
-    jszip "^3.3.0"
+    jszip "^3.5.0"
     resize-observer-polyfill "^1.5.1"
     tslib "^2.0.0"
 
@@ -10886,10 +10878,10 @@ jsprim@^1.2.2:
     readable-stream "~2.3.6"
     set-immediate-shim "~1.0.1"
 
-jszip@^3.3.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/jszip/-/jszip-3.4.0.tgz#1a69421fa5f0bb9bc222a46bca88182fba075350"
-  integrity sha512-gZAOYuPl4EhPTXT0GjhI3o+ZAz3su6EhLrKUoAivcKqyqC7laS5JEv4XWZND9BgcDcF83vI85yGbDmDR6UhrIg==
+jszip@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/jszip/-/jszip-3.5.0.tgz#b4fd1f368245346658e781fec9675802489e15f6"
+  integrity sha512-WRtu7TPCmYePR1nazfrtuF216cIVon/3GWOvHS9QR5bIwSbnxtdpma6un3jyGGNhHsKCSzn5Ypk+EkDRvTGiFA==
   dependencies:
     lie "~3.3.0"
     pako "~1.0.2"
