@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
-import { ApolloModule } from 'apollo-angular';
+import { InMemoryCache } from '@apollo/client/core';
+import { APOLLO_OPTIONS } from 'apollo-angular';
 
 import { AppComponent } from './app.component';
 
@@ -11,10 +11,16 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
-    ApolloModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APOLLO_OPTIONS,
+      deps: [],
+      useFactory: () => ({
+        cache: new InMemoryCache(),
+      }),
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Apollo, gql } from 'apollo-angular';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'apollo-angular-link-http-ngcc';
+
+  constructor(private apollo: Apollo) {
+    this.apollo.watchQuery({query: gql`{ user { name } }`});
+  }
 }

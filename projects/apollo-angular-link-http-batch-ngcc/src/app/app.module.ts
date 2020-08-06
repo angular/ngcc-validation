@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { ApolloModule } from 'apollo-angular';
-import { HttpBatchLinkModule } from 'apollo-angular-link-http-batch';
+import { InMemoryCache } from '@apollo/client/core';
+import { APOLLO_OPTIONS } from 'apollo-angular';
+import { HttpBatchLink } from 'apollo-angular/http';
 
 import { AppComponent } from './app.component';
 
@@ -13,10 +14,17 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    ApolloModule,
-    HttpBatchLinkModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APOLLO_OPTIONS,
+      deps: [HttpBatchLink],
+      useFactory: (httpBatchLink: HttpBatchLink) => ({
+        cache: new InMemoryCache(),
+        link: httpBatchLink.create({uri: 'http://localhost:3000'}),
+      }),
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
