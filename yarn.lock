@@ -48,12 +48,12 @@
     "@angular-devkit/core" "10.0.2"
     rxjs "6.5.5"
 
-"@angular-devkit/architect@github:angular/angular-devkit-architect-builds#37ce028c0":
-  version "0.1001.0-next.4+7.37ce028"
-  uid "65b5770948c35a3463eeba172a5f9ce5e91a1c85"
-  resolved "https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/65b5770948c35a3463eeba172a5f9ce5e91a1c85"
+"@angular-devkit/architect@github:angular/angular-devkit-architect-builds#75897676b":
+  version "0.1001.0-next.4+49.7589767"
+  uid eb62f4b7627774411f9d41df81b25183a0054382
+  resolved "https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/eb62f4b7627774411f9d41df81b25183a0054382"
   dependencies:
-    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#37ce028c0"
+    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#75897676b"
     rxjs "6.6.2"
 
 "@angular-devkit/architect@~0.1000.0":
@@ -64,15 +64,15 @@
     "@angular-devkit/core" "10.0.3"
     rxjs "6.5.5"
 
-"@angular-devkit/build-angular@github:angular/angular-devkit-build-angular-builds#76b40a10ebe26b397f6e44a137aa1ef2b68daad2":
-  version "0.1001.0-next.4+7.37ce028"
-  uid "76b40a10ebe26b397f6e44a137aa1ef2b68daad2"
-  resolved "https://codeload.github.com/angular/angular-devkit-build-angular-builds/tar.gz/76b40a10ebe26b397f6e44a137aa1ef2b68daad2"
+"@angular-devkit/build-angular@github:angular/angular-devkit-build-angular-builds#79c9e6730aa90fc69f6f54baec3d0cfc22f753c0":
+  version "0.1001.0-next.4+49.7589767"
+  uid "79c9e6730aa90fc69f6f54baec3d0cfc22f753c0"
+  resolved "https://codeload.github.com/angular/angular-devkit-build-angular-builds/tar.gz/79c9e6730aa90fc69f6f54baec3d0cfc22f753c0"
   dependencies:
-    "@angular-devkit/architect" "github:angular/angular-devkit-architect-builds#37ce028c0"
-    "@angular-devkit/build-optimizer" "github:angular/angular-devkit-build-optimizer-builds#37ce028c0"
-    "@angular-devkit/build-webpack" "github:angular/angular-devkit-build-webpack-builds#37ce028c0"
-    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#37ce028c0"
+    "@angular-devkit/architect" "github:angular/angular-devkit-architect-builds#75897676b"
+    "@angular-devkit/build-optimizer" "github:angular/angular-devkit-build-optimizer-builds#75897676b"
+    "@angular-devkit/build-webpack" "github:angular/angular-devkit-build-webpack-builds#75897676b"
+    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#75897676b"
     "@babel/core" "7.11.1"
     "@babel/generator" "7.11.0"
     "@babel/plugin-transform-runtime" "7.11.0"
@@ -80,7 +80,7 @@
     "@babel/runtime" "7.11.2"
     "@babel/template" "7.10.4"
     "@jsdevtools/coverage-istanbul-loader" "3.0.5"
-    "@ngtools/webpack" "github:angular/ngtools-webpack-builds#37ce028c0"
+    "@ngtools/webpack" "github:angular/ngtools-webpack-builds#75897676b"
     autoprefixer "9.8.6"
     babel-loader "8.1.0"
     browserslist "^4.9.1"
@@ -89,17 +89,17 @@
     circular-dependency-plugin "5.2.0"
     copy-webpack-plugin "6.0.3"
     core-js "3.6.4"
-    css-loader "4.2.0"
+    css-loader "4.2.1"
     cssnano "4.1.10"
     file-loader "6.0.0"
     find-cache-dir "3.3.1"
     glob "7.1.6"
-    jest-worker "26.2.1"
+    jest-worker "26.3.0"
     karma-source-map-support "1.4.0"
     less-loader "6.2.0"
     license-webpack-plugin "2.3.0"
     loader-utils "2.0.0"
-    mini-css-extract-plugin "0.9.0"
+    mini-css-extract-plugin "0.10.0"
     minimatch "3.0.4"
     open "7.1.0"
     parse5 "6.0.1"
@@ -112,7 +112,7 @@
     regenerator-runtime "0.13.7"
     resolve-url-loader "3.1.1"
     rimraf "3.0.2"
-    rollup "2.23.0"
+    rollup "2.23.1"
     rxjs "6.6.2"
     sass "1.26.10"
     sass-loader "9.0.3"
@@ -133,25 +133,25 @@
     webpack-merge "4.2.2"
     webpack-sources "1.4.3"
     webpack-subresource-integrity "1.4.1"
-    worker-plugin "4.0.3"
+    worker-plugin "5.0.0"
 
-"@angular-devkit/build-optimizer@github:angular/angular-devkit-build-optimizer-builds#37ce028c0":
-  version "0.1001.0-next.4+7.37ce028"
-  uid "3c17ac48674979810023ba5e9e21c5bd5cac8c50"
-  resolved "https://codeload.github.com/angular/angular-devkit-build-optimizer-builds/tar.gz/3c17ac48674979810023ba5e9e21c5bd5cac8c50"
+"@angular-devkit/build-optimizer@github:angular/angular-devkit-build-optimizer-builds#75897676b":
+  version "0.1001.0-next.4+49.7589767"
+  uid "9b594a9217db20511196d79a959afa842c99fb40"
+  resolved "https://codeload.github.com/angular/angular-devkit-build-optimizer-builds/tar.gz/9b594a9217db20511196d79a959afa842c99fb40"
   dependencies:
     loader-utils "2.0.0"
     source-map "0.7.3"
-    tslib "2.0.0"
+    tslib "2.0.1"
     webpack-sources "1.4.3"
 
-"@angular-devkit/build-webpack@github:angular/angular-devkit-build-webpack-builds#37ce028c0":
-  version "0.1001.0-next.4+7.37ce028"
-  uid "93e9125f25b8db6f9c1319e3c6db957fba8ac69f"
-  resolved "https://codeload.github.com/angular/angular-devkit-build-webpack-builds/tar.gz/93e9125f25b8db6f9c1319e3c6db957fba8ac69f"
+"@angular-devkit/build-webpack@github:angular/angular-devkit-build-webpack-builds#75897676b":
+  version "0.1001.0-next.4+49.7589767"
+  uid "3186cbb8871a6a107bf385290cf4150d4cfb3aaa"
+  resolved "https://codeload.github.com/angular/angular-devkit-build-webpack-builds/tar.gz/3186cbb8871a6a107bf385290cf4150d4cfb3aaa"
   dependencies:
-    "@angular-devkit/architect" "github:angular/angular-devkit-architect-builds#37ce028c0"
-    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#37ce028c0"
+    "@angular-devkit/architect" "github:angular/angular-devkit-architect-builds#75897676b"
+    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#75897676b"
     rxjs "6.6.2"
 
 "@angular-devkit/core@10.0.2", "@angular-devkit/core@^10.0.0":
@@ -209,10 +209,10 @@
     rxjs "6.5.4"
     source-map "0.7.3"
 
-"@angular-devkit/core@github:angular/angular-devkit-core-builds#37ce028c0":
-  version "10.1.0-next.4+7.37ce028"
-  uid cdd557e4b52220992198d383cdb6de456e7f2e5a
-  resolved "https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/cdd557e4b52220992198d383cdb6de456e7f2e5a"
+"@angular-devkit/core@github:angular/angular-devkit-core-builds#75897676b":
+  version "10.1.0-next.4+49.7589767"
+  uid "3f0c31a13078f43aa70b94089ea6fe4d4a859f36"
+  resolved "https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/3f0c31a13078f43aa70b94089ea6fe4d4a859f36"
   dependencies:
     ajv "6.12.3"
     fast-json-stable-stringify "2.1.0"
@@ -254,13 +254,13 @@
     "@angular-devkit/core" "7.3.9"
     rxjs "6.3.3"
 
-"@angular-devkit/schematics@github:angular/angular-devkit-schematics-builds#37ce028c0":
-  version "10.1.0-next.4+7.37ce028"
-  uid f7133a9fa5121fcfb1aeaba8ace05c6e77070b59
-  resolved "https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/f7133a9fa5121fcfb1aeaba8ace05c6e77070b59"
+"@angular-devkit/schematics@github:angular/angular-devkit-schematics-builds#75897676b":
+  version "10.1.0-next.4+49.7589767"
+  uid a4d2e24c5281111b7c51d588a2ce243253c4051b
+  resolved "https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/a4d2e24c5281111b7c51d588a2ce243253c4051b"
   dependencies:
-    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#37ce028c0"
-    ora "4.0.5"
+    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#75897676b"
+    ora "5.0.0"
     rxjs "6.6.2"
 
 "@angular-material-extensions/password-strength@^6.0.0":
@@ -324,16 +324,16 @@
     universal-analytics "0.4.20"
     uuid "7.0.2"
 
-"@angular/cli@github:angular/cli-builds#87f9af8f75d5dab13826bfb8cd9d4c24dde9c050":
-  version "10.1.0-next.4+7.37ce028"
-  uid "87f9af8f75d5dab13826bfb8cd9d4c24dde9c050"
-  resolved "https://codeload.github.com/angular/cli-builds/tar.gz/87f9af8f75d5dab13826bfb8cd9d4c24dde9c050"
+"@angular/cli@github:angular/cli-builds#9726e8499eec5be905da8f45490b9bd7bc98f6c5":
+  version "10.1.0-next.4+49.7589767"
+  uid "9726e8499eec5be905da8f45490b9bd7bc98f6c5"
+  resolved "https://codeload.github.com/angular/cli-builds/tar.gz/9726e8499eec5be905da8f45490b9bd7bc98f6c5"
   dependencies:
-    "@angular-devkit/architect" "github:angular/angular-devkit-architect-builds#37ce028c0"
-    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#37ce028c0"
-    "@angular-devkit/schematics" "github:angular/angular-devkit-schematics-builds#37ce028c0"
-    "@schematics/angular" "github:angular/schematics-angular-builds#37ce028c0"
-    "@schematics/update" "github:angular/schematics-update-builds#37ce028c0"
+    "@angular-devkit/architect" "github:angular/angular-devkit-architect-builds#75897676b"
+    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#75897676b"
+    "@angular-devkit/schematics" "github:angular/angular-devkit-schematics-builds#75897676b"
+    "@schematics/angular" "github:angular/schematics-angular-builds#75897676b"
+    "@schematics/update" "github:angular/schematics-update-builds#75897676b"
     "@yarnpkg/lockfile" "1.1.0"
     ansi-colors "4.1.1"
     debug "4.1.1"
@@ -3709,12 +3709,12 @@
   dependencies:
     tslib "^2.0.0"
 
-"@ngtools/webpack@github:angular/ngtools-webpack-builds#37ce028c0":
-  version "10.1.0-next.4+7.37ce028"
-  uid "13f55d8d0ac97d532a7a4f3548642f7242c9727d"
-  resolved "https://codeload.github.com/angular/ngtools-webpack-builds/tar.gz/13f55d8d0ac97d532a7a4f3548642f7242c9727d"
+"@ngtools/webpack@github:angular/ngtools-webpack-builds#75897676b":
+  version "10.1.0-next.4+49.7589767"
+  uid c4f7ffc674ba006972a3aeda9fe7e1bbf9d58105
+  resolved "https://codeload.github.com/angular/ngtools-webpack-builds/tar.gz/c4f7ffc674ba006972a3aeda9fe7e1bbf9d58105"
   dependencies:
-    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#37ce028c0"
+    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#75897676b"
     enhanced-resolve "4.3.0"
     rxjs "6.6.2"
     webpack-sources "1.4.3"
@@ -4456,13 +4456,13 @@
     "@angular-devkit/core" "8.3.20"
     "@angular-devkit/schematics" "8.3.20"
 
-"@schematics/angular@github:angular/schematics-angular-builds#37ce028c0":
-  version "10.1.0-next.4+7.37ce028"
-  uid "9ce73161af83896e0d074fb9ffed8d9aa0dcdacc"
-  resolved "https://codeload.github.com/angular/schematics-angular-builds/tar.gz/9ce73161af83896e0d074fb9ffed8d9aa0dcdacc"
+"@schematics/angular@github:angular/schematics-angular-builds#75897676b":
+  version "10.1.0-next.4+49.7589767"
+  uid "6f974311571c976edfc29f45d08d858d43e9ef9c"
+  resolved "https://codeload.github.com/angular/schematics-angular-builds/tar.gz/6f974311571c976edfc29f45d08d858d43e9ef9c"
   dependencies:
-    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#37ce028c0"
-    "@angular-devkit/schematics" "github:angular/angular-devkit-schematics-builds#37ce028c0"
+    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#75897676b"
+    "@angular-devkit/schematics" "github:angular/angular-devkit-schematics-builds#75897676b"
     jsonc-parser "2.3.0"
 
 "@schematics/angular@~10.0.0":
@@ -4488,13 +4488,13 @@
     semver "7.1.3"
     semver-intersect "1.4.0"
 
-"@schematics/update@github:angular/schematics-update-builds#37ce028c0":
-  version "0.1001.0-next.4+7.37ce028"
-  uid "1e9f7d24fa78654550e27a475f214e8268e22641"
-  resolved "https://codeload.github.com/angular/schematics-update-builds/tar.gz/1e9f7d24fa78654550e27a475f214e8268e22641"
+"@schematics/update@github:angular/schematics-update-builds#75897676b":
+  version "0.1001.0-next.4+49.7589767"
+  uid "147a90d3c25589c64d2fa47e11caa2251ef1f4c9"
+  resolved "https://codeload.github.com/angular/schematics-update-builds/tar.gz/147a90d3c25589c64d2fa47e11caa2251ef1f4c9"
   dependencies:
-    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#37ce028c0"
-    "@angular-devkit/schematics" "github:angular/angular-devkit-schematics-builds#37ce028c0"
+    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#75897676b"
+    "@angular-devkit/schematics" "github:angular/angular-devkit-schematics-builds#75897676b"
     "@yarnpkg/lockfile" "1.1.0"
     ini "1.3.5"
     npm-package-arg "^8.0.0"
@@ -6943,6 +6943,11 @@ cli-spinners@^2.2.0:
   resolved "https://registry.yarnpkg.com/cli-spinners/-/cli-spinners-2.2.0.tgz#e8b988d9206c692302d8ee834e7a85c0144d8f77"
   integrity sha512-tgU3fKwzYjiLEQgPMD9Jt+JjHVL9kW93FiIMX/l7rivvOD4/LL0Mf7gda3+4U2KJBloybwgj5KEoQgGRioMiKQ==
 
+cli-spinners@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/cli-spinners/-/cli-spinners-2.4.0.tgz#c6256db216b878cfba4720e719cec7cf72685d7f"
+  integrity sha512-sJAofoarcm76ZGpuooaO0eDy8saEy+YoZBLjC4h8srt4jeBnkYeOgqxgsJQTpyt2LjI5PTfLJHSL+41Yu4fEJA==
+
 cli-width@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
@@ -7462,10 +7467,10 @@ css-declaration-sorter@^4.0.1:
     postcss "^7.0.1"
     timsort "^0.3.0"
 
-css-loader@4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-4.2.0.tgz#b57efb92ac8f0cd85bf92d89df9634ef1f51b8bf"
-  integrity sha512-ko7a9b0iFpWtk9eSI/C8IICvZeGtYnjxYjw45rJprokXj/+kBd/siX4vAIBq9Uij8Jubc4jL1EvSnTjCEwaHSw==
+css-loader@4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-4.2.1.tgz#9f48fd7eae1219d629a3f085ba9a9102ca1141a7"
+  integrity sha512-MoqmF1if7Z0pZIEXA4ZF9PgtCXxWbfzfJM+3p+OYfhcrwcqhaCRb74DSnfzRl7e024xEiCRn5hCvfUbTf2sgFA==
   dependencies:
     camelcase "^6.0.0"
     cssesc "^3.0.0"
@@ -10769,7 +10774,16 @@ jasminewd2@^2.1.0:
   resolved "https://registry.yarnpkg.com/jasminewd2/-/jasminewd2-2.2.0.tgz#e37cf0b17f199cce23bea71b2039395246b4ec4e"
   integrity sha1-43zwsX8ZnM4jvqcbIDk5Uka07E4=
 
-jest-worker@26.2.1, jest-worker@^26.2.1:
+jest-worker@26.3.0:
+  version "26.3.0"
+  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-26.3.0.tgz#7c8a97e4f4364b4f05ed8bca8ca0c24de091871f"
+  integrity sha512-Vmpn2F6IASefL+DVBhPzI2J9/GJUsqzomdeN+P+dK8/jKxbh8R3BtFnx3FIta7wYlPU62cpJMJQo4kuOowcMnw==
+  dependencies:
+    "@types/node" "*"
+    merge-stream "^2.0.0"
+    supports-color "^7.0.0"
+
+jest-worker@^26.2.1:
   version "26.2.1"
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-26.2.1.tgz#5d630ab93f666b53f911615bc13e662b382bd513"
   integrity sha512-+XcGMMJDTeEGncRb5M5Zq9P7K4sQ1sirhjdOxsN1462h6lFo9w59bl2LVQmdGEEeU3m+maZCkS2Tcc9SfCHO4A==
@@ -11375,6 +11389,13 @@ log-symbols@^3.0.0:
   dependencies:
     chalk "^2.4.2"
 
+log-symbols@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/log-symbols/-/log-symbols-4.0.0.tgz#69b3cc46d20f448eccdb75ea1fa733d9e821c920"
+  integrity sha512-FN8JBzLx6CzeMrB0tg6pqlGU1wCrXW+ZXGH481kfsBqer0hToTIiHdjH4Mq8xJUbvATujKCvaREGWpGUionraA==
+  dependencies:
+    chalk "^4.0.0"
+
 log4js@^6.2.1:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/log4js/-/log4js-6.3.0.tgz#10dfafbb434351a3e30277a00b9879446f715bcb"
@@ -11782,10 +11803,10 @@ mimic-fn@^2.0.0, mimic-fn@^2.1.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
 
-mini-css-extract-plugin@0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.9.0.tgz#47f2cf07aa165ab35733b1fc97d4c46c0564339e"
-  integrity sha512-lp3GeY7ygcgAmVIcRPBVhIkf8Us7FZjA+ILpal44qLdSu11wmjKQ3d9k15lfD7pO4esu9eUIAW7qiYIBppv40A==
+mini-css-extract-plugin@0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.10.0.tgz#a0e6bfcad22a9c73f6c882a3c7557a98e2d3d27d"
+  integrity sha512-QgKgJBjaJhxVPwrLNqqwNS0AGkuQQ31Hp4xGXEK/P7wehEg6qmNtReHKai3zRXqY60wGVWLYcOMJK2b98aGc3A==
   dependencies:
     loader-utils "^1.1.0"
     normalize-url "1.9.1"
@@ -13099,16 +13120,16 @@ ora@4.0.4:
     strip-ansi "^6.0.0"
     wcwidth "^1.0.1"
 
-ora@4.0.5:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/ora/-/ora-4.0.5.tgz#7410b5cc2d99fa637fd5099bbb9f02bfbb5a361e"
-  integrity sha512-jCDgm9DqvRcNIAEv2wZPrh7E5PcQiDUnbnWbAfu4NGAE2ZNqPFbDixmWldy1YG2QfLeQhuiu6/h5VRrk6cG50w==
+ora@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/ora/-/ora-5.0.0.tgz#4f0b34f2994877b49b452a707245ab1e9f6afccb"
+  integrity sha512-s26qdWqke2kjN/wC4dy+IQPBIMWBJlSU/0JZhk30ZDBLelW25rv66yutUWARMigpGPzcXHb+Nac5pNhN/WsARw==
   dependencies:
-    chalk "^3.0.0"
+    chalk "^4.1.0"
     cli-cursor "^3.1.0"
-    cli-spinners "^2.2.0"
+    cli-spinners "^2.4.0"
     is-interactive "^1.0.0"
-    log-symbols "^3.0.0"
+    log-symbols "^4.0.0"
     mute-stream "0.0.8"
     strip-ansi "^6.0.0"
     wcwidth "^1.0.1"
@@ -15131,10 +15152,10 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rollup@2.23.0:
-  version "2.23.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.23.0.tgz#b7ab1fee0c0e60132fd0553c4df1e9cdacfada9d"
-  integrity sha512-vLNmZFUGVwrnqNAJ/BvuLk1MtWzu4IuoqsH9UWK5AIdO3rt8/CSiJNvPvCIvfzrbNsqKbNzPAG1V2O4eTe2XZg==
+rollup@2.23.1:
+  version "2.23.1"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.23.1.tgz#d458d28386dc7660c2e8a4978bea6f9494046c20"
+  integrity sha512-Heyl885+lyN/giQwxA8AYT2GY3U+gOlTqVLrMQYno8Z1X9lAOpfXPiKiZCyPc25e9BLJM3Zlh957dpTlO4pa8A==
   optionalDependencies:
     fsevents "~2.1.2"
 
@@ -16789,15 +16810,20 @@ tslib@1.11.1, tslib@^1.11.1:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.11.1.tgz#eb15d128827fbee2841549e171f45ed338ac7e35"
   integrity sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA==
 
-tslib@2.0.0, tslib@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.0.tgz#18d13fc2dce04051e20f074cc8387fd8089ce4f3"
-  integrity sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
+tslib@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.1.tgz#410eb0d113e5b6356490eec749603725b021b43e"
+  integrity sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ==
 
 tslib@^1.13.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
   integrity sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
+
+tslib@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.0.tgz#18d13fc2dce04051e20f074cc8387fd8089ce4f3"
+  integrity sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
 
 tslint@~6.1.0:
   version "6.1.0"
@@ -17496,10 +17522,10 @@ worker-loader@^2.0.0:
     loader-utils "^1.0.0"
     schema-utils "^0.4.0"
 
-worker-plugin@4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/worker-plugin/-/worker-plugin-4.0.3.tgz#7c42e600d5931ad154d3d5f187a32446df64db0f"
-  integrity sha512-7hFDYWiKcE3yHZvemsoM9lZis/PzurHAEX1ej8PLCu818Rt6QqUAiDdxHPCKZctzmhqzPpcFSgvMCiPbtooqAg==
+worker-plugin@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/worker-plugin/-/worker-plugin-5.0.0.tgz#113b5fe1f4a5d6a957cecd29915bedafd70bb537"
+  integrity sha512-AXMUstURCxDD6yGam2r4E34aJg6kW85IiaeX72hi+I1cxyaMUtrvVY6sbfpGKAj5e7f68Acl62BjQF5aOOx2IQ==
   dependencies:
     loader-utils "^1.1.0"
 
