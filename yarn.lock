@@ -9,28 +9,28 @@
   dependencies:
     tslib "^1.9.0"
 
-"@alfresco/adf-core@3.9.0":
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/@alfresco/adf-core/-/adf-core-3.9.0.tgz#22922732eaf5908c874c6eed825e72dab7679dce"
-  integrity sha512-HkGhfFvCe98CbCGrQvDc5YQA/n0S9x0854fn7wCauEX9i3foYmlwEzWNHY/b3Uwy/G0EqjD5UQWHiExiu4uweQ==
+"@alfresco/adf-core@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@alfresco/adf-core/-/adf-core-4.0.0.tgz#292d0d0876b4d4b0745b2325aa09de3a7d748393"
+  integrity sha512-SKUF7Q4NpGd3BbdCE6FxxD4SgFO1RD709yFptPOCljO2mYRFppyAWldgcfpNYe+2gXJ8bUUF2AUDAlbHtPwUsA==
   dependencies:
-    tslib "^1.9.0"
+    tslib "^2.0.0"
 
-"@alfresco/adf-extensions@3.9.0":
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/@alfresco/adf-extensions/-/adf-extensions-3.9.0.tgz#9c43d650a4562f8927dc14e9d78ecf9362279ad4"
-  integrity sha512-fm6x1l+VMAaHfXvXNRTCwzCwgRDpUVmManrXGrCOZltcfktvdDyyUJg0sHC7ikSH0ktcyH+pxPbVBvdgvQIFFg==
+"@alfresco/adf-extensions@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@alfresco/adf-extensions/-/adf-extensions-4.0.0.tgz#0a6749f1213582dce05eca908b6be2df84e716f8"
+  integrity sha512-UYP2agckKjOKH+MSLzsCJajfto8I/QsQwSX1/vHy7APVc/Mfauu8GLVuvryfkD+YdmHM1dxlkOjOkdcN3EohpQ==
   dependencies:
-    tslib "^1.9.0"
+    tslib "^2.0.0"
 
-"@alfresco/js-api@3.9.0":
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/@alfresco/js-api/-/js-api-3.9.0.tgz#881288fd4b58414682e4baa172df42c8d1a0db6c"
-  integrity sha512-O0Xe175Ziks+ap8Pb1VbjlGuB1x3cgxdPIKIPziXjXb7eAbvk7VO4HItwgQ6itSvFIU4H5CXO1t+NfTucak7EA==
+"@alfresco/js-api@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@alfresco/js-api/-/js-api-4.0.0.tgz#fcfb77516e3558ebf8484cea0fd870efa8fd9180"
+  integrity sha512-k2XFyRueRfDnUWsYRW8hwJfrv8Ftx5ePJBEf5gWkgSlOcSVS0NSQUbq/9x12xGCerXnvjh7CLQNXqwgisBuu2Q==
   dependencies:
     event-emitter "^0.3.5"
     minimatch "3.0.4"
-    superagent "^5.1.2"
+    superagent "^6.0.0"
 
 "@angular-devkit/architect@0.901.0":
   version "0.901.0"
@@ -9176,10 +9176,10 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
-formidable@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/formidable/-/formidable-1.2.1.tgz#70fb7ca0290ee6ff961090415f4b3df3d2082659"
-  integrity sha512-Fs9VRguL0gqGHkXS5GQiMCr1VhZBxz0JnJs4JmMp/2jL18Fmbzvv7vOFRU+U8TBkHEE/CX1qDXzJplVULgsLeg==
+formidable@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/formidable/-/formidable-1.2.2.tgz#bf69aea2972982675f00865342b982986f6b8dd9"
+  integrity sha512-V8gLm+41I/8kguQ4/o1D3RIHRmhYFG4pnNyonvua+40rqcEmT4+V71yaZ3B457xbbgCsCfjSPi65u/W6vK1U5Q==
 
 forwarded@~0.1.2:
   version "0.1.2"
@@ -11601,7 +11601,7 @@ mime@^2.4.4:
   resolved "https://registry.yarnpkg.com/mime/-/mime-2.4.4.tgz#bd7b91135fc6b01cde3e9bae33d659b63d8857e5"
   integrity sha512-LRxmNwziLPT828z+4YkNzloCFC2YM4wrB99k+AV5ZbEyfGNWfG8SO1FUXLmLDBSo89NrJZ4DIWeLjy1CHGhMGA==
 
-mime@^2.4.5:
+mime@^2.4.5, mime@^2.4.6:
   version "2.4.6"
   resolved "https://registry.yarnpkg.com/mime/-/mime-2.4.6.tgz#e5b407c90db442f2beb5b162373d07b69affa4d1"
   integrity sha512-RZKhC3EmpBchfTGBVb8fb+RL2cWyw/32lshnsETttkBAyAUXSGHxbEJWWRXc751DrIxG1q04b8QwMbAwkRPpUA==
@@ -14198,10 +14198,10 @@ qs@6.7.0:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
-qs@^6.9.1:
-  version "6.9.1"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.9.1.tgz#20082c65cb78223635ab1a9eaca8875a29bf8ec9"
-  integrity sha512-Cxm7/SS/y/Z3MHWSxXb8lIFqgqBowP5JMlTUFyJN88y0SGQhVmZnqFK/PeuMX9LzUyWsqqhNxIyg0jlzq946yA==
+qs@^6.9.4:
+  version "6.9.4"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.9.4.tgz#9090b290d1f91728d3c22e54843ca44aea5ab687"
+  integrity sha512-A1kFqHekCTM7cz0udomYUoYNWjBebHm/5wzU/XqrBRBNWectVH0QIiN+NEcZ0Dte5hvzHwbr8+XQmguPhJ6WdQ==
 
 qs@~6.5.2:
   version "6.5.2"
@@ -14420,10 +14420,10 @@ readable-stream@^3.0.6:
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
 
-readable-stream@^3.4.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.5.0.tgz#465d70e6d1087f6162d079cd0b5db7fbebfd1606"
-  integrity sha512-gSz026xs2LfxBPudDuI41V1lka8cxg64E66SGe78zJlsUofOg/yqwezdIcdfwik6B4h8LFmWPA9ef9X3FiNFLA==
+readable-stream@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.6.0.tgz#337bbda3adc0706bd3e024426a286d4b4b2c9198"
+  integrity sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==
   dependencies:
     inherits "^2.0.3"
     string_decoder "^1.1.1"
@@ -16047,22 +16047,22 @@ stylus@0.54.8:
     semver "^6.3.0"
     source-map "^0.7.3"
 
-superagent@^5.1.2:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/superagent/-/superagent-5.2.1.tgz#9f5f86b705be0865a8c1b9bcde533ab7773ff63a"
-  integrity sha512-46b4Lkwnlz7Ebdv2FBbfuqb3kVkG1jV/SK3EW6NnwL9a3T4h5hHtegNEQfbXvTFbDoUZXId4W3dMgap2f6ic1g==
+superagent@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/superagent/-/superagent-6.0.0.tgz#882a73dcdf4ce2b9f5abaea01e9064585d5c7072"
+  integrity sha512-gBiyDSUR3zbYO8za+MudSNxMFSOhKcZfQ1Anya1DWzk9R32zl++cYUFHXzP3VnyvQO8h/1/uPPA9FUDDtE+qdA==
   dependencies:
     component-emitter "^1.3.0"
     cookiejar "^2.1.2"
     debug "^4.1.1"
     fast-safe-stringify "^2.0.7"
     form-data "^3.0.0"
-    formidable "^1.2.1"
+    formidable "^1.2.2"
     methods "^1.1.2"
-    mime "^2.4.4"
-    qs "^6.9.1"
-    readable-stream "^3.4.0"
-    semver "^6.3.0"
+    mime "^2.4.6"
+    qs "^6.9.4"
+    readable-stream "^3.6.0"
+    semver "^7.3.2"
 
 supports-color@^2.0.0:
   version "2.0.0"
