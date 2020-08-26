@@ -4586,10 +4586,12 @@
     "@types/connect" "*"
     "@types/node" "*"
 
-"@types/chart.js@^2.7.48":
-  version "2.9.2"
-  resolved "https://registry.yarnpkg.com/@types/chart.js/-/chart.js-2.9.2.tgz#0629c49d791df1347a163aa412d665218f7be667"
-  integrity sha512-jgSW2LSsrgLLzfxDhJfDLst4ifH3IhHqbE1qXrqigHyhDz1zGHL3PSvIxwcoQvCAcq8kMeVcTkpiODChAy/QaA==
+"@types/chart.js@^2.9.22":
+  version "2.9.24"
+  resolved "https://registry.yarnpkg.com/@types/chart.js/-/chart.js-2.9.24.tgz#f044fde90c928cb054e2ea582eb68d9945d84bc6"
+  integrity sha512-AQI7X+ow3SaONl44JrHoL/5B+lCsJyG31UHZ5RP98Uh15hI/zjEkDsAb4EIm4P9TGfNhZLXw/nMc5w0u10+/fQ==
+  dependencies:
+    moment "^2.10.2"
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
@@ -12048,14 +12050,14 @@ ng2-ace-editor@0.3.9:
     ace-builds "^1.4.2"
     brace "^0.11.1"
 
-ng2-charts@2.3.3:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/ng2-charts/-/ng2-charts-2.3.3.tgz#04c111314f493b1ae1f3d3132c122460d202cff9"
-  integrity sha512-cRrSzQrYjjwqpRtDe3P5b1emiyKToGWVShbuY4dSMefZoDhl8NsbcIWoeGucrkpQasZMj2nrh8H04CdD4J4Zmg==
+ng2-charts@2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/ng2-charts/-/ng2-charts-2.4.0.tgz#9ccedca82ae5c27308388527748a8222aa2d88ac"
+  integrity sha512-i0puYxIGfAfFKwyCDqiBIEPn1yec3S5RGPhf7MZHRwqf9hNXGLnPqKMlX5+q4nmDVd8albE7yt1ezCWpEsiB/w==
   dependencies:
-    "@types/chart.js" "^2.7.48"
+    "@types/chart.js" "^2.9.22"
     lodash-es "^4.17.11"
-    tslib "^1.9.0"
+    tslib "^2.0.0"
 
 ng2-ckeditor@1.2.9:
   version "1.2.9"
