@@ -3644,16 +3644,16 @@
     nativescript-intl "^3.0.0"
     reflect-metadata "^0.1.8"
 
-"@nativescript/core@*":
-  version "6.5.3"
-  resolved "https://registry.yarnpkg.com/@nativescript/core/-/core-6.5.3.tgz#d0fa046ce4c943daf8712eddc35cb1dd1b97b4d0"
-  integrity sha512-1Zi7yaYGzKv6pRcFj/PxBwFJc1k3yBI3AV440YRwLQ38IKNCeBKIkLuZenOTxYpISZRL/nayWMWUc5rgd+7LPQ==
+"@nativescript/core@6.5.15":
+  version "6.5.15"
+  resolved "https://registry.yarnpkg.com/@nativescript/core/-/core-6.5.15.tgz#f6aea8c859b5afa922331ea7880687b9cbcd458b"
+  integrity sha512-BqB4fWdycm5Khh6UuDH+CMSoxLQUh0dcRfWK/Wua3EPfcpvMtB4ped4reU8olhjA7eOtIPn/+OVz5GQrn4reNw==
   dependencies:
     css-tree "^1.0.0-alpha.37"
     nativescript-hook "0.2.5"
     reduce-css-calc "^2.1.6"
     semver "6.3.0"
-    tns-core-modules-widgets next
+    tns-core-modules-widgets latest
     tslib "1.10.0"
 
 "@nebular/auth@5.1.0":
@@ -16340,17 +16340,17 @@ tmp@0.2.1:
   dependencies:
     rimraf "^3.0.0"
 
-tns-core-modules-widgets@next:
-  version "6.6.0-next-2020-05-08-112112-01"
-  resolved "https://registry.yarnpkg.com/tns-core-modules-widgets/-/tns-core-modules-widgets-6.6.0-next-2020-05-08-112112-01.tgz#0a7cc30d223ebb64589828175cfb23d9c6503e6e"
-  integrity sha512-aW30j6gKiXP48XOs6qdO2SiPx61pUYOlMmQVovQbG6vBB8WbUR9k9UviY1cY/DExNUBOSh3cMe8uLOpDWiR49A==
+tns-core-modules-widgets@latest:
+  version "6.5.10"
+  resolved "https://registry.yarnpkg.com/tns-core-modules-widgets/-/tns-core-modules-widgets-6.5.10.tgz#e387c075967aa4e24e187141a93569b121c3a0a8"
+  integrity sha512-esZPbnm0wIn89AoFxdfhFuG0a/JE9A9k3ovBRpzs9O9d/JrChlgkTX4lSRQz6xBHLC1UVaqiTc/DNBGbdaeCyA==
 
-tns-core-modules@6.5.15:
-  version "6.5.15"
-  resolved "https://registry.yarnpkg.com/tns-core-modules/-/tns-core-modules-6.5.15.tgz#2ec7d39a5b1703977a4ec514e25764d53110a400"
-  integrity sha512-2aLjcVCE0MA5dJhOJhigHrSRG4JNobDqPfikxrpkDyPwrnLOzVJDybi5gk1PD+CdtRwVRY9ZRzEE8cH10e4+QQ==
+tns-core-modules@6.5.16:
+  version "6.5.16"
+  resolved "https://registry.yarnpkg.com/tns-core-modules/-/tns-core-modules-6.5.16.tgz#6309b6a841a31f04b4e7b824b4b05c5d41ab168b"
+  integrity sha512-pFV6cgbVdsTddJEFGNgdoqRfa6KowhKdt/wvGvUP+IGOP2uQJLR6XmriP81eH/OAnLgNNmceKfJKjge6oZu+RQ==
   dependencies:
-    "@nativescript/core" "*"
+    "@nativescript/core" "6.5.15"
 
 to-array@0.1.4:
   version "0.1.4"
