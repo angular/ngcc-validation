@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { GoogleApiModule, NG_GAPI_CONFIG } from 'ng-gapi/lib/src';
+import { GoogleApiModule, NG_GAPI_CONFIG } from 'ng-gapi';
 
 import { AppComponent } from './app.component';
 
