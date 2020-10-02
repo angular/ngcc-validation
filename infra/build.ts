@@ -119,6 +119,7 @@ class BuilderPool {
     }
     if (newPasses.length) {
       console.log(chalk.green('New successes: ' + newPasses.join(', ')));
+      console.log(' (Please remove these projects from \'failing-projects.json\'.)');
     }
 
     // Additionally, ensure `failingProjectsList` does not contain non-existent projects.
@@ -130,7 +131,7 @@ class BuilderPool {
         nonExistentFailingProjects.join(', ')));
     }
 
-    process.exit((regressed.length > 0 || nonExistentFailingProjects.length > 0) ? 1 : 0);
+    process.exit((regressed.length + newPasses.length + nonExistentFailingProjects.length > 0) ? 1 : 0);
   }
 }
 
