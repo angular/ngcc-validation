@@ -298,6 +298,15 @@
   optionalDependencies:
     parse5 "^5.0.0"
 
+"@angular/cdk@^10.2.4":
+  version "10.2.4"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-10.2.4.tgz#656095648af005e7fa02c4cc68865be4bf59fc10"
+  integrity sha512-Ccm/iRb6zELWwMem6qTnFCalMVX/aS17hhN65efpNKrH3ovhyQSPWtF4p9IaEJ3rZpfXqXMPBneJ9ZXAA/iKog==
+  dependencies:
+    tslib "^2.0.0"
+  optionalDependencies:
+    parse5 "^5.0.0"
+
 "@angular/cdk@github:angular/cdk-builds#26c58c8e44a43512aa23762bd7e784593510487a":
   version "11.0.0-next.1-sha-7d99c358a"
   uid "26c58c8e44a43512aa23762bd7e784593510487a"
@@ -12026,7 +12035,18 @@ ng-sidebar@9.4.2:
   resolved "https://registry.yarnpkg.com/ng-sidebar/-/ng-sidebar-9.4.2.tgz#3ecc4b06e244eb378d6d1fb5511c17c986698bca"
   integrity sha512-8KmEQYFhn4S5LDjRDXBhDfCgLchJEj+ClBdiTCAQoRjX8vdh85hmKIGN7aBsh1HNOXKN3rzDu0qmd90193/P3Q==
 
-ng-zorro-antd@10.0.0, ng-zorro-antd@^10.0.0:
+ng-zorro-antd@10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/ng-zorro-antd/-/ng-zorro-antd-10.0.1.tgz#9dd884de952206bf997bd68d02ce44017c0d72d8"
+  integrity sha512-kQzdYA9hcgtn/PcLfDO0caOUkksL5AWlkLCrw1K0QMdTE7ndH7azMvu6xzwV/JeK7UA1JELPfsK1wpOgdzuFaw==
+  dependencies:
+    "@angular/cdk" "^10.2.4"
+    "@ant-design/icons-angular" "^10.0.0"
+    date-fns "^2.10.0"
+    resize-observer-polyfill "^1.5.1"
+    tslib "^2.0.0"
+
+ng-zorro-antd@^10.0.0:
   version "10.0.0"
   resolved "https://registry.yarnpkg.com/ng-zorro-antd/-/ng-zorro-antd-10.0.0.tgz#b4bc37ad9c00a9c59b16f37a71c7fe71a757380e"
   integrity sha512-mQ/pUtixetAGs/0hhy8SApFR1/BIGUfEvRhKCi/3g3+uKZdS5Xy9UEZ5XirqIKD9PY/ygt112RNG8UeZrtkKeQ==
