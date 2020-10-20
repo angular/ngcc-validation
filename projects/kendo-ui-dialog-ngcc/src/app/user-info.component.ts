@@ -29,8 +29,8 @@ import { FormControl, FormGroup } from '@angular/forms';
   `
 })
 export class UserInfoComponent extends DialogContentBase {
-  @Input() public age: number;
-  @Input() public name: string;
+  @Input() public age: number = 0;
+  @Input() public name: string = '';
 
   public formGroup: FormGroup = new FormGroup({
     age: new FormControl(this.age),
