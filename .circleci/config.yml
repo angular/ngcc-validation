@@ -79,7 +79,7 @@ jobs:
       # Switch `tsconfig.base.json` to the specified target.
       - run: node --eval "const tsCfgPath = './tsconfig.base.json', tsCfg = require(tsCfgPath); tsCfg.compilerOptions.target = '<< parameters.target >>'; fs.writeFileSync(tsCfgPath, JSON.stringify(tsCfg))"
       # Run tests!
-      - run: yarn build --nb-shards=${CIRCLE_NODE_TOTAL} --shard=${CIRCLE_NODE_INDEX}
+      - run: yarn build --target=<< parameters.target >> --nb-shards=${CIRCLE_NODE_TOTAL} --shard=${CIRCLE_NODE_INDEX}
       - notify_webhook_on_fail:
           webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
   run_ngcc_standalone:

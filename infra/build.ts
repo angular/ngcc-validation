@@ -5,9 +5,10 @@ import { Worker } from 'worker_threads';
 import { argv } from 'yargs';
 
 import { projects } from '../angular.json';
-import * as failingProjectsList from './failing-projects.json';
+import * as failingProjectsJson from './failing-projects.json';
 
 const allProjectNames = Object.keys(projects).sort();
+const failingProjectsList = failingProjectsJson[argv.target as keyof typeof failingProjectsJson];
 const failingProjects = new Set(failingProjectsList);
 
 interface Output {
