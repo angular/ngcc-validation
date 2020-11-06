@@ -3065,6 +3065,11 @@
     lodash.camelcase "^4.3.0"
     protobufjs "^6.8.6"
 
+"@igniteui/material-icons-extended@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@igniteui/material-icons-extended/-/material-icons-extended-2.4.0.tgz#c947385c5f036a9154fc18be7059b0f070618182"
+  integrity sha512-jamjRH/LnF7+mluVTM0SUWF9yeIrrczlfYgm+U7wz/adYqvNQYfxk/8hCS3mN5RD6TBQnFMZnRJU5GPtVZNdTw==
+
 "@ionic/angular@5.4.2":
   version "5.4.2"
   resolved "https://registry.yarnpkg.com/@ionic/angular/-/angular-5.4.2.tgz#26f31a9d552011627b31507d6c28b20e2982e6fd"
@@ -10052,11 +10057,12 @@ iferr@^0.1.5:
   resolved "https://registry.yarnpkg.com/iferr/-/iferr-0.1.5.tgz#c60eed69e6d8fdb6b3104a1fcbca1c192dc5b501"
   integrity sha1-xg7taebY/bazEEofy8ocGS3FtQE=
 
-igniteui-angular@10.1.4:
-  version "10.1.4"
-  resolved "https://registry.yarnpkg.com/igniteui-angular/-/igniteui-angular-10.1.4.tgz#c1bdd4b97a1860f2272496a7b811026c4615d293"
-  integrity sha512-EjSc0D9oUjVHaxs3RoWZcBYNfGyzHtIHremmCz5gxNGwgb2p/Fe4n0pGur5V6un+CbgDs7qQEt5JIcRhvKAQ4A==
+igniteui-angular@10.2.2:
+  version "10.2.2"
+  resolved "https://registry.yarnpkg.com/igniteui-angular/-/igniteui-angular-10.2.2.tgz#0279019954d635a83f8646c0fb99a5ec20913b9a"
+  integrity sha512-7OVr+OfZjzrgeIaXkvZ9CxTLZG0/AGZVrOoKGuszrE5tCGg6AsXwZfSota9f651/mOwnwR2kxcTL03XSngy8uQ==
   dependencies:
+    "@igniteui/material-icons-extended" "^2.4.0"
     "@types/hammerjs" "^2.0.36"
     hammerjs "^2.0.8"
     igniteui-trial-watermark "^1.0.3"
@@ -10064,6 +10070,7 @@ igniteui-angular@10.1.4:
     lodash.merge "^4.6.2"
     resize-observer-polyfill "^1.5.1"
     tslib "^2.0.0"
+    uuid "^8.3.0"
 
 igniteui-trial-watermark@^1.0.3:
   version "1.0.3"
@@ -17015,7 +17022,7 @@ uuid@7.0.2:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.2.tgz#7ff5c203467e91f5e0d85cfcbaaf7d2ebbca9be6"
   integrity sha512-vy9V/+pKG+5ZTYKf+VcphF5Oc6EFiu3W8Nv3P3zIh0EqVI80ZxOzuPfe9EHjkFNvf8+xuTHVeei4Drydlx4zjw==
 
-uuid@8.3.1:
+uuid@8.3.1, uuid@^8.3.0:
   version "8.3.1"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.1.tgz#2ba2e6ca000da60fce5a196954ab241131e05a31"
   integrity sha512-FOmRr+FmWEIG8uhZv6C2bTgEVXsHk08kE7mPlrBbEe+c3r9pjceVPgupIfNIhc4yx55H69OXANrUaSuu9eInKg==
