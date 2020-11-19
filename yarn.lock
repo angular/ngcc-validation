@@ -537,19 +537,19 @@
   dependencies:
     tinycolor2 "^1.4.1"
 
-"@ant-design/colors@^4.0.0":
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/@ant-design/colors/-/colors-4.0.5.tgz#d7d100d7545cca8f624954604a6892fc48ba5aae"
-  integrity sha512-3mnuX2prnWOWvpFTS2WH2LoouWlOgtnIpc6IarWN6GOzzLF8dW/U8UctuvIPhoboETehZfJ61XP+CGakBEPJ3Q==
+"@ant-design/colors@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@ant-design/colors/-/colors-5.0.0.tgz#46b73b4cc6935b35fc8b84555e8e42c8cfc190e6"
+  integrity sha512-Pe1rYorgVC1v4f+InDXvIlQH715pO1g7BsOhy/ehX/U6ebPKqojmkYJKU3lF+84Zmvyar7ngZ28hesAa1nWjLg==
   dependencies:
-    tinycolor2 "^1.4.1"
+    "@ctrl/tinycolor" "^3.1.6"
 
-"@ant-design/icons-angular@10.1.1":
-  version "10.1.1"
-  resolved "https://registry.yarnpkg.com/@ant-design/icons-angular/-/icons-angular-10.1.1.tgz#36c208730318d4aaed362a14f37c93ed8142cb68"
-  integrity sha512-OEX1WYYcEZzTEkyYeTTvzJ+AZ4qzXkZ19ipolrLOP/2856HbqX1TXNhHEtmoExk1T/bNzRe3+zOWXeUrkxD6xw==
+"@ant-design/icons-angular@10.2.0":
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/@ant-design/icons-angular/-/icons-angular-10.2.0.tgz#cf13a6a33b1415934b7331b58cc38fa0653fa374"
+  integrity sha512-c5g31hD9otf0DAmHMlvijyOcq1sXpdqKbMFZHxXAUG2sTi+cgixqI8LNePCc9MxBy0N48gAmp0CfhGiByxZJnQ==
   dependencies:
-    "@ant-design/colors" "^4.0.0"
+    "@ant-design/colors" "^5.0.0"
     tslib "^2.0.0"
 
 "@ant-design/icons-angular@^10.0.0":
@@ -2738,6 +2738,11 @@
   integrity sha512-MXpeLiiDZiUvlCs02M8jGw4hS24b8Be5WVCA3Gc8MT0Sd8H06xSvVH5HU+H0M5vb4fJdLDHlRlMO/QBGVqJI3A==
   dependencies:
     showdown "^1.9.1"
+
+"@ctrl/tinycolor@^3.1.6":
+  version "3.1.7"
+  resolved "https://registry.yarnpkg.com/@ctrl/tinycolor/-/tinycolor-3.1.7.tgz#1585f67629882002a9f8e15a2941c9a4321bf80c"
+  integrity sha512-/0C6fjXbCwu22k8mMsKRSAo9zgu61d2p75Or9IuIC0Vu5CWN88t2QHK93LhNnxnqHWf5SFwFU28w9cKfTmnfvg==
 
 "@cypress/webpack-preprocessor@~4.1.2":
   version "4.1.2"
