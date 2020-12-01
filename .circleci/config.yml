@@ -8,8 +8,9 @@ version: 2.1
 # **NOTE 1**: Pin to exact images using an ID (SHA). See https://circleci.com/docs/2.0/circleci-images/#using-a-docker-image-id-to-pin-an-image-to-a-fixed-version.
 #             (Using the tag in not necessary when pinning by ID, but include it anyway for documentation purposes.)
 # **NOTE 2**: If you change the version of the docker images, also change the `cache_key` suffix.
-var_1: &docker_image circleci/node:12.11-browsers@sha256:a799729b2e3997086313757470cc4cb70067affab9818eddeb5c9cc80150ea3c
-var_2: &cache_key v2-ngcc-validation-{{ checksum "yarn.lock" }}-node-12.9
+# var_1: &docker_image circleci/node:12.11-browsers@sha256:a799729b2e3997086313757470cc4cb70067affab9818eddeb5c9cc80150ea3c
+var_1: &docker_image circleci/node:15.3.0-browsers@sha256:372872f01de07e98191ee7e33f9055cf78e03fb6104339704d6e3e4d7a438b90
+var_2: &cache_key v2-ngcc-validation-{x{ checksum "yarn.lock" }x}-node-15.3.0
 var_3: &working_directory ~/repo
 
 # Executor Definitions
@@ -51,10 +52,13 @@ jobs:
       - restore_cache:
           name: Restore Yarn Package Cache
           key: *cache_key
+      - run: node --version
+      - run: npm --version
       - run:
           name: Install Dependencies
           command: |
-            CHROMEDRIVER_VERSION_ARG="--versions.chrome 75.0.3770.90" yarn install --network-timeout 100000 --frozen-lockfile
+            # CHROMEDRIVER_VERSION_ARG="--versions.chrome 87.0.4280.20" yarn install --network-timeout 100000 --frozen-lockfile
+            CHROMEDRIVER_VERSION_ARG="--versions.chrome 87.0.4280.20" npm install --force
       - save_cache:
           name: Save Yarn Package Cache
           key: *cache_key
