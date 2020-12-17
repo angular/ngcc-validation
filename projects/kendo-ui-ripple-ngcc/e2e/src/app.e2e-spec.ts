@@ -16,11 +16,14 @@ describe('workspace-project App', () => {
     expect(page.isRippleTarget(firstButton)).toBe(false);
     expect(page.isRippleTarget(secondButton)).toBe(false);
 
-    await firstButton.click();
+    await page.clickRippleEnabledButton(firstButton);
     expect(page.isRippleTarget(firstButton)).toBe(true);
     expect(page.isRippleTarget(secondButton)).toBe(false);
 
-    await secondButton.click();
+    // Wait for the ripple animation to complete, so that the `k-ripple-target` class is removed.
+    await browser.sleep(500);
+
+    await page.clickRippleEnabledButton(secondButton);
     expect(page.isRippleTarget(firstButton)).toBe(false);
     expect(page.isRippleTarget(secondButton)).toBe(true);
   });
