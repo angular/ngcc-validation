@@ -5,16 +5,6 @@ module.exports = {
   packages: {
     ...baseConfig.packages,
 
-    // `@alfresco/adf-core` is currently failing with ngcc.
-    // Remove this when `@alfresco/adf-core` is removed from `infra/failing-projects.json`.
-    '@alfresco/adf-core': {
-      entryPoints: {
-        '.': {
-          ignore: true,
-        },
-      },
-    },
-
     // `@carbon/icons-angular` v11 (currently v11.0.0 and v11.0.1) has incorrect values for
     // `package.json > main`, pointing to a non-existent file
     // (`bundles/carbon-components-angular.js`) instead of the correct one:
