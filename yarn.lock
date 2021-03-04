@@ -40,12 +40,12 @@
     "@angular-devkit/core" "11.1.4"
     rxjs "6.6.3"
 
-"@angular-devkit/architect@^0.1102.0":
-  version "0.1102.2"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1102.2.tgz#3b3eb654ae7c8c204b248bba76982ce8de2f7b6c"
-  integrity sha512-FE7DeT13elqDlELF23QqvEFnT2BkxeC5t31/QW85IN/OR5Tf/q7XEpj7giJXyzKFQ60M3ZzbznZyRz0EqtfaBQ==
+"@angular-devkit/architect@^0.1102.3":
+  version "0.1102.3"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1102.3.tgz#c5e022dc85682a2d19a94613f451add2538fd6d6"
+  integrity sha512-+skN/lDvWPxiQl0d2maVtfqgr/aRIx4cZdlTTp20FQ14J8BK9xFHuexnhQ17jdVYCIrgWoPDz2d9ZRw7e6pXvA==
   dependencies:
-    "@angular-devkit/core" "11.2.2"
+    "@angular-devkit/core" "11.2.3"
     rxjs "6.6.3"
 
 "@angular-devkit/architect@github:angular/angular-devkit-architect-builds#a7b9497b6":
@@ -174,10 +174,10 @@
     rxjs "6.6.3"
     source-map "0.7.3"
 
-"@angular-devkit/core@11.2.2", "@angular-devkit/core@^11.2.0":
-  version "11.2.2"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-11.2.2.tgz#c6b40f941b24d2af447831fc958b744316cd7d87"
-  integrity sha512-LUDO1AdIjereiMh0j5p9xJcdr9ifhbWCPxlZqfu5wHzUfhCx9gO2Lvjp6rZXQ3OedXg5IZUnyxHlzkszQOsgiw==
+"@angular-devkit/core@11.2.3", "@angular-devkit/core@^11.2.3":
+  version "11.2.3"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-11.2.3.tgz#322fb08f4e2683a37bd08edecb04ddafa42865d9"
+  integrity sha512-2JEGXzFqjTqVls2uIZEE0sk4VY9a/alxBAq8BFYIVbvzKsL9gAY71Ztf21zrhQrZop9qeuLJtOAbp00QyYUaQA==
   dependencies:
     ajv "6.12.6"
     fast-json-stable-stringify "2.1.0"
@@ -3221,14 +3221,14 @@
   resolved "https://registry.yarnpkg.com/@ngui/auto-complete/-/auto-complete-3.0.0.tgz#961cd1bacb03a1c592310a788afbb6a6f8d23c28"
   integrity sha512-cEJHTuta1ZEAgWMTZNmFhVqTcuWIqCLUUBJWIWuIwZgVBcnM/ctn5GSyu/lP2iCV+VG34kHE8NrvTnAztagYxA==
 
-"@nguniversal/builders@11.2.0":
-  version "11.2.0"
-  resolved "https://registry.yarnpkg.com/@nguniversal/builders/-/builders-11.2.0.tgz#92e5da2b4403adf0124cacbdf0ad1818cd7ef635"
-  integrity sha512-K0ILNeudIxxy4YCsWXoQXGCAlVPj2Kjk/9x4BNk0+De1DR91vog2NlnVHN631W1aNkHCE1BoGVJ9CuOOrKhqlw==
+"@nguniversal/builders@11.2.1":
+  version "11.2.1"
+  resolved "https://registry.yarnpkg.com/@nguniversal/builders/-/builders-11.2.1.tgz#42fbe12ee56f4e700f9feae292e431f57779512b"
+  integrity sha512-TSN12ykp2UbHoAAXrtesALaAkIs8KQ0qHmnVEEWeHqOU6/lDGYg3DHtnEpVW3kzPz0FirgudYfO3K+auer6v7g==
   dependencies:
-    "@angular-devkit/architect" "^0.1102.0"
-    "@angular-devkit/core" "^11.2.0"
-    "@nguniversal/common" "11.2.0"
+    "@angular-devkit/architect" "^0.1102.3"
+    "@angular-devkit/core" "^11.2.3"
+    "@nguniversal/common" "11.2.1"
     browser-sync "^2.26.7"
     guess-parser "^0.4.12"
     http-proxy-middleware "^1.0.0"
@@ -3240,6 +3240,14 @@
   version "11.2.0"
   resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-11.2.0.tgz#9b2406746818f9ab0c08718d142a35041af763ab"
   integrity sha512-AStKUerA7Y5R2wIXzv7/G/Vd0427HuIOYkaSCMlVkKIU78ZUs2jS2qhIb09O7WP+47hPgBxFmbf1SkEtUkLfAg==
+  dependencies:
+    critters "0.0.7"
+    tslib "^2.0.0"
+
+"@nguniversal/common@11.2.1":
+  version "11.2.1"
+  resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-11.2.1.tgz#c2f6a6ee9fee43121bf3cb5da43b76a45ce9f8eb"
+  integrity sha512-2PYo38yBCIE5GdURFj9s5b18bY/SwX3WHmNRoMaR6Aj8uE0j2kVpmyqQgdHTyvf93pgpIbRyo7x1J6MFFXPQAA==
   dependencies:
     critters "0.0.7"
     tslib "^2.0.0"
