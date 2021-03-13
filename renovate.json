@@ -1,6 +1,8 @@
 {
-  "extends": [
-    "schedule:nonOfficeHours"
+  "schedule": [
+    "before 7am every weekday",
+    "after 6pm every weekday",
+    "every weekend"
   ],
   "automerge": true,
   "major": {
