@@ -7491,21 +7491,21 @@ dev-ip@^1.0.1:
   resolved "https://registry.yarnpkg.com/dev-ip/-/dev-ip-1.0.1.tgz#a76a3ed1855be7a012bb8ac16cb80f3c00dc28f0"
   integrity sha1-p2o+0YVb56ASu4rBbLgPPADcKPA=
 
-devexpress-diagram@2.0.11:
-  version "2.0.11"
-  resolved "https://registry.yarnpkg.com/devexpress-diagram/-/devexpress-diagram-2.0.11.tgz#938e3dfcdd75cb7ebe4c4b749f241ce49af76356"
-  integrity sha512-ZxLLBOQJuv54Keh4hcSK17YodOQ4PBvhgrAmqPiWI29winEa+Q6lFYwTakPpGa72FYAmFekwgtac8/WOS/x2ZQ==
+devexpress-diagram@2.0.18:
+  version "2.0.18"
+  resolved "https://registry.yarnpkg.com/devexpress-diagram/-/devexpress-diagram-2.0.18.tgz#686e34e563774a042edf103794393c194cd9f127"
+  integrity sha512-5u3q1K9zhbGseK5jkh7zwPzefmmW88O6YwtaBB/pRkw1C8L9h58aqFfGTHqJipu7Jy/gxemCcNduahYwecDA/A==
   dependencies:
     "@devexpress/utils" "1.3"
     es6-object-assign "^1.1.0"
 
-devexpress-gantt@2.0.18:
-  version "2.0.18"
-  resolved "https://registry.yarnpkg.com/devexpress-gantt/-/devexpress-gantt-2.0.18.tgz#b0832438b03b3eee6f8ddb684142d7261ffdb2d3"
-  integrity sha512-tmcZPd1V4NccrO4ei9zcMMuxGCdReEIrS0KVxyu9H4DMEIQyW4qLrffgyfoCbWoJcOZbGeSwfcq1i4b44YYzCw==
+devexpress-gantt@2.0.24:
+  version "2.0.24"
+  resolved "https://registry.yarnpkg.com/devexpress-gantt/-/devexpress-gantt-2.0.24.tgz#f90ce5ac6775ff4917b163e45322ecc1851bfaf1"
+  integrity sha512-g5hwzu//EWvBicffwZ2LrfJDy1qCxePvnbdQXmmBaQ9OOqH6+EFkPUI0fzd4/sDpLBjVh7SM3ju2yIBpFGBE1A==
   dependencies:
     "@devexpress/utils" "1.3.2"
-    tslib "2.0.1"
+    tslib "2.1.0"
 
 devextreme-angular@20.2.6:
   version "20.2.6"
@@ -7516,10 +7516,10 @@ devextreme-angular@20.2.6:
     devextreme-schematics latest
     tslib "^1.9.0"
 
-devextreme-quill@~0.9.8:
-  version "0.9.8"
-  resolved "https://registry.yarnpkg.com/devextreme-quill/-/devextreme-quill-0.9.8.tgz#7eab205e12a3ced154b70430386094a0ccd22d61"
-  integrity sha512-acrAE+ukbRjoacC/r+bRNhCo/xTOxcnNhZ2KUtxoOuiaqPN9WEK4HCfcv44G9JIKPQCmZUFr6O/AYg1fgOYwrA==
+devextreme-quill@~0.10.2:
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/devextreme-quill/-/devextreme-quill-0.10.3.tgz#869e4ded39a23ed68b1a8a47e2034c87649d3a98"
+  integrity sha512-ZVSgVla5I6/ZDfWEthlJMfsDYkh/790+MWWL6U55KQF7ae/Oexdg/NyZg9nHSIdEd046tQn/slWU6FvmaUS+VQ==
   dependencies:
     core-js "^3.6.5"
     eventemitter3 "^4.0.0"
@@ -7540,19 +7540,19 @@ devextreme-schematics@latest:
     rxjs "~6.4.0"
     typescript "3.5.3"
 
-devextreme@20.2.5:
-  version "20.2.5"
-  resolved "https://registry.yarnpkg.com/devextreme/-/devextreme-20.2.5.tgz#8f2f7387cc3c3cb2650de41da19af857b489a5c7"
-  integrity sha512-KPMq/y+zlPu3JOxdaV0TvqA9AzDKqljpuuhetLc9k6IFRTRhMa2yWiHvePp/FZmfWhumIDIj1AEVedUySDlCUQ==
+devextreme@20.2.6:
+  version "20.2.6"
+  resolved "https://registry.yarnpkg.com/devextreme/-/devextreme-20.2.6.tgz#1f2f6a5239a2397e7a3c401ba02cfd4f8c5818fd"
+  integrity sha512-Prs+Mx+cuGqgEl4qlJHiw2i/v7cnybjn1yNXiP2OPDIccoqwiSdI4UInfHwrM6w3N42+weDxS8nEDmBav31Smg==
   dependencies:
-    devexpress-diagram "2.0.11"
-    devexpress-gantt "2.0.18"
-    devextreme-quill "~0.9.8"
+    devexpress-diagram "2.0.18"
+    devexpress-gantt "2.0.24"
+    devextreme-quill "~0.10.2"
     jszip "^2.0.0 || ^3.0.0"
     preact "^10.4.5"
     rrule "2.6.6"
     showdown "^1.8.6"
-    turndown "^6.0.0"
+    turndown "^7.0.0"
 
 di@^0.0.1:
   version "0.0.1"
@@ -7667,7 +7667,7 @@ domexception@^2.0.1:
   dependencies:
     webidl-conversions "^5.0.0"
 
-domino@^2.1.2:
+domino@^2.1.2, domino@^2.1.6:
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/domino/-/domino-2.1.6.tgz#fe4ace4310526e5e7b9d12c7de01b7f485a57ffe"
   integrity sha512-3VdM/SXBZX2omc9JF9nOPCtDaYQ67BGp5CoLpIQlO2KCAPETs8TcDHacF26jXadGbvUteZzRTeos2fhID5+ucQ==
@@ -10121,7 +10121,7 @@ jsbn@~0.1.0:
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
   integrity sha1-peZUwuWi3rXyAdls77yoDA7y9RM=
 
-jsdom@^16.2.0, jsdom@^16.4.0:
+jsdom@^16.4.0:
   version "16.4.0"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-16.4.0.tgz#36005bde2d136f73eee1a830c6d45e55408edddb"
   integrity sha512-lYMm3wYdgPhrl7pDcRmvzPhhrGVBeVhPIqeHjzeiHN3DFmD1RBpbExbi8vU7BJdH8VAZYovR8DMt0PNNDM7k8w==
@@ -15727,12 +15727,12 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
-turndown@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/turndown/-/turndown-6.0.0.tgz#c083d6109a9366be1b84b86b20af09140ea4b413"
-  integrity sha512-UVJBhSyRHCpNKtQ00mNWlYUM/i+tcipkb++F0PrOpt0L7EhNd0AX9mWEpL2dRFBu7LWXMp4HgAMA4OeKKnN7og==
+turndown@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/turndown/-/turndown-7.0.0.tgz#19b2a6a2d1d700387a1e07665414e4af4fec5225"
+  integrity sha512-G1FfxfR0mUNMeGjszLYl3kxtopC4O9DRRiMlMDDVHvU1jaBkGFg4qxIyjIk2aiKLHyDyZvZyu4qBO2guuYBy3Q==
   dependencies:
-    jsdom "^16.2.0"
+    domino "^2.1.6"
 
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
