@@ -1,4 +1,5 @@
 {
+  "baseBranches": ["master", "latest"],
   "schedule": [
     "before 7am every weekday",
     "after 6pm every weekday",
@@ -12,7 +13,7 @@
   "semanticCommits": true,
   "semanticCommitType": "build",
   "separateMajorMinor": false,
-  "prConcurrentLimit": 2,
+  "prConcurrentLimit": 3,
   "timezone": "America/Tijuana",
   "rangeStrategy": "pin",
   "ignoreDeps": ["nativescript-angular"],
