@@ -2359,6 +2359,28 @@
     "@firebase/util" "1.1.0"
     tslib "^2.1.0"
 
+"@firebase/app-check-interop-types@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@firebase/app-check-interop-types/-/app-check-interop-types-0.1.0.tgz#83afd9d41f99166c2bdb2d824e5032e9edd8fe53"
+  integrity sha512-uZfn9s4uuRsaX5Lwx+gFP3B6YsyOKUE+Rqa6z9ojT4VSRAsZFko9FRn6OxQUA1z5t5d08fY4pf+/+Dkd5wbdbA==
+
+"@firebase/app-check-types@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@firebase/app-check-types/-/app-check-types-0.1.0.tgz#75602650c5f118891834280b72addcac513c4b7d"
+  integrity sha512-jf92QzVkj9ulyp/K01h/GpVYNSjuk6DP9nHkq4AUyM+35e96cl9gL3+qOTD0//5CVfrWjRo7+lbVlW2OpG/JDQ==
+
+"@firebase/app-check@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@firebase/app-check/-/app-check-0.1.0.tgz#a8b4f1f014c2c8474b529dedb500ceabadb8b2a1"
+  integrity sha512-pvoiGJronrUwivadWSdDqWLfa1LGu8wGGHKwLdz29VZkJlNtu1Fzn0WVAKhgOhx4HYaj04ZLwo79CETzTRn6Jw==
+  dependencies:
+    "@firebase/app-check-interop-types" "0.1.0"
+    "@firebase/app-check-types" "0.1.0"
+    "@firebase/component" "0.5.0"
+    "@firebase/logger" "0.2.6"
+    "@firebase/util" "1.1.0"
+    tslib "^2.1.0"
+
 "@firebase/app-types@0.6.2":
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/@firebase/app-types/-/app-types-0.6.2.tgz#8578cb1061a83ced4570188be9e225d54e0f27fb"
@@ -8371,13 +8393,14 @@ find-up@^4.0.0, find-up@^4.1.0:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
 
-firebase@8.5.0:
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/firebase/-/firebase-8.5.0.tgz#185d16bb3a8f302e87d9e517d73828af55eacb3f"
-  integrity sha512-dsyONwJ6y4f7OL7MjqzFtRwbkwkni2Xx4pubzPqSyYEjLfqJOrUNIhUf6U7G7fsTLqBI71hdRmUEMt/Bukl8QA==
+firebase@8.6.0:
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/firebase/-/firebase-8.6.0.tgz#63cb37df65fbf846eaf028aa71855961b19f19ad"
+  integrity sha512-kwjx1bACHKUPFaF9MCNn4ex0gYrrsenq1pNkdPB5tz8wISjA75O159fDmZ8KuRBBg8RqyrWu/oIsTiecOt/Z8g==
   dependencies:
     "@firebase/analytics" "0.6.10"
     "@firebase/app" "0.6.21"
+    "@firebase/app-check" "0.1.0"
     "@firebase/app-types" "0.6.2"
     "@firebase/auth" "0.16.5"
     "@firebase/database" "0.10.0"
