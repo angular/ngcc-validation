@@ -7,8 +7,14 @@ import { argv } from 'yargs';
 import { projects } from '../angular.json';
 import * as failingProjectsJson from './failing-projects.json';
 
+const args = argv as unknown as {
+  target: string;
+  shard?: string | number;
+  nbShards?: string | number;
+};
+
 const allProjectNames = Object.keys(projects).sort();
-const failingProjectsList = failingProjectsJson[argv.target as keyof typeof failingProjectsJson];
+const failingProjectsList = failingProjectsJson[args.target as keyof typeof failingProjectsJson];
 const failingProjects = new Set(failingProjectsList);
 
 interface Output {
@@ -139,11 +145,11 @@ class BuilderPool {
 const pool = new BuilderPool(2);
 
 let shardProjectNames = allProjectNames;
-if (argv.shard !== undefined) {
-  const shardId = argv.shard as string | number;
+if (args.shard !== undefined) {
+  const shardId = +args.shard;
   // Remove tests that are not part of this shard.
-  const nbShards = (argv['nb-shards'] || 2) as string | number;
-  shardProjectNames = allProjectNames.filter((name, i) => i % +nbShards === +shardId);
+  const nbShards = (args.nbShards !== undefined) ? +args.nbShards : 2;
+  shardProjectNames = allProjectNames.filter((name, i) => i % nbShards === shardId);
 }
 
 shardProjectNames.forEach(dir => pool.schedule(dir));
