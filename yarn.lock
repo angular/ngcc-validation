@@ -4196,11 +4196,12 @@
     contra "1.9.4"
     crossvent "1.5.4"
 
-"@swimlane/ngx-charts@17.0.1":
-  version "17.0.1"
-  resolved "https://registry.yarnpkg.com/@swimlane/ngx-charts/-/ngx-charts-17.0.1.tgz#7d86d4725f864d798659c0c0a2eabb6f9f60982c"
-  integrity sha512-4pvSznkFo/vM59YUnXH0Y/f8n9cUBBelHuh7UoNlMchl1jI083eFk0zK5fEL2sF3c+vvEpBeYB523GxWvWoifw==
+"@swimlane/ngx-charts@18.0.1":
+  version "18.0.1"
+  resolved "https://registry.yarnpkg.com/@swimlane/ngx-charts/-/ngx-charts-18.0.1.tgz#84c9996d5a66590d911c8e218ffb2761880c22cf"
+  integrity sha512-yTSKIPyzcrR13wUnJf5K4cem+nrYhfKeywdipLM+7/qgJiLcs7HFRvcUhCTp3jQl2K+y8a6OWJAAmS8azcAshg==
   dependencies:
+    "@types/d3-shape" "^2.0.0"
     d3-array "^2.9.1"
     d3-brush "^2.1.0"
     d3-color "^2.0.0"
@@ -4291,6 +4292,18 @@
   version "2.8.9"
   resolved "https://registry.yarnpkg.com/@types/cors/-/cors-2.8.9.tgz#4bd1fcac72eca8d5bec93e76c7fdcbdc1bc2cd4a"
   integrity sha512-zurD1ibz21BRlAOIKP8yhrxlqKx6L9VCwkB5kMiP6nZAhoF5MvC7qS1qPA7nRcr1GJolfkQC7/EAL4hdYejLtg==
+
+"@types/d3-path@^1":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@types/d3-path/-/d3-path-1.0.9.tgz#73526b150d14cd96e701597cbf346cfd1fd4a58c"
+  integrity sha512-NaIeSIBiFgSC6IGUBjZWcscUJEq7vpVu7KthHN8eieTV9d9MqkSOZLH4chq1PmcKy06PNe3axLeKmRIyxJ+PZQ==
+
+"@types/d3-shape@^2.0.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@types/d3-shape/-/d3-shape-2.1.0.tgz#cc7bbc9fc2c25f092bd457887a3224a21a55ca55"
+  integrity sha512-xTMEs8eITRksXclcVxMHIONRdyjj2TjDIwO4XFOPTVBNK9/oC4ZOhUbvTz1IpcsEsS/mClwuulP+OoawSAbSGA==
+  dependencies:
+    "@types/d3-path" "^1"
 
 "@types/datatables.net@1.10.19":
   version "1.10.19"
