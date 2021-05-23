@@ -5,6 +5,21 @@ module.exports = {
   packages: {
     ...baseConfig.packages,
 
+    // `ngcc` is currently unable to process exported non-const enums in UMD bundles. See
+    // https://github.com/angular/ngcc-validation/pull/3189#issuecomment-844951349 for more details.
+    //
+    // For now, disable UMD processing for `@swimlane/ngx-charts`, which is the only known package
+    // that is affected by this issue.
+    '@swimlane/ngx-charts': {
+      entryPoints: {
+        '.': {
+          override: {
+            main: undefined,
+          },
+        },
+      },
+    },
+
     // `angular-draggable-droppable` uses Rollup with the
     // [rollup-commonjs](https://github.com/rollup/plugins/tree/master/packages/commonjs) plugin,
     // which results in UMD format that ngcc cannot understand. The Angular code is not contained
