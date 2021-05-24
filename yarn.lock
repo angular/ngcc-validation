@@ -2565,10 +2565,10 @@
     lodash.camelcase "^4.3.0"
     protobufjs "^6.8.6"
 
-"@igniteui/material-icons-extended@^2.4.0":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@igniteui/material-icons-extended/-/material-icons-extended-2.6.0.tgz#ebaaba0c17b39b7615828a3b938b5c6791a1707d"
-  integrity sha512-xnCVJ/WcSrhLwm+SirHwOOjSF9ZGMdQbZlBoMgkK/IKj+UwYQlUqa2TRuqD3STK8VXlwrvjRkdwroB2L6xs2Cw==
+"@igniteui/material-icons-extended@^2.7.0":
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@igniteui/material-icons-extended/-/material-icons-extended-2.7.0.tgz#f81437ec5aec95b24433f93290e7cfc10172eb16"
+  integrity sha512-2DPYDnrzplysJoaa7/hSviim4hwh2xHzrNALoumgizpmRl5RDf4Itx5plYafF+b9d2P6Latqrsvr6r5qKy2NlQ==
 
 "@ionic/angular@5.6.7":
   version "5.6.7"
@@ -2620,6 +2620,11 @@
     loader-utils "^2.0.0"
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
+
+"@juggle/resize-observer@^3.3.0":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.3.1.tgz#b50a781709c81e10701004214340f25475a171a0"
+  integrity sha512-zMM9Ds+SawiUkakS7y94Ymqx+S0ORzpG3frZirN3l+UlXUmSUR7hF4wxCVqW+ei94JzV5kt0uXBcoOEAuiydrw==
 
 "@mat-datetimepicker/core@6.0.2":
   version "6.0.2"
@@ -9049,18 +9054,18 @@ ieee754@^1.1.13:
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
   integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
 
-igniteui-angular@11.1.10:
-  version "11.1.10"
-  resolved "https://registry.yarnpkg.com/igniteui-angular/-/igniteui-angular-11.1.10.tgz#a386c9cb93464758ac167e4d56f73bbe9612b086"
-  integrity sha512-MBaaTapqZvJMT0hgwMPqW8tHEppj6v8HJaYR/sahOJFm3igX5AUaU6+zqGt8f5knIsXbxcbNXfaWwH0zYkpb2w==
+igniteui-angular@12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/igniteui-angular/-/igniteui-angular-12.0.0.tgz#75a291ac7470aacc56dae80903404117d08f7824"
+  integrity sha512-V/H01EtjQBm6z+ZbjsEXS9wboX+S5Zb/VRQHwo3HCBt1kaW1eaK4a+jEVukjqJXZmA+vHZcE5M6UbX70xYDbSw==
   dependencies:
-    "@igniteui/material-icons-extended" "^2.4.0"
+    "@igniteui/material-icons-extended" "^2.7.0"
+    "@juggle/resize-observer" "^3.3.0"
     "@types/hammerjs" "^2.0.36"
     hammerjs "^2.0.8"
     igniteui-trial-watermark "^1.0.3"
     jszip "^3.6.0"
     lodash.mergewith "^4.6.2"
-    resize-observer-polyfill "^1.5.1"
     tslib "^2.0.0"
     uuid "^8.3.0"
 
