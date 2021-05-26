@@ -1903,7 +1903,7 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/runtime@7.14.0":
+"@babel/runtime@7.14.0", "@babel/runtime@^7.12.1":
   version "7.14.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.0.tgz#46794bc20b612c5f75e62dd071e24dfd95f1cbe6"
   integrity sha512-JELkvo/DlpNdJ7dlyw/eY7E0suy5i5GQH+Vlxaq1nsNJ+H7f4Vtv3jMeCEgRhZZQFXTjldYfQgv2qmM6M1v5wA==
@@ -2265,6 +2265,16 @@
   integrity sha512-Ii7hpz6ItNMLKz23qQOlHom/k0e1TSnIQKCwZlKuYBwpIEBX5I/PQxvAwbdBnu5EZZSkdjnhzxl6luhl/k4LdA==
   dependencies:
     tslib "2.0.1"
+
+"@devextreme/vdom@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@devextreme/vdom/-/vdom-1.2.1.tgz#95734512403d064037ea9990f5b5e7ef8c0d9e63"
+  integrity sha512-O2yNq9yALNkR9F29u9o/aBwluZIus5lx9WvDlpZqlNZrXIDvzO3ekmpVBEDGMmkjgUqbcjWmV/xBSSAgcXKuyQ==
+  dependencies:
+    inferno "^7.4.6"
+    inferno-compat "^7.4.6"
+    inferno-create-element "^7.4.6"
+    inferno-hydrate "^7.4.6"
 
 "@discoveryjs/json-ext@0.5.2":
   version "0.5.2"
@@ -7352,18 +7362,18 @@ dev-ip@^1.0.1:
   resolved "https://registry.yarnpkg.com/dev-ip/-/dev-ip-1.0.1.tgz#a76a3ed1855be7a012bb8ac16cb80f3c00dc28f0"
   integrity sha1-p2o+0YVb56ASu4rBbLgPPADcKPA=
 
-devexpress-diagram@2.0.23:
-  version "2.0.23"
-  resolved "https://registry.yarnpkg.com/devexpress-diagram/-/devexpress-diagram-2.0.23.tgz#575d5f30862cd93621ea9843659d370f7f3bfca4"
-  integrity sha512-6DQ3KUsHBKcpVT6yUMizbuX7LgVnT5EgJUW173XfKs+9lbAdUMYNOZ7CroEIePu6LZLyMMfssR1CeBfGTAc9lQ==
+devexpress-diagram@2.1.15:
+  version "2.1.15"
+  resolved "https://registry.yarnpkg.com/devexpress-diagram/-/devexpress-diagram-2.1.15.tgz#6c8963fcab24bd6e1f42597f34bdb22efe5bbf27"
+  integrity sha512-tsas1cVkLhdtEJLqA0fvNMQB0iXSqJREY+d4q7qZWZ1Cu7JxFosKACvZpgzcqBdaYFTIr9b8GAdHr79t3lAl2A==
   dependencies:
     "@devexpress/utils" "1.3"
     es6-object-assign "^1.1.0"
 
-devexpress-gantt@2.0.29:
-  version "2.0.29"
-  resolved "https://registry.yarnpkg.com/devexpress-gantt/-/devexpress-gantt-2.0.29.tgz#2a9aec49356186e5562ab200fcaa31e53236fc2c"
-  integrity sha512-vDi7hHMEaz5icNDOGZVy8fdxxFCGeuaqt9Fr+DAy16gGe38mgkArqunE90ffY7Z7PeowlVYeW965At31S5wFhg==
+devexpress-gantt@2.1.31:
+  version "2.1.31"
+  resolved "https://registry.yarnpkg.com/devexpress-gantt/-/devexpress-gantt-2.1.31.tgz#6a4034458dc61b258445c4096a046c7cf789b4ca"
+  integrity sha512-SHKI9Jk/i1GzncVcQeUxhffZIgFgpjaV38CYsrKEMzIQhPZC6pwjFuXuQzi3pk4Z0a2ulPYCX53GoiUSyMGdoA==
   dependencies:
     "@devexpress/utils" "1.3.2"
     tslib "2.1.0"
@@ -7377,10 +7387,10 @@ devextreme-angular@21.1.3:
     devextreme-schematics latest
     tslib "^1.9.0"
 
-devextreme-quill@~0.10.3:
-  version "0.10.3"
-  resolved "https://registry.yarnpkg.com/devextreme-quill/-/devextreme-quill-0.10.3.tgz#869e4ded39a23ed68b1a8a47e2034c87649d3a98"
-  integrity sha512-ZVSgVla5I6/ZDfWEthlJMfsDYkh/790+MWWL6U55KQF7ae/Oexdg/NyZg9nHSIdEd046tQn/slWU6FvmaUS+VQ==
+devextreme-quill@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/devextreme-quill/-/devextreme-quill-1.0.0.tgz#4d6065ff67a0d5a7a4fbd7edade2d933f2564f7d"
+  integrity sha512-eA1NZdJjG4RPLKet/rjvsP+a2J55pdQLF+4KaVRQiwuBiOgBSTN6+KDjIdryrbGNfSNnEd9YG3E3mBtTKBxW3g==
   dependencies:
     core-js "^3.6.5"
     eventemitter3 "^4.0.0"
@@ -7401,16 +7411,21 @@ devextreme-schematics@latest:
     rxjs "~6.4.0"
     typescript "3.5.3"
 
-devextreme@20.2.7:
-  version "20.2.7"
-  resolved "https://registry.yarnpkg.com/devextreme/-/devextreme-20.2.7.tgz#65e2d7f14d4c8b65d8e4314a1f145a92e62bede8"
-  integrity sha512-Vc8N6TOg0xqVkfdl4zPLkw4PnX/Ewtexg8cUkgzeloN4s+5wFAmuQXEoqL1EByFoK748XP24IPjK8CrQQU1bLw==
+devextreme@21.1.3:
+  version "21.1.3"
+  resolved "https://registry.yarnpkg.com/devextreme/-/devextreme-21.1.3.tgz#85bb7cf3cb5bbb872a4b455634d0bbd906fb03c0"
+  integrity sha512-p2Pite6+pSSJAdPekxl5po1177MIJLePG93CsWRr1zHJhxgR1XO2q29ciW1W3Kl32sX4EYN2C49pMAZOCvu9uA==
   dependencies:
-    devexpress-diagram "2.0.23"
-    devexpress-gantt "2.0.29"
-    devextreme-quill "~0.10.3"
+    "@babel/runtime" "^7.12.1"
+    "@devextreme/vdom" "1.2.1"
+    devexpress-diagram "2.1.15"
+    devexpress-gantt "2.1.31"
+    devextreme-quill "~1.0.0"
+    inferno "^7.4.6"
+    inferno-compat "^7.4.6"
+    inferno-create-element "^7.4.6"
+    inferno-hydrate "^7.4.6"
     jszip "^2.0.0 || ^3.0.0"
-    preact "^10.4.5"
     rrule "2.6.6"
     showdown "^1.9.1"
     turndown "^7.0.0"
@@ -9147,6 +9162,71 @@ infer-owner@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/infer-owner/-/infer-owner-1.0.4.tgz#c4cefcaa8e51051c2a40ba2ce8a3d27295af9467"
   integrity sha512-IClj+Xz94+d7irH5qRyfJonOdfTzuDaifE6ZPWfx0N0+/ATZCbuTPq2prFl526urkQd90WyUKIh1DfBQ2hMz9A==
+
+inferno-clone-vnode@7.4.8:
+  version "7.4.8"
+  resolved "https://registry.yarnpkg.com/inferno-clone-vnode/-/inferno-clone-vnode-7.4.8.tgz#fafdb21f86e566f662da7e58ff9be1fc76baff08"
+  integrity sha512-Un9Saio4TJ+1DFehPd7JuNDJV2Fy2aPhK5hD4zmG+JWLUIphi/nuhbwrlsCNmTTDmOsB7GrqyrXFvOUEKX4YpA==
+  dependencies:
+    inferno "7.4.8"
+
+inferno-compat@^7.4.6:
+  version "7.4.8"
+  resolved "https://registry.yarnpkg.com/inferno-compat/-/inferno-compat-7.4.8.tgz#9a631b1228832ef802a67caec72f4517f5bf28db"
+  integrity sha512-3oDoqUzWOTXw8UXwbXGyJ1VInIX/KNIH4Qq88tygbDINzKLSxQaWZDWDfn/AJK52DeG64g3v8uU+XFpLr2lqzg==
+  dependencies:
+    inferno "7.4.8"
+    inferno-clone-vnode "7.4.8"
+    inferno-create-class "7.4.8"
+    inferno-create-element "7.4.8"
+    inferno-extras "7.4.8"
+
+inferno-create-class@7.4.8:
+  version "7.4.8"
+  resolved "https://registry.yarnpkg.com/inferno-create-class/-/inferno-create-class-7.4.8.tgz#80ee55379a33c8a2fb647ba30f6f5d8b571cc692"
+  integrity sha512-XY7LcSpfLTug+M/lz/F9XSmhmYjxhJ40xJtetIK1h81aaSvqqFAG3wuBCHqcIW0jlwPJRch8/gDxq6SB3gHCKQ==
+  dependencies:
+    inferno "7.4.8"
+
+inferno-create-element@7.4.8, inferno-create-element@^7.4.6:
+  version "7.4.8"
+  resolved "https://registry.yarnpkg.com/inferno-create-element/-/inferno-create-element-7.4.8.tgz#77bbf24288645c359cf65b4821a3938c6537eb5e"
+  integrity sha512-hCkA+RAiqoeWlmmCrb3VIUDV+4lEeLDCI98RcB4HqzAJwjH8dMR4ZeDQO3f9crygPnmSW7r1L0Ykjf0O2oHYFQ==
+  dependencies:
+    inferno "7.4.8"
+
+inferno-extras@7.4.8:
+  version "7.4.8"
+  resolved "https://registry.yarnpkg.com/inferno-extras/-/inferno-extras-7.4.8.tgz#36ad59d5dd68a2f5963569aa8bb1b2d78750a305"
+  integrity sha512-GEGnOECDfNLWa0g4uI35eDrknHgiXZzaB7GPucm/Gvb+QI7BMR+A9fhloqKT9DZ+9HX6C4z7gQirmUK74V1P3w==
+  dependencies:
+    inferno "7.4.8"
+
+inferno-hydrate@^7.4.6:
+  version "7.4.8"
+  resolved "https://registry.yarnpkg.com/inferno-hydrate/-/inferno-hydrate-7.4.8.tgz#0d61679db68d0c7ceb42d1c4dff2fa07f14af389"
+  integrity sha512-7dBtyPt3BmN6e4erTgtf/BtZ97StA8QFlHYEZzV7JNcIcFHwKVwISLT0zE04ZHghPrhQS0ssRm8j6T7Fdevc1A==
+  dependencies:
+    inferno "7.4.8"
+
+inferno-shared@7.4.8:
+  version "7.4.8"
+  resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-7.4.8.tgz#2b554a36683b770339008749096d9704846dd337"
+  integrity sha512-I0jnqsBcQvGJ7hqZF3vEzspQ80evViCe8joP3snWkPXPElk9WBVGLBHX5tHwuFuXv6wW4zeVVA4kBRAs47B+NQ==
+
+inferno-vnode-flags@7.4.8:
+  version "7.4.8"
+  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-7.4.8.tgz#275d70e3c8b2b3f4eb56041cc9b8c832ce1fb26d"
+  integrity sha512-wOUeO7Aho8VH+s2V2K/53KwS0DtQFgT7TdzPE/s6P26ZIxQj+vt7oTJqzXn+xjRIjnfkTLm2eQ8qfInOWCu1rw==
+
+inferno@7.4.8, inferno@^7.4.6:
+  version "7.4.8"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-7.4.8.tgz#0d5504753e79903b0e4bbeff76fc11fd0b9ffe92"
+  integrity sha512-4XwGe5Kd0QkSaM/jqAQWjM0GfDLv+KujcWm5zbIow80G1tOEnZurQqhyF8u6m/HX3SnrCi+njlVdtPKDJXQiDw==
+  dependencies:
+    inferno-shared "7.4.8"
+    inferno-vnode-flags "7.4.8"
+    opencollective-postinstall "^2.0.3"
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -11757,7 +11837,7 @@ open@^7.4.2:
     is-docker "^2.0.0"
     is-wsl "^2.1.1"
 
-opencollective-postinstall@^2.0.2:
+opencollective-postinstall@^2.0.2, opencollective-postinstall@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz#7a0fff978f6dbfa4d006238fbac98ed4198c3259"
   integrity sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==
@@ -12785,11 +12865,6 @@ postcss@^8.2.10, postcss@^8.2.9:
     colorette "^1.2.2"
     nanoid "^3.1.23"
     source-map-js "^0.6.2"
-
-preact@^10.4.5:
-  version "10.5.12"
-  resolved "https://registry.yarnpkg.com/preact/-/preact-10.5.12.tgz#6a8ee8bf40a695c505df9abebacd924e4dd37704"
-  integrity sha512-r6siDkuD36oszwlCkcqDJCAKBQxGoeEGytw2DGMD5A/GGdu5Tymw+N2OBXwvOLxg6d1FeY8MgMV3cc5aVQo4Cg==
 
 preboot@8.0.0:
   version "8.0.0"
