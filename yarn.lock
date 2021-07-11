@@ -283,7 +283,7 @@
   dependencies:
     tslib "^2.2.0"
 
-"@angular/cdk@12.1.1":
+"@angular/cdk@12.1.1", "@angular/cdk@^12.1.0":
   version "12.1.1"
   resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-12.1.1.tgz#83b7ec7d5b97a003d31ea0dd25403e890d5e06ea"
   integrity sha512-MJENa8qmfLAr6t59u1+mEC2YPbCn4n3vsY6k8fKyf+ILXwwGHWNZlYblaRMBjrF/crSx1Kd5vb30RCqIcNTGsA==
@@ -522,7 +522,7 @@
   dependencies:
     "@ctrl/tinycolor" "^3.3.1"
 
-"@ant-design/icons-angular@12.0.3":
+"@ant-design/icons-angular@12.0.3", "@ant-design/icons-angular@^12.0.3":
   version "12.0.3"
   resolved "https://registry.yarnpkg.com/@ant-design/icons-angular/-/icons-angular-12.0.3.tgz#3e99aa99ceebb978384a2926d06da19c043fc4bd"
   integrity sha512-Jl/O7fQiFGsFHuesOp7Oo/TKTPSlWAqMa2DBQdgQbNzv2c3v1ijQWd54ymDC6ftIHMsKD30nJ6bekCiqdbfZuA==
@@ -11700,16 +11700,16 @@ ng-sidebar@9.4.2:
   resolved "https://registry.yarnpkg.com/ng-sidebar/-/ng-sidebar-9.4.2.tgz#3ecc4b06e244eb378d6d1fb5511c17c986698bca"
   integrity sha512-8KmEQYFhn4S5LDjRDXBhDfCgLchJEj+ClBdiTCAQoRjX8vdh85hmKIGN7aBsh1HNOXKN3rzDu0qmd90193/P3Q==
 
-ng-zorro-antd@11.4.2:
-  version "11.4.2"
-  resolved "https://registry.yarnpkg.com/ng-zorro-antd/-/ng-zorro-antd-11.4.2.tgz#c19f12fee9166cbed0b6c7c63fa37da0464413e7"
-  integrity sha512-1dMIz5zBma+CfUYYKmIKWIB9mXX837L+WKGGHhl2KrmIIbsbNLh3WTKudCBuyqL58EEgiVhTZYwl841xdz+vLw==
+ng-zorro-antd@12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/ng-zorro-antd/-/ng-zorro-antd-12.0.0.tgz#13e2f8d96b708e28ad773b9571d38a981ca8f0b1"
+  integrity sha512-GfMOFadUVIFQA1C0lG54o8FqtZRpshIO1m0xtXrpTYMdrw/42yQpGyYUparoGDY1JeH8aTlqxyzag+H0zvIJZw==
   dependencies:
-    "@angular/cdk" "^11.0.2"
-    "@ant-design/icons-angular" "^11.0.1"
+    "@angular/cdk" "^12.1.0"
+    "@ant-design/icons-angular" "^12.0.3"
     date-fns "^2.10.0"
     resize-observer-polyfill "^1.5.1"
-    tslib "^2.0.0"
+    tslib "^2.2.0"
 
 ng-zorro-antd@^11.4.1:
   version "11.4.1"
