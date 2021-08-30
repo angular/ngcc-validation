@@ -6041,7 +6041,15 @@ angular-datatables@12.0.0:
   dependencies:
     "@angular/cli" "^12.0.0"
 
-angular-draggable-droppable@4.6.0, angular-draggable-droppable@^4.6.0:
+angular-draggable-droppable@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/angular-draggable-droppable/-/angular-draggable-droppable-5.0.0.tgz#b9484d4b8c64962d7ab1103d72dcc2e9a3928572"
+  integrity sha512-hmwrFgc0igNnTgSfFLAhpiYRSfFzN99uX5RBpTLHMNyuiqotAhlOr2kn4OFjkdhZS45NYkgcUQ7sNBPlTfG4IA==
+  dependencies:
+    "@mattlewis92/dom-autoscroller" "^2.4.2"
+    tslib "^2.3.1"
+
+angular-draggable-droppable@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/angular-draggable-droppable/-/angular-draggable-droppable-4.6.0.tgz#9e8671e2c13854dcabea3df2b15208af3dc85a2b"
   integrity sha512-+8JhTDMKkc/NuFFqb8/H/QHpB+v4Z7YNrgvEbV+PQxXry19rkr89ofZgjNIXhZexTvJNb03BYlSQoknzXE9b3g==
@@ -16526,7 +16534,7 @@ tslib@2.1.0, tslib@>=1.9.0, tslib@^2.0.0, tslib@^2.0.3, tslib@^2.1.0, tslib@~2.1
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
   integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
 
-tslib@2.3.1:
+tslib@2.3.1, tslib@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
