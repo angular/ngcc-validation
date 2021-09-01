@@ -18439,28 +18439,28 @@
         }
       }
     },
-    "ngx-swiper-wrapper-ngcc": {
+    "swiper-ngcc": {
       "projectType": "application",
       "schematics": {},
-      "root": "projects/ngx-swiper-wrapper-ngcc",
-      "sourceRoot": "projects/ngx-swiper-wrapper-ngcc/src",
+      "root": "projects/swiper-ngcc",
+      "sourceRoot": "projects/swiper-ngcc/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-swiper-wrapper-ngcc",
-            "index": "projects/ngx-swiper-wrapper-ngcc/src/index.html",
-            "main": "projects/ngx-swiper-wrapper-ngcc/src/main.ts",
-            "polyfills": "projects/ngx-swiper-wrapper-ngcc/src/polyfills.ts",
-            "tsConfig": "projects/ngx-swiper-wrapper-ngcc/tsconfig.app.json",
+            "outputPath": "dist/swiper-ngcc",
+            "index": "projects/swiper-ngcc/src/index.html",
+            "main": "projects/swiper-ngcc/src/main.ts",
+            "polyfills": "projects/swiper-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/swiper-ngcc/tsconfig.app.json",
             "aot": true,
             "assets": [
-              "projects/ngx-swiper-wrapper-ngcc/src/favicon.ico",
-              "projects/ngx-swiper-wrapper-ngcc/src/assets"
+              "projects/swiper-ngcc/src/favicon.ico",
+              "projects/swiper-ngcc/src/assets"
             ],
             "styles": [
-              "projects/ngx-swiper-wrapper-ngcc/src/styles.css"
+              "projects/swiper-ngcc/src/styles.css"
             ],
             "scripts": []
           },
@@ -18468,8 +18468,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/ngx-swiper-wrapper-ngcc/src/environments/environment.ts",
-                  "with": "projects/ngx-swiper-wrapper-ngcc/src/environments/environment.prod.ts"
+                  "replace": "projects/swiper-ngcc/src/environments/environment.ts",
+                  "with": "projects/swiper-ngcc/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -18496,33 +18496,33 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-swiper-wrapper-ngcc:build"
+            "browserTarget": "swiper-ngcc:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-swiper-wrapper-ngcc:build:production"
+              "browserTarget": "swiper-ngcc:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-swiper-wrapper-ngcc:build"
+            "browserTarget": "swiper-ngcc:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-swiper-wrapper-ngcc/src/test.ts",
-            "polyfills": "projects/ngx-swiper-wrapper-ngcc/src/polyfills.ts",
-            "tsConfig": "projects/ngx-swiper-wrapper-ngcc/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-swiper-wrapper-ngcc/karma.conf.js",
+            "main": "projects/swiper-ngcc/src/test.ts",
+            "polyfills": "projects/swiper-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/swiper-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/swiper-ngcc/karma.conf.js",
             "assets": [
-              "projects/ngx-swiper-wrapper-ngcc/src/favicon.ico",
-              "projects/ngx-swiper-wrapper-ngcc/src/assets"
+              "projects/swiper-ngcc/src/favicon.ico",
+              "projects/swiper-ngcc/src/assets"
             ],
             "styles": [
-              "projects/ngx-swiper-wrapper-ngcc/src/styles.css"
+              "projects/swiper-ngcc/src/styles.css"
             ],
             "scripts": []
           }
@@ -18531,9 +18531,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngx-swiper-wrapper-ngcc/tsconfig.app.json",
-              "projects/ngx-swiper-wrapper-ngcc/tsconfig.spec.json",
-              "projects/ngx-swiper-wrapper-ngcc/e2e/tsconfig.json"
+              "projects/swiper-ngcc/tsconfig.app.json",
+              "projects/swiper-ngcc/tsconfig.spec.json",
+              "projects/swiper-ngcc/e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -18543,12 +18543,12 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/ngx-swiper-wrapper-ngcc/e2e/protractor.conf.js",
-            "devServerTarget": "ngx-swiper-wrapper-ngcc:serve"
+            "protractorConfig": "projects/swiper-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "swiper-ngcc:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ngx-swiper-wrapper-ngcc:serve:production"
+              "devServerTarget": "swiper-ngcc:serve:production"
             }
           }
         }

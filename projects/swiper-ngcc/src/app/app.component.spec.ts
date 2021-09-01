@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ngx-swiper-wrapper-ngcc'`, () => {
+  it(`should have as title 'swiper-ngcc'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('ngx-swiper-wrapper-ngcc');
+    expect(app.title).toEqual('swiper-ngcc');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to ngx-swiper-wrapper-ngcc!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to swiper-ngcc!');
   });
 });
