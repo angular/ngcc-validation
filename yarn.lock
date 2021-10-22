@@ -41,12 +41,12 @@
     "@jridgewell/resolve-uri" "1.0.0"
     sourcemap-codec "1.4.8"
 
-"@angular-devkit/architect@^0.1300.0-rc.0":
-  version "0.1300.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1300.0-rc.0.tgz#c91af51fd47c5ed26e4049cd94a8d3d2efeeadec"
-  integrity sha512-e/IxntlzooSUYhFe4KOF15ttyyzG7g8t1GjI3uU89GOr0AknigdyQ32O7eAmnNvL/Ziy1Kv38bLXL+gQZB4uWg==
+"@angular-devkit/architect@^0.1300.0-rc.1":
+  version "0.1300.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1300.0-rc.1.tgz#f9f8987ea2109b3f9541458169c01124d1e56f30"
+  integrity sha512-irhY4v3/OZXkWniSfgfqg7ZrXRY8w5DXtGia1ve+GylOkOmfx8aOsTcTK4x9ESbAR+NaoarMl7zmA6sO9ePdCg==
   dependencies:
-    "@angular-devkit/core" "13.0.0-rc.0"
+    "@angular-devkit/core" "13.0.0-rc.1"
     rxjs "6.6.7"
 
 "@angular-devkit/architect@github:angular/angular-devkit-architect-builds#0ccc8d3ec":
@@ -149,10 +149,10 @@
     rxjs "6.6.7"
     source-map "0.7.3"
 
-"@angular-devkit/core@13.0.0-rc.0", "@angular-devkit/core@^13.0.0-rc.0":
-  version "13.0.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-13.0.0-rc.0.tgz#54d0aea113d92d3a7175fd45e5d52b1474216b08"
-  integrity sha512-iWIVf296ybEKo3ddL6xzuvNjlR3nEchCjE2bnRcbWflKqFo9V/oVjQT6TQ8ADx4l4CTVXg26RkjQMpL3FMeBLA==
+"@angular-devkit/core@13.0.0-rc.1":
+  version "13.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-13.0.0-rc.1.tgz#49722f414afe646f2b1bc645b1e3dd0a67b594b4"
+  integrity sha512-MgN30iGA0nRTBN3N4bKBBhoTfuOWiMcbrQ/KknL4Vd+dOxNqpLLvSZuE3ghm6PqwCK+cUQPhDvQo/d6yhdplKQ==
   dependencies:
     ajv "8.6.3"
     ajv-formats "2.1.1"
@@ -181,6 +181,18 @@
     fast-json-stable-stringify "2.0.0"
     magic-string "0.25.3"
     rxjs "6.4.0"
+    source-map "0.7.3"
+
+"@angular-devkit/core@^13.0.0-rc.0":
+  version "13.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-13.0.0-rc.0.tgz#54d0aea113d92d3a7175fd45e5d52b1474216b08"
+  integrity sha512-iWIVf296ybEKo3ddL6xzuvNjlR3nEchCjE2bnRcbWflKqFo9V/oVjQT6TQ8ADx4l4CTVXg26RkjQMpL3FMeBLA==
+  dependencies:
+    ajv "8.6.3"
+    ajv-formats "2.1.1"
+    fast-json-stable-stringify "2.1.0"
+    magic-string "0.25.7"
+    rxjs "6.6.7"
     source-map "0.7.3"
 
 "@angular-devkit/core@github:angular/angular-devkit-core-builds#0ccc8d3ec":
@@ -3703,14 +3715,14 @@
   resolved "https://registry.yarnpkg.com/@ngui/auto-complete/-/auto-complete-3.0.0.tgz#961cd1bacb03a1c592310a788afbb6a6f8d23c28"
   integrity sha512-cEJHTuta1ZEAgWMTZNmFhVqTcuWIqCLUUBJWIWuIwZgVBcnM/ctn5GSyu/lP2iCV+VG34kHE8NrvTnAztagYxA==
 
-"@nguniversal/builders@13.0.0-rc.0":
-  version "13.0.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@nguniversal/builders/-/builders-13.0.0-rc.0.tgz#aeedc7c9641f0021f930a3b96cd4aa6865998942"
-  integrity sha512-NKUON+rSPKQVmgOgBT9wNpb0bnWpC/3x8H3SghN5ICOtclHWSj0d22OeecujO0SjxGpq4mCKeEW+/50jKMA3ig==
+"@nguniversal/builders@13.0.0-rc.1":
+  version "13.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@nguniversal/builders/-/builders-13.0.0-rc.1.tgz#3eaaf86eabe89bce54547e6292dd18c126cdd6c3"
+  integrity sha512-Sxnjo81i4zmchdZ/dJ4ZGRxfJIrXeRqLqFPbwMJYO8nLXtBWkDO/PNcoo0IcTHFBZXWJsUTTV5zOZK3s0UZvXQ==
   dependencies:
-    "@angular-devkit/architect" "^0.1300.0-rc.0"
+    "@angular-devkit/architect" "^0.1300.0-rc.1"
     "@angular-devkit/core" "^13.0.0-rc.0"
-    "@nguniversal/common" "13.0.0-rc.0"
+    "@nguniversal/common" "13.0.0-rc.1"
     browser-sync "^2.26.7"
     express "^4.17.1"
     guess-parser "^0.4.12"
@@ -3726,6 +3738,15 @@
   integrity sha512-UZE5AaTV9uQbWv0+AfCqdpbzlbJQLMioHP5TcWKqzkdMcDYf8fxd+rdF8ZoUDxEBC2AabTNKtQgvoDTOSwWJOA==
   dependencies:
     critters "0.0.10"
+    jsdom "18.0.0"
+    tslib "^2.3.0"
+
+"@nguniversal/common@13.0.0-rc.1":
+  version "13.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-13.0.0-rc.1.tgz#05512738d900f7e8dfd1eeb075bfa34af8b0b8ac"
+  integrity sha512-eZg3bCtS2/o3CEaAWkPyNe1bHt1hMaVSd2mD59CknQc/dxSKlI2UMuMyBE4SqUFbXlUxAgm633eAlGjIrrvM/Q==
+  dependencies:
+    critters "0.0.11"
     jsdom "18.0.0"
     tslib "^2.3.0"
 
