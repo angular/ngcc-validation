@@ -11,8 +11,8 @@ version: 2.1
 #             See https://circleci.com/developer/images/image/cimg/node.
 # **NOTE 4**: Specify a ChromeDriver version that is compatible with the version of Chrome used.
 #             See https://chromedriver.chromium.org/downloads.
-var_1: &docker_image cimg/node:14.15.4-browsers@sha256:567deabc21e69837e4f1e5cfddeebb6c1b27cc606d40081753385161462f4282
-var_2: &cache_key v2-ngcc-validation-{{ checksum "yarn.lock" }}-node-14.15.4
+var_1: &docker_image cimg/node:14.18.1-browsers@sha256:10506b3b51e08c453194d80b61053275c38c85761c00d08e5e90dc1898f07a55
+var_2: &cache_key v2-ngcc-validation-{{ checksum "yarn.lock" }}-node-14.18.1
 var_3: &chrome_version 88.0.4324.150
 var_4: &chromedriver_version 88.0.4324.96
 var_5: &working_directory ~/repo
