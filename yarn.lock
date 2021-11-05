@@ -41,12 +41,12 @@
     "@jridgewell/resolve-uri" "1.0.0"
     sourcemap-codec "1.4.8"
 
-"@angular-devkit/architect@^0.1300.0-rc.2":
-  version "0.1300.0-rc.2"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1300.0-rc.2.tgz#fe3d46cf5d6a7cbc891ac494885171bf6a6eead7"
-  integrity sha512-kDA5Vx4nTFy/qEkrIBqpg6I0dPieXikaYhnyycpt4H6xaBO7Jg6DPpd3U1WNdAQLFkx7pyrEfHATx3nXMTU7/g==
+"@angular-devkit/architect@^0.1300.0":
+  version "0.1300.1"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1300.1.tgz#974725b1bc0f82cc6c310d5b59da5e44b6a46b51"
+  integrity sha512-D6R2kYnZlKIpVx+lnuC8MRu8ZUqq2dkpeNJ1yP2IgkRdRktXWOOc2xj8utZ6NVCn8m/9kdOceQDlceVz/XT0+g==
   dependencies:
-    "@angular-devkit/core" "13.0.0-rc.2"
+    "@angular-devkit/core" "13.0.1"
     rxjs "6.6.7"
 
 "@angular-devkit/architect@github:angular/angular-devkit-architect-builds#97624f3e8":
@@ -149,10 +149,10 @@
     rxjs "6.6.7"
     source-map "0.7.3"
 
-"@angular-devkit/core@13.0.0-rc.2", "@angular-devkit/core@^13.0.0-rc.2":
-  version "13.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-13.0.0-rc.2.tgz#27de52f40f0050e2bf1d12cc2d70d3a89f3e136a"
-  integrity sha512-R3tRpozvksicizpX/88uSzZ31SkeS6HTCxbHpBlup9D5VGjLDQSIrKOeJhzH/rRdONW0TNGNhvICwy+3xFlsbQ==
+"@angular-devkit/core@13.0.1", "@angular-devkit/core@^13.0.0":
+  version "13.0.1"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-13.0.1.tgz#f84d3290a9d99f83a1431438860c8c6bfb89c777"
+  integrity sha512-RfhpPw7vU5ok7ICUwEx4Lic+HCHrMjKnj/Tbk+CfSqONTFtqDaMoC8itQE2risLugT4mzO+3Cy95eccpf282kQ==
   dependencies:
     ajv "8.6.3"
     ajv-formats "2.1.1"
@@ -3809,14 +3809,14 @@
   resolved "https://registry.yarnpkg.com/@ngui/auto-complete/-/auto-complete-3.0.0.tgz#961cd1bacb03a1c592310a788afbb6a6f8d23c28"
   integrity sha512-cEJHTuta1ZEAgWMTZNmFhVqTcuWIqCLUUBJWIWuIwZgVBcnM/ctn5GSyu/lP2iCV+VG34kHE8NrvTnAztagYxA==
 
-"@nguniversal/builders@13.0.0-rc.2":
-  version "13.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/@nguniversal/builders/-/builders-13.0.0-rc.2.tgz#eda60534b9efa1067e6ee818972379a19507b69d"
-  integrity sha512-+sSB5cY650OvNwwBLEihTdtAJ95RbJANLUag9j4MfB9HaLC+gas5nyPZDW1uV+nnJVGGb81SMWNVRHsL350LIA==
+"@nguniversal/builders@13.0.0":
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/builders/-/builders-13.0.0.tgz#582f386a7d3a7dbc2a89ac7fabc8250817e6a683"
+  integrity sha512-CYmY+lGo6AdQBehtazwTA2J5K616Iy85Gfk7sPhHl3hTZSOmXj8Xa3GQturYHAtFNq0iD+WO+xoAyljXzQTzPw==
   dependencies:
-    "@angular-devkit/architect" "^0.1300.0-rc.2"
-    "@angular-devkit/core" "^13.0.0-rc.2"
-    "@nguniversal/common" "13.0.0-rc.2"
+    "@angular-devkit/architect" "^0.1300.0"
+    "@angular-devkit/core" "^13.0.0"
+    "@nguniversal/common" "13.0.0"
     browser-sync "^2.26.7"
     express "^4.17.1"
     guess-parser "^0.4.12"
