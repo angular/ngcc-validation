@@ -3826,6 +3826,15 @@
     rxjs "^6.5.5"
     tree-kill "^1.2.2"
 
+"@nguniversal/common@13.0.0":
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-13.0.0.tgz#b4c858d10760b21ea4e09e9f3aae8b9444e64838"
+  integrity sha512-5jBBy4qxdk5v2MZcEeIUVmh6mDVGBR5yQgns+J1h/UYmIEKfa8RBh1UUHMbw2A/rIq/Rtxaig2GTCsdODjPX1Q==
+  dependencies:
+    critters "0.0.14"
+    jsdom "18.0.0"
+    tslib "^2.3.0"
+
 "@nguniversal/common@13.0.0-rc.2":
   version "13.0.0-rc.2"
   resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-13.0.0-rc.2.tgz#1151e6a5c1704e4411d21aa78a20b9d14043dbfc"
@@ -3835,12 +3844,12 @@
     jsdom "18.0.0"
     tslib "^2.3.0"
 
-"@nguniversal/express-engine@13.0.0-rc.2":
-  version "13.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/@nguniversal/express-engine/-/express-engine-13.0.0-rc.2.tgz#35d1e5317868dd90a6bebbf46800508078805845"
-  integrity sha512-dRUaF1VF1z7Gy9IZQNZD36Qv8+DkWeBARgWR9+FpVnCzKX0HVhYanEgE53XmpWxZ9b6Y6hlO1CAhAUe1bd1syQ==
+"@nguniversal/express-engine@13.0.0":
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/express-engine/-/express-engine-13.0.0.tgz#0b051fcf1c432437ff60146b1adef5c44ffdc0c8"
+  integrity sha512-Lr/c/RBM8BsjCq7UheT2iBCIpbRh8eBo7ED2mO2Z7SxqxtW1Ml6Emn8PrfcMSGMqLLY01tNyXGxVEO4p8dNgKg==
   dependencies:
-    "@nguniversal/common" "13.0.0-rc.2"
+    "@nguniversal/common" "13.0.0"
     tslib "^2.3.0"
 
 "@ngx-formly/bootstrap@5.10.23":
