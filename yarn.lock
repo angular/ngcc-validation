@@ -13010,12 +13010,12 @@ ngx-chips@2.2.2:
     ng2-material-dropdown ">=0.11.0"
     tslib "^1.10.0"
 
-ngx-clipboard@14.0.1:
-  version "14.0.1"
-  resolved "https://registry.yarnpkg.com/ngx-clipboard/-/ngx-clipboard-14.0.1.tgz#fe977ee115f50f6a589487f6f99fa5eef5203763"
-  integrity sha512-y6fDrvAso1cbM+VvHgB2kJ3dcQ/EBPol33nLaqqKB1jNO/Kd3l17EHdXNW/oKY0wUKCHk7ZCuiinREgUHEYfXg==
+ngx-clipboard@15.0.0:
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/ngx-clipboard/-/ngx-clipboard-15.0.0.tgz#751c38cd2ae19e5669a223c7417c29a5c002c031"
+  integrity sha512-CArAecNiVKIYXDJX8aJfTi6y8s9ysXjg3Bk712p8QFpJhemQijlsgrXJGbuQonnvG1hcu9VjSPE0cn0rGcciSA==
   dependencies:
-    ngx-window-token ">=4.0.0"
+    ngx-window-token ">=6.0.0"
     tslib "^2.0.0"
 
 ngx-color-picker@11.0.0:
@@ -13193,17 +13193,10 @@ ngx-wig@12.2.0:
   dependencies:
     tslib "^2.2.0"
 
-ngx-window-token@6.0.0:
+ngx-window-token@6.0.0, ngx-window-token@>=6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/ngx-window-token/-/ngx-window-token-6.0.0.tgz#8b4704242df93a302422a23163359c09d6bb34a0"
   integrity sha512-IeLKO1jzfzSvZ6vlAt4QSY/B5XcHEhdOwTjqvWEPt6/esWV9T3mA2ln10kj6SCc9pUSx4NybxE10gcyyYroImg==
-  dependencies:
-    tslib "^2.0.0"
-
-ngx-window-token@>=4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/ngx-window-token/-/ngx-window-token-4.0.0.tgz#8d8553d193f0515eb28f04ccf2c598fbe6abaa34"
-  integrity sha512-z6tS3UQoKULdABWHpE57l1xtoxFFzlwLe1n+nu9+xzCZUdSvkGqhb5dSje4NOVhA6mMOqzR4SctSBZARwqPPuQ==
   dependencies:
     tslib "^2.0.0"
 
