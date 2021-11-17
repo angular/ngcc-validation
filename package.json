@@ -4,6 +4,7 @@
   "description": "Validation of Angular libraries working with NGCC.",
   "scripts": {
     "ng": "ng",
+    "check-ngcc-packages": "ts-node --project infra/tsconfig.json infra/is-ngcc-necessary.ts",
     "build": "ts-node --project infra/tsconfig.json infra/build.ts",
     "add-project": "ts-node --project infra/tsconfig.json infra/create-proj.ts",
     "postinstall": "webdriver-manager update --gecko false --standalone false $CHROMEDRIVER_VERSION_ARG",

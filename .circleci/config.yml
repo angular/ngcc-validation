@@ -77,6 +77,7 @@ jobs:
           name: Install Dependencies
           command: |
             CHROMEDRIVER_VERSION_ARG="--versions.chrome $CHROMEDRIVER_VERSION" yarn install --network-timeout 100000 --frozen-lockfile
+      - run: yarn check-ngcc-packages
       - save_cache:
           name: Save Yarn Package Cache
           key: *cache_key
