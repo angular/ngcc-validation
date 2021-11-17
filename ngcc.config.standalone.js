@@ -81,32 +81,31 @@ module.exports = {
     // reverting to an older version of Rollup in NgPackagr or fixing this in ngcc with something
     // like https://github.com/angular/angular/pull/43938).
     ...Object.fromEntries(
-        Object.entries({
-          '@delon/abc': ['date-picker'],
-          '@delon/theme': ['.'],
-          '@delon/util': ['pipes/currency'],
-          '@ng-select/ng-select': ['.'],
-          'ng-zorro-antd': [
-            'avatar',
-            'badge',
-            'core/transition-patch',
-            'date-picker',
-            'layout',
-            'result',
-            'slider',
-            'tabs',
-            'tree',
-            'tree-view',
-          ],
-        }).map(([pkgName, entryPoints]) => [
-          pkgName,
-          {
-            entryPoints: Object.fromEntries(entryPoints.map(entryPoint => [
-              entryPoint,
-              {override: {main: undefined}},
-            ])),
-          },
-        ]),
+      Object.entries({
+        '@delon/abc': ['date-picker'],
+        '@delon/theme': ['.'],
+        '@delon/util': ['pipes/currency'],
+        'ng-zorro-antd': [
+          'avatar',
+          'badge',
+          'core/transition-patch',
+          'date-picker',
+          'layout',
+          'result',
+          'slider',
+          'tabs',
+          'tree',
+          'tree-view',
+        ],
+      }).map(([pkgName, entryPoints]) => [
+        pkgName,
+        {
+          entryPoints: Object.fromEntries(entryPoints.map(entryPoint => [
+            entryPoint,
+            { override: { main: undefined } },
+          ])),
+        },
+      ]),
     ),
   },
 };
