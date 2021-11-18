@@ -69,5 +69,43 @@ module.exports = {
         },
       },
     },
+
+    // The UMD bundles of some packages are generated with Rollup v2.57.0 or newer, which uses
+    // element access (i.e. `exports['foo']`) instead of property access (i.e. `exports.foo`) for
+    // certain exports. Since `ngcc` is not capable of correctly processing such exports, this
+    // results in errors.
+    //
+    // Temporarily ignore UMD bundles for the affected entry-points.
+    //
+    // This change can be reverted once the problem is addressed (either by fixing this in Rollup,
+    // reverting to an older version of Rollup in NgPackagr or fixing this in ngcc with something
+    // like https://github.com/angular/angular/pull/43938).
+    ...Object.fromEntries(
+      Object.entries({
+        '@delon/abc': ['date-picker'],
+        '@delon/theme': ['.'],
+        '@delon/util': ['pipes/currency'],
+        'ng-zorro-antd': [
+          'avatar',
+          'badge',
+          'core/transition-patch',
+          'date-picker',
+          'layout',
+          'result',
+          'slider',
+          'tabs',
+          'tree',
+          'tree-view',
+        ],
+      }).map(([pkgName, entryPoints]) => [
+        pkgName,
+        {
+          entryPoints: Object.fromEntries(entryPoints.map(entryPoint => [
+            entryPoint,
+            { override: { main: undefined } },
+          ])),
+        },
+      ]),
+    ),
   },
 };
