@@ -82,7 +82,7 @@ module.exports = {
     // like https://github.com/angular/angular/pull/43938).
     ...Object.fromEntries(
       Object.entries({
-        '@delon/abc': ['date-picker'],
+        '@delon/abc': ['date-picker', 'st'],
         '@delon/theme': ['.'],
         '@delon/util': ['pipes/currency'],
         'ng-zorro-antd': [
