@@ -78,6 +78,8 @@ jobs:
           command: |
             CHROMEDRIVER_VERSION_ARG="--versions.chrome $CHROMEDRIVER_VERSION" yarn install --network-timeout 100000 --frozen-lockfile
       - run: yarn check-ngcc-packages
+      - notify_webhook_on_fail:
+          webhook_url_env_var: SLACK_NGCC_WEBHOOK_URL
       - save_cache:
           name: Save Yarn Package Cache
           key: *cache_key
