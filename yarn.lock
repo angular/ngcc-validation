@@ -2501,11 +2501,6 @@
     protobufjs "^6.10.0"
     yargs "^16.1.1"
 
-"@igniteui/material-icons-extended@^2.8.0":
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/@igniteui/material-icons-extended/-/material-icons-extended-2.8.0.tgz#7e4123e7dd1e163152e8326de596cea1200e385e"
-  integrity sha512-EHrYCo0WCEUjXPxzb8LG2s4CnWnkwxaqy2xaL/HhT1WfhZuVvJHxe/nxUEl5R/8V9fl0jRiSigpHrtgGBykBzw==
-
 "@ionic/angular@5.9.1":
   version "5.9.1"
   resolved "https://registry.yarnpkg.com/@ionic/angular/-/angular-5.9.1.tgz#59bc14f6714693a8c982c7f89fbe8f0a3160e02d"
@@ -2550,11 +2545,6 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@jridgewell/resolve-uri/-/resolve-uri-1.0.0.tgz#3fdf5798f0b49e90155896f6291df186eac06c83"
   integrity sha512-9oLAnygRMi8Q5QkYEU4XWK04B+nuoXoxjRvRxgjuChkLZFBja0YPSgdZ7dZtwhncLBcQe/I/E+fLuk5qxcYVJA==
-
-"@juggle/resize-observer@^3.3.0":
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.3.1.tgz#b50a781709c81e10701004214340f25475a171a0"
-  integrity sha512-zMM9Ds+SawiUkakS7y94Ymqx+S0ORzpG3frZirN3l+UlXUmSUR7hF4wxCVqW+ei94JzV5kt0uXBcoOEAuiydrw==
 
 "@lit/reactive-element@^1.0.0", "@lit/reactive-element@^1.0.0-rc.2":
   version "1.0.2"
@@ -3570,11 +3560,6 @@
   version "3.43.3"
   resolved "https://registry.yarnpkg.com/@types/googlemaps/-/googlemaps-3.43.3.tgz#70cf962154a160fe78bcd69d6ccc296dd9175b1f"
   integrity sha512-ZWNoz/O8MPEpiajvj7QiqCY8tTLFNqNZ/a+s+zTV58wFVNAvvqV4bdGfnsjTb5Cs4V6wEsLrX8XRhmnyYJ2Tdg==
-
-"@types/hammerjs@^2.0.40":
-  version "2.0.40"
-  resolved "https://registry.yarnpkg.com/@types/hammerjs/-/hammerjs-2.0.40.tgz#ded0240b6ea1ad7afc1e60374c49087aaea5dbd8"
-  integrity sha512-VbjwR1fhsn2h2KXAY4oy1fm7dCxaKy0D+deTb8Ilc3Eo3rc5+5eA4rfYmZaHgNJKxVyI0f6WIXzO2zLkVmQPHA==
 
 "@types/http-proxy@^1.17.5":
   version "1.17.6"
@@ -7757,7 +7742,7 @@ guess-parser@^0.4.12:
   dependencies:
     "@wessberg/ts-evaluator" "0.0.27"
 
-hammerjs@2.0.8, hammerjs@^2.0.8:
+hammerjs@2.0.8:
   version "2.0.8"
   resolved "https://registry.yarnpkg.com/hammerjs/-/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
   integrity sha1-BO93hiz/K7edMPdpIJWTAiK/YPE=
@@ -8128,26 +8113,6 @@ iferr@^0.1.5:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/iferr/-/iferr-0.1.5.tgz#c60eed69e6d8fdb6b3104a1fcbca1c192dc5b501"
   integrity sha1-xg7taebY/bazEEofy8ocGS3FtQE=
-
-igniteui-angular@12.3.0:
-  version "12.3.0"
-  resolved "https://registry.yarnpkg.com/igniteui-angular/-/igniteui-angular-12.3.0.tgz#6fa42571be87db08d34978ac79cb667cb7271a6a"
-  integrity sha512-8lprA0F3GA+U7J/QeGRP5KAUFe0tFk75iyUkYEUpYVzpiTAy6Ayq8ev/XnxWvFHHpBPX6dNMMlidX/LVbMDgMQ==
-  dependencies:
-    "@igniteui/material-icons-extended" "^2.8.0"
-    "@juggle/resize-observer" "^3.3.0"
-    "@types/hammerjs" "^2.0.40"
-    hammerjs "^2.0.8"
-    igniteui-trial-watermark "^1.0.3"
-    jszip "^3.6.0"
-    lodash.mergewith "^4.6.2"
-    tslib "^2.0.0"
-    uuid "^8.3.0"
-
-igniteui-trial-watermark@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/igniteui-trial-watermark/-/igniteui-trial-watermark-1.0.3.tgz#6f7b8628144dd848c32b6d863f6e0b37d5ce9956"
-  integrity sha512-q6thtu+7R6MOB+i9GorFPCcWeOImW43BzCAtKnDAYWwaoueb8Lg1EhBkIhAyfEIH+yZ/9c5lnZdU61/GRPoP+g==
 
 ignore-walk@^3.0.1:
   version "3.0.4"
@@ -9154,7 +9119,7 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
-jszip@^3.1.3, jszip@^3.6.0, jszip@^3.7.1:
+jszip@^3.1.3, jszip@^3.7.1:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/jszip/-/jszip-3.7.1.tgz#bd63401221c15625a1228c556ca8a68da6fda3d9"
   integrity sha512-ghL0tz1XG9ZEmRMcEN2vt7xabrDdqHHeykgARpmZ0BiIctWxM47Vt63ZO2dnp4QYt/xJVLLy5Zv1l/xRdh2byg==
@@ -9536,11 +9501,6 @@ lodash.merge@^4.5.0:
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
-
-lodash.mergewith@^4.6.2:
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.2.tgz#617121f89ac55f59047c7aec1ccd6654c6590f55"
-  integrity sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==
 
 lodash.once@^4.0.0:
   version "4.1.1"
@@ -14023,7 +13983,7 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@8.3.2, uuid@^8.3.0:
+uuid@8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
