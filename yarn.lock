@@ -2588,37 +2588,47 @@
     tns-core-modules-widgets latest
     tslib "1.10.0"
 
-"@nebular/auth@8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@nebular/auth/-/auth-8.0.0.tgz#f34dccb80e7d34a4a75baf1a751952935ebdba9a"
-  integrity sha512-2bL4XsyoN3+Hb14fAFvxjnj3I5KX5Xi7QBSquiSfo5u1PDJKCTRA8TVuKmmOqSNJ7Y7ztbA+qR2Q5BY6KXTspg==
-
-"@nebular/date-fns@8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@nebular/date-fns/-/date-fns-8.0.0.tgz#bf517fcb82d114f327c4acf8e234f5776e0f6df9"
-  integrity sha512-52JfXXM0RYV0WGXPgSNUhQKDaxkSB15wmX5maSWDbj2rlI+d2R6t8ScWfyZVPfiR/3h8L10KWPYiysjJPZ6CXQ==
-
-"@nebular/eva-icons@8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@nebular/eva-icons/-/eva-icons-8.0.0.tgz#186bfda564be9521b0584eb23a09e4a1be036bb9"
-  integrity sha512-eUNEQJP5w+XiAW1FyEVneno0qiNKoDZlobkglhdvVR1u7e3D4a5IxwnaKK0Izl/6j6eSs/qoBuzrBkJ4alaNjw==
-
-"@nebular/moment@8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@nebular/moment/-/moment-8.0.0.tgz#072055fe0a0bb94c5ec976465ae66fbad06074f0"
-  integrity sha512-3PcYKIMT78U+ZsSb6fZj6k4VsNF68WMTL47QN7ILMBS7DejJTroxrlxC4y3m0ebR9p3y302oG40FUApbEi2VUQ==
-
-"@nebular/security@8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@nebular/security/-/security-8.0.0.tgz#b336210936e30d2dc6f127c6634e23558819555d"
-  integrity sha512-ak/kNqGhu9MuPZfKW+JrvXGyI2QslEfjsnQm3KwjAcx+n9JIYpwBwk+aJhS/R+OOnPWYPL7dhxg8lWi1mBZ8GQ==
-
-"@nebular/theme@8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@nebular/theme/-/theme-8.0.0.tgz#808ba716cd96dc02d14aeec5583daf6d71ddec26"
-  integrity sha512-Lq1a3IgjfU1bqwCrsPQBd3nGmjK61fND+6r4lmXFWDRvXti18k5KMIvzY+KryNsTEhEOyby+V5R16T67MKZs6g==
+"@nebular/auth@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@nebular/auth/-/auth-9.0.0.tgz#c34b7fafa5acaeb924bd7a3b1a28d1273ab6bc02"
+  integrity sha512-pZ/pihUpY9KWNC+U0AQ+pBepYHJNPOboSx8NDc7IDKOV0umz1wb+lPgctRGL9NIC0128zcCT/W0dp7M4h7f5bQ==
   dependencies:
-    intersection-observer "0.7.0"
+    tslib "^2.3.0"
+
+"@nebular/date-fns@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@nebular/date-fns/-/date-fns-9.0.0.tgz#81a691f247ee35f7a534148a867c5debf25291ac"
+  integrity sha512-rm1x8B6z9fJTitx3P1YetoXJKI0p8VwVlqDxlzQrdNY0Ty6OhT2Qh+0mmm1Ew1pj26wbcV1tCN1biJ+X1SaGtw==
+  dependencies:
+    tslib "^2.3.0"
+
+"@nebular/eva-icons@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@nebular/eva-icons/-/eva-icons-9.0.0.tgz#92bc67c6c0c67c25024af096c8e1d992979835c1"
+  integrity sha512-qdnCp/+pcpqVQR77USqveAJODYoRBCM28QLSF0znkyL1yLieDvWhJv99C5/GnHGmGp1KibltJ4uVhSNRr90umw==
+  dependencies:
+    tslib "^2.3.0"
+
+"@nebular/moment@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@nebular/moment/-/moment-9.0.0.tgz#3cb93cf40a3b11f6dc44109b86b841b7b425a5c4"
+  integrity sha512-t4gIP2C4NsnlbiV8dHvcwEawDJiqpm7EwY72Fo9DkzIYAU7P0K9U6jEFdqPFwTE9kc6sqnVf1tx1ILcfwNR11w==
+  dependencies:
+    tslib "^2.3.0"
+
+"@nebular/security@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@nebular/security/-/security-9.0.0.tgz#00c98ae57078b8fed8332d4b156ed2dd23ef44b6"
+  integrity sha512-VIXroQTcp3vjTzlny5zLrgevQueUrz/nwA4pLdVXH5N5aMXfVh1vb2U42zjeKnGNAX3LjS0LrLJFKaXB7KZ8Ig==
+  dependencies:
+    tslib "^2.3.0"
+
+"@nebular/theme@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@nebular/theme/-/theme-9.0.0.tgz#38873776b61baf7240f372e0fbdcd261ad15375b"
+  integrity sha512-IwqAsmjVPDSRM3cwH+UBTZKupxdXZz7NHw3/tTZgfLf3bBg3xW3Cr+abnqDTJv1ue0dIPDCCvUSNVNxtaFW7lQ==
+  dependencies:
+    tslib "^2.3.0"
 
 "@netbasal/spectator@3.12.0":
   version "3.12.0"
@@ -8273,11 +8283,6 @@ intersection-observer@0.12.0, intersection-observer@>=0.11.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.12.0.tgz#6c84628f67ce8698e5f9ccf857d97718745837aa"
   integrity sha512-2Vkz8z46Dv401zTWudDGwO7KiGHNDkMv417T5ItcNYfmvHR/1qCTVBO9vwH8zZmQ0WkA/1ARwpysR9bsnop4NQ==
-
-intersection-observer@0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.7.0.tgz#ee16bee978db53516ead2f0a8154b09b400bbdc9"
-  integrity sha512-Id0Fij0HsB/vKWGeBe9PxeY45ttRiBmhFyyt/geBdDHBYNctMRTE3dC1U3ujzz3lap+hVXlEcVaB56kZP/eEUg==
 
 intl@1.2.5:
   version "1.2.5"
