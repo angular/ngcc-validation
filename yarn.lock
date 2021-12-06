@@ -53,7 +53,7 @@
   version "0.1301.0-next.3"
   resolved "https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/2f3c671d579582ee0b8174496be3dbefb43a3655"
   dependencies:
-    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#033c4415e"
+    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#d94613268"
     rxjs "6.6.7"
 
 "@angular-devkit/build-angular@github:angular/angular-devkit-build-angular-builds#e27ad698210a3437c9a8227b5d2ca830f11fca25":
@@ -61,9 +61,9 @@
   resolved "https://codeload.github.com/angular/angular-devkit-build-angular-builds/tar.gz/e27ad698210a3437c9a8227b5d2ca830f11fca25"
   dependencies:
     "@ampproject/remapping" "1.0.2"
-    "@angular-devkit/architect" "github:angular/angular-devkit-architect-builds#033c4415e"
-    "@angular-devkit/build-webpack" "github:angular/angular-devkit-build-webpack-builds#033c4415e"
-    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#033c4415e"
+    "@angular-devkit/architect" "github:angular/angular-devkit-architect-builds#d94613268"
+    "@angular-devkit/build-webpack" "github:angular/angular-devkit-build-webpack-builds#d94613268"
+    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#d94613268"
     "@babel/core" "7.16.0"
     "@babel/generator" "7.16.0"
     "@babel/helper-annotate-as-pure" "7.16.0"
@@ -74,7 +74,7 @@
     "@babel/runtime" "7.16.3"
     "@babel/template" "7.16.0"
     "@discoveryjs/json-ext" "0.5.6"
-    "@ngtools/webpack" "github:angular/ngtools-webpack-builds#033c4415e"
+    "@ngtools/webpack" "github:angular/ngtools-webpack-builds#d94613268"
     ansi-colors "4.1.1"
     babel-loader "8.2.3"
     babel-plugin-istanbul "6.1.1"
@@ -131,7 +131,7 @@
   version "0.1301.0-next.3"
   resolved "https://codeload.github.com/angular/angular-devkit-build-webpack-builds/tar.gz/cbba6b66bb283824e0e3c3bdfd03f09a2537daeb"
   dependencies:
-    "@angular-devkit/architect" "github:angular/angular-devkit-architect-builds#033c4415e"
+    "@angular-devkit/architect" "github:angular/angular-devkit-architect-builds#d94613268"
     rxjs "6.6.7"
 
 "@angular-devkit/core@13.0.2", "@angular-devkit/core@^13.0.2":
@@ -199,7 +199,7 @@
   version "13.1.0-next.3"
   resolved "https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/494e4ae261c35ad5c030b4e6c063328a4db126e1"
   dependencies:
-    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#033c4415e"
+    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#d94613268"
     jsonc-parser "3.0.0"
     magic-string "0.25.7"
     ora "5.4.1"
@@ -246,10 +246,10 @@
   version "13.1.0-next.3"
   resolved "https://codeload.github.com/angular/cli-builds/tar.gz/cb4a734f6ed9bb9cfafa7f8aff85e51539da79ba"
   dependencies:
-    "@angular-devkit/architect" "github:angular/angular-devkit-architect-builds#033c4415e"
-    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#033c4415e"
-    "@angular-devkit/schematics" "github:angular/angular-devkit-schematics-builds#033c4415e"
-    "@schematics/angular" "github:angular/schematics-angular-builds#033c4415e"
+    "@angular-devkit/architect" "github:angular/angular-devkit-architect-builds#d94613268"
+    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#d94613268"
+    "@angular-devkit/schematics" "github:angular/angular-devkit-schematics-builds#d94613268"
+    "@schematics/angular" "github:angular/schematics-angular-builds#d94613268"
     "@yarnpkg/lockfile" "1.1.0"
     ansi-colors "4.1.1"
     debug "4.3.3"
@@ -3265,8 +3265,8 @@
   version "13.1.0-next.3"
   resolved "https://codeload.github.com/angular/schematics-angular-builds/tar.gz/2c29fc4119833d84642941974d70b85d98fdd90f"
   dependencies:
-    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#033c4415e"
-    "@angular-devkit/schematics" "github:angular/angular-devkit-schematics-builds#033c4415e"
+    "@angular-devkit/core" "github:angular/angular-devkit-core-builds#d94613268"
+    "@angular-devkit/schematics" "github:angular/angular-devkit-schematics-builds#d94613268"
     jsonc-parser "3.0.0"
 
 "@sheerun/mutationobserver-shim@^0.3.2":
@@ -9206,11 +9206,6 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
-lodash-es@^4.17.15:
-  version "4.17.20"
-  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.20.tgz#29f6332eefc60e849f869c264bc71126ad61e8f7"
-  integrity sha512-JD1COMZsq8maT6mnuz1UMV0jvYD0E0aUsSOdrr1/nAG3dhqQXwRRgeW0cSqH1U43INKcqxaiVIQNOUDld7gRDA==
-
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
@@ -9900,14 +9895,6 @@ ng2-ace-editor@0.3.9:
   dependencies:
     ace-builds "^1.4.2"
     brace "^0.11.1"
-
-ng2-charts@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/ng2-charts/-/ng2-charts-3.0.0.tgz#9da3a5f9ec6eb139bfcaf20ee4452e4fa948f840"
-  integrity sha512-Xbb/ZT0JAb5/wYaOIdBaLwQ88F0xtjFQ89qdP08PjllF+JRhR8xd2g78yETTDWGliqadB3YTP7Hvlin5WvDxlw==
-  dependencies:
-    lodash-es "^4.17.15"
-    tslib "^2.3.0"
 
 ng2-ckeditor@1.3.4:
   version "1.3.4"
