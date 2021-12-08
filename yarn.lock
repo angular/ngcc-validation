@@ -2487,21 +2487,22 @@
     protobufjs "^6.10.0"
     yargs "^16.1.1"
 
-"@ionic/angular@5.9.2":
-  version "5.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic/angular/-/angular-5.9.2.tgz#7423971b6462c07657927a75af3ec89c597b1d88"
-  integrity sha512-5GzKg+l4au3xFECky2v/USlRsmTAXgvNO5Zalt7NUXc//VJIL2lQvswojE6FBWuM/xR5W0CWbJdFth19TaZWVQ==
+"@ionic/angular@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@ionic/angular/-/angular-6.0.0.tgz#c96cd17b100b0a2b8b9ca7e5594bcad763e138ff"
+  integrity sha512-BCbPMLHsZCGxNij/b6JDFDWXZNKi47VWK3XEH72nkE8xGJ47RXGjDXeVrtc+2TM1TxSm+J8tL+P3hnSgoBgyMQ==
   dependencies:
-    "@ionic/core" "5.9.2"
-    tslib "^1.9.3"
+    "@ionic/core" "6.0.0"
+    jsonc-parser "^3.0.0"
+    tslib "^2.0.0"
 
-"@ionic/core@5.9.2":
-  version "5.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-5.9.2.tgz#2dc8168e771bcd1587511efe0ff76a80b8353ddc"
-  integrity sha512-1ZqSBS8R6tGQsc+LsLxIRv0q3Ww6jwgJXLvdn6FmVWfpPbBvT+CjCuU9hqJ5qwM+atErblUMYSexvvpws8lGAA==
+"@ionic/core@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-6.0.0.tgz#9c95513fc7fff79a0113f540da754b4a16910f99"
+  integrity sha512-3e5EJhDebK4pCiFREpNB95o2kBSAdhRb3eMsBDOCYWYuFlcZEOGOpiGx+kYF/klYVQnB45UXAmR8nCX1indmHQ==
   dependencies:
-    "@stencil/core" "^2.4.0"
-    ionicons "^5.5.3"
+    "@stencil/core" "~2.11.0-0"
+    ionicons "^6.0.0"
     tslib "^2.1.0"
 
 "@ionic/storage@3.0.6":
@@ -3282,15 +3283,15 @@
   resolved "https://registry.yarnpkg.com/@sheerun/mutationobserver-shim/-/mutationobserver-shim-0.3.3.tgz#5405ee8e444ed212db44e79351f0c70a582aae25"
   integrity sha512-DetpxZw1fzPD5xUBrIAoplLChO2VB8DlL5Gg+I1IR9b2wPqYIca2WSUxL5g1vLeR4MsQq1NeWriXAVffV+U1Fw==
 
-"@stencil/core@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.4.0.tgz#17b45629c8986e35dcbce3f7dab7d64beede83f2"
-  integrity sha512-gU6+Yyd6O0KrCSS/O6j8KKqmRo+/Dcs2fI0+APCpbAWK+nqhwDISpdnSEfGDCLMoAC08XOZCycBRk2K1VGnEcg==
+"@stencil/core@~2.10.0":
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.10.0.tgz#acf44b9ae6578a20f0d09bf94296e833beadc885"
+  integrity sha512-15rWMTPQ/sp0lSV82HVCXkIya3QLN+uBl7pqK4JnTrp4HiLrzLmNbWjbvgCs55gw0lULbCIGbRIEsFz+Pe/Q+A==
 
-"@stencil/core@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.5.0.tgz#4f35f273250242f187fc9d3e4d7d52bed4efce08"
-  integrity sha512-gpoYJEYzu5LV2hr7uPZklug3zXhEbYGKyNodPfmOOYZtO9q42l7RQ3cAnC8MzEoF4jFrfemgtevGik8sqn9ClQ==
+"@stencil/core@~2.11.0-0":
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.11.0.tgz#8accc2791e2c34cce2d2aa8b40864dd40be4e10c"
+  integrity sha512-/IubCWhVXCguyMUp/3zGrg3c882+RJNg/zpiKfyfJL3kRCOwe+/MD8OoAXVGdd+xAohZKIi1Ik+EHFlsptsjLg==
 
 "@swimlane/dragula@^3.8.0":
   version "3.8.0"
@@ -8216,12 +8217,12 @@ ionic-angular@3.9.10:
   resolved "https://registry.yarnpkg.com/ionic-angular/-/ionic-angular-3.9.10.tgz#6b3514b05f6c668c7e852844b66779b9e9fb4515"
   integrity sha512-4nmGrdpu4Zy3SZwF0AaS/3gDrbFGU1dV+zn1eqInFgFj9q20N1cIITgvyIcoxUI/IoqYiohsJX1rGY5vB/HrhQ==
 
-ionicons@^5.5.3:
-  version "5.5.3"
-  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-5.5.3.tgz#33cfc4c8a590ac45895f2b10309ef4586ed244c1"
-  integrity sha512-L71djrMi8pAad66tpwdnO1vwcyluCFvehzxU1PpH1k/HpYBZhZ5IaYhqXipmqUvu5aEbd4cbRguYyI5Fd4bxTw==
+ionicons@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-6.0.0.tgz#c7c0d253d62b33ba3fa47568ff58586a5d8bdcd1"
+  integrity sha512-p83W1T8jZUlllHAjuIWaDQbI36OYqdrwcf8MhYbKW7+9rjGlCMP9+5OaR0W7tl0QfM004uAiy/zkc7HTpDNKgA==
   dependencies:
-    "@stencil/core" "^2.5.0"
+    "@stencil/core" "~2.10.0"
 
 ip-regex@^2.1.0:
   version "2.1.0"
@@ -8848,7 +8849,7 @@ json5@^1.0.1:
   dependencies:
     minimist "^1.2.0"
 
-jsonc-parser@3.0.0:
+jsonc-parser@3.0.0, jsonc-parser@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-3.0.0.tgz#abdd785701c7e7eaca8a9ec8cf070ca51a745a22"
   integrity sha512-fQzRfAbIBnR0IQvftw9FJveWiHp72Fg20giDrHz6TdfB12UH/uue0D3hm57UB5KgAVuniLMCaS8P1IMj9NR7cA==
