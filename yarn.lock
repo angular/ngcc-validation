@@ -4205,17 +4205,17 @@ angular-bootstrap-datetimepicker@4.0.2:
   dependencies:
     tslib "^1.9.0"
 
-angular-calendar@0.28.28:
-  version "0.28.28"
-  resolved "https://registry.yarnpkg.com/angular-calendar/-/angular-calendar-0.28.28.tgz#25d0a37f70badb570abaed0e2704dc560561958f"
-  integrity sha512-q6FIye6zkwFeMZfHBgFByHpZdHbWu02EQAJ67XjyZmwiDAvjo7LVoTlaug93CjggJ4DL0YEAWDG4rokLBBgq2w==
+angular-calendar@0.29.0:
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/angular-calendar/-/angular-calendar-0.29.0.tgz#b6f3df4752b495205dbba32794618fd4880fed71"
+  integrity sha512-TK4yUNsOhCUVrBRTJhGvVgGkQHgR0DTDFnPUTv0YSeDAuq5+irWjH23UrHmrhBCwFPelGLrTHjxsbMwjuzrJjw==
   dependencies:
     "@scarf/scarf" "^1.1.1"
-    angular-draggable-droppable "^4.6.0"
-    angular-resizable-element "^3.4.0"
-    calendar-utils "^0.8.5"
+    angular-draggable-droppable "^6.0.0"
+    angular-resizable-element "^5.0.0"
+    calendar-utils "^0.9.0"
     positioning "^2.0.1"
-    tslib "^1.14.1"
+    tslib "^2.0.0"
 
 angular-draggable-droppable@5.0.0:
   version "5.0.0"
@@ -4225,13 +4225,13 @@ angular-draggable-droppable@5.0.0:
     "@mattlewis92/dom-autoscroller" "^2.4.2"
     tslib "^2.3.1"
 
-angular-draggable-droppable@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/angular-draggable-droppable/-/angular-draggable-droppable-4.6.0.tgz#9e8671e2c13854dcabea3df2b15208af3dc85a2b"
-  integrity sha512-+8JhTDMKkc/NuFFqb8/H/QHpB+v4Z7YNrgvEbV+PQxXry19rkr89ofZgjNIXhZexTvJNb03BYlSQoknzXE9b3g==
+angular-draggable-droppable@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/angular-draggable-droppable/-/angular-draggable-droppable-6.0.0.tgz#4f79a80d110ea22bb970e1d62a7d89e64b64c0ad"
+  integrity sha512-q6JJ3LWT/Olm8hak9+AJui/iBzpm3fsVHOKKsFAYJLFXoVZbP3EM5DxRLztdEMejne5MR8mOI/eifiYNVz13Lw==
   dependencies:
     "@mattlewis92/dom-autoscroller" "^2.4.2"
-    tslib "^1.9.0"
+    tslib "^2.3.1"
 
 angular-froala-wysiwyg@4.0.7:
   version "4.0.7"
@@ -4262,12 +4262,12 @@ angular-pipes@10.0.0:
   dependencies:
     tslib "^1.9.0"
 
-angular-resizable-element@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/angular-resizable-element/-/angular-resizable-element-3.4.0.tgz#9f0f65c32dc3c1ce5c9f5be2ba1e738443ba31d3"
-  integrity sha512-xL5a8FmghzrZmHPy7uwWz98m91gRXgAcdeCRYcK/nD7psXMTYNk5EPmHA0qZTDCIYljhT4h0OKWLvx56NQGfDA==
+angular-resizable-element@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/angular-resizable-element/-/angular-resizable-element-5.0.0.tgz#c292cfd537a8e8c3850b6dc1a66ffcc1462864d1"
+  integrity sha512-GbV8myA2x8aUU8CK7siTi1QMjtilzQzIgClqUVpE/YM1WAp0/OnioBV12oLcOT24eEwP3zDqPTHL+D1Kv2rNAw==
   dependencies:
-    tslib "^1.9.0"
+    tslib "^2.2.0"
 
 angular-tree-component@8.5.6:
   version "8.5.6"
@@ -5044,10 +5044,10 @@ cache-base@^1.0.1:
     union-value "^1.0.0"
     unset-value "^1.0.0"
 
-calendar-utils@^0.8.5:
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/calendar-utils/-/calendar-utils-0.8.5.tgz#8d3aacc7ef3c5fbae4a1a3fc00458ac144efb69d"
-  integrity sha512-mgn7dqZfDEqY/obyPO9ib8FSk28vAIOIOXyrjffT9jw1vAmxLguhvohM6JehDA6dY+ddkWBlPCDLCcRv0PncKw==
+calendar-utils@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/calendar-utils/-/calendar-utils-0.9.0.tgz#d0b2e0bb5a2238d30afde4fe774c0afd89366c6b"
+  integrity sha512-QxMf/I+y/it02EoFvla7Fq9n4SIOK9T97wT4W0VfvbFTbhf92AYHm9IBXGWDJiARNM2pvrGCFtI8AFB0D4OuWw==
 
 call-bind@^1.0.0, call-bind@^1.0.2:
   version "1.0.2"
@@ -13113,7 +13113,7 @@ tslib@>=1.9.0, tslib@^2.0.0, tslib@^2.0.3, tslib@^2.1.0, tslib@~2.1.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
   integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
 
-tslib@^1.10.0, tslib@^1.11.1, tslib@^1.13.0, tslib@^1.14.1, tslib@^1.7.0, tslib@^1.7.1, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
+tslib@^1.10.0, tslib@^1.11.1, tslib@^1.13.0, tslib@^1.7.0, tslib@^1.7.1, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
