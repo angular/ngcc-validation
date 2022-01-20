@@ -49,12 +49,12 @@
     "@angular-devkit/core" "13.1.3"
     rxjs "6.6.7"
 
-"@angular-devkit/architect@^0.1300.2":
-  version "0.1300.2"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1300.2.tgz#3de9c667d2a83e0e40056daf7dc0c27f4d3dddb1"
-  integrity sha512-cCTPFKZlR+Szt+X/l/eo4KBYnRba2NiCpFNPVsujitm7JqCXkjab7NDlf+2XMVD8vZl/kR1hfyF6O9ywYmhEFA==
+"@angular-devkit/architect@^0.1301.0":
+  version "0.1301.4"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1301.4.tgz#2fc51bcae0dcb581c8be401e2fde7bbd10b43076"
+  integrity sha512-p6G8CEMnE+gYwxRyEttj3QGsuNJ3Kusi7iwBIzWyf2RpJSdGzXdwUEiRGg6iS0YHFr06/ZFfAWfnM2DQvNm4TA==
   dependencies:
-    "@angular-devkit/core" "13.0.2"
+    "@angular-devkit/core" "13.1.4"
     rxjs "6.6.7"
 
 "@angular-devkit/build-angular@13.1.3":
@@ -137,22 +137,22 @@
     "@angular-devkit/architect" "0.1301.3"
     rxjs "6.6.7"
 
-"@angular-devkit/core@13.0.2", "@angular-devkit/core@^13.0.2":
-  version "13.0.2"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-13.0.2.tgz#1ef92388464ca86d22b21c6ebcb9fc3b6a16c374"
-  integrity sha512-I4co4GH+iu0tns+UXfMtjJISO+cLpaUuiEH6kf0wF5cqjaIeluA9UjIRnxuNbdTW8iE2xVj/UWhQfHe/Ncp76w==
+"@angular-devkit/core@13.1.3":
+  version "13.1.3"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-13.1.3.tgz#d1f8a6b4ad4326732a160a7549fccca1369fd108"
+  integrity sha512-o14jGDk4h14dVYYQafOn+2rq9CDmDMbDV6logqKYCLzTDRlK8gccDnqJM/QKAlfWCzbllZqcHDmg6FyoRLO9RQ==
   dependencies:
-    ajv "8.6.3"
+    ajv "8.8.2"
     ajv-formats "2.1.1"
     fast-json-stable-stringify "2.1.0"
     magic-string "0.25.7"
     rxjs "6.6.7"
     source-map "0.7.3"
 
-"@angular-devkit/core@13.1.3":
-  version "13.1.3"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-13.1.3.tgz#d1f8a6b4ad4326732a160a7549fccca1369fd108"
-  integrity sha512-o14jGDk4h14dVYYQafOn+2rq9CDmDMbDV6logqKYCLzTDRlK8gccDnqJM/QKAlfWCzbllZqcHDmg6FyoRLO9RQ==
+"@angular-devkit/core@13.1.4", "@angular-devkit/core@^13.1.0":
+  version "13.1.4"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-13.1.4.tgz#b5b6ddd674ae351f83beff2e4a0d702096bdfd47"
+  integrity sha512-225Gjy4iVxh5Jo9njJnaG75M/Dt95UW+dEPCGWKV5E/++7UUlXlo9sNWq8x2vJm2nhtsPkpnXNOt4pW1mIDwqQ==
   dependencies:
     ajv "8.8.2"
     ajv-formats "2.1.1"
@@ -2535,14 +2535,14 @@
   resolved "https://registry.yarnpkg.com/@ngui/auto-complete/-/auto-complete-3.0.0.tgz#961cd1bacb03a1c592310a788afbb6a6f8d23c28"
   integrity sha512-cEJHTuta1ZEAgWMTZNmFhVqTcuWIqCLUUBJWIWuIwZgVBcnM/ctn5GSyu/lP2iCV+VG34kHE8NrvTnAztagYxA==
 
-"@nguniversal/builders@13.0.1":
-  version "13.0.1"
-  resolved "https://registry.yarnpkg.com/@nguniversal/builders/-/builders-13.0.1.tgz#1713a44399456389f2d3ede1328d7cd38f6f957d"
-  integrity sha512-wF2pSfFGTNq5a8YfiFZ/pE0IZ+dIz+pCkYFdWtaRnO1LlYWN0smyCbQroWFGzCgoFGUzq1h/vKVlcQIRJ2ESQw==
+"@nguniversal/builders@13.0.2":
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/@nguniversal/builders/-/builders-13.0.2.tgz#735913203f800dbe108e9a07d9d9d5ded885be79"
+  integrity sha512-ydmR+JzZvhgFiqxOT5mIfCJH//LfFCaud6tPugvj/EHI+kVWFhEurR8wDHRMHGv2t+nYYtNFzTXt5EWGCMB/vA==
   dependencies:
-    "@angular-devkit/architect" "^0.1300.2"
-    "@angular-devkit/core" "^13.0.2"
-    "@nguniversal/common" "13.0.1"
+    "@angular-devkit/architect" "^0.1301.0"
+    "@angular-devkit/core" "^13.1.0"
+    "@nguniversal/common" "13.0.2"
     browser-sync "^2.26.7"
     express "^4.17.1"
     guess-parser "^0.4.12"
@@ -2551,15 +2551,6 @@
     piscina "~3.1.0"
     rxjs "^6.5.5"
     tree-kill "^1.2.2"
-
-"@nguniversal/common@13.0.1":
-  version "13.0.1"
-  resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-13.0.1.tgz#1c4296c444ed79762ac3c14cf7b67422d77f4ff2"
-  integrity sha512-/9q/G7K/3zkfVXafi2FciYgcsgyvYYJfp5ppHHlFl81YYALNJftEkk5go0K+PzLVvDSTcIvGtB4V5qRGob/Vyw==
-  dependencies:
-    critters "0.0.14"
-    jsdom "18.0.0"
-    tslib "^2.3.0"
 
 "@nguniversal/common@13.0.2":
   version "13.0.2"
@@ -4004,16 +3995,6 @@ ajv@6.9.1:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ajv@8.6.3:
-  version "8.6.3"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.6.3.tgz#11a66527761dc3e9a3845ea775d2d3c0414e8764"
-  integrity sha512-SMJOdDP6LqTkD0Uq8qLi+gMwSt0imXLSV080qFVwJCpH9U6Mb+SUGHAXM0KNbcBPguytWyvFxcHgMLe2D2XSpw==
-  dependencies:
-    fast-deep-equal "^3.1.1"
-    json-schema-traverse "^1.0.0"
-    require-from-string "^2.0.2"
-    uri-js "^4.2.2"
-
 ajv@8.8.2, ajv@^8.8.0:
   version "8.8.2"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.8.2.tgz#01b4fef2007a28bf75f0b7fc009f62679de4abbb"
@@ -5414,18 +5395,6 @@ create-require@^1.1.0:
   resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
   integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
 
-critters@0.0.14:
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/critters/-/critters-0.0.14.tgz#08e585ce9cb9b9a3eab88cafda7bde7f6cd0763f"
-  integrity sha512-YiBoGKfU8/xg+tVMw0KfMBgmr0TWa1JGmRXDzbQRQQaDarGUcZZtZEB25QyYrLasQZAnvqoZhSg2GW0zdsQkYQ==
-  dependencies:
-    chalk "^4.1.0"
-    css-select "^4.1.3"
-    parse5 "^6.0.1"
-    parse5-htmlparser2-tree-adapter "^6.0.1"
-    postcss "^8.3.7"
-    pretty-bytes "^5.3.0"
-
 critters@0.0.16:
   version "0.0.16"
   resolved "https://registry.yarnpkg.com/critters/-/critters-0.0.16.tgz#ffa2c5561a65b43c53b940036237ce72dcebfe93"
@@ -5502,17 +5471,6 @@ css-prefers-color-scheme@^3.1.1:
   dependencies:
     postcss "^7.0.5"
 
-css-select@^4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/css-select/-/css-select-4.1.3.tgz#a70440f70317f2669118ad74ff105e65849c7067"
-  integrity sha512-gT3wBNd9Nj49rAbmtFHj1cljIAOLYSX1nZ8CB7TBO3INYckygm5B7LISU/szY//YmdiSLbJvDLOx9VnMVpMBxA==
-  dependencies:
-    boolbase "^1.0.0"
-    css-what "^5.0.0"
-    domhandler "^4.2.0"
-    domutils "^2.6.0"
-    nth-check "^2.0.0"
-
 css-select@^4.2.0:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/css-select/-/css-select-4.2.1.tgz#9e665d6ae4c7f9d65dbe69d0316e3221fb274cdd"
@@ -5550,7 +5508,7 @@ css-vars-ponyfill@^2.3.2:
   resolved "https://registry.yarnpkg.com/css-vars-ponyfill/-/css-vars-ponyfill-2.4.3.tgz#320a5b47d36d86d5175e41ee85e56a126b64b9b4"
   integrity sha512-PBfIwjSu27s8kebu8taEYFM8ehVr8o2Qw4H4nSlJzHAJgcduAqxz4oPmYTJuzgauOKaWII9SHWStQ965fxsdZA==
 
-css-what@^5.0.0, css-what@^5.1.0:
+css-what@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-5.1.0.tgz#3f7b707aadf633baf62c2ceb8579b545bb40f7fe"
   integrity sha512-arSMRWIIFY0hV8pIxZMEfmMI47Wj3R/aWpZDDxWYCPEiOMv6tfOrnpDtgxBYPEQD4V0Y/958+1TdC3iWTFcUPw==
@@ -6052,7 +6010,7 @@ domino@^2.1.2, domino@^2.1.6:
   resolved "https://registry.yarnpkg.com/domino/-/domino-2.1.6.tgz#fe4ace4310526e5e7b9d12c7de01b7f485a57ffe"
   integrity sha512-3VdM/SXBZX2omc9JF9nOPCtDaYQ67BGp5CoLpIQlO2KCAPETs8TcDHacF26jXadGbvUteZzRTeos2fhID5+ucQ==
 
-domutils@^2.6.0, domutils@^2.8.0:
+domutils@^2.8.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-2.8.0.tgz#4437def5db6e2d1f5d6ee859bd95ca7d02048135"
   integrity sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A==
@@ -8351,39 +8309,6 @@ jsbn@~0.1.0:
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
   integrity sha1-peZUwuWi3rXyAdls77yoDA7y9RM=
 
-jsdom@18.0.0:
-  version "18.0.0"
-  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-18.0.0.tgz#0fa974638cd26dfc33f0d84c7526d0a3e5df5dc8"
-  integrity sha512-HVLuBcFmwdWulStv5U+J59b1AyzXhM92KXlM8HQ3ecYtRM2OQEUCPMa4oNuDeCBmtRcC7tJvb0Xz5OeFXMOKTA==
-  dependencies:
-    abab "^2.0.5"
-    acorn "^8.5.0"
-    acorn-globals "^6.0.0"
-    cssom "^0.5.0"
-    cssstyle "^2.3.0"
-    data-urls "^3.0.1"
-    decimal.js "^10.3.1"
-    domexception "^4.0.0"
-    escodegen "^2.0.0"
-    form-data "^4.0.0"
-    html-encoding-sniffer "^3.0.0"
-    http-proxy-agent "^5.0.0"
-    https-proxy-agent "^5.0.0"
-    is-potential-custom-element-name "^1.0.1"
-    nwsapi "^2.2.0"
-    parse5 "6.0.1"
-    saxes "^5.0.1"
-    symbol-tree "^3.2.4"
-    tough-cookie "^4.0.0"
-    w3c-hr-time "^1.0.2"
-    w3c-xmlserializer "^3.0.0"
-    webidl-conversions "^7.0.0"
-    whatwg-encoding "^2.0.0"
-    whatwg-mimetype "^3.0.0"
-    whatwg-url "^10.0.0"
-    ws "^8.2.3"
-    xml-name-validator "^4.0.0"
-
 jsdom@19.0.0:
   version "19.0.0"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-19.0.0.tgz#93e67c149fe26816d38a849ea30ac93677e16b6a"
@@ -9859,7 +9784,7 @@ npmlog@^6.0.0:
     gauge "^4.0.0"
     set-blocking "^2.0.0"
 
-nth-check@^2.0.0, nth-check@^2.0.1:
+nth-check@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-2.0.1.tgz#2efe162f5c3da06a28959fbd3db75dbeea9f0fc2"
   integrity sha512-it1vE95zF6dTT9lBsYbxvqh0Soy4SPowchj0UBGj/V6cTPnXXtQOPUbhZ6CmGzAD/rW22LQK6E96pcdJXk4A4w==
