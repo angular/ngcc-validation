@@ -2561,12 +2561,21 @@
     jsdom "18.0.0"
     tslib "^2.3.0"
 
-"@nguniversal/express-engine@13.0.1":
-  version "13.0.1"
-  resolved "https://registry.yarnpkg.com/@nguniversal/express-engine/-/express-engine-13.0.1.tgz#7ff3d826f38515caba892ce77fb026ec71b417f2"
-  integrity sha512-af2hzfg+m+VGsXqNFFJ+He2Q8LplsuxvhlSRx04zqoC1jqf15Miz2UW6pHlHya4fDyU8Q6gSNWCqcApNLVkeJA==
+"@nguniversal/common@13.0.2":
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-13.0.2.tgz#a7923b9c3c3d469d4e1bb6804ac2f64f11251f28"
+  integrity sha512-HtjtPFmz/GhW2TnvxqdFdewL5NpTXYBA51U7RUjJtLs78xsW4rG3kfZEG20y6E3xn+++B0jJMfAx6Q+2cuRdig==
   dependencies:
-    "@nguniversal/common" "13.0.1"
+    critters "0.0.16"
+    jsdom "19.0.0"
+    tslib "^2.3.0"
+
+"@nguniversal/express-engine@13.0.2":
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/@nguniversal/express-engine/-/express-engine-13.0.2.tgz#cf9483a13fc81380569286af3bab938a9cdc3ce4"
+  integrity sha512-4CUBAYeatF8hl01hNdt372ANHjFFuaZ8rAYX64LWJSrlnt5a33NAbbHzMnAESbeo4LOkdG0XFQPB9IGG1MN5qw==
+  dependencies:
+    "@nguniversal/common" "13.0.2"
     tslib "^2.3.0"
 
 "@ngx-formly/bootstrap@5.10.29":
@@ -8346,6 +8355,39 @@ jsdom@18.0.0:
   version "18.0.0"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-18.0.0.tgz#0fa974638cd26dfc33f0d84c7526d0a3e5df5dc8"
   integrity sha512-HVLuBcFmwdWulStv5U+J59b1AyzXhM92KXlM8HQ3ecYtRM2OQEUCPMa4oNuDeCBmtRcC7tJvb0Xz5OeFXMOKTA==
+  dependencies:
+    abab "^2.0.5"
+    acorn "^8.5.0"
+    acorn-globals "^6.0.0"
+    cssom "^0.5.0"
+    cssstyle "^2.3.0"
+    data-urls "^3.0.1"
+    decimal.js "^10.3.1"
+    domexception "^4.0.0"
+    escodegen "^2.0.0"
+    form-data "^4.0.0"
+    html-encoding-sniffer "^3.0.0"
+    http-proxy-agent "^5.0.0"
+    https-proxy-agent "^5.0.0"
+    is-potential-custom-element-name "^1.0.1"
+    nwsapi "^2.2.0"
+    parse5 "6.0.1"
+    saxes "^5.0.1"
+    symbol-tree "^3.2.4"
+    tough-cookie "^4.0.0"
+    w3c-hr-time "^1.0.2"
+    w3c-xmlserializer "^3.0.0"
+    webidl-conversions "^7.0.0"
+    whatwg-encoding "^2.0.0"
+    whatwg-mimetype "^3.0.0"
+    whatwg-url "^10.0.0"
+    ws "^8.2.3"
+    xml-name-validator "^4.0.0"
+
+jsdom@19.0.0:
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-19.0.0.tgz#93e67c149fe26816d38a849ea30ac93677e16b6a"
+  integrity sha512-RYAyjCbxy/vri/CfnjUWJQQtZ3LKlLnDqj+9XLNnJPgEGeirZs3hllKR20re8LUZ6o1b1X4Jat+Qd26zmP41+A==
   dependencies:
     abab "^2.0.5"
     acorn "^8.5.0"
