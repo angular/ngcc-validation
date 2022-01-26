@@ -41,12 +41,20 @@
     "@jridgewell/resolve-uri" "1.0.0"
     sourcemap-codec "1.4.8"
 
-"@angular-devkit/architect@0.1301.4", "@angular-devkit/architect@^0.1301.0":
+"@angular-devkit/architect@0.1301.4":
   version "0.1301.4"
   resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1301.4.tgz#2fc51bcae0dcb581c8be401e2fde7bbd10b43076"
   integrity sha512-p6G8CEMnE+gYwxRyEttj3QGsuNJ3Kusi7iwBIzWyf2RpJSdGzXdwUEiRGg6iS0YHFr06/ZFfAWfnM2DQvNm4TA==
   dependencies:
     "@angular-devkit/core" "13.1.4"
+    rxjs "6.6.7"
+
+"@angular-devkit/architect@^0.1301.0":
+  version "0.1301.3"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1301.3.tgz#197f92c984adf22776798ce568e64396e464a03d"
+  integrity sha512-fFSevgYGZHCybYoyTkZ9b1YCSthBmoi77alwWjqMhYXUNXx7yx50zJZ6Ur2v3YpctVjU6eoGc5FDFyVHwXT0Iw==
+  dependencies:
+    "@angular-devkit/core" "13.1.3"
     rxjs "6.6.7"
 
 "@angular-devkit/build-angular@13.1.4":
@@ -128,6 +136,18 @@
   dependencies:
     "@angular-devkit/architect" "0.1301.4"
     rxjs "6.6.7"
+
+"@angular-devkit/core@13.1.3":
+  version "13.1.3"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-13.1.3.tgz#d1f8a6b4ad4326732a160a7549fccca1369fd108"
+  integrity sha512-o14jGDk4h14dVYYQafOn+2rq9CDmDMbDV6logqKYCLzTDRlK8gccDnqJM/QKAlfWCzbllZqcHDmg6FyoRLO9RQ==
+  dependencies:
+    ajv "8.8.2"
+    ajv-formats "2.1.1"
+    fast-json-stable-stringify "2.1.0"
+    magic-string "0.25.7"
+    rxjs "6.6.7"
+    source-map "0.7.3"
 
 "@angular-devkit/core@13.1.4", "@angular-devkit/core@^13.1.0":
   version "13.1.4"
@@ -9392,13 +9412,6 @@ ng2-ace-editor@0.3.9:
   dependencies:
     ace-builds "^1.4.2"
     brace "^0.11.1"
-
-ng2-ckeditor@1.3.6:
-  version "1.3.6"
-  resolved "https://registry.yarnpkg.com/ng2-ckeditor/-/ng2-ckeditor-1.3.6.tgz#65d892790604ee03af02e962b72da8213e6c6743"
-  integrity sha512-dApbj+xgsw/CSzS9eDsEYa7ssSOvFzRoNm9/nXWGZZNXYe+vGBs7qlddRGGZraR2Hzi1f1N2xmefNz+tCtc3wA==
-  dependencies:
-    tslib "^2.3.0"
 
 ng2-completer@9.0.1:
   version "9.0.1"
