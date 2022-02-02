@@ -14,7 +14,7 @@ export class AppPage {
   }
 
   getDropDownList() {
-    return element(by.css('.k-dropdown'));
+    return element(by.css('.k-dropdownlist'));
   }
 
   getMultiSelect() {

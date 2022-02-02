@@ -12,7 +12,7 @@ describe('workspace-project App', () => {
     page.navigateTo();
     await page.getLabelAt(0).click();
 
-    const dropDown = page.getDropDownWrap();
+    const dropDown = page.getDropDownList();
     const activeElement = browser.driver.switchTo().activeElement();
     expect(await dropDown.getId()).toBe(await activeElement.getId());
   });

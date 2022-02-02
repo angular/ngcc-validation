@@ -9,7 +9,7 @@ export class AppPage {
     return element.all(by.css('app-root label')).get(index);
   }
 
-  getDropDownWrap() {
-    return element(by.css('app-root .k-dropdown-wrap'));
+  getDropDownList() {
+    return element(by.css('app-root kendo-dropdownlist'));
   }
 }

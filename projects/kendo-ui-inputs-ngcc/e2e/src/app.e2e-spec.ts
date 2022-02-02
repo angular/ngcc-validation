@@ -10,8 +10,8 @@ describe('kendo-angular-inputs', () => {
 
   it('should render numerictextbox rulers', async () => {
     await page.navigateTo();
-    expect(await element(by.css('kendo-numerictextbox .k-link.k-link-increase')).isPresent()).toBe(true);
-    expect(await element(by.css('kendo-numerictextbox .k-link.k-link-decrease')).isPresent()).toBe(true);
+    expect(await element(by.css('kendo-numerictextbox .k-input-spinner > .k-spinner-increase')).isPresent()).toBe(true);
+    expect(await element(by.css('kendo-numerictextbox .k-input-spinner > .k-spinner-decrease')).isPresent()).toBe(true);
   });
 
   it('should render slider rulers', async () => {
