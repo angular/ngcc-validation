@@ -10,7 +10,7 @@ export class AppPage {
   }
 
   getCalendarTitle(): ElementFinder {
-    return element.all(by.css('.k-calendar .k-calendar-header .k-title')).get(0);
+    return element.all(by.css('.k-calendar .k-calendar-header .k-calendar-title')).get(0);
   }
 
   getDateInput(): ElementFinder {
@@ -22,7 +22,7 @@ export class AppPage {
   }
 
   async openDatePicker(): Promise<void> {
-    await element(by.css('.k-datepicker .k-picker-wrap > .k-select')).click();
+    await element(by.css('.k-datepicker .k-input-button')).click();
     await browser.sleep(300);
   }
 
@@ -40,7 +40,7 @@ export class AppPage {
   }
 
   async openDateTimePicker(): Promise<void> {
-    await element(by.css('.k-datetimepicker .k-picker-wrap > .k-select')).click();
+    await element(by.css('.k-datetimepicker .k-input-button')).click();
     await browser.sleep(300);
   }
 
@@ -49,7 +49,7 @@ export class AppPage {
   }
 
   async openTimePicker(): Promise<void> {
-    await element(by.css('.k-timepicker .k-picker-wrap > .k-select')).click();
+    await element(by.css('.k-timepicker .k-input-button')).click();
     await browser.sleep(300);
   }
 
@@ -62,7 +62,7 @@ export class AppPage {
   }
 
   getPopupCalendarTitle(): ElementFinder {
-    return element(by.css('.k-popup .k-calendar .k-calendar-header .k-title'));
+    return element(by.css('.k-popup .k-calendar .k-calendar-header .k-calendar-title'));
   }
 
   async scrollToPopupCalendarBottom(): Promise<void> {
