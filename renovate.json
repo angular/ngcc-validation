@@ -24,23 +24,16 @@
     },
     {
       "packagePatterns": [
-        "^@angular/"
+        "^@angular/",
+        "^@angular-devkit/"
       ],
       "excludePackagePatterns": [
-        "^@angular/cli$",
         "^@angular/cdk$",
         "^@angular/fire$",
         "^@angular/flex-layout$",
         "^@angular/material"
       ],
-      "groupName": "angular-framework"
-    },
-    {
-      "packagePatterns": [
-        "^@angular-devkit/",
-        "^@angular/cli$"
-      ],
-      "groupName": "angular-cli"
+      "groupName": "angular-framework-and-cli"
     },
     {
       "packagePatterns": [
