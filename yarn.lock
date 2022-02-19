@@ -2605,6 +2605,11 @@
   dependencies:
     tslib "^2.3.0"
 
+"@mattlewis92/dom-autoscroller@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@mattlewis92/dom-autoscroller/-/dom-autoscroller-2.4.2.tgz#ccb753fbcf6b3672b0273e0c3bda7924fe238013"
+  integrity sha512-YbrUWREPGEjE/FU6foXcAT1YbVwqD/jkYnY1dFb0o4AxtP3s4xKBthlELjndZih8uwsDWgQZx1eNskRNe2BgZQ==
+
 "@mobiscroll/angular-lite@4.10.9":
   version "4.10.9"
   resolved "https://registry.yarnpkg.com/@mobiscroll/angular-lite/-/angular-lite-4.10.9.tgz#5d9b83bac957ee869bfcc61b2de7f756e620f4b3"
@@ -4268,6 +4273,14 @@ angular-bootstrap-datetimepicker@4.0.2:
   integrity sha512-FEhPbpVszPKw5CUSyk/QKWsTlsGPC6KS2MQawVr4LfQN/foOaGM3hvw6mMl0ASrAZtikcsFa5h2cA5GLJMPZBg==
   dependencies:
     tslib "^1.9.0"
+
+angular-draggable-droppable@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/angular-draggable-droppable/-/angular-draggable-droppable-6.0.0.tgz#4f79a80d110ea22bb970e1d62a7d89e64b64c0ad"
+  integrity sha512-q6JJ3LWT/Olm8hak9+AJui/iBzpm3fsVHOKKsFAYJLFXoVZbP3EM5DxRLztdEMejne5MR8mOI/eifiYNVz13Lw==
+  dependencies:
+    "@mattlewis92/dom-autoscroller" "^2.4.2"
+    tslib "^2.3.1"
 
 angular-froala-wysiwyg@4.0.9:
   version "4.0.9"
