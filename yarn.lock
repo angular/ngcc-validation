@@ -10118,7 +10118,7 @@ ng2-file-upload@1.4.0:
   dependencies:
     tslib "^1.9.0"
 
-ng2-material-dropdown@1.0.0:
+ng2-material-dropdown@1.0.0, ng2-material-dropdown@>=1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ng2-material-dropdown/-/ng2-material-dropdown-1.0.0.tgz#1d8a5ff5926fcf0b64a2094a36fcfeb54f08fb43"
   integrity sha512-waKgEkKQwGZT0dqRAd3ZW+wueYs5Xw9owiPBSMdg5jru5DcKDpUqFaADMqqI7HPuzJCxNJSln6nXX1tMYDbXGA==
@@ -10155,6 +10155,14 @@ ngx-bootstrap@8.0.0:
   integrity sha512-UjJ/57Pr7ctdI2L113QX1IqJPYtOMrp5Qq/RLvUT1TOwPQWPi9LXTQ/7BtipkptQjer7Fk9yueITH3Y8vD+Dmg==
   dependencies:
     tslib "^2.0.0"
+
+ngx-chips@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ngx-chips/-/ngx-chips-3.0.0.tgz#9a373adcd8997c820bc1bc9f0751a19ae1210551"
+  integrity sha512-hBJg4m9kCtCfersQef7vr2Ve6j9ntFSoB5ktF8MyOQnpONAriIp46c3Tb2wdf/lMEB2Xmc45snfJKnxKh3zimg==
+  dependencies:
+    ng2-material-dropdown ">=1.0.0"
+    tslib "^2.3.0"
 
 ngx-color-picker@11.0.0:
   version "11.0.0"
