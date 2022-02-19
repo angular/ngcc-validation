@@ -33,7 +33,7 @@
     minimatch "3.0.4"
     superagent "^6.0.0"
 
-"@ampproject/remapping@2.1.2", "@ampproject/remapping@^2.1.0":
+"@ampproject/remapping@2.1.2", "@ampproject/remapping@^2.0.0", "@ampproject/remapping@^2.1.0":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.1.2.tgz#4edca94973ded9630d20101cd8559cedb8d8bd34"
   integrity sha512-hoyByceqwKirw7w3Z7gnIIZC3Wx3J484Y3L/cMpXFbr7d9ZQj2mODrirNzcJa+SM3UlpWXYvKV4RlRpFXlWgXg==
@@ -2706,7 +2706,7 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.2.tgz#30aa825f11d438671d585bd44e7fd564535fc210"
   integrity sha512-82cpyJyKRoQoRi+14ibCeGPu0CwypgtBAdBhq1WfvagpCZNKqwXbKwXllYSMG91DhmG4jt9gN8eP6lGOtozuaw==
 
-"@graphql-typed-document-node/core@^3.0.0", "@graphql-typed-document-node/core@^3.1.0":
+"@graphql-typed-document-node/core@^3.0.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@graphql-typed-document-node/core/-/core-3.1.0.tgz#0eee6373e11418bfe0b5638f654df7a4ca6a3950"
   integrity sha512-wYn6r8zVZyQJ6rQaALBEln5B1pzxb9shV5Ef97kTvn6yVGrqyXVnDqnU24MXnFubR+rZjBY9NWuxX3FB2sTsjg==
@@ -5215,10 +5215,10 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.1.tgz#20f18294f797f2209b5f65c8e3b5c8e8261d127c"
   integrity sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==
 
-"@types/trusted-types@^1.0.1":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-1.0.6.tgz#569b8a08121d3203398290d602d84d73c8dcf5da"
-  integrity sha512-230RC8sFeHoT6sSUlRO6a8cAnclO06eeiq1QDfiv2FGCLWFvvERWgwIQD4FWqD9A69BN7Lzee4OXwoMVnnsWDw==
+"@types/trusted-types@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-2.0.2.tgz#fc25ad9943bcac11cceb8168db4f275e0e72e756"
+  integrity sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg==
 
 "@types/ws@^8.2.2":
   version "8.2.2"
@@ -5987,14 +5987,11 @@ anymatch@~3.1.1:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-apollo-angular@2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/apollo-angular/-/apollo-angular-2.6.0.tgz#3c8d5732c91aeabe6566fda8db0155a6a1ddca17"
-  integrity sha512-PxlOlYbJB39mKAIMX24twrrM+1qm+o7OIdvtiJJB4MSlDFdlKR6yCrZdxpvoHFRoK1vWl23g4GiLrf8bNyJuyQ==
+apollo-angular@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/apollo-angular/-/apollo-angular-3.0.0.tgz#3c7be4ca0bda99be2be171cd3f950bfd956b6b8b"
+  integrity sha512-rE6O7MifeS5UJj1eVBNNx85mPUr+31X/Ut2g0D3m2g8EbFoa2+CJCpag5g+lHnt0Eqmz5cD1lO5zC+00yT7XTw==
   dependencies:
-    "@graphql-typed-document-node/core" "^3.1.0"
-    extract-files "^9.0.0"
-    semver "^7.0.0"
     tslib "^2.0.0"
 
 app-root-path@^3.0.0:
@@ -9052,11 +9049,6 @@ extglob@^2.0.4:
     regex-not "^1.0.0"
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
-
-extract-files@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/extract-files/-/extract-files-9.0.0.tgz#8a7744f2437f81f5ed3250ed9f1550de902fe54a"
-  integrity sha512-CvdFfHkC95B4bBBk36hcEmvdR2awOdhhVUYH6S/zrVj3477zven/fJMYg7121h4T1xHZC+tetUpubpAhxwI7hQ==
 
 extsprintf@1.3.0:
   version "1.3.0"
