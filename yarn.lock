@@ -3384,6 +3384,11 @@
   resolved "https://registry.yarnpkg.com/@scarf/scarf/-/scarf-1.1.0.tgz#b84b4a91cd938a688d36245b7a7db6fbc476a499"
   integrity sha512-b2iE8kjjzzUo2WZ0xuE2N77kfnTds7ClrDxcz3Atz7h2XrNVoAPUoT75i7CY0st5x++70V91Y+c6RpBX9MX7Jg==
 
+"@scarf/scarf@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@scarf/scarf/-/scarf-1.1.1.tgz#d8b9f20037b3a37dbf8dcdc4b3b72f9285bfce35"
+  integrity sha512-VGbKDbk1RFIaSmdVb0cNjjWJoRWRI/Weo23AjRCC2nryO0iAS8pzsToJfPVPtVs74WHw4L1UTADNdIYRLkirZQ==
+
 "@schematics/angular@^8.0.0":
   version "8.3.29"
   resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-8.3.29.tgz#da747539230dae16111c56422339c02dbb17681d"
@@ -4367,7 +4372,19 @@ angular-bootstrap-datetimepicker@4.0.2:
   dependencies:
     tslib "^1.9.0"
 
-angular-draggable-droppable@6.0.0:
+angular-calendar@0.29.0:
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/angular-calendar/-/angular-calendar-0.29.0.tgz#b6f3df4752b495205dbba32794618fd4880fed71"
+  integrity sha512-TK4yUNsOhCUVrBRTJhGvVgGkQHgR0DTDFnPUTv0YSeDAuq5+irWjH23UrHmrhBCwFPelGLrTHjxsbMwjuzrJjw==
+  dependencies:
+    "@scarf/scarf" "^1.1.1"
+    angular-draggable-droppable "^6.0.0"
+    angular-resizable-element "^5.0.0"
+    calendar-utils "^0.9.0"
+    positioning "^2.0.1"
+    tslib "^2.0.0"
+
+angular-draggable-droppable@6.0.0, angular-draggable-droppable@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/angular-draggable-droppable/-/angular-draggable-droppable-6.0.0.tgz#4f79a80d110ea22bb970e1d62a7d89e64b64c0ad"
   integrity sha512-q6JJ3LWT/Olm8hak9+AJui/iBzpm3fsVHOKKsFAYJLFXoVZbP3EM5DxRLztdEMejne5MR8mOI/eifiYNVz13Lw==
@@ -4403,6 +4420,13 @@ angular-pipes@10.0.0:
   integrity sha512-H5PiZQnabARQDC76YY6KMPXGkmI+UJLTSnJH9j/aylvkLBnQr7zN4wKwiWXMd6mYlcY/lcpdFzw9BI/+XqLRwA==
   dependencies:
     tslib "^1.9.0"
+
+angular-resizable-element@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/angular-resizable-element/-/angular-resizable-element-5.0.0.tgz#c292cfd537a8e8c3850b6dc1a66ffcc1462864d1"
+  integrity sha512-GbV8myA2x8aUU8CK7siTi1QMjtilzQzIgClqUVpE/YM1WAp0/OnioBV12oLcOT24eEwP3zDqPTHL+D1Kv2rNAw==
+  dependencies:
+    tslib "^2.2.0"
 
 angular-tree-component@8.5.6:
   version "8.5.6"
@@ -5226,6 +5250,11 @@ cache-base@^1.0.1:
     to-object-path "^0.3.0"
     union-value "^1.0.0"
     unset-value "^1.0.0"
+
+calendar-utils@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/calendar-utils/-/calendar-utils-0.9.0.tgz#d0b2e0bb5a2238d30afde4fe774c0afd89366c6b"
+  integrity sha512-QxMf/I+y/it02EoFvla7Fq9n4SIOK9T97wT4W0VfvbFTbhf92AYHm9IBXGWDJiARNM2pvrGCFtI8AFB0D4OuWw==
 
 call-bind@^1.0.0, call-bind@^1.0.2:
   version "1.0.2"
@@ -10929,6 +10958,11 @@ portscanner@2.1.1:
   dependencies:
     async "1.5.2"
     is-number-like "^1.0.3"
+
+positioning@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/positioning/-/positioning-2.0.1.tgz#4f1b3a65ed4b830e0922a3fcdf6de58a545bd398"
+  integrity sha512-DsAgM42kV/ObuwlRpAzDTjH9E8fGKkMDJHWFX+kfNXSxh7UCCQxEmdjv/Ws5Ft1XDnt3JT8fIDYeKNSE2TbttA==
 
 posix-character-classes@^0.1.0:
   version "0.1.1"

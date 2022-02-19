@@ -463,6 +463,121 @@
         }
       }
     },
+    "angular-calendar-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/angular-calendar-ngcc",
+      "sourceRoot": "projects/angular-calendar-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/angular-calendar-ngcc",
+            "index": "projects/angular-calendar-ngcc/src/index.html",
+            "main": "projects/angular-calendar-ngcc/src/main.ts",
+            "polyfills": "projects/angular-calendar-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/angular-calendar-ngcc/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/angular-calendar-ngcc/src/favicon.ico",
+              "projects/angular-calendar-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/angular-calendar-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/angular-calendar-ngcc/src/environments/environment.ts",
+                  "with": "projects/angular-calendar-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "angular-calendar-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angular-calendar-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "angular-calendar-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-calendar-ngcc/src/test.ts",
+            "polyfills": "projects/angular-calendar-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/angular-calendar-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-calendar-ngcc/karma.conf.js",
+            "assets": [
+              "projects/angular-calendar-ngcc/src/favicon.ico",
+              "projects/angular-calendar-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/angular-calendar-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-calendar-ngcc/tsconfig.app.json",
+              "projects/angular-calendar-ngcc/tsconfig.spec.json",
+              "projects/angular-calendar-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/angular-calendar-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "angular-calendar-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angular-calendar-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
     "angular-draggable-droppable-ngcc": {
       "projectType": "application",
       "schematics": {},
