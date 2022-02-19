@@ -10028,6 +10028,696 @@
         }
       }
     },
+    "nebularauth-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/nebularauth-ngcc",
+      "sourceRoot": "projects/nebularauth-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/nebularauth-ngcc",
+            "index": "projects/nebularauth-ngcc/src/index.html",
+            "main": "projects/nebularauth-ngcc/src/main.ts",
+            "polyfills": "projects/nebularauth-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/nebularauth-ngcc/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/nebularauth-ngcc/src/favicon.ico",
+              "projects/nebularauth-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/nebularauth-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/nebularauth-ngcc/src/environments/environment.ts",
+                  "with": "projects/nebularauth-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "nebularauth-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "nebularauth-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "nebularauth-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/nebularauth-ngcc/src/test.ts",
+            "polyfills": "projects/nebularauth-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/nebularauth-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/nebularauth-ngcc/karma.conf.js",
+            "assets": [
+              "projects/nebularauth-ngcc/src/favicon.ico",
+              "projects/nebularauth-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/nebularauth-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/nebularauth-ngcc/tsconfig.app.json",
+              "projects/nebularauth-ngcc/tsconfig.spec.json",
+              "projects/nebularauth-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/nebularauth-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "nebularauth-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "nebularauth-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "nebulardate-fns-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/nebulardate-fns-ngcc",
+      "sourceRoot": "projects/nebulardate-fns-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/nebulardate-fns-ngcc",
+            "index": "projects/nebulardate-fns-ngcc/src/index.html",
+            "main": "projects/nebulardate-fns-ngcc/src/main.ts",
+            "polyfills": "projects/nebulardate-fns-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/nebulardate-fns-ngcc/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/nebulardate-fns-ngcc/src/favicon.ico",
+              "projects/nebulardate-fns-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/nebulardate-fns-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/nebulardate-fns-ngcc/src/environments/environment.ts",
+                  "with": "projects/nebulardate-fns-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "nebulardate-fns-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "nebulardate-fns-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "nebulardate-fns-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/nebulardate-fns-ngcc/src/test.ts",
+            "polyfills": "projects/nebulardate-fns-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/nebulardate-fns-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/nebulardate-fns-ngcc/karma.conf.js",
+            "assets": [
+              "projects/nebulardate-fns-ngcc/src/favicon.ico",
+              "projects/nebulardate-fns-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/nebulardate-fns-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/nebulardate-fns-ngcc/tsconfig.app.json",
+              "projects/nebulardate-fns-ngcc/tsconfig.spec.json",
+              "projects/nebulardate-fns-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/nebulardate-fns-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "nebulardate-fns-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "nebulardate-fns-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "nebulareva-icons-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/nebulareva-icons-ngcc",
+      "sourceRoot": "projects/nebulareva-icons-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/nebulareva-icons-ngcc",
+            "index": "projects/nebulareva-icons-ngcc/src/index.html",
+            "main": "projects/nebulareva-icons-ngcc/src/main.ts",
+            "polyfills": "projects/nebulareva-icons-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/nebulareva-icons-ngcc/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/nebulareva-icons-ngcc/src/favicon.ico",
+              "projects/nebulareva-icons-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/nebulareva-icons-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/nebulareva-icons-ngcc/src/environments/environment.ts",
+                  "with": "projects/nebulareva-icons-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "nebulareva-icons-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "nebulareva-icons-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "nebulareva-icons-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/nebulareva-icons-ngcc/src/test.ts",
+            "polyfills": "projects/nebulareva-icons-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/nebulareva-icons-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/nebulareva-icons-ngcc/karma.conf.js",
+            "assets": [
+              "projects/nebulareva-icons-ngcc/src/favicon.ico",
+              "projects/nebulareva-icons-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/nebulareva-icons-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/nebulareva-icons-ngcc/tsconfig.app.json",
+              "projects/nebulareva-icons-ngcc/tsconfig.spec.json",
+              "projects/nebulareva-icons-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/nebulareva-icons-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "nebulareva-icons-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "nebulareva-icons-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "nebularmoment-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/nebularmoment-ngcc",
+      "sourceRoot": "projects/nebularmoment-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/nebularmoment-ngcc",
+            "index": "projects/nebularmoment-ngcc/src/index.html",
+            "main": "projects/nebularmoment-ngcc/src/main.ts",
+            "polyfills": "projects/nebularmoment-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/nebularmoment-ngcc/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/nebularmoment-ngcc/src/favicon.ico",
+              "projects/nebularmoment-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/nebularmoment-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/nebularmoment-ngcc/src/environments/environment.ts",
+                  "with": "projects/nebularmoment-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "nebularmoment-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "nebularmoment-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "nebularmoment-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/nebularmoment-ngcc/src/test.ts",
+            "polyfills": "projects/nebularmoment-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/nebularmoment-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/nebularmoment-ngcc/karma.conf.js",
+            "assets": [
+              "projects/nebularmoment-ngcc/src/favicon.ico",
+              "projects/nebularmoment-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/nebularmoment-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/nebularmoment-ngcc/tsconfig.app.json",
+              "projects/nebularmoment-ngcc/tsconfig.spec.json",
+              "projects/nebularmoment-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/nebularmoment-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "nebularmoment-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "nebularmoment-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "nebularsecurity-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/nebularsecurity-ngcc",
+      "sourceRoot": "projects/nebularsecurity-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/nebularsecurity-ngcc",
+            "index": "projects/nebularsecurity-ngcc/src/index.html",
+            "main": "projects/nebularsecurity-ngcc/src/main.ts",
+            "polyfills": "projects/nebularsecurity-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/nebularsecurity-ngcc/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/nebularsecurity-ngcc/src/favicon.ico",
+              "projects/nebularsecurity-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/nebularsecurity-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/nebularsecurity-ngcc/src/environments/environment.ts",
+                  "with": "projects/nebularsecurity-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "nebularsecurity-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "nebularsecurity-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "nebularsecurity-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/nebularsecurity-ngcc/src/test.ts",
+            "polyfills": "projects/nebularsecurity-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/nebularsecurity-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/nebularsecurity-ngcc/karma.conf.js",
+            "assets": [
+              "projects/nebularsecurity-ngcc/src/favicon.ico",
+              "projects/nebularsecurity-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/nebularsecurity-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/nebularsecurity-ngcc/tsconfig.app.json",
+              "projects/nebularsecurity-ngcc/tsconfig.spec.json",
+              "projects/nebularsecurity-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/nebularsecurity-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "nebularsecurity-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "nebularsecurity-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "nebulartheme-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/nebulartheme-ngcc",
+      "sourceRoot": "projects/nebulartheme-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/nebulartheme-ngcc",
+            "index": "projects/nebulartheme-ngcc/src/index.html",
+            "main": "projects/nebulartheme-ngcc/src/main.ts",
+            "polyfills": "projects/nebulartheme-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/nebulartheme-ngcc/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/nebulartheme-ngcc/src/favicon.ico",
+              "projects/nebulartheme-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/nebulartheme-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/nebulartheme-ngcc/src/environments/environment.ts",
+                  "with": "projects/nebulartheme-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "nebulartheme-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "nebulartheme-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "nebulartheme-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/nebulartheme-ngcc/src/test.ts",
+            "polyfills": "projects/nebulartheme-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/nebulartheme-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/nebulartheme-ngcc/karma.conf.js",
+            "assets": [
+              "projects/nebulartheme-ngcc/src/favicon.ico",
+              "projects/nebulartheme-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/nebulartheme-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/nebulartheme-ngcc/tsconfig.app.json",
+              "projects/nebulartheme-ngcc/tsconfig.spec.json",
+              "projects/nebulartheme-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/nebulartheme-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "nebulartheme-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "nebulartheme-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
     "netbasalspectator-ngcc": {
       "projectType": "application",
       "schematics": {},
