@@ -5804,6 +5804,121 @@
         }
       }
     },
+    "datoramaakita-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/datoramaakita-ngcc",
+      "sourceRoot": "projects/datoramaakita-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/datoramaakita-ngcc",
+            "index": "projects/datoramaakita-ngcc/src/index.html",
+            "main": "projects/datoramaakita-ngcc/src/main.ts",
+            "polyfills": "projects/datoramaakita-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/datoramaakita-ngcc/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/datoramaakita-ngcc/src/favicon.ico",
+              "projects/datoramaakita-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/datoramaakita-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/datoramaakita-ngcc/src/environments/environment.ts",
+                  "with": "projects/datoramaakita-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "datoramaakita-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "datoramaakita-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "datoramaakita-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/datoramaakita-ngcc/src/test.ts",
+            "polyfills": "projects/datoramaakita-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/datoramaakita-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/datoramaakita-ngcc/karma.conf.js",
+            "assets": [
+              "projects/datoramaakita-ngcc/src/favicon.ico",
+              "projects/datoramaakita-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/datoramaakita-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/datoramaakita-ngcc/tsconfig.app.json",
+              "projects/datoramaakita-ngcc/tsconfig.spec.json",
+              "projects/datoramaakita-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/datoramaakita-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "datoramaakita-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "datoramaakita-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
     "delonabc-ngcc": {
       "projectType": "application",
       "schematics": {},
