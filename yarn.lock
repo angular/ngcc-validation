@@ -33,7 +33,7 @@
     minimatch "3.0.4"
     superagent "^6.0.0"
 
-"@ampproject/remapping@2.1.2", "@ampproject/remapping@^2.1.0":
+"@ampproject/remapping@2.1.2", "@ampproject/remapping@^2.0.0", "@ampproject/remapping@^2.1.0":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.1.2.tgz#4edca94973ded9630d20101cd8559cedb8d8bd34"
   integrity sha512-hoyByceqwKirw7w3Z7gnIIZC3Wx3J484Y3L/cMpXFbr7d9ZQj2mODrirNzcJa+SM3UlpWXYvKV4RlRpFXlWgXg==
@@ -2748,21 +2748,21 @@
   resolved "https://registry.yarnpkg.com/@igniteui/material-icons-extended/-/material-icons-extended-2.8.0.tgz#7e4123e7dd1e163152e8326de596cea1200e385e"
   integrity sha512-EHrYCo0WCEUjXPxzb8LG2s4CnWnkwxaqy2xaL/HhT1WfhZuVvJHxe/nxUEl5R/8V9fl0jRiSigpHrtgGBykBzw==
 
-"@ionic/angular@6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@ionic/angular/-/angular-6.0.0.tgz#c96cd17b100b0a2b8b9ca7e5594bcad763e138ff"
-  integrity sha512-BCbPMLHsZCGxNij/b6JDFDWXZNKi47VWK3XEH72nkE8xGJ47RXGjDXeVrtc+2TM1TxSm+J8tL+P3hnSgoBgyMQ==
+"@ionic/angular@6.0.8":
+  version "6.0.8"
+  resolved "https://registry.yarnpkg.com/@ionic/angular/-/angular-6.0.8.tgz#2b6c1b01bd0a627adb66388199923265ef11045e"
+  integrity sha512-sPXQ17SCym0Skx1vbFmhHyPCNH5NoKIyuHee8ROZcTvNizavJYajoU+YTcr6v3w37CecsTz/JgpCXbAUHxxrcQ==
   dependencies:
-    "@ionic/core" "6.0.0"
+    "@ionic/core" "^6.0.8"
     jsonc-parser "^3.0.0"
     tslib "^2.0.0"
 
-"@ionic/core@6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-6.0.0.tgz#9c95513fc7fff79a0113f540da754b4a16910f99"
-  integrity sha512-3e5EJhDebK4pCiFREpNB95o2kBSAdhRb3eMsBDOCYWYuFlcZEOGOpiGx+kYF/klYVQnB45UXAmR8nCX1indmHQ==
+"@ionic/core@^6.0.8":
+  version "6.0.8"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-6.0.8.tgz#d5fd7e7518d9ac233dbc01ab55d0fd4bc7597f75"
+  integrity sha512-sfkms6Rj8MPuZOo+bdjL75ewTmr8oKsMepFL3MM7Nfu+GfNsAuauf1fRYwoD34f0jVgfUnJvhvT3V3NVVTQwHQ==
   dependencies:
-    "@stencil/core" "~2.11.0-0"
+    "@stencil/core" "~2.13.0"
     ionicons "^6.0.0"
     tslib "^2.1.0"
 
@@ -4616,10 +4616,10 @@
   resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.10.0.tgz#acf44b9ae6578a20f0d09bf94296e833beadc885"
   integrity sha512-15rWMTPQ/sp0lSV82HVCXkIya3QLN+uBl7pqK4JnTrp4HiLrzLmNbWjbvgCs55gw0lULbCIGbRIEsFz+Pe/Q+A==
 
-"@stencil/core@~2.11.0-0":
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.11.0.tgz#8accc2791e2c34cce2d2aa8b40864dd40be4e10c"
-  integrity sha512-/IubCWhVXCguyMUp/3zGrg3c882+RJNg/zpiKfyfJL3kRCOwe+/MD8OoAXVGdd+xAohZKIi1Ik+EHFlsptsjLg==
+"@stencil/core@~2.13.0":
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.13.0.tgz#993fd74a5c7c8fe8af75848ca9df2211cd05b818"
+  integrity sha512-EEKHOHgYpg3/iFUKMXTZJjUayRul7sXDwNw0OGgkEOe4t7JWiibDkzUHuruvpbqEydX+z1+ez5K2bMMY76c2wA==
 
 "@swimlane/dragula@^3.8.0":
   version "3.8.0"
@@ -5215,10 +5215,10 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.1.tgz#20f18294f797f2209b5f65c8e3b5c8e8261d127c"
   integrity sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==
 
-"@types/trusted-types@^1.0.1":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-1.0.6.tgz#569b8a08121d3203398290d602d84d73c8dcf5da"
-  integrity sha512-230RC8sFeHoT6sSUlRO6a8cAnclO06eeiq1QDfiv2FGCLWFvvERWgwIQD4FWqD9A69BN7Lzee4OXwoMVnnsWDw==
+"@types/trusted-types@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-2.0.2.tgz#fc25ad9943bcac11cceb8168db4f275e0e72e756"
+  integrity sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg==
 
 "@types/ws@^8.2.2":
   version "8.2.2"
