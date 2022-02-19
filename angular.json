@@ -3502,6 +3502,121 @@
         }
       }
     },
+    "ant-designicons-angular-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/ant-designicons-angular-ngcc",
+      "sourceRoot": "projects/ant-designicons-angular-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/ant-designicons-angular-ngcc",
+            "index": "projects/ant-designicons-angular-ngcc/src/index.html",
+            "main": "projects/ant-designicons-angular-ngcc/src/main.ts",
+            "polyfills": "projects/ant-designicons-angular-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/ant-designicons-angular-ngcc/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/ant-designicons-angular-ngcc/src/favicon.ico",
+              "projects/ant-designicons-angular-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/ant-designicons-angular-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/ant-designicons-angular-ngcc/src/environments/environment.ts",
+                  "with": "projects/ant-designicons-angular-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "ant-designicons-angular-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "ant-designicons-angular-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "ant-designicons-angular-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ant-designicons-angular-ngcc/src/test.ts",
+            "polyfills": "projects/ant-designicons-angular-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/ant-designicons-angular-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/ant-designicons-angular-ngcc/karma.conf.js",
+            "assets": [
+              "projects/ant-designicons-angular-ngcc/src/favicon.ico",
+              "projects/ant-designicons-angular-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/ant-designicons-angular-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ant-designicons-angular-ngcc/tsconfig.app.json",
+              "projects/ant-designicons-angular-ngcc/tsconfig.spec.json",
+              "projects/ant-designicons-angular-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/ant-designicons-angular-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "ant-designicons-angular-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "ant-designicons-angular-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
     "apollo-angular-link-http-batch-ngcc": {
       "projectType": "application",
       "schematics": {},
