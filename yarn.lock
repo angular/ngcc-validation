@@ -10205,7 +10205,7 @@ internmap@^1.0.0:
   resolved "https://registry.yarnpkg.com/internmap/-/internmap-1.0.1.tgz#0017cc8a3b99605f0302f2b198d272e015e5df95"
   integrity sha512-lDB5YccMydFBtasVtxnZ3MRBHuaoE8GKsppq+EchKL2U4nK/DmEpPHNH8MZe5HkMtpSiTSOZwfN0tzYjO/lJEw==
 
-intersection-observer@0.12.0, intersection-observer@>=0.11.0:
+intersection-observer@0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.12.0.tgz#6c84628f67ce8698e5f9ccf857d97718745837aa"
   integrity sha512-2Vkz8z46Dv401zTWudDGwO7KiGHNDkMv417T5ItcNYfmvHR/1qCTVBO9vwH8zZmQ0WkA/1ARwpysR9bsnop4NQ==
@@ -12480,13 +12480,12 @@ ng-gapi@0.0.94:
     "@types/gapi.auth2" "^0.0.51"
     tslib "^1.11.1"
 
-ng-in-viewport@6.1.5:
-  version "6.1.5"
-  resolved "https://registry.yarnpkg.com/ng-in-viewport/-/ng-in-viewport-6.1.5.tgz#1b6a5d51c8cc7bb9d70e651fcde5fb94854f68bb"
-  integrity sha512-1yYwKlJm3i/cTaJn3h8jyPvpXocOPWXXj0xdHN+n25rIzcf1r1YpNmvA2bFELvrEOcIbBGgpuo+oQGb9tBzLmg==
+ng-in-viewport@13.0.1:
+  version "13.0.1"
+  resolved "https://registry.yarnpkg.com/ng-in-viewport/-/ng-in-viewport-13.0.1.tgz#e7624bd57cf3999416151dbe42d5ca3a8f54ce56"
+  integrity sha512-RLOiT5AY8ypFuNCdif1aGG5Fx2INoG2+1b+CGJLhk0lPMLFyCVhmnma3Mq4M7TnwO+plNmqAfbu60usZF2zZ3g==
   dependencies:
-    intersection-observer ">=0.11.0"
-    tslib ">=1.9.0"
+    tslib "^2.1.0"
 
 ng-inline-svg@13.1.1:
   version "13.1.1"
@@ -16363,15 +16362,15 @@ tslib@2.3.1, tslib@^2.3.1:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
-tslib@>=1.9.0, tslib@^2.0.0, tslib@^2.0.3, tslib@^2.1.0, tslib@~2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
-  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
-
 tslib@^1.10.0, tslib@^1.11.1, tslib@^1.13.0, tslib@^1.7.0, tslib@^1.7.1, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
+
+tslib@^2.0.0, tslib@^2.0.3, tslib@^2.1.0, tslib@~2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
+  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
 
 tslib@^2.2.0:
   version "2.2.0"
