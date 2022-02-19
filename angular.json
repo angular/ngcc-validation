@@ -3847,6 +3847,121 @@
         }
       }
     },
+    "angulartics2-ngcc": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/angulartics2-ngcc",
+      "sourceRoot": "projects/angulartics2-ngcc/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/angulartics2-ngcc",
+            "index": "projects/angulartics2-ngcc/src/index.html",
+            "main": "projects/angulartics2-ngcc/src/main.ts",
+            "polyfills": "projects/angulartics2-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/angulartics2-ngcc/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/angulartics2-ngcc/src/favicon.ico",
+              "projects/angulartics2-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/angulartics2-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/angulartics2-ngcc/src/environments/environment.ts",
+                  "with": "projects/angulartics2-ngcc/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "angulartics2-ngcc:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angulartics2-ngcc:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "angulartics2-ngcc:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angulartics2-ngcc/src/test.ts",
+            "polyfills": "projects/angulartics2-ngcc/src/polyfills.ts",
+            "tsConfig": "projects/angulartics2-ngcc/tsconfig.spec.json",
+            "karmaConfig": "projects/angulartics2-ngcc/karma.conf.js",
+            "assets": [
+              "projects/angulartics2-ngcc/src/favicon.ico",
+              "projects/angulartics2-ngcc/src/assets"
+            ],
+            "styles": [
+              "projects/angulartics2-ngcc/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angulartics2-ngcc/tsconfig.app.json",
+              "projects/angulartics2-ngcc/tsconfig.spec.json",
+              "projects/angulartics2-ngcc/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/angulartics2-ngcc/e2e/protractor.conf.js",
+            "devServerTarget": "angulartics2-ngcc:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angulartics2-ngcc:serve:production"
+            }
+          }
+        }
+      }
+    },
     "angularupgrade-ngcc": {
       "projectType": "application",
       "schematics": {},
