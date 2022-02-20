@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { InMemoryCache } from '@apollo/client/core';
-import { APOLLO_OPTIONS } from 'apollo-angular';
+import { ApolloModule, APOLLO_OPTIONS } from 'apollo-angular';
 
 import { AppComponent } from './app.component';
 
@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
+    ApolloModule,
     BrowserModule,
   ],
   providers: [
