@@ -5,7 +5,7 @@ import { resolve } from 'path';
 const packages = Object.keys(JSON.parse(readFileSync(resolve(__dirname, '../package.json'), 'utf8')).dependencies);
 const knownNonNgccPackages = new Set<string>(JSON.parse(readFileSync(resolve(__dirname, './non-ngcc-packages.json'), 'utf8')));
 
-console.log(chalk.gray('Checking for packages that no longer need ngcc processing'));
+console.log(chalk.gray('Checking for packages that no longer need ngcc processing...'));
 
 const nonNgccPackages = [];
 for (const packageName of packages) {
@@ -28,14 +28,14 @@ for (const packageName of packages) {
 }
 
 if (nonNgccPackages.length > 0) {
-  console.error(chalk.red('The following packages no longer need to be processed by ngcc. Please remove them and the project that references them if appropriate.'));
+  console.error(chalk.red('The following packages no longer need to be processed by ngcc. Please add them to `./infra/non-ngcc-packages.json`.'));
   for (const packageName of nonNgccPackages) {
     console.error(`- ${packageName}`);
   }
   process.exit(1);
 }
 
-console.error(chalk.gray('No packages need to be removed.'));
+console.error(chalk.gray('No packages that no longer need ngcc processing.'));
 process.exit(0);
 
 
