@@ -2279,63 +2279,64 @@
   dependencies:
     schematics-utilities "^2.0.3"
 
-"@delon/abc@13.2.0":
-  version "13.2.0"
-  resolved "https://registry.yarnpkg.com/@delon/abc/-/abc-13.2.0.tgz#6ded6ee2d3edfa2cbc743c66f1d4e0ed759ebcd9"
-  integrity sha512-hPCUAunC4bTOSgqxnBbWO/XlK64CiDha2/zGsqiHgI6x1yAA/Gib7TFQxaqy7D0lpyaD3h6ucM+rlfXhl2vJWw==
+"@delon/abc@13.2.1":
+  version "13.2.1"
+  resolved "https://registry.yarnpkg.com/@delon/abc/-/abc-13.2.1.tgz#a79515692da6efd04989b9d9806a5bdd7339f108"
+  integrity sha512-xFy+QLSly51jH1DSKsu/CYcHcK7cNV6ucfaoAU7WadJR4Hd1CM+gehjObcAdOqPAZfl/iEzDbS1Q8N9uSq3j5A==
   dependencies:
-    "@delon/acl" "^13.2.0"
-    "@delon/theme" "^13.2.0"
-    "@delon/util" "^13.2.0"
+    "@delon/acl" "^13.2.1"
+    "@delon/theme" "^13.2.1"
+    "@delon/util" "^13.2.1"
     file-saver "^2.0.5"
     isutf8 "^4.0.0"
     jszip "^3.7.1"
     ngx-countdown "^13.0.0"
+    plyr "^3.6.12"
     tslib "^2.3.0"
     xlsx "^0.17.4"
 
-"@delon/acl@13.2.0", "@delon/acl@^13.2.0":
-  version "13.2.0"
-  resolved "https://registry.yarnpkg.com/@delon/acl/-/acl-13.2.0.tgz#931996334df61ee28dbf4a54fd7a5c18911f9809"
-  integrity sha512-nJXpZC81TX1LIxsI4hVZaOx+TkeCIhjg84L6KT2Cbn0sYmUQdidWTxcZ0vNXHhacDTUwg5lbpMAiSJ+j2byBeQ==
+"@delon/acl@13.2.1", "@delon/acl@^13.2.1":
+  version "13.2.1"
+  resolved "https://registry.yarnpkg.com/@delon/acl/-/acl-13.2.1.tgz#d088f02ff19732922dd1c89b6c051f2b0822cfc5"
+  integrity sha512-1fnhdwrxAoasPoqqwXVkmTpZoMxgsh4OdbCtmZDel2pC2eXX17aFUe9XxjPLnNIy7GmdgHwiocDOHSDfhCi73w==
   dependencies:
-    "@delon/util" "^13.2.0"
+    "@delon/util" "^13.2.1"
     tslib "^2.3.0"
 
-"@delon/auth@13.2.0":
-  version "13.2.0"
-  resolved "https://registry.yarnpkg.com/@delon/auth/-/auth-13.2.0.tgz#2d3bf3af9a6d7710573e17f70962b167839657e3"
-  integrity sha512-8kI41FDNR9Wk7Y1zYsvy1xDYwHdHnkoyaHS7JH0D8pEAKkjZqDC6d7/n7QQnyysDvjtsEp36+BwASjNTvJW86Q==
+"@delon/auth@13.2.1":
+  version "13.2.1"
+  resolved "https://registry.yarnpkg.com/@delon/auth/-/auth-13.2.1.tgz#41cfedd9e4dbcd7de01afbf90bead856b8625b94"
+  integrity sha512-E+frOU9UkeSAVUCOP3eL7G1YBsncFTHhzMi+FHQiBWI8PS7peZMzBJJGqHrLwpSswFhppozh3tltaUYVV/0ziQ==
   dependencies:
-    "@delon/util" "^13.2.0"
+    "@delon/util" "^13.2.1"
     tslib "^2.3.0"
 
-"@delon/form@13.2.0":
-  version "13.2.0"
-  resolved "https://registry.yarnpkg.com/@delon/form/-/form-13.2.0.tgz#0bdf54a665150e36c2b5508ec0c45e55a073fa8e"
-  integrity sha512-Y1pptmSu4fDjPQ7fc74gT/orE61aYAKI/6TNNy8jL12ukUn8mcGJpNqhc4xRXs1+ytZ9/uQe5WsTD88gh8FPsg==
+"@delon/form@13.2.1":
+  version "13.2.1"
+  resolved "https://registry.yarnpkg.com/@delon/form/-/form-13.2.1.tgz#b92da1be3605293bb2b94dd20d346f790fc07783"
+  integrity sha512-CRcvGbxi8yiUbAW5MZA5wTTOIvYekFV5ZJXRnY8uf4nCz57bMIqtXlsQQGl4NR69Qy3+KWUyjVrhGz4cdpHwKQ==
   dependencies:
-    "@delon/acl" "^13.2.0"
-    "@delon/theme" "^13.2.0"
-    "@delon/util" "^13.2.0"
+    "@delon/acl" "^13.2.1"
+    "@delon/theme" "^13.2.1"
+    "@delon/util" "^13.2.1"
     ajv "^8.8.2"
     ajv-formats "^2.1.1"
     tslib "^2.3.0"
 
-"@delon/theme@13.2.0", "@delon/theme@^13.2.0":
-  version "13.2.0"
-  resolved "https://registry.yarnpkg.com/@delon/theme/-/theme-13.2.0.tgz#a06539df36731f13fbfba75b2d849a5396b4bd01"
-  integrity sha512-yufPCO380v7RGDqMjCvfc3atXCA5dTn6ofvIQPxe7jwAIWtI+tWsnpQjyWN2doUP6xNST7KmjHjG49VZsIPA4Q==
+"@delon/theme@13.2.1", "@delon/theme@^13.2.1":
+  version "13.2.1"
+  resolved "https://registry.yarnpkg.com/@delon/theme/-/theme-13.2.1.tgz#7601f6b3d60bd9159261ab1a231a3b98ae9452be"
+  integrity sha512-+EcZ6Y2AO/0N7DKIARehcoNs+C2XowJx7DajBOZHqZSo3wSFuCCyvp+MFFQ2shdLcHDFz5cO4mefXff8d7JklQ==
   dependencies:
-    "@delon/acl" "^13.2.0"
-    "@delon/util" "^13.2.0"
-    ng-zorro-antd "^13.0.0"
+    "@delon/acl" "^13.2.1"
+    "@delon/util" "^13.2.1"
+    ng-zorro-antd "^13.1.1"
     tslib "^2.3.0"
 
-"@delon/util@13.2.0", "@delon/util@^13.2.0":
-  version "13.2.0"
-  resolved "https://registry.yarnpkg.com/@delon/util/-/util-13.2.0.tgz#08a064826d1a78052b03fd93b4145de260a26850"
-  integrity sha512-GVW7MJw35HX2N77PGfEUaeBQgP9OGxzUTCKm3+lvMOVt9ar9T26dhq+HXBse+yHwH792yhaqVoqoF+LQxCZsig==
+"@delon/util@13.2.1", "@delon/util@^13.2.1":
+  version "13.2.1"
+  resolved "https://registry.yarnpkg.com/@delon/util/-/util-13.2.1.tgz#abeabde17d70848a98f95a6e277fef792cc434a5"
+  integrity sha512-7j30GM698xUuSF1T2uDuHRIEm6sQgCvBb34TY/c1OKvdxwi08RegrmMAn7g/u0irwPEnzXrGLYSN4TR7G4hafA==
   dependencies:
     extend "^3.0.2"
     tslib "^2.3.0"
@@ -7408,6 +7409,11 @@ core-js@^3.19.1:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.19.3.tgz#6df8142a996337503019ff3235a7022d7cdf4559"
   integrity sha512-LeLBMgEGSsG7giquSzvgBrTS7V5UL6ks3eQlUSbN8dJStlLFiRzUm5iqsRyzUB8carhfKjkJ2vzKqE6z1Vga9g==
 
+core-js@^3.20.0:
+  version "3.21.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.21.1.tgz#f2e0ddc1fc43da6f904706e8e955bc19d06a0d94"
+  integrity sha512-FRq5b/VMrWlrmCzwRrpDYNxyHP9BcAZC+xHJaqTgIE5091ZV1NTmyh0sGOg5XqpnHvR0svdy0sv1gWA1zmhxig==
+
 core-util-is@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -7612,6 +7618,11 @@ cssstyle@^2.2.0, cssstyle@^2.3.0:
   integrity sha512-AZL67abkUzIuvcHqk7c09cezpGNcxUxU4Ioi/05xHk4DQeTkWmGYftIE6ctU6AEt+Gn4n1lDStOtj7FKycP71A==
   dependencies:
     cssom "~0.3.6"
+
+custom-event-polyfill@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/custom-event-polyfill/-/custom-event-polyfill-1.0.7.tgz#9bc993ddda937c1a30ccd335614c6c58c4f87aee"
+  integrity sha512-TDDkd5DkaZxZFM8p+1I3yAlvM3rSr1wbrOliG4yJiwinMZN8z/iGL7BTlDkrJcYTmgUSb4ywVCc3ZaUtOtC76w==
 
 custom-event@1.0.0:
   version "1.0.0"
@@ -11821,6 +11832,11 @@ loader-utils@^2.0.0:
     emojis-list "^3.0.0"
     json5 "^2.1.2"
 
+loadjs@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/loadjs/-/loadjs-4.2.0.tgz#2a0336376397a6a43edf98c9ec3229ddd5abb6f6"
+  integrity sha512-AgQGZisAlTPbTEzrHPb6q+NYBMD+DP9uvGSIjSUM5uG+0jG15cb8axWpxuOIqrmQjn6scaaH8JwloiP27b2KXA==
+
 localforage@^1.9.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/localforage/-/localforage-1.9.0.tgz#f3e4d32a8300b362b4634cc4e066d9d00d2f09d1"
@@ -12723,20 +12739,10 @@ ng-sidebar@9.4.2:
   resolved "https://registry.yarnpkg.com/ng-sidebar/-/ng-sidebar-9.4.2.tgz#3ecc4b06e244eb378d6d1fb5511c17c986698bca"
   integrity sha512-8KmEQYFhn4S5LDjRDXBhDfCgLchJEj+ClBdiTCAQoRjX8vdh85hmKIGN7aBsh1HNOXKN3rzDu0qmd90193/P3Q==
 
-ng-zorro-antd@13.1.1:
+ng-zorro-antd@13.1.1, ng-zorro-antd@^13.1.1:
   version "13.1.1"
   resolved "https://registry.yarnpkg.com/ng-zorro-antd/-/ng-zorro-antd-13.1.1.tgz#ecc398e7756671fcccee0b3cb70813dd28fd8313"
   integrity sha512-4haER9G+OlbAG66elL0lp/QO1jOKoyt79BVYw3bILDUSMBVWCe1UGKaIG47BCybLYFV0qcL8AiDuIGNLkddbjg==
-  dependencies:
-    "@angular/cdk" "^13.0.1"
-    "@ant-design/icons-angular" "^13.0.1"
-    date-fns "^2.16.1"
-    tslib "^2.3.0"
-
-ng-zorro-antd@^13.0.0:
-  version "13.0.0"
-  resolved "https://registry.yarnpkg.com/ng-zorro-antd/-/ng-zorro-antd-13.0.0.tgz#a117f346b0272f9e8579830c4f5122ac47b3701f"
-  integrity sha512-NuCixRJTM/t7Jp6Fe4kL4pIHoqumZdjR/kH0O1ZK7Dk4MvfZ2XcZ05akiGGB8JZlJ+eVPplVKvNydTqyIisr4Q==
   dependencies:
     "@angular/cdk" "^13.0.1"
     "@ant-design/icons-angular" "^13.0.1"
@@ -13863,6 +13869,17 @@ pkg-dir@^4.1.0:
   dependencies:
     find-up "^4.0.0"
 
+plyr@^3.6.12:
+  version "3.6.12"
+  resolved "https://registry.yarnpkg.com/plyr/-/plyr-3.6.12.tgz#e64481f163f9188d783447aedbf424fefd2ee92f"
+  integrity sha512-42WhYpMS/FEyX2unSEvhYtj1RvJgWvOsjZQFDongOQHA4eVzsyr7b06bzVpinMAOVC9e5H7RCbK+6CCAFIl2VQ==
+  dependencies:
+    core-js "^3.20.0"
+    custom-event-polyfill "^1.0.7"
+    loadjs "^4.2.0"
+    rangetouch "^2.0.1"
+    url-polyfill "^1.1.12"
+
 portfinder@^1.0.28:
   version "1.0.28"
   resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-1.0.28.tgz#67c4622852bd5374dd1dd900f779f53462fac778"
@@ -14637,6 +14654,11 @@ range-parser@^1.2.1, range-parser@~1.2.0, range-parser@~1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
+
+rangetouch@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/rangetouch/-/rangetouch-2.0.1.tgz#c01105110fd3afca2adcb1a580692837d883cb70"
+  integrity sha512-sln+pNSc8NGaHoLzwNBssFSf/rSYkqeBXzX1AtJlkJiUaVSJSbRAWJk+4omsXkN+EJalzkZhWQ3th1m0FpR5xA==
 
 raw-body@2.4.0:
   version "2.4.0"
@@ -16809,6 +16831,11 @@ urix@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
+
+url-polyfill@^1.1.12:
+  version "1.1.12"
+  resolved "https://registry.yarnpkg.com/url-polyfill/-/url-polyfill-1.1.12.tgz#6cdaa17f6b022841b3aec0bf8dbd87ac0cd33331"
+  integrity sha512-mYFmBHCapZjtcNHW0MDq9967t+z4Dmg5CJ0KqysK3+ZbyoNOWQHksGCTWwDhxGXllkWlOc10Xfko6v4a3ucM6A==
 
 use@^3.1.0:
   version "3.1.1"
