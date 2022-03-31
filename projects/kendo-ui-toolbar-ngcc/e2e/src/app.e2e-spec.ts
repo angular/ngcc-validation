@@ -5,6 +5,8 @@ describe('kendo-toolbar', () => {
   let page: AppPage;
 
   beforeEach(() => {
+    // Latest kendo version causes the app to not stabilize, so we need to skip waiting.
+    browser.waitForAngularEnabled(false);
     page = new AppPage();
   });
 
