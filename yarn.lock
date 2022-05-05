@@ -156,7 +156,7 @@
     rxjs "6.6.7"
     source-map "0.7.3"
 
-"@angular-devkit/core@13.3.0", "@angular-devkit/core@^13.3.0":
+"@angular-devkit/core@13.3.0":
   version "13.3.0"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-13.3.0.tgz#ad15f2a6b72599a3e22194ebf2decc35e91e592c"
   integrity sha512-8YrreVbWlJVZnk5zs4vfkRItrPEtWhUcxWOBfYT/Kwu4FwJVAnNuhJAxxXOAQ2Ckd7cv30Idh/RFVLbTZ5Gs9w==
@@ -200,6 +200,18 @@
     fast-json-stable-stringify "2.0.0"
     magic-string "0.25.3"
     rxjs "6.4.0"
+    source-map "0.7.3"
+
+"@angular-devkit/core@^13.3.4":
+  version "13.3.5"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-13.3.5.tgz#c5f32f4f99b5cad8df9cf3cf4da9c4b1335c1155"
+  integrity sha512-w7vzK4VoYP9rLgxJ2SwEfrkpKybdD+QgQZlsDBzT0C6Ebp7b4gkNcNVFo8EiZvfDl6Yplw2IAP7g7fs3STn0hQ==
+  dependencies:
+    ajv "8.9.0"
+    ajv-formats "2.1.1"
+    fast-json-stable-stringify "2.1.0"
+    magic-string "0.25.7"
+    rxjs "6.6.7"
     source-map "0.7.3"
 
 "@angular-devkit/schematics@13.2.4", "@angular-devkit/schematics@^12.0.0 || ^13.0.0":
@@ -3901,14 +3913,14 @@
   resolved "https://registry.yarnpkg.com/@ngui/auto-complete/-/auto-complete-3.0.0.tgz#961cd1bacb03a1c592310a788afbb6a6f8d23c28"
   integrity sha512-cEJHTuta1ZEAgWMTZNmFhVqTcuWIqCLUUBJWIWuIwZgVBcnM/ctn5GSyu/lP2iCV+VG34kHE8NrvTnAztagYxA==
 
-"@nguniversal/builders@13.1.0":
-  version "13.1.0"
-  resolved "https://registry.yarnpkg.com/@nguniversal/builders/-/builders-13.1.0.tgz#41bc36ca79b0af5b95a2577477525c5785453c53"
-  integrity sha512-tG/o04rODUIlMnkW/g9TWt50S6CkX6sCvR+fCS7n7YsLrknnlhj7qMIIEKCiuE+b/7lbfQUe2HepnFEfxLypmw==
+"@nguniversal/builders@13.1.1":
+  version "13.1.1"
+  resolved "https://registry.yarnpkg.com/@nguniversal/builders/-/builders-13.1.1.tgz#e0571957f443b226833c4b17fdbb3a89d324a5e2"
+  integrity sha512-R73GKHr7KeTIBE/kSudhsN0V1gx+TrnM28RHdzw3eHCz2Q3msGpgdt/79+2EjLcvWjoVHOsD+aFIJ9+sx422yQ==
   dependencies:
     "@angular-devkit/architect" "^0.1303.0"
-    "@angular-devkit/core" "^13.3.0"
-    "@nguniversal/common" "13.1.0"
+    "@angular-devkit/core" "^13.3.4"
+    "@nguniversal/common" "13.1.1"
     browser-sync "^2.26.7"
     express "^4.17.1"
     guess-parser "^0.4.12"
@@ -3922,6 +3934,15 @@
   version "13.1.0"
   resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-13.1.0.tgz#cceb868982c623898fe7b9c42b0fb366d86af0e5"
   integrity sha512-bmRwJoEM5LfA4kDRkuVvoOv6NFAOgn2WpolwQlnLNfGTKL/fyNw/JyIvdEphQdjhTTRadehY8MYbr+X97+hyLw==
+  dependencies:
+    critters "0.0.16"
+    jsdom "19.0.0"
+    tslib "^2.3.0"
+
+"@nguniversal/common@13.1.1":
+  version "13.1.1"
+  resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-13.1.1.tgz#5f8c144f41a5f867c8d051d2ebfa052f10ac22fd"
+  integrity sha512-DoAPA7+kUz+qMgCTUtRPFcMGY0zz8OSkOTZnxqO5sUYntD6mCEQImHU0WF4ud88j71o0Hv+AISJD1evAAANCdw==
   dependencies:
     critters "0.0.16"
     jsdom "19.0.0"
