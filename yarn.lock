@@ -48,12 +48,12 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@angular-devkit/architect@^0.1303.0":
-  version "0.1303.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1303.0.tgz#19910779a8178d00c1569ebae7f25557d0c721b8"
-  integrity sha512-kTcKB917ICA8j53SGo4gn+qAlzx8si+iHnOTbp5QlMr7qt/Iz07SVVI8mRlMD6c6lr7eE/fVlCLzEZ1+WCQpTA==
+"@angular-devkit/architect@^0.1400.0-next":
+  version "0.1400.0"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1400.0.tgz#ad2d55ac898daead4bcb791499ab2b98b40803ed"
+  integrity sha512-INPO+r5CHElPdFLOrwUYShZqtr37/kTJegAoWpSNC8Zy8WgTlecvA+y5eHy0bNeXMjWbZ3YCZJ1jXYpJJNL1Kg==
   dependencies:
-    "@angular-devkit/core" "13.3.0"
+    "@angular-devkit/core" "14.0.0"
     rxjs "6.6.7"
 
 "@angular-devkit/architect@github:angular/angular-devkit-architect-builds#b5deab15f":
@@ -154,15 +154,14 @@
     rxjs "6.6.7"
     source-map "0.7.3"
 
-"@angular-devkit/core@13.3.0":
-  version "13.3.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-13.3.0.tgz#ad15f2a6b72599a3e22194ebf2decc35e91e592c"
-  integrity sha512-8YrreVbWlJVZnk5zs4vfkRItrPEtWhUcxWOBfYT/Kwu4FwJVAnNuhJAxxXOAQ2Ckd7cv30Idh/RFVLbTZ5Gs9w==
+"@angular-devkit/core@14.0.0", "@angular-devkit/core@^14.0.0-next":
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-14.0.0.tgz#33e56337257fdda3e429b36548820814d9fafbc2"
+  integrity sha512-xQXpNbIeBjnbY68OFkrpFm6v7xlmTLFk6zGPIkI4T/hrqT2kNmg0y1/FcN6yMBgCEC9WVWR8SHGaPWrc5VVZMw==
   dependencies:
-    ajv "8.9.0"
+    ajv "8.11.0"
     ajv-formats "2.1.1"
-    fast-json-stable-stringify "2.1.0"
-    magic-string "0.25.7"
+    jsonc-parser "3.0.0"
     rxjs "6.6.7"
     source-map "0.7.3"
 
@@ -186,18 +185,6 @@
     fast-json-stable-stringify "2.0.0"
     magic-string "0.25.3"
     rxjs "6.4.0"
-    source-map "0.7.3"
-
-"@angular-devkit/core@^13.3.4":
-  version "13.3.5"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-13.3.5.tgz#c5f32f4f99b5cad8df9cf3cf4da9c4b1335c1155"
-  integrity sha512-w7vzK4VoYP9rLgxJ2SwEfrkpKybdD+QgQZlsDBzT0C6Ebp7b4gkNcNVFo8EiZvfDl6Yplw2IAP7g7fs3STn0hQ==
-  dependencies:
-    ajv "8.9.0"
-    ajv-formats "2.1.1"
-    fast-json-stable-stringify "2.1.0"
-    magic-string "0.25.7"
-    rxjs "6.6.7"
     source-map "0.7.3"
 
 "@angular-devkit/core@github:angular/angular-devkit-core-builds#b5deab15f":
@@ -4906,20 +4893,20 @@
   resolved "https://registry.yarnpkg.com/@ngui/auto-complete/-/auto-complete-3.0.0.tgz#961cd1bacb03a1c592310a788afbb6a6f8d23c28"
   integrity sha512-cEJHTuta1ZEAgWMTZNmFhVqTcuWIqCLUUBJWIWuIwZgVBcnM/ctn5GSyu/lP2iCV+VG34kHE8NrvTnAztagYxA==
 
-"@nguniversal/builders@13.1.1":
-  version "13.1.1"
-  resolved "https://registry.yarnpkg.com/@nguniversal/builders/-/builders-13.1.1.tgz#e0571957f443b226833c4b17fdbb3a89d324a5e2"
-  integrity sha512-R73GKHr7KeTIBE/kSudhsN0V1gx+TrnM28RHdzw3eHCz2Q3msGpgdt/79+2EjLcvWjoVHOsD+aFIJ9+sx422yQ==
+"@nguniversal/builders@14.0.0":
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/builders/-/builders-14.0.0.tgz#00caa96d2de5a139add5c4692c9461d5678c5274"
+  integrity sha512-WpoKSK3aeovnVMbvl5iFmHP1pqurlBHQz7ZmofU41QJEW+ukOW/9ZUmE0AZQPUyEM+AeJ0QEUIwcaKkzv+ugRQ==
   dependencies:
-    "@angular-devkit/architect" "^0.1303.0"
-    "@angular-devkit/core" "^13.3.4"
-    "@nguniversal/common" "13.1.1"
+    "@angular-devkit/architect" "^0.1400.0-next"
+    "@angular-devkit/core" "^14.0.0-next"
+    "@nguniversal/common" "14.0.0"
     browser-sync "^2.26.7"
     express "^4.17.1"
     guess-parser "^0.4.12"
     http-proxy-middleware "^2.0.0"
     ora "^5.1.0"
-    piscina "~3.1.0"
+    piscina "~3.2.0"
     rxjs "^6.5.5"
     tree-kill "^1.2.2"
 
@@ -4927,6 +4914,15 @@
   version "13.1.1"
   resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-13.1.1.tgz#5f8c144f41a5f867c8d051d2ebfa052f10ac22fd"
   integrity sha512-DoAPA7+kUz+qMgCTUtRPFcMGY0zz8OSkOTZnxqO5sUYntD6mCEQImHU0WF4ud88j71o0Hv+AISJD1evAAANCdw==
+  dependencies:
+    critters "0.0.16"
+    jsdom "19.0.0"
+    tslib "^2.3.0"
+
+"@nguniversal/common@14.0.0":
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-14.0.0.tgz#e23d0fd93a974438f76c28484fc835a1fc106045"
+  integrity sha512-P37LXcfOdTVavUk4LaW9zFg73uB3XlwQK1RPULiccQBuu44rBP7zJoQI2P7lccJcDhY+WvZmFYpgD3t9gMJ8VA==
   dependencies:
     critters "0.0.16"
     jsdom "19.0.0"
@@ -15361,21 +15357,10 @@ pirates@^4.0.4:
   resolved "https://registry.yarnpkg.com/pirates/-/pirates-4.0.5.tgz#feec352ea5c3268fb23a37c702ab1699f35a5f3b"
   integrity sha512-8V9+HQPupnaXMA23c5hvl69zXvTwTzyAYasnkb0Tts4XvO4CliqONMOnvlq26rkhLC3nWDFBJf73LU1e1VZLaQ==
 
-piscina@3.2.0:
+piscina@3.2.0, piscina@~3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/piscina/-/piscina-3.2.0.tgz#f5a1dde0c05567775690cccefe59d9223924d154"
   integrity sha512-yn/jMdHRw+q2ZJhFhyqsmANcbF6V2QwmD84c6xRau+QpQOmtrBCoRGdvTfeuFDYXB5W2m6MfLkjkvQa9lUSmIA==
-  dependencies:
-    eventemitter-asyncresource "^1.0.0"
-    hdr-histogram-js "^2.0.1"
-    hdr-histogram-percentiles-obj "^3.0.0"
-  optionalDependencies:
-    nice-napi "^1.0.2"
-
-piscina@~3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/piscina/-/piscina-3.1.0.tgz#2333636865b6cb69c5a370bbc499a98cabcf3e04"
-  integrity sha512-KTW4sjsCD34MHrUbx9eAAbuUSpVj407hQSgk/6Epkg0pbRBmv4a3UX7Sr8wxm9xYqQLnsN4mFOjqGDzHAdgKQg==
   dependencies:
     eventemitter-asyncresource "^1.0.0"
     hdr-histogram-js "^2.0.1"
