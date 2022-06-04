@@ -11113,15 +11113,10 @@ highcharts@10.1.0:
   resolved "https://registry.yarnpkg.com/highcharts/-/highcharts-10.1.0.tgz#561872ae8ea819131d78949136d05bcaaa99108b"
   integrity sha512-gW/pzy/Qy/hiYeCflYHpwgsP2nqQavwuRUswRf+papmbutZ3I7K7AIZJ/yZ9NL5yzpF7X7r2dX7/nzZGN4A1rg==
 
-highlight.js@11.5.1:
+highlight.js@11.5.1, highlight.js@^11.5.1:
   version "11.5.1"
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.5.1.tgz#027c24e4509e2f4dcd00b4a6dda542ce0a1f7aea"
   integrity sha512-LKzHqnxr4CrD2YsNoIf/o5nJ09j4yi/GcH5BnYz9UnVpZdS4ucMgvP61TDty5xJcFGRjnH4DpujkS9bHT3hq0Q==
-
-highlight.js@^11.0.0:
-  version "11.3.1"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.3.1.tgz#813078ef3aa519c61700f84fe9047231c5dc3291"
-  integrity sha512-PUhCRnPjLtiLHZAQ5A/Dt5F8cWZeMyj9KRsACsWT+OD6OP0x6dp5OmT5jdx0JgEyPxPZZIPQpRN2TciUT7occw==
 
 highlightjs-line-numbers.js@^2.8.0:
   version "2.8.0"
@@ -14224,12 +14219,12 @@ ngx-file-drop@13.0.0:
   dependencies:
     tslib "^2.0.0"
 
-ngx-highlightjs@6.1.3:
-  version "6.1.3"
-  resolved "https://registry.yarnpkg.com/ngx-highlightjs/-/ngx-highlightjs-6.1.3.tgz#d99d7b9442b21950c58e85daa588c8f568c6036e"
-  integrity sha512-QF91hKhD75HpuJOgCGL3M7UyZommAqIgzubpZN2/At7OqBZ3G6NX9n/r6ksezSur34wjYOYQunNJhIvsXQzu6Q==
+ngx-highlightjs@7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/ngx-highlightjs/-/ngx-highlightjs-7.0.0.tgz#271e488eea4d4d64ae59f3f1f3078261de9cbda4"
+  integrity sha512-po/pBuqH6ROFN0PoNTS98319okmvA6jwhvNnratPnBt9RpXESLQCYYH5hjIpV2RRhFcqAjqiqMipnURvz2jD1Q==
   dependencies:
-    highlight.js "^11.0.0"
+    highlight.js "^11.5.1"
     highlightjs-line-numbers.js "^2.8.0"
     tslib "^2.0.0"
 
