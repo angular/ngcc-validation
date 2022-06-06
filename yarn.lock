@@ -2644,64 +2644,65 @@
   dependencies:
     schematics-utilities "^2.0.3"
 
-"@delon/abc@13.5.0":
-  version "13.5.0"
-  resolved "https://registry.yarnpkg.com/@delon/abc/-/abc-13.5.0.tgz#892ffaf135da19e7263b92306fa3141605dee6d9"
-  integrity sha512-zImZuhfTm9HEEf5klSEvVKMIR7xJdAvSKjSZ3Je+yumzzrjOl+HzV2x2Z+Ji26hei3IR8pO/Q06LG27oM7WiVg==
+"@delon/abc@13.5.1":
+  version "13.5.1"
+  resolved "https://registry.yarnpkg.com/@delon/abc/-/abc-13.5.1.tgz#666953ec11da13edfdea6bbba26e4450824ba968"
+  integrity sha512-JulajWqm+WcHLzh3UD64LNFXQtlitWiNHY4ZUhFcantoYwGJpySRrrANwVKVaall6TjTo7GntHgNpj9SafU6oA==
   dependencies:
-    "@delon/acl" "^13.5.0"
-    "@delon/theme" "^13.5.0"
-    "@delon/util" "^13.5.0"
+    "@delon/acl" "^13.5.1"
+    "@delon/theme" "^13.5.1"
+    "@delon/util" "^13.5.1"
     file-saver "^2.0.5"
     isutf8 "^4.0.0"
     jszip "^3.7.1"
     ngx-countdown "^13.0.0"
+    pdfjs-dist "^2.14.305"
     plyr "^3.6.12"
     tslib "^2.3.0"
     xlsx "^0.18.4"
 
-"@delon/acl@13.5.0", "@delon/acl@^13.5.0":
-  version "13.5.0"
-  resolved "https://registry.yarnpkg.com/@delon/acl/-/acl-13.5.0.tgz#62e0c42a2d4a82f32fb33595857998b12acc6447"
-  integrity sha512-8Iol0+LGqIqJmstLw7fLzjI4DAcXURV/9SKVA0Si8xmL3iJSYL5d0JgO9D3WVYceAOtQv4d/BfuZCekc9PqX+w==
+"@delon/acl@13.5.1", "@delon/acl@^13.5.1":
+  version "13.5.1"
+  resolved "https://registry.yarnpkg.com/@delon/acl/-/acl-13.5.1.tgz#8c74889acfce43fcbec113284b3a9894368e3320"
+  integrity sha512-qvDD+2AQmywUNiRDCv04KHLtyMQo5CHir65Dr7M3YT8jHjKC5YuIaiMBFfuXmjNZ0W5uH8zf3KflVeZy4SL6xg==
   dependencies:
-    "@delon/util" "^13.5.0"
+    "@delon/util" "^13.5.1"
     tslib "^2.3.0"
 
-"@delon/auth@13.5.0":
-  version "13.5.0"
-  resolved "https://registry.yarnpkg.com/@delon/auth/-/auth-13.5.0.tgz#3068ac49b2326880ab13b967fc9986999761b16b"
-  integrity sha512-VoTwsAe8kT1l3kVOSYEuMBkv5furFPdWjc4iYoTwTG3tjnU9UaqWv+uti7eo7kXEGOb91jU8818ZOAv9x09LEw==
+"@delon/auth@13.5.1":
+  version "13.5.1"
+  resolved "https://registry.yarnpkg.com/@delon/auth/-/auth-13.5.1.tgz#8cdb5f08fa2f2bd27632bcfa28db74437b170eec"
+  integrity sha512-xKaWI+SLyK3duOMtXCgPoI06OHBgbJX34SImvHmQGYt8cGp1eFvqTYYEgJ2W2gKJ3/nEsxT7onUUf/yrQ9GKDA==
   dependencies:
-    "@delon/util" "^13.5.0"
+    "@delon/util" "^13.5.1"
     tslib "^2.3.0"
 
-"@delon/form@13.5.0":
-  version "13.5.0"
-  resolved "https://registry.yarnpkg.com/@delon/form/-/form-13.5.0.tgz#620c7b04bf830e1fcefda94c39d3cfea21cd3945"
-  integrity sha512-WD5LCldZlz+yKLHQ2X4yQlJjgfVj5xs+1ns3jrMIea4b2rfmP92zY4TD11vGMP2e7LNjMH2Fx8hQUmZr0nKZmQ==
+"@delon/form@13.5.1":
+  version "13.5.1"
+  resolved "https://registry.yarnpkg.com/@delon/form/-/form-13.5.1.tgz#e2a6413e305650c2cf36e79ae3afb9fac0517fe7"
+  integrity sha512-TWh6bvIQjjPoQpMX881GTKR2iaLHgSGu6XmAimBh9HI/IyCOdxpU82eQp/HUnyWcZVVsatmxX4B5fqirb5q1sQ==
   dependencies:
-    "@delon/acl" "^13.5.0"
-    "@delon/theme" "^13.5.0"
-    "@delon/util" "^13.5.0"
+    "@delon/acl" "^13.5.1"
+    "@delon/theme" "^13.5.1"
+    "@delon/util" "^13.5.1"
     ajv "^8.10.0"
     ajv-formats "^2.1.1"
     tslib "^2.3.0"
 
-"@delon/theme@13.5.0", "@delon/theme@^13.5.0":
-  version "13.5.0"
-  resolved "https://registry.yarnpkg.com/@delon/theme/-/theme-13.5.0.tgz#d2edbd9845816c15cd805f894702f0dabde5d8cf"
-  integrity sha512-leD7jw7o1Nt7WMKtXLPsYWIbnVuqUP0kxH60nTVtdm3O3CS+5ESbFZgu+y/LykMQiscfYRjL/sqjO9QYHVBUQQ==
+"@delon/theme@13.5.1", "@delon/theme@^13.5.1":
+  version "13.5.1"
+  resolved "https://registry.yarnpkg.com/@delon/theme/-/theme-13.5.1.tgz#10c042a2fb594c515481752c5ecac09de7951a97"
+  integrity sha512-fb9T6DD+FjscZSTNmhPTWuDiEWabP1Y0+wSbATkcZDrQGx0vqC5auoN4Tg3C+5LDOYPJkZBPtO1eiE6/OPGEyQ==
   dependencies:
-    "@delon/acl" "^13.5.0"
-    "@delon/util" "^13.5.0"
+    "@delon/acl" "^13.5.1"
+    "@delon/util" "^13.5.1"
     ng-zorro-antd "^13.1.1"
     tslib "^2.3.0"
 
-"@delon/util@13.5.0", "@delon/util@^13.5.0":
-  version "13.5.0"
-  resolved "https://registry.yarnpkg.com/@delon/util/-/util-13.5.0.tgz#2a10d4c7b0641fdd023bda5c827e347dc5f03689"
-  integrity sha512-JvMDXCKs01lU6vMhg/9PU12lGuwtdlKjbnuP5rs8eMbuNW5PTAQapsOSukI0Ao5iJ8ldqwkIrxtuZG0vwEg10w==
+"@delon/util@13.5.1", "@delon/util@^13.5.1":
+  version "13.5.1"
+  resolved "https://registry.yarnpkg.com/@delon/util/-/util-13.5.1.tgz#2d84e7291e66ac82799f83be228ea81e7e424e5e"
+  integrity sha512-ZLaRK4j57ucJDkeBoQd+JgYtD3eDDav9z+HQzIjVhhur/LA9+ZD5q6oSERwW4kT46igIG9ZonexSv7IO+UtvkA==
   dependencies:
     extend "^3.0.2"
     tslib "^2.3.0"
@@ -15293,7 +15294,7 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
-pdfjs-dist@2.14.305:
+pdfjs-dist@2.14.305, pdfjs-dist@^2.14.305:
   version "2.14.305"
   resolved "https://registry.yarnpkg.com/pdfjs-dist/-/pdfjs-dist-2.14.305.tgz#ed2ecb439ff8af5446c90a310ebd30bc1a91df62"
   integrity sha512-5f7i25J1dKIBczhgfxEgNxfYNIxXEdxqo6Qb4ehY7Ja+p6AI4uUmk/OcVGXfRGm2ys5iaJJhJUwBFwv6Jl/Qww==
