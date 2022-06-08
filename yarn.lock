@@ -2674,13 +2674,6 @@
     extend "^3.0.2"
     tslib "^2.3.0"
 
-"@devexpress/utils@1.3.13":
-  version "1.3.13"
-  resolved "https://registry.yarnpkg.com/@devexpress/utils/-/utils-1.3.13.tgz#dc51cf7028bc21e4502bc3968df9be10fc92b369"
-  integrity sha512-DaTNDLcyepRegwKCWrikP+6WH0cY6/gVSLC/wd6o6AhuTpn6jrXEYcJm50+DwUSwAPVyoQcp6iYRTD1BdITrBQ==
-  dependencies:
-    tslib "2.0.1"
-
 "@devexpress/utils@1.3.14":
   version "1.3.14"
   resolved "https://registry.yarnpkg.com/@devexpress/utils/-/utils-1.3.14.tgz#ec30cb7d7cfeb82f506afe857f5058057f836d89"
@@ -2688,10 +2681,17 @@
   dependencies:
     tslib "2.0.1"
 
-"@devextreme/runtime@~2.3.14":
-  version "2.3.14"
-  resolved "https://registry.yarnpkg.com/@devextreme/runtime/-/runtime-2.3.14.tgz#e00f51929c7bee2d687d8ad2e36156b0f983ca94"
-  integrity sha512-svMPzYI7torLp1PLs5CmZqkEfJSaJvmZq9VsgJMJIZCe6a9KzI1iZb6J9xPeYNBxtXl0VDTGes7sL6DjH0aFYA==
+"@devexpress/utils@1.3.16":
+  version "1.3.16"
+  resolved "https://registry.yarnpkg.com/@devexpress/utils/-/utils-1.3.16.tgz#e7b6e18380b7fa9cec57aa9c80621bf3da1e93dc"
+  integrity sha512-4Az8FUtvesew89j6N7zmDGfZQyHicvSwVoPZMmxRPvz2u4UiLpI/LDD0zuzLYWsLa8pr+SsJ3JRIKmhlcDAsgA==
+  dependencies:
+    tslib "2.0.1"
+
+"@devextreme/runtime@~2.3.15":
+  version "2.3.15"
+  resolved "https://registry.yarnpkg.com/@devextreme/runtime/-/runtime-2.3.15.tgz#7ed62c9df9bcc6413b7400d1396177f00f62b1dd"
+  integrity sha512-yl0A5gxtickdiWx/iXy0PzHwsAbrfciflVK7sG8Rr1Wh50w2ZzL+jVCOD7GWODtzKwo9VVM2nAo6yvxItz0V/g==
   dependencies:
     inferno "^7.4.6"
     inferno-compat "^7.4.6"
@@ -9159,18 +9159,18 @@ dev-ip@^1.0.1:
   resolved "https://registry.yarnpkg.com/dev-ip/-/dev-ip-1.0.1.tgz#a76a3ed1855be7a012bb8ac16cb80f3c00dc28f0"
   integrity sha1-p2o+0YVb56ASu4rBbLgPPADcKPA=
 
-devexpress-diagram@2.1.47:
-  version "2.1.47"
-  resolved "https://registry.yarnpkg.com/devexpress-diagram/-/devexpress-diagram-2.1.47.tgz#fc8e86fd1a2bcdaf7abcf2a2554a786da34b693f"
-  integrity sha512-wU2NKTBChHvY/fBTmf7a2xrLwHFybpEtoPfvutqneresC0KR0IkmjvHJAFZ4zLNgQ93CLI0qVg2HUvux59NkcA==
+devexpress-diagram@2.1.57:
+  version "2.1.57"
+  resolved "https://registry.yarnpkg.com/devexpress-diagram/-/devexpress-diagram-2.1.57.tgz#d42c99fa369e4a6bd0ed3e4d11fb1da8a109c034"
+  integrity sha512-cVlnR2dOvU/+iMlA9cICfdFNYpjDaRp44qojb7SV+pyCpImMOeAdReUKjgogcIsmtHzCOi9uSVyyuPvWn8sDwg==
   dependencies:
-    "@devexpress/utils" "1.3.13"
+    "@devexpress/utils" "1.3.16"
     es6-object-assign "^1.1.0"
 
-devexpress-gantt@4.0.13:
-  version "4.0.13"
-  resolved "https://registry.yarnpkg.com/devexpress-gantt/-/devexpress-gantt-4.0.13.tgz#2ac925177f24efa251765afb31329e3b85e0fbc4"
-  integrity sha512-OwoVBEyl8ozMCZ9PnIjQyhs0HjnRVPbnmngIFEofPuVuOhZQBZSh28toORuNMtq4qG1pg2axPa0Lh6Gn+OI6mg==
+devexpress-gantt@4.0.26:
+  version "4.0.26"
+  resolved "https://registry.yarnpkg.com/devexpress-gantt/-/devexpress-gantt-4.0.26.tgz#a0c8fd560710ef3cb8d79a2400eeed7d29db48ba"
+  integrity sha512-nbQ1iGkCZYszq1fpFdqbMGTXNpIVxLLacBmqF+d1HU56cYhRuL7NIorhgyyHXHco0pyYy+UqJ1wzBMLLQPvtAA==
   dependencies:
     "@devexpress/utils" "1.3.14"
     tslib "2.3.1"
@@ -9185,10 +9185,10 @@ devextreme-angular@21.2.7:
     inferno-server "7.4.4"
     tslib "^1.9.0"
 
-devextreme-quill@~1.5.13:
-  version "1.5.14"
-  resolved "https://registry.yarnpkg.com/devextreme-quill/-/devextreme-quill-1.5.14.tgz#f537c934cc8a354800d471e8b3a50bd1b22ebd78"
-  integrity sha512-BDYaMKEcV+Q+ldv0o08X72wJBwG3jgKuLOl067cwqunTrZ6l+7w2eBb0+7Ms22WoGr/RL2bWoEOCoUN9pzcY8w==
+devextreme-quill@~1.5.16:
+  version "1.5.16"
+  resolved "https://registry.yarnpkg.com/devextreme-quill/-/devextreme-quill-1.5.16.tgz#71ffad0fa6633fa769c26c1110d1e76ba7fe679f"
+  integrity sha512-ZaYpLZRMC3NkLzbKdIaJyG6b4mTWlFjJM4V68RN43qwl/SnMnes7WC1gMwP3CBdWuh7ObsXXTh+cMMSVqUSeLA==
   dependencies:
     core-js "^3.19.1"
     eventemitter3 "^4.0.0"
@@ -9216,16 +9216,16 @@ devextreme-showdown@^1.0.1:
   dependencies:
     yargs "^17.2.1"
 
-devextreme@21.2.7:
-  version "21.2.7"
-  resolved "https://registry.yarnpkg.com/devextreme/-/devextreme-21.2.7.tgz#59de3fa8affe2f437a82ca68783665acc03bc45f"
-  integrity sha512-h6F8pbhIQhMPyIRLcUvqiIl5uOshIqufbjUpnSS7GSFAhsBA6wa3MDpDFnAtR5nB9cKXmh/AmYatfLPGNsUViA==
+devextreme@21.2.8:
+  version "21.2.8"
+  resolved "https://registry.yarnpkg.com/devextreme/-/devextreme-21.2.8.tgz#29547260b50a98e4ad397aabf24284c58151837a"
+  integrity sha512-F1XdtGHTmOWhJmPaeGSA2w8fOXZcccL3mOtzRoCSYVfszLvfSdI0QthP+v6hJwTdhb3NNieComBiepqjfzcJ5w==
   dependencies:
     "@babel/runtime" "^7.12.1"
-    "@devextreme/runtime" "~2.3.14"
-    devexpress-diagram "2.1.47"
-    devexpress-gantt "4.0.13"
-    devextreme-quill "~1.5.13"
+    "@devextreme/runtime" "~2.3.15"
+    devexpress-diagram "2.1.57"
+    devexpress-gantt "4.0.26"
+    devextreme-quill "~1.5.16"
     devextreme-showdown "^1.0.1"
     inferno "^7.4.9"
     inferno-compat "^7.4.9"
