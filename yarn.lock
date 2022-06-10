@@ -5247,10 +5247,10 @@
     "@progress/kendo-schematics" "^3.0.0"
     tslib "^2.3.1"
 
-"@progress/kendo-angular-dropdowns@7.0.1":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-dropdowns/-/kendo-angular-dropdowns-7.0.1.tgz#8e6e3269299c4daacdf4cdea16d1326e7d19545b"
-  integrity sha512-/i+CfdccXFNV6acZyhGX8bYsF5kjdPTxM8pGk6xInQf1A/ozti8Cc2takl+jis+6Pz6fvTQI4btrUrlWojwr5g==
+"@progress/kendo-angular-dropdowns@7.0.2":
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-dropdowns/-/kendo-angular-dropdowns-7.0.2.tgz#0f9b9029af35e4bd650977a930ae2e56442a307f"
+  integrity sha512-AqgJLM85eiWVplaWuyH6Z7sq3pQYsZS30oxnWMGD2wOjqboIJCw56GgFQoIhhpiw13FYEdR2C/6HLxaNqOXUyw==
   dependencies:
     "@progress/kendo-common" "^0.2.1"
     "@progress/kendo-schematics" "^3.0.0"
@@ -5305,13 +5305,13 @@
     "@telerik/kendo-draggable" "^2.0.0"
     tslib "^2.3.1"
 
-"@progress/kendo-angular-intl@4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-intl/-/kendo-angular-intl-4.0.0.tgz#fa4313bc73a3f46c67d18253aec443a6914e5053"
-  integrity sha512-7JJBMo7jM5EujeZWVmxDagAdjgHCbsmqVOIC+t1aAgf/eSbl3l/ICFO9drd6MVgN8C7ke3ssxvZK8m9SezcyzQ==
+"@progress/kendo-angular-intl@4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-intl/-/kendo-angular-intl-4.0.1.tgz#d5325c1b6af5916e1f29a805441c877e56232d2f"
+  integrity sha512-eFsdH+ePnt6Jh7Yhp3E2+/5gL3qISrnnnfA/CpQ9uWcJjaZUQrPVgIVASlJg482svTNZwDlWkwyI5lCKa/7MSw==
   dependencies:
+    "@progress/kendo-intl" "^3.0.2"
     "@progress/kendo-schematics" "^3.0.0"
-    "@telerik/kendo-intl" "^2.3.0"
     tslib "^2.3.1"
 
 "@progress/kendo-angular-l10n@4.0.0":
@@ -5433,14 +5433,14 @@
     "@progress/kendo-schematics" "^3.0.0"
     tslib "^2.3.1"
 
-"@progress/kendo-angular-treeview@7.0.1":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-treeview/-/kendo-angular-treeview-7.0.1.tgz#ed8d8ecc17e34fa30e319a857746e71707aa16b8"
-  integrity sha512-mY9nXL7chIbRVP3oRogL4EmqjlLZCqk2j6t9JPW8RZNaJe4gRdP24jt1dZqaVKraTlMBGzBAAQvGCQktPQoQvQ==
+"@progress/kendo-angular-treeview@7.0.2":
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-treeview/-/kendo-angular-treeview-7.0.2.tgz#18941652af922de6edbc956b99dd7ec92594a7dd"
+  integrity sha512-MK3qBvpPmxdyb/PjrDQz7w4dhXEIYstocfKbUtrBoiEL5hiJvAKYmDbFOxdPGS2ebE/GYRTG1+sUgvIK4ama6g==
   dependencies:
     "@progress/kendo-common" "^0.2.0"
+    "@progress/kendo-draggable" "^3.0.0"
     "@progress/kendo-schematics" "^3.0.0"
-    "@telerik/kendo-draggable" "^2.0.0"
     tslib "^2.3.1"
 
 "@progress/kendo-angular-upload@9.0.2":
@@ -5489,6 +5489,11 @@
   dependencies:
     tslib "^1.7.0"
 
+"@progress/kendo-draggable@^3.0.0":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-draggable/-/kendo-draggable-3.0.1.tgz#7379945757f802c80565959262ada82371c4dc5d"
+  integrity sha512-majYTdBVcUafWco/cN+HUuoDmu36bIpTKqrWYRaEOO1FcSZan+p7+lapIzn+D3IIeKcAIws7xKmng6ruh2svRg==
+
 "@progress/kendo-drawing@1.16.3":
   version "1.16.3"
   resolved "https://registry.yarnpkg.com/@progress/kendo-drawing/-/kendo-drawing-1.16.3.tgz#cd01378f69ba98e94995315157dbf0287a576eee"
@@ -5531,7 +5536,7 @@
   resolved "https://registry.yarnpkg.com/@progress/kendo-file-saver/-/kendo-file-saver-1.1.0.tgz#d87b18d230b2df39d7eebca7317f5fe3a51b7db2"
   integrity sha512-26iPl67d0izUlzU6p98QM5f/spOK3QCdmSJrEzGakw1Yp0qyFmp2V9uKeswfWgX0NhKmJApWjlAxxrtRvYjHYA==
 
-"@progress/kendo-intl@^3.0.0":
+"@progress/kendo-intl@^3.0.0", "@progress/kendo-intl@^3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@progress/kendo-intl/-/kendo-intl-3.0.2.tgz#baae1f02214cff15425b2f11e4703af45ae60af6"
   integrity sha512-EL6H2oDGtUi64BUNXSUL0yVdKOPqtLDZjXz4vOaIoc5So7tAqJTMFZ0WLBfqHIlj7lkYfzonl6qDjbwIzkA7qg==
@@ -5761,7 +5766,7 @@
   resolved "https://registry.yarnpkg.com/@telerik/kendo-draggable/-/kendo-draggable-2.2.0.tgz#651ee63e8978c3c9d8548a3ece37280ce5944863"
   integrity sha512-78ofOzRpisqPjG51LfLQ4FEWoGJXs4PkzyJSdVklyFw6gtAnj/T6dp7mHIMj8BivVkN9FjNgf4Eo/mdYs9fusQ==
 
-"@telerik/kendo-intl@^2.0.0", "@telerik/kendo-intl@^2.3.0":
+"@telerik/kendo-intl@^2.0.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@telerik/kendo-intl/-/kendo-intl-2.3.0.tgz#df48b47f4e6d89bd6a9189a15176f521e4f40390"
   integrity sha512-IFNL37+I8hvO1G6SsW65ixTqkCtPZDH1SlJ33xEKpjCjVwrC/oLCJjuK+EF5buXSPK0iw0YSvlY6hDHAzAYF6g==
