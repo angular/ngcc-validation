@@ -2689,13 +2689,12 @@
   dependencies:
     tslib "2.0.1"
 
-"@devextreme/runtime@~2.3.15":
-  version "2.3.15"
-  resolved "https://registry.yarnpkg.com/@devextreme/runtime/-/runtime-2.3.15.tgz#7ed62c9df9bcc6413b7400d1396177f00f62b1dd"
-  integrity sha512-yl0A5gxtickdiWx/iXy0PzHwsAbrfciflVK7sG8Rr1Wh50w2ZzL+jVCOD7GWODtzKwo9VVM2nAo6yvxItz0V/g==
+"@devextreme/runtime@~3.0.7":
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/@devextreme/runtime/-/runtime-3.0.8.tgz#a76bb3871a885b13b7641eddb9cb1bb517802be7"
+  integrity sha512-JtDbOJeT+OuOSFCk19HY+aP4pP3RL8w3xOdB45B3xlRq5hcZbNGgbCZplwlQt4dXst3PAgoZh2gADOPJxTYYQQ==
   dependencies:
     inferno "^7.4.6"
-    inferno-compat "^7.4.6"
     inferno-create-element "^7.4.6"
     inferno-hydrate "^7.4.6"
 
@@ -9185,10 +9184,10 @@ devexpress-diagram@2.1.57:
     "@devexpress/utils" "1.3.16"
     es6-object-assign "^1.1.0"
 
-devexpress-gantt@4.0.26:
-  version "4.0.26"
-  resolved "https://registry.yarnpkg.com/devexpress-gantt/-/devexpress-gantt-4.0.26.tgz#a0c8fd560710ef3cb8d79a2400eeed7d29db48ba"
-  integrity sha512-nbQ1iGkCZYszq1fpFdqbMGTXNpIVxLLacBmqF+d1HU56cYhRuL7NIorhgyyHXHco0pyYy+UqJ1wzBMLLQPvtAA==
+devexpress-gantt@4.1.30:
+  version "4.1.30"
+  resolved "https://registry.yarnpkg.com/devexpress-gantt/-/devexpress-gantt-4.1.30.tgz#9ec8e720082e9a785b1661fbaf272439557680ea"
+  integrity sha512-/CbuCx99QT05VCT4jXIbnw8/iwuc/ypKHFWU/HuUUKtPOSKZhAh7KAVqq20WSt8SjiPxQWXRG2lfoYS1O3Wvvw==
   dependencies:
     "@devexpress/utils" "1.3.14"
     tslib "2.3.1"
@@ -9234,15 +9233,15 @@ devextreme-showdown@^1.0.1:
   dependencies:
     yargs "^17.2.1"
 
-devextreme@21.2.8:
-  version "21.2.8"
-  resolved "https://registry.yarnpkg.com/devextreme/-/devextreme-21.2.8.tgz#29547260b50a98e4ad397aabf24284c58151837a"
-  integrity sha512-F1XdtGHTmOWhJmPaeGSA2w8fOXZcccL3mOtzRoCSYVfszLvfSdI0QthP+v6hJwTdhb3NNieComBiepqjfzcJ5w==
+devextreme@22.1.3:
+  version "22.1.3"
+  resolved "https://registry.yarnpkg.com/devextreme/-/devextreme-22.1.3.tgz#c0ee99d51bc04d373c41d9b01fda5253e57ba354"
+  integrity sha512-PGlEfKVmmS9rKb40L4/kolws3eQdZlrk5gTbW/nqYexOOpCfV1XiUHA+zF6U0ZP0thRAtngGs6Wn+RuaPA+R9w==
   dependencies:
     "@babel/runtime" "^7.12.1"
-    "@devextreme/runtime" "~2.3.15"
+    "@devextreme/runtime" "~3.0.7"
     devexpress-diagram "2.1.57"
-    devexpress-gantt "4.0.26"
+    devexpress-gantt "4.1.30"
     devextreme-quill "~1.5.16"
     devextreme-showdown "^1.0.1"
     inferno "^7.4.9"
@@ -11408,24 +11407,6 @@ inferno-clone-vnode@7.4.10:
   dependencies:
     inferno "7.4.10"
 
-inferno-clone-vnode@7.4.8:
-  version "7.4.8"
-  resolved "https://registry.yarnpkg.com/inferno-clone-vnode/-/inferno-clone-vnode-7.4.8.tgz#fafdb21f86e566f662da7e58ff9be1fc76baff08"
-  integrity sha512-Un9Saio4TJ+1DFehPd7JuNDJV2Fy2aPhK5hD4zmG+JWLUIphi/nuhbwrlsCNmTTDmOsB7GrqyrXFvOUEKX4YpA==
-  dependencies:
-    inferno "7.4.8"
-
-inferno-compat@^7.4.6:
-  version "7.4.8"
-  resolved "https://registry.yarnpkg.com/inferno-compat/-/inferno-compat-7.4.8.tgz#9a631b1228832ef802a67caec72f4517f5bf28db"
-  integrity sha512-3oDoqUzWOTXw8UXwbXGyJ1VInIX/KNIH4Qq88tygbDINzKLSxQaWZDWDfn/AJK52DeG64g3v8uU+XFpLr2lqzg==
-  dependencies:
-    inferno "7.4.8"
-    inferno-clone-vnode "7.4.8"
-    inferno-create-class "7.4.8"
-    inferno-create-element "7.4.8"
-    inferno-extras "7.4.8"
-
 inferno-compat@^7.4.9:
   version "7.4.10"
   resolved "https://registry.yarnpkg.com/inferno-compat/-/inferno-compat-7.4.10.tgz#4820f3a35c807b39e9b03096a57afd877165ff1b"
@@ -11444,13 +11425,6 @@ inferno-create-class@7.4.10:
   dependencies:
     inferno "7.4.10"
 
-inferno-create-class@7.4.8:
-  version "7.4.8"
-  resolved "https://registry.yarnpkg.com/inferno-create-class/-/inferno-create-class-7.4.8.tgz#80ee55379a33c8a2fb647ba30f6f5d8b571cc692"
-  integrity sha512-XY7LcSpfLTug+M/lz/F9XSmhmYjxhJ40xJtetIK1h81aaSvqqFAG3wuBCHqcIW0jlwPJRch8/gDxq6SB3gHCKQ==
-  dependencies:
-    inferno "7.4.8"
-
 inferno-create-element@7.4.10, inferno-create-element@^7.4.9:
   version "7.4.10"
   resolved "https://registry.yarnpkg.com/inferno-create-element/-/inferno-create-element-7.4.10.tgz#a4d143c98aa141345fd9969b55b56f57336e0329"
@@ -11458,7 +11432,7 @@ inferno-create-element@7.4.10, inferno-create-element@^7.4.9:
   dependencies:
     inferno "7.4.10"
 
-inferno-create-element@7.4.8, inferno-create-element@^7.4.6:
+inferno-create-element@^7.4.6:
   version "7.4.8"
   resolved "https://registry.yarnpkg.com/inferno-create-element/-/inferno-create-element-7.4.8.tgz#77bbf24288645c359cf65b4821a3938c6537eb5e"
   integrity sha512-hCkA+RAiqoeWlmmCrb3VIUDV+4lEeLDCI98RcB4HqzAJwjH8dMR4ZeDQO3f9crygPnmSW7r1L0Ykjf0O2oHYFQ==
@@ -11471,13 +11445,6 @@ inferno-extras@7.4.10:
   integrity sha512-fdXtG8XEo8HKC1VI11RJJS4cuPFIgVWQrah1ngiFjc9SPZKov1szreqC43L9qcJ/2k05hxLNE13t887pXBfCRA==
   dependencies:
     inferno "7.4.10"
-
-inferno-extras@7.4.8:
-  version "7.4.8"
-  resolved "https://registry.yarnpkg.com/inferno-extras/-/inferno-extras-7.4.8.tgz#36ad59d5dd68a2f5963569aa8bb1b2d78750a305"
-  integrity sha512-GEGnOECDfNLWa0g4uI35eDrknHgiXZzaB7GPucm/Gvb+QI7BMR+A9fhloqKT9DZ+9HX6C4z7gQirmUK74V1P3w==
-  dependencies:
-    inferno "7.4.8"
 
 inferno-hydrate@^7.4.6:
   version "7.4.8"
