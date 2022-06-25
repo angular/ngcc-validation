@@ -254,10 +254,10 @@
   optionalDependencies:
     parse5 "^5.0.0"
 
-"@angular/cdk@github:angular/cdk-builds#8f5107475d851b38700c4bc8c2c717a7ab3e1130":
+"@angular/cdk@github:angular/cdk-builds#4da68558059dfaadd26e727b6641d25e680b2391":
   version "15.0.0-next.0"
-  uid "8f5107475d851b38700c4bc8c2c717a7ab3e1130"
-  resolved "https://codeload.github.com/angular/cdk-builds/tar.gz/8f5107475d851b38700c4bc8c2c717a7ab3e1130"
+  uid "4da68558059dfaadd26e727b6641d25e680b2391"
+  resolved "https://codeload.github.com/angular/cdk-builds/tar.gz/4da68558059dfaadd26e727b6641d25e680b2391"
   dependencies:
     tslib "^2.3.0"
   optionalDependencies:
@@ -394,10 +394,10 @@
     glob "8.0.3"
     yargs "^17.2.1"
 
-"@angular/material-experimental@github:angular/material-experimental-builds#b097b6d84e863dc175f176e81660eeb236fceb20":
+"@angular/material-experimental@github:angular/material-experimental-builds#7bf8a12d791f2f8b6415c80365125cbb72006d5a":
   version "15.0.0-next.0"
-  uid b097b6d84e863dc175f176e81660eeb236fceb20
-  resolved "https://codeload.github.com/angular/material-experimental-builds/tar.gz/b097b6d84e863dc175f176e81660eeb236fceb20"
+  uid "7bf8a12d791f2f8b6415c80365125cbb72006d5a"
+  resolved "https://codeload.github.com/angular/material-experimental-builds/tar.gz/7bf8a12d791f2f8b6415c80365125cbb72006d5a"
   dependencies:
     "@material/animation" "15.0.0-canary.5b40eb988.0"
     "@material/auto-init" "15.0.0-canary.5b40eb988.0"
@@ -448,18 +448,65 @@
     "@material/typography" "15.0.0-canary.5b40eb988.0"
     tslib "^2.3.0"
 
-"@angular/material-moment-adapter@github:angular/material-moment-adapter-builds#4974f0c9689328d38ce41a91fe108e03bdf35fcd":
+"@angular/material-moment-adapter@github:angular/material-moment-adapter-builds#191a7746c0c51323dc9e83957b4957bb56c72028":
   version "15.0.0-next.0"
-  uid "4974f0c9689328d38ce41a91fe108e03bdf35fcd"
-  resolved "https://codeload.github.com/angular/material-moment-adapter-builds/tar.gz/4974f0c9689328d38ce41a91fe108e03bdf35fcd"
+  uid "191a7746c0c51323dc9e83957b4957bb56c72028"
+  resolved "https://codeload.github.com/angular/material-moment-adapter-builds/tar.gz/191a7746c0c51323dc9e83957b4957bb56c72028"
   dependencies:
     tslib "^2.3.0"
 
-"@angular/material@github:angular/material-builds#b1fdd72cf6a4e224128769e9cb887cc9fc809ec9":
+"@angular/material@github:angular/material-builds#f082f9a3e1d000108a3fc48802b7b2c7378ce762":
   version "15.0.0-next.0"
-  uid b1fdd72cf6a4e224128769e9cb887cc9fc809ec9
-  resolved "https://codeload.github.com/angular/material-builds/tar.gz/b1fdd72cf6a4e224128769e9cb887cc9fc809ec9"
+  uid f082f9a3e1d000108a3fc48802b7b2c7378ce762
+  resolved "https://codeload.github.com/angular/material-builds/tar.gz/f082f9a3e1d000108a3fc48802b7b2c7378ce762"
   dependencies:
+    "@material/animation" "15.0.0-canary.5b40eb988.0"
+    "@material/auto-init" "15.0.0-canary.5b40eb988.0"
+    "@material/banner" "15.0.0-canary.5b40eb988.0"
+    "@material/base" "15.0.0-canary.5b40eb988.0"
+    "@material/button" "15.0.0-canary.5b40eb988.0"
+    "@material/card" "15.0.0-canary.5b40eb988.0"
+    "@material/checkbox" "15.0.0-canary.5b40eb988.0"
+    "@material/chips" "15.0.0-canary.5b40eb988.0"
+    "@material/circular-progress" "15.0.0-canary.5b40eb988.0"
+    "@material/data-table" "15.0.0-canary.5b40eb988.0"
+    "@material/density" "15.0.0-canary.5b40eb988.0"
+    "@material/dialog" "15.0.0-canary.5b40eb988.0"
+    "@material/dom" "15.0.0-canary.5b40eb988.0"
+    "@material/drawer" "15.0.0-canary.5b40eb988.0"
+    "@material/elevation" "15.0.0-canary.5b40eb988.0"
+    "@material/fab" "15.0.0-canary.5b40eb988.0"
+    "@material/feature-targeting" "15.0.0-canary.5b40eb988.0"
+    "@material/floating-label" "15.0.0-canary.5b40eb988.0"
+    "@material/form-field" "15.0.0-canary.5b40eb988.0"
+    "@material/icon-button" "15.0.0-canary.5b40eb988.0"
+    "@material/image-list" "15.0.0-canary.5b40eb988.0"
+    "@material/layout-grid" "15.0.0-canary.5b40eb988.0"
+    "@material/line-ripple" "15.0.0-canary.5b40eb988.0"
+    "@material/linear-progress" "15.0.0-canary.5b40eb988.0"
+    "@material/list" "15.0.0-canary.5b40eb988.0"
+    "@material/menu" "15.0.0-canary.5b40eb988.0"
+    "@material/menu-surface" "15.0.0-canary.5b40eb988.0"
+    "@material/notched-outline" "15.0.0-canary.5b40eb988.0"
+    "@material/radio" "15.0.0-canary.5b40eb988.0"
+    "@material/ripple" "15.0.0-canary.5b40eb988.0"
+    "@material/rtl" "15.0.0-canary.5b40eb988.0"
+    "@material/segmented-button" "15.0.0-canary.5b40eb988.0"
+    "@material/select" "15.0.0-canary.5b40eb988.0"
+    "@material/shape" "15.0.0-canary.5b40eb988.0"
+    "@material/slider" "15.0.0-canary.5b40eb988.0"
+    "@material/snackbar" "15.0.0-canary.5b40eb988.0"
+    "@material/switch" "15.0.0-canary.5b40eb988.0"
+    "@material/tab" "15.0.0-canary.5b40eb988.0"
+    "@material/tab-bar" "15.0.0-canary.5b40eb988.0"
+    "@material/tab-indicator" "15.0.0-canary.5b40eb988.0"
+    "@material/tab-scroller" "15.0.0-canary.5b40eb988.0"
+    "@material/textfield" "15.0.0-canary.5b40eb988.0"
+    "@material/theme" "15.0.0-canary.5b40eb988.0"
+    "@material/tooltip" "15.0.0-canary.5b40eb988.0"
+    "@material/top-app-bar" "15.0.0-canary.5b40eb988.0"
+    "@material/touch-target" "15.0.0-canary.5b40eb988.0"
+    "@material/typography" "15.0.0-canary.5b40eb988.0"
     tslib "^2.3.0"
 
 "@angular/platform-browser-dynamic@github:angular/platform-browser-dynamic-builds#79c9f527195f9c7eab098f0bd5cfebd3d69f2927":
