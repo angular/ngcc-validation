@@ -1,5 +1,5 @@
 {
-  "baseBranches": ["master", "latest"],
+  "baseBranches": ["main", "latest"],
   "schedule": [
     "before 7am every weekday",
     "after 6pm every weekday",
@@ -9,7 +9,6 @@
   "major": {
     "automerge": true
   },
-  "masterIssue": true,
   "rebaseWhen": "conflicted",
   "semanticCommits": true,
   "semanticCommitType": "build",
@@ -152,7 +151,6 @@
         "minor",
         "major"
       ],
-      "masterIssueApproval": true
     }
   ]
 }
