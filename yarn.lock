@@ -6928,10 +6928,12 @@ angular-calendar@0.29.0:
     positioning "^2.0.1"
     tslib "^2.0.0"
 
-angular-datatables@13.1.0:
-  version "13.1.0"
-  resolved "https://registry.yarnpkg.com/angular-datatables/-/angular-datatables-13.1.0.tgz#b873ad663726b050b16703c6e387c663fd896b96"
-  integrity sha512-1xKdHe1PrcY3tRLXI3oS6HZe5/loU6OvpY4hshS3LkULa+x7CtsheV41/5INRzZOc0ak0evX7PUJcd6ha6xd4g==
+angular-datatables@14.0.0:
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/angular-datatables/-/angular-datatables-14.0.0.tgz#86f771073a0d5bc302f516dc91e35d31e5a42515"
+  integrity sha512-IdJdS/IGAFKcWKCM3PrgHt8YIyCGxUKaPQGQom+5YvAcIMKuRwgB7aYT2H3+zUsJBNms2Yaeh95ABNT+yqOwLQ==
+  dependencies:
+    codelyzer "^6.0.2"
 
 angular-draggable-droppable@6.1.0:
   version "6.1.0"
@@ -8241,7 +8243,7 @@ code-point-at@^1.0.0:
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
 
-codelyzer@6.0.2:
+codelyzer@6.0.2, codelyzer@^6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/codelyzer/-/codelyzer-6.0.2.tgz#25d72eae641e8ff13ffd7d99b27c9c7ad5d7e135"
   integrity sha512-v3+E0Ucu2xWJMOJ2fA/q9pDT/hlxHftHGPUay1/1cTgyPV5JTHFdO9hqo837Sx2s9vKBMTt5gO+lhF95PO6J+g==
