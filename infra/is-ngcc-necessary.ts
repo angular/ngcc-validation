@@ -40,7 +40,6 @@ if (nonNgccPackages.length > 0) {
   process.exit(1);
 }
 
-console.log(chalk.gray('No packages that no longer need ngcc processing.'));
 process.exit(0);
 
 
