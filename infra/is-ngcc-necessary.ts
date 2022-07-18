@@ -7,6 +7,7 @@ const knownNonNgccPackages = new Set<string>(JSON.parse(readFileSync(resolve(__d
 
 console.log(chalk.gray('Checking for packages that no longer need ngcc processing...'));
 
+const ngccPackages = [];
 const nonNgccPackages = [];
 for (const packageName of packages) {
   if (knownNonNgccPackages.has(packageName)) {
@@ -22,20 +23,24 @@ for (const packageName of packages) {
 
   const metadataPath = resolve(packagePath, typingsPath.replace(/\.d\.ts$/, '') + '.metadata.json');
 
-  if (!existsSync(metadataPath)) {
+  if (existsSync(metadataPath)) {
+    ngccPackages.push(packagePath);
+  } else {
     nonNgccPackages.push(packagePath);
   }
 }
 
+console.log(chalk.gray(`${ngccPackages.length} out of ${packages.length} packages still need ngcc processing.`));
+
 if (nonNgccPackages.length > 0) {
   console.error(chalk.red('The following packages no longer need to be processed by ngcc. Please add them to `./infra/non-ngcc-packages.json`.'));
   for (const packageName of nonNgccPackages) {
-    console.error(`- ${packageName}`);
+    console.error(chalk.yellow(`- ${packageName}`));
   }
   process.exit(1);
 }
 
-console.error(chalk.gray('No packages that no longer need ngcc processing.'));
+console.log(chalk.gray('No packages that no longer need ngcc processing.'));
 process.exit(0);
 
 
