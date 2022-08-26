@@ -34,6 +34,13 @@
         "^@angular/flex-layout$",
         "^@angular/material"
       ],
+      "postUpgradeTasks": {
+        "commands": [
+          "yarn install",
+          "yarn run browserslist --update-db"
+        ],
+        "fileFilters": ["yarn.lock"]
+      },
       "groupName": "angular-framework-and-cli"
     },
     {
