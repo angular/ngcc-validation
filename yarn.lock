@@ -5340,13 +5340,13 @@
     "@progress/kendo-schematics" "^3.0.0"
     tslib "^2.3.1"
 
-"@progress/kendo-angular-common@3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-common/-/kendo-angular-common-3.1.0.tgz#04c81c57d232f50aa19f0eba9fcdf7a73370c190"
-  integrity sha512-+KdpPqtTnxUMNMOoMnb/oKWy1HwHVeyS9ZCtA+3NWA6QRhNQef1cy70Y76PVqhYEmvdR/0iV/ksbkR+t1oqA/Q==
+"@progress/kendo-angular-common@3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-common/-/kendo-angular-common-3.1.1.tgz#4d1682274b63a38d35549d5fe95ac2b04556df7c"
+  integrity sha512-NBtaJ/Dl1df8yMDPuqi6ylGXrE0hYI9lF15xtXgewU3aS6EUTfCcIU2Dvnyw0lWZgdsIsAFbU/3c67dQafgrFg==
   dependencies:
+    "@progress/kendo-draggable" "^3.0.2"
     "@progress/kendo-schematics" "^3.0.0"
-    "@telerik/kendo-draggable" "^2.0.0"
     tslib "^2.3.1"
 
 "@progress/kendo-angular-conversational-ui@5.0.1":
@@ -5539,12 +5539,12 @@
     "@progress/kendo-schematics" "^3.0.0"
     tslib "^2.3.1"
 
-"@progress/kendo-angular-sortable@5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-sortable/-/kendo-angular-sortable-5.0.1.tgz#5223813cb8ef199417f2b9171baf3c8dcb78fdf8"
-  integrity sha512-vdudqktCqaUZmwuduJ+39AzBoRvqaLhR25/Y1pU2CHm/EotMRzm2hNZspwqOvJF5tkXWmEG2cUy60NqTlKXnLA==
+"@progress/kendo-angular-sortable@5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-sortable/-/kendo-angular-sortable-5.0.2.tgz#f816bd6d17eaa31c9a73a4e44de68562b2f7ac14"
+  integrity sha512-i9zfrwqA3yNf/TlM+DbUEWeXiZtrEt1S/VSXCpuI1WEozWUAzNYVgYhZvfa667azrm5hAqGo46OxF8DpEekLzQ==
   dependencies:
-    "@progress/kendo-draggable" "^3.0.0"
+    "@progress/kendo-draggable" "^3.0.2"
     "@progress/kendo-schematics" "^3.0.0"
     tslib "^2.3.1"
 
@@ -5564,13 +5564,13 @@
     "@progress/kendo-schematics" "^3.0.0"
     tslib "^2.3.1"
 
-"@progress/kendo-angular-treeview@7.1.2":
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-treeview/-/kendo-angular-treeview-7.1.2.tgz#b1d0e269851a2c3126400c72d3f3e76a93cc4e92"
-  integrity sha512-PWXzdIIodWfJC2jEsSLsK6TM4ANk+5wwlaTZ3UnGy3gM1pcCZZLkhES3P/rlgC8cnsiTMi2xIYLjuJ4oO4JnCQ==
+"@progress/kendo-angular-treeview@7.1.3":
+  version "7.1.3"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-treeview/-/kendo-angular-treeview-7.1.3.tgz#abf6bf163a8680d426d1442f3d9cd49b3f8dd008"
+  integrity sha512-iuLFsDARuFAKIi33G8BA0eUy7lqF9fkNraRm70/ZnSfrLVn4CjVVvjIMQqZO9VJAaSI63lAQsLw42+NtuCDUmA==
   dependencies:
     "@progress/kendo-common" "^0.2.0"
-    "@progress/kendo-draggable" "^3.0.0"
+    "@progress/kendo-draggable" "^3.0.2"
     "@progress/kendo-schematics" "^3.0.0"
     tslib "^2.3.1"
 
@@ -5631,6 +5631,11 @@
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@progress/kendo-draggable/-/kendo-draggable-3.0.1.tgz#7379945757f802c80565959262ada82371c4dc5d"
   integrity sha512-majYTdBVcUafWco/cN+HUuoDmu36bIpTKqrWYRaEOO1FcSZan+p7+lapIzn+D3IIeKcAIws7xKmng6ruh2svRg==
+
+"@progress/kendo-draggable@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-draggable/-/kendo-draggable-3.0.2.tgz#d0ce83a466db470abc515fdf030b6094749e8156"
+  integrity sha512-B5bR1bEtLZ4i0eCtbT1umem3w9dC82QZ8wJ9/MMjcS0/luBiARnIacRM69b0PYN+uESztBuzKrrTpW70FCT47A==
 
 "@progress/kendo-drawing@1.17.1":
   version "1.17.1"
@@ -5908,11 +5913,6 @@
     "@swimlane/dragula" "^3.8.0"
     "@types/dragula" "^2.1.34"
     tslib "^2.0.0"
-
-"@telerik/kendo-draggable@^2.0.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@telerik/kendo-draggable/-/kendo-draggable-2.2.0.tgz#651ee63e8978c3c9d8548a3ece37280ce5944863"
-  integrity sha512-78ofOzRpisqPjG51LfLQ4FEWoGJXs4PkzyJSdVklyFw6gtAnj/T6dp7mHIMj8BivVkN9FjNgf4Eo/mdYs9fusQ==
 
 "@telerik/kendo-intl@^2.0.0":
   version "2.3.0"
