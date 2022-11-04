@@ -5002,14 +5002,14 @@
   resolved "https://registry.yarnpkg.com/@ngui/auto-complete/-/auto-complete-3.0.0.tgz#961cd1bacb03a1c592310a788afbb6a6f8d23c28"
   integrity sha512-cEJHTuta1ZEAgWMTZNmFhVqTcuWIqCLUUBJWIWuIwZgVBcnM/ctn5GSyu/lP2iCV+VG34kHE8NrvTnAztagYxA==
 
-"@nguniversal/builders@14.2.0":
-  version "14.2.0"
-  resolved "https://registry.yarnpkg.com/@nguniversal/builders/-/builders-14.2.0.tgz#8b0303fd615a0383304a1a6b437c6587116dd224"
-  integrity sha512-7rElvsL1OdLtYmn1zNwijga21KhDtjkhuM2o2Mwqafiud3a4zfxzmdv/hOAvFapVTlpUYgb+m4pBwq7V4DYiUA==
+"@nguniversal/builders@14.2.1":
+  version "14.2.1"
+  resolved "https://registry.yarnpkg.com/@nguniversal/builders/-/builders-14.2.1.tgz#e683d1547313a1aed188cd03f522406c00821379"
+  integrity sha512-VHdpjJx/SeMlRm+Ij73gUVOWk6pt8ZrRUdKg4mlsG3mUZjv6wxlse6wMnTNnOHV+J9uItCilY9dG3dPiBkXB2w==
   dependencies:
     "@angular-devkit/architect" "^0.1402.0"
     "@angular-devkit/core" "^14.2.0"
-    "@nguniversal/common" "14.2.0"
+    "@nguniversal/common" "14.2.1"
     browser-sync "^2.26.7"
     express "^4.17.1"
     guess-parser "^0.4.12"
@@ -5023,6 +5023,15 @@
   version "14.2.0"
   resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-14.2.0.tgz#03ba2a9f23465b978eb408e10cdcf445e9276820"
   integrity sha512-6dpPSpCo6Kz4OrFa0RRFu8kmR6QDAEhwgTjD2MNU+WVf5ngwBAcakxW5/3bIx6A17et+Zr1/EVyhpyXFYSUjhw==
+  dependencies:
+    critters "0.0.16"
+    jsdom "20.0.0"
+    tslib "^2.3.0"
+
+"@nguniversal/common@14.2.1":
+  version "14.2.1"
+  resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-14.2.1.tgz#8914442272168dfb75956219e4fa9eca319e0965"
+  integrity sha512-lh1ngCvqbm++SrDpHbMEw9WMfBIV8hUad7cWtY3X/V4BNY70ItKxrWLvt6PQzKeHHgVJVHim3ot7rwaaUTZNcQ==
   dependencies:
     critters "0.0.16"
     jsdom "20.0.0"
