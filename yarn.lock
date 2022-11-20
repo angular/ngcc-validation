@@ -6289,11 +6289,6 @@
   resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.1.tgz#459c65fa1867dafe6a8f322c4c51695663cc55e9"
   integrity sha512-5tXH6Bx/kNGd3MgffdmP4dy2Z+G4eaXw0SE81Tq3BNadtnMR5/ySMzX4SLEzHJzSmPNn4HIdpQsBvXMUykr58w==
 
-"@types/marked@^4.0.3":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-4.0.3.tgz#2098f4a77adaba9ce881c9e0b6baf29116e5acc4"
-  integrity sha512-HnMWQkLJEf/PnxZIfbm0yGJRRZYYMhb++O9M36UCTA9z53uPvVoSlAwJr3XOpDEryb7Hwl1qAx/MV6YIW1RXxg==
-
 "@types/mime@^1":
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.2.tgz#93e25bf9ee75fe0fd80b594bc4feb0e862111b5a"
@@ -10127,10 +10122,10 @@ emoji-regex@^8.0.0:
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-8.0.0.tgz#e818fd69ce5ccfcb404594f842963bf53164cc37"
   integrity sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==
 
-emoji-toolkit@^6.6.0:
-  version "6.6.0"
-  resolved "https://registry.yarnpkg.com/emoji-toolkit/-/emoji-toolkit-6.6.0.tgz#e7287c43a96f940ec4c5428cd7100a40e57518f1"
-  integrity sha512-pEu0kow2p1N8zCKnn/L6H0F3rWUBB3P3hVjr/O5yl1fK7N9jU4vO4G7EFapC5Y3XwZLUCY0FZbOPyTkH+4V2eQ==
+emoji-toolkit@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/emoji-toolkit/-/emoji-toolkit-7.0.0.tgz#63b5e5bdc63acd2e5629a0157969b94d414961fb"
+  integrity sha512-swoVbGlR/cyJ2ysrw1+axjRkEHAlH0myhbK1ybkv8zR6r9KpL4vzb96m3Y2j0hixUKj1Nb8YBQbk3ihB+XkpBw==
 
 emojis-list@^3.0.0:
   version "3.0.0"
@@ -14011,11 +14006,6 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-marked@^4.0.17:
-  version "4.0.18"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-4.0.18.tgz#cd0ac54b2e5610cfb90e8fd46ccaa8292c9ed569"
-  integrity sha512-wbLDJ7Zh0sqA0Vdg6aqlbT+yPxqLblpAZh1mK2+AO2twQkPywvvqQNfEPVwSSRjZ7dZcdeVBIAgiO7MMp3Dszw==
-
 material-components-web@14.0.0:
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/material-components-web/-/material-components-web-14.0.0.tgz#cf8a1d3b467822c41014beef7ef6a3dd38ef2368"
@@ -14857,19 +14847,18 @@ ngx-logger@5.0.11:
     tslib "^2.3.0"
     vlq "^1.0.0"
 
-ngx-markdown@14.0.1:
-  version "14.0.1"
-  resolved "https://registry.yarnpkg.com/ngx-markdown/-/ngx-markdown-14.0.1.tgz#5e97d91012dd3f429635aa7a18b2b75051eea85e"
-  integrity sha512-y5CY4e0QM0uR6+MvU1rnh1Ks+rku14309kVVojyXLcWl4zlrt8VAYCcf/+A+8z/IDOaz38yTrxNBnvYDJzNzYA==
+ngx-markdown@15.0.0:
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/ngx-markdown/-/ngx-markdown-15.0.0.tgz#212ea7c1157294117c1199109c6534e28b282533"
+  integrity sha512-/7IVkNwuukCK4ybI3Ag1RkkUgw5h1pA96OoOPgOCX0omeAv9dMkh5aPukQNPLtmqhkImZyXF29e4steGcjglcw==
   dependencies:
-    "@types/marked" "^4.0.3"
+    tslib "^2.3.0"
+  optionalDependencies:
     clipboard "^2.0.11"
-    emoji-toolkit "^6.6.0"
+    emoji-toolkit "^7.0.0"
     katex "^0.16.0"
-    marked "^4.0.17"
     mermaid "^9.1.2"
     prismjs "^1.28.0"
-    tslib "^2.3.0"
 
 ngx-mask@14.2.4:
   version "14.2.4"
