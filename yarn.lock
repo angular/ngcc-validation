@@ -8058,13 +8058,13 @@ caniuse-lite@^1.0.30001219, caniuse-lite@^1.0.30001280, caniuse-lite@^1.0.300013
   resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001402.tgz"
   integrity sha512-Mx4MlhXO5NwuvXGgVb+hg65HZ+bhUYsz8QtDGDo2QmaJS2GBX47Xfi2koL86lc8K+l+htXeTEB/Aeqvezoo6Ew==
 
-canvas@^2.10.1:
-  version "2.10.1"
-  resolved "https://registry.yarnpkg.com/canvas/-/canvas-2.10.1.tgz#fbfd4b1b3b106c3454481d79d363ebadf8811c08"
-  integrity sha512-29pIjn9uwTUsIgJUNd7GXxKk8sg4iyJwLm1wIilNIqX1mVzXSc2nUij9exW1LqNpis1d2ebMYfMqTWcokZ4pdA==
+canvas@^2.10.2:
+  version "2.10.2"
+  resolved "https://registry.yarnpkg.com/canvas/-/canvas-2.10.2.tgz#66d827e24acd6c34667453728e13d337417d4b20"
+  integrity sha512-FSmlsip0nZ0U4Zcfht0qBJqDhlfGuevTZKE8h+dBOYrJjGvY3iqMGSzzbvkaFhvMXiVxfcMaPHS/kge++T5SKg==
   dependencies:
     "@mapbox/node-pre-gyp" "^1.0.0"
-    nan "^2.15.0"
+    nan "^2.17.0"
     simple-get "^3.0.3"
 
 caseless@~0.12.0:
@@ -14528,7 +14528,7 @@ nan@^2.12.1:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
   integrity sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
 
-nan@^2.15.0:
+nan@^2.17.0:
   version "2.17.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.17.0.tgz#c0150a2368a182f033e9aa5195ec76ea41a199cb"
   integrity sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==
@@ -15835,13 +15835,14 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
-pdfjs-dist@3.0.279:
-  version "3.0.279"
-  resolved "https://registry.yarnpkg.com/pdfjs-dist/-/pdfjs-dist-3.0.279.tgz#a040dca4797fce6014e7f5c656a98e6246510ac8"
-  integrity sha512-YDwYiPi8wqlYDC4QF0JsXSJH1E+vn7UAc5hSNPkuF4HYkPAiNFBkEsK9pWzM2iinVNQJIztmtfLDg1B17jKtJA==
+pdfjs-dist@3.1.81:
+  version "3.1.81"
+  resolved "https://registry.yarnpkg.com/pdfjs-dist/-/pdfjs-dist-3.1.81.tgz#52d0683c8cdb60631e75d2f6aa1be2c1de0d9470"
+  integrity sha512-hZHVVbjU2Ac1VYyPFrg9fBcyS7EEdB8YFy5upk6LmnsXl10WxAavdiViGWi2C/xK0GZObEpSSJU1VnoF9t8n9w==
   dependencies:
-    canvas "^2.10.1"
     web-streams-polyfill "^3.2.1"
+  optionalDependencies:
+    canvas "^2.10.2"
 
 pdfjs-dist@^2.15.349:
   version "2.15.349"
