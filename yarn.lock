@@ -144,10 +144,10 @@
     "@angular-devkit/architect" "github:angular/angular-devkit-architect-builds#ca5648975"
     rxjs "6.6.7"
 
-"@angular-devkit/core@12.2.17":
-  version "12.2.17"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-12.2.17.tgz#0bef00636efe624163486265e05c508587cb57f1"
-  integrity sha512-PyOY7LGUPPd6rakxUYbfQN6zAdOCMCouVp5tERY1WTdMdEiuULOtHsPee8kNbh75pD59KbJNU+fwozPRMuIm5g==
+"@angular-devkit/core@12.2.18":
+  version "12.2.18"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-12.2.18.tgz#6c530658b59f625388986fc73e4c4f966269725a"
+  integrity sha512-GDLHGe9HEY5SRS+NrKr14C8aHsRCiBFkBFSSbeohgLgcgSXzZHFoU84nDWrl3KZNP8oqcUSv5lHu6dLcf2fnww==
   dependencies:
     ajv "8.6.2"
     ajv-formats "2.1.0"
@@ -229,12 +229,12 @@
     "@angular-devkit/core" "8.3.29"
     rxjs "6.4.0"
 
-"@angular-devkit/schematics@^12.0.0":
-  version "12.2.17"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-12.2.17.tgz#e3c217465d04837f0589d6dfc286056be1b7c68f"
-  integrity sha512-c0eNu/nx1Mnu7KcZgYTYHP736H4Y9pSyLBSmLAHYZv3t3m0dIPbhifRcLQX7hHQ8fGT2ZFxmOpaQG5/DcIghSw==
+"@angular-devkit/schematics@^12.2.18":
+  version "12.2.18"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-12.2.18.tgz#22de79ff820ed484e6edccfac30a9f6b0562842e"
+  integrity sha512-bZ9NS5PgoVfetRC6WeQBHCY5FqPZ9y2TKHUo12sOB2YSL3tgWgh1oXyP8PtX34gasqsLjNULxEQsAQYEsiX/qQ==
   dependencies:
-    "@angular-devkit/core" "12.2.17"
+    "@angular-devkit/core" "12.2.18"
     ora "5.4.1"
     rxjs "6.6.7"
 
@@ -9402,14 +9402,14 @@ devexpress-gantt@4.1.33:
     "@devexpress/utils" "1.3.14"
     tslib "2.3.1"
 
-devextreme-angular@22.1.6:
-  version "22.1.6"
-  resolved "https://registry.yarnpkg.com/devextreme-angular/-/devextreme-angular-22.1.6.tgz#86352fdbfeea429b91718ad08a32319e1b0f7526"
-  integrity sha512-LclY20SM7QDg2pFyMzfrJYTkdOcYKIheMXpxX2+liNNNywxzJJrJE/i0uzeWgoA9ZhcmgBE9qdKxx4fYs8dIOw==
+devextreme-angular@22.2.3:
+  version "22.2.3"
+  resolved "https://registry.yarnpkg.com/devextreme-angular/-/devextreme-angular-22.2.3.tgz#5c59f9a1a1a1324f5fce64ffc64d89afc593b0d4"
+  integrity sha512-rQuqs8ivT+6jt8fnIdug7SWiCESElKsfLyBg8DaUhC0/+Hb6zNePOZFyhCvn5H9bYYxm+VkD18mz/lm4cuH4DQ==
   dependencies:
-    "@angular-devkit/schematics" "^12.0.0"
+    "@angular-devkit/schematics" "^12.2.18"
     devextreme-schematics latest
-    inferno-server "7.4.4"
+    inferno-server "7.4.11"
     tslib "^2.2.0"
 
 devextreme-quill@~1.5.18:
@@ -11687,22 +11687,22 @@ inferno-hydrate@^7.4.9:
   dependencies:
     inferno "7.4.10"
 
-inferno-server@7.4.4:
-  version "7.4.4"
-  resolved "https://registry.yarnpkg.com/inferno-server/-/inferno-server-7.4.4.tgz#866c8699aa154c5e15e9b9b48a329f3ce10bd687"
-  integrity sha512-d8r39lumNJYT6q/N0EMnvPR48iHt5+z/gUL0hrAOsDMPQz16j8M5HJiiiXzCR+rvkcMJj01K68xD9Q2yi1ZQFw==
+inferno-server@7.4.11:
+  version "7.4.11"
+  resolved "https://registry.yarnpkg.com/inferno-server/-/inferno-server-7.4.11.tgz#05ec0f7ceea4a30da412baaccbbfeca258db27cf"
+  integrity sha512-SUnkCqZNWOIrjRVoVk/E1/70O1f1ImkCX9H2gDPbS0uc3GDxuzIeCgn0rpcc0XV9KzZJ2LTGxuBtEoQQOjUn2Q==
   dependencies:
-    inferno "7.4.4"
+    inferno "7.4.11"
 
 inferno-shared@7.4.10:
   version "7.4.10"
   resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-7.4.10.tgz#d4ca2c7fd6b580f86a623e923d080aa1d7259014"
   integrity sha512-d7wlcW8NhchfX4vSg+6k9/FwFHAooo81GfWZtnDXtUvZNS4WEMaPH2j1YV6VnN4X3R0850dHRxR7830PdKh4Iw==
 
-inferno-shared@7.4.4:
-  version "7.4.4"
-  resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-7.4.4.tgz#de0fbe5f0dc3bfa52c2daf1528e456355c97d6b4"
-  integrity sha512-HqnNCKCg30Wmt8/7MVwPr9JapIfa++dwrHvNhRWmSCcsKhF4MOJiZ1C9EunTPzSLua3n8TLrj6W3UB4gXk6kMQ==
+inferno-shared@7.4.11:
+  version "7.4.11"
+  resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-7.4.11.tgz#6e06e0668c4dad5f8b1fd4c688e1072faa6f1e87"
+  integrity sha512-pN725bDSTxkQmRS3e/3H02/xAqgHl+xgddCMjPm8M0etRdRcVCisi3NGPhzSbDDmiftrxhY31exs7+dwsngcDA==
 
 inferno-shared@7.4.8:
   version "7.4.8"
@@ -11714,10 +11714,10 @@ inferno-vnode-flags@7.4.10:
   resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-7.4.10.tgz#a255931fc1df1e6896b29226d837f28e1c5ac968"
   integrity sha512-OzfnqXrJx8Rl3FtyjhdFk7gzuCLMPCbDTiO8Bz0lw6P3ngW9Md5N5LPeg7Jz510PM0NisScQtxxHPwsFQxDIfw==
 
-inferno-vnode-flags@7.4.4:
-  version "7.4.4"
-  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-7.4.4.tgz#79491d8b0b2f918cdf13a5d630774f4902a4b8e2"
-  integrity sha512-Wyx7S/T8vKgGP4nTeqN5MYm9ryzh1xvZ1mJ4eZWXklqqnNx66kYeEUwMviqncG6uExcqnue1z8FA/rVjx/Y8yQ==
+inferno-vnode-flags@7.4.11:
+  version "7.4.11"
+  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-7.4.11.tgz#642a835a8dde514f244296b27c176a2b8704fbac"
+  integrity sha512-L7lslEQCq3IfwgT/b9zhuMf8fv6KXCNXXHZevk/WYxnqJsOWGDcKpJn0zkzXfvmj0otbB149iLUQVBq3oe2sfA==
 
 inferno-vnode-flags@7.4.8:
   version "7.4.8"
@@ -11733,14 +11733,14 @@ inferno@7.4.10, inferno@^7.4.9:
     inferno-vnode-flags "7.4.10"
     opencollective-postinstall "^2.0.3"
 
-inferno@7.4.4:
-  version "7.4.4"
-  resolved "https://registry.yarnpkg.com/inferno/-/inferno-7.4.4.tgz#98c823e63ec51f08d23becf77bb727e35d2bcbb7"
-  integrity sha512-ITPZ/Li1EvyDDNjRY7+R1MRRlPz5+fYg8wGMhgfUSMg8QcQWoeM0hP5BEYxdDz4K/aGWHfey7CgHXY6HGWylqA==
+inferno@7.4.11:
+  version "7.4.11"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-7.4.11.tgz#fcee308cf0e4a2f6066d96da74e3b425583bfc66"
+  integrity sha512-N+cs33ESWI8fdToCd98yMRYl7jkLnCkJskxov3FKKlaKOvk3PRlAttbhmUaYdWXlRvt2WeXi+J4MbzNj3V6G0w==
   dependencies:
-    inferno-shared "7.4.4"
-    inferno-vnode-flags "7.4.4"
-    opencollective-postinstall "^2.0.2"
+    inferno-shared "7.4.11"
+    inferno-vnode-flags "7.4.11"
+    opencollective-postinstall "^2.0.3"
 
 inferno@7.4.8, inferno@^7.4.6:
   version "7.4.8"
@@ -14637,7 +14637,7 @@ open@^8.0.9:
     is-docker "^2.1.1"
     is-wsl "^2.2.0"
 
-opencollective-postinstall@^2.0.2, opencollective-postinstall@^2.0.3:
+opencollective-postinstall@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz#7a0fff978f6dbfa4d006238fbac98ed4198c3259"
   integrity sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==
