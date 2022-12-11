@@ -6646,17 +6646,17 @@ angular-bootstrap-datetimepicker@4.0.2:
   dependencies:
     tslib "^1.9.0"
 
-angular-calendar@0.30.1:
-  version "0.30.1"
-  resolved "https://registry.yarnpkg.com/angular-calendar/-/angular-calendar-0.30.1.tgz#6d433dfd81d1aab5fe1c58373bcac277154e6625"
-  integrity sha512-QNDGmMzDH/Lx0WXya3mug+MYEpEAQHKlErB/ZpE5F1glChFmPuWCV4aLN6sqacMjZW1TybAJ/ES88B6LS7l8zw==
+angular-calendar@0.31.0:
+  version "0.31.0"
+  resolved "https://registry.yarnpkg.com/angular-calendar/-/angular-calendar-0.31.0.tgz#adf71a2078021b1893d14a87a4e0efda67a1312a"
+  integrity sha512-QGPObUmOYLr4IeSaj1pzZjcycN6otYx+SbeezJuujstXR9f2wo4CtMlBQ+SU+ZF5VFfrdYge8qkxMGCLBLBRrw==
   dependencies:
     "@scarf/scarf" "^1.1.1"
-    angular-draggable-droppable "^7.0.0"
-    angular-resizable-element "^6.0.0"
-    calendar-utils "^0.10.1"
+    angular-draggable-droppable "^8.0.0"
+    angular-resizable-element "^7.0.0"
+    calendar-utils "^0.10.4"
     positioning "^2.0.1"
-    tslib "^2.4.0"
+    tslib "^2.4.1"
 
 angular-datatables@14.0.1:
   version "14.0.1"
@@ -6665,21 +6665,13 @@ angular-datatables@14.0.1:
   dependencies:
     codelyzer "^6.0.2"
 
-angular-draggable-droppable@8.0.0:
+angular-draggable-droppable@8.0.0, angular-draggable-droppable@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/angular-draggable-droppable/-/angular-draggable-droppable-8.0.0.tgz#8adcdf7c6997e736ae496bae5a3b2a53d88c2b27"
   integrity sha512-+gpSNBbygjV1pxTxsM3UPJKcXHXJabYoTtKcgQe74rGnb1umKc07XCBD1qDzvlG/kocthvhQ12qfYOYzHnE3ZA==
   dependencies:
     "@mattlewis92/dom-autoscroller" "^2.4.2"
     tslib "^2.4.1"
-
-angular-draggable-droppable@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/angular-draggable-droppable/-/angular-draggable-droppable-7.0.0.tgz#b7a2c020c04f061d4de55c28d1baee31cba148d2"
-  integrity sha512-XEtIx4hsByrwunKPHiqXRcqCPZlP2YF7ZXWgdoBIGiNVg0L/4xx8OcaKVeVsrOrKsN/t/IB4kJqeG45btUcSGA==
-  dependencies:
-    "@mattlewis92/dom-autoscroller" "^2.4.2"
-    tslib "^2.4.0"
 
 angular-froala-wysiwyg@4.0.16:
   version "4.0.16"
@@ -6739,10 +6731,10 @@ angular-pipes@10.0.0:
   dependencies:
     tslib "^1.9.0"
 
-angular-resizable-element@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/angular-resizable-element/-/angular-resizable-element-6.0.0.tgz#59e6b33e21adda4a8a37cbcd7fc29f8fcad83d82"
-  integrity sha512-rZtL98JDiCg/sh4mPpcWOa64jGJvwkWHpc1abvvUckdQ/LAGF3QlwvWoaCGoYHGlcdrQFXUWCtSJgIrHxSATCg==
+angular-resizable-element@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/angular-resizable-element/-/angular-resizable-element-7.0.0.tgz#da25b9a4f117264efcc59b7a3ac963b875a3ce3b"
+  integrity sha512-fzLZCi1RkyWX419CHV0tDKDfl/oiUxy9u4NqDAJPEZkPaktrwL2KM5RWiOzyHLXUajWyWY146UnqwXW4yQslSA==
   dependencies:
     tslib "^2.3.0"
 
@@ -7662,10 +7654,10 @@ cache-base@^1.0.1:
     union-value "^1.0.0"
     unset-value "^1.0.0"
 
-calendar-utils@^0.10.1:
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/calendar-utils/-/calendar-utils-0.10.1.tgz#a8c142405d02f6567903ceb8e55d48b6cefe54e1"
-  integrity sha512-WGXp28tOMXeQpOtiAwhH7QlayVLecI2I0/29fS46VBjNXN33fDGVbK5Em8x0L3evLBUt7POBsPf0rm2Dt6GEhg==
+calendar-utils@^0.10.4:
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/calendar-utils/-/calendar-utils-0.10.4.tgz#31bbeb4e35579137043bc85471e98a2924d81ff9"
+  integrity sha512-gBK4xCJ42yjaUKwuUha6cZOfxAmGzvSgbdAaX3xLRioeKbYoOK1x1qeD6dch72rsMZlTgATPbBBx42bnkStqgQ==
 
 call-bind@^1.0.0, call-bind@^1.0.2:
   version "1.0.2"
