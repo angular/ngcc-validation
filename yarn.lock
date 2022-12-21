@@ -285,6 +285,15 @@
   optionalDependencies:
     parse5 "^5.0.0"
 
+"@angular/cdk@^15.0.0":
+  version "15.0.3"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-15.0.3.tgz#9f995914d7d8fb0cb035cf2ba9c956b741fdbf79"
+  integrity sha512-iRLV6V6ksIshDL8Cdn1+DUNTRLqj+DAqmYTWYCEvH4qU6o0XSeXrAHNW5zNFqWgCZbmWt03G5jOBWBNaxa9QKw==
+  dependencies:
+    tslib "^2.3.0"
+  optionalDependencies:
+    parse5 "^7.1.2"
+
 "@angular/cdk@github:angular/cdk-builds#9e2d10f564a1bf068209c88ac29ac7b003f33a03":
   version "15.1.0-next.2"
   resolved "https://codeload.github.com/angular/cdk-builds/tar.gz/9e2d10f564a1bf068209c88ac29ac7b003f33a03"
@@ -576,7 +585,7 @@
   dependencies:
     "@ctrl/tinycolor" "^3.3.1"
 
-"@ant-design/icons-angular@15.0.0":
+"@ant-design/icons-angular@15.0.0", "@ant-design/icons-angular@^15.0.0":
   version "15.0.0"
   resolved "https://registry.yarnpkg.com/@ant-design/icons-angular/-/icons-angular-15.0.0.tgz#fa6119e6c1f710f2c03ba11aff25bfd87b5a0243"
   integrity sha512-9DMpuoqZBvS7+VJ0s3tl2g/kI1sTLDQWfykiXYa+AkZ2AvJwHebvR7Cw7/xfiXFDLyZTjPgtC0x0gex13EShuA==
@@ -13828,13 +13837,13 @@ ng-sidebar@9.4.2:
   resolved "https://registry.yarnpkg.com/ng-sidebar/-/ng-sidebar-9.4.2.tgz#3ecc4b06e244eb378d6d1fb5511c17c986698bca"
   integrity sha512-8KmEQYFhn4S5LDjRDXBhDfCgLchJEj+ClBdiTCAQoRjX8vdh85hmKIGN7aBsh1HNOXKN3rzDu0qmd90193/P3Q==
 
-ng-zorro-antd@14.3.0:
-  version "14.3.0"
-  resolved "https://registry.yarnpkg.com/ng-zorro-antd/-/ng-zorro-antd-14.3.0.tgz#0cc5a406b62f4dcbcda2eea4d8d654c27c323dae"
-  integrity sha512-mGVok0DggrvVYTYWpbJJVekBs6j19kAkxB7PdZp0bvYRedpOVWKSEDX1Cigy7txnGw5UsSuzRSn3h6oZcBUmTA==
+ng-zorro-antd@15.0.0:
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/ng-zorro-antd/-/ng-zorro-antd-15.0.0.tgz#e315a267723d921de9f8d3f9dcae17c98aa2927a"
+  integrity sha512-txsYpgdI+yevd/zkv/VFRIovrxs+HpYKGjoLt6p6VKWYHyl172C+3Zn3Dwpb54f+JqfClPk9bb/RBG40QrsrWg==
   dependencies:
-    "@angular/cdk" "^14.1.0"
-    "@ant-design/icons-angular" "^14.1.0"
+    "@angular/cdk" "^15.0.0"
+    "@ant-design/icons-angular" "^15.0.0"
     date-fns "^2.16.1"
     tslib "^2.3.0"
 
