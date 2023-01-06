@@ -126,6 +126,13 @@ jobs:
 workflows:
   version: 2
   default_workflow:
+    triggers:
+      - schedule:
+         branches:
+           only:
+             - main
+          # Run at 2:00AM every day.
+          cron: '0 2 * * *'
     jobs:
       - setup
       - run_ngcc_via_cli:
