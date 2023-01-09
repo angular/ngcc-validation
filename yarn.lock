@@ -276,15 +276,6 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/cdk@^14.1.0":
-  version "14.2.0"
-  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-14.2.0.tgz#27d0b307b1e9361fff21199001ac19f9b107767c"
-  integrity sha512-rAeQXUSbOJSKLVizueRKoZmRb0An5qJUMigsF8wJwJjySUIcJ8uSIOMV+G1rxkvxVVY0HRAVi2rIkJbeq3+WKQ==
-  dependencies:
-    tslib "^2.3.0"
-  optionalDependencies:
-    parse5 "^5.0.0"
-
 "@angular/cdk@^15.0.0":
   version "15.0.3"
   resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-15.0.3.tgz#9f995914d7d8fb0cb035cf2ba9c956b741fdbf79"
@@ -589,14 +580,6 @@
   version "15.0.0"
   resolved "https://registry.yarnpkg.com/@ant-design/icons-angular/-/icons-angular-15.0.0.tgz#fa6119e6c1f710f2c03ba11aff25bfd87b5a0243"
   integrity sha512-9DMpuoqZBvS7+VJ0s3tl2g/kI1sTLDQWfykiXYa+AkZ2AvJwHebvR7Cw7/xfiXFDLyZTjPgtC0x0gex13EShuA==
-  dependencies:
-    "@ant-design/colors" "^5.0.0"
-    tslib "^2.0.0"
-
-"@ant-design/icons-angular@^14.1.0":
-  version "14.1.0"
-  resolved "https://registry.yarnpkg.com/@ant-design/icons-angular/-/icons-angular-14.1.0.tgz#7612507aae28872ce3ccd139857452426cc30be3"
-  integrity sha512-SvWi8p4L+cCfTGtezeUq1s8kahZEO1UVf7ZR615Fix3c2l9OnAJi+niDkq2fZHjpiarFrt8HoZ2EhMAMN7jfbg==
   dependencies:
     "@ant-design/colors" "^5.0.0"
     tslib "^2.0.0"
@@ -2627,66 +2610,66 @@
   dependencies:
     schematics-utilities "^2.0.3"
 
-"@delon/abc@14.3.0":
-  version "14.3.0"
-  resolved "https://registry.yarnpkg.com/@delon/abc/-/abc-14.3.0.tgz#d9ed91509a6d499bb859dccc5f7e9a63b306fc64"
-  integrity sha512-CAU0cGq8AD4rQlJ7hSWudOqjVHeS074CXAj1fk5qzzdMRiT0PLSUWDmaYc4DFodfhimv4+hVTFqMyv/a/exJKw==
+"@delon/abc@15.0.0":
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/@delon/abc/-/abc-15.0.0.tgz#43630a5aaf1d9b91d4a7d49b9ecee46488af5aae"
+  integrity sha512-g7W6K+AXpbzjJWFKHcQFucoZ8wEtSTMRHEU8BFWEEz7KSdpAPDcHPwAOxqyL5H2V+ldAvBzCGAdZheRuNG2z6A==
   dependencies:
-    "@delon/acl" "^14.3.0"
-    "@delon/theme" "^14.3.0"
-    "@delon/util" "^14.3.0"
+    "@delon/acl" "^15.0.0"
+    "@delon/theme" "^15.0.0"
+    "@delon/util" "^15.0.0"
     "@github/hotkey" "^2.0.1"
     file-saver "^2.0.5"
     isutf8 "^4.0.0"
     jszip "^3.10.1"
-    ngx-countdown "^14.0.0"
-    pdfjs-dist "^2.15.349"
-    plyr "^3.7.2"
+    ngx-countdown "^15.0.0"
+    pdfjs-dist "^3.2.146"
+    plyr "^3.7.3"
     tslib "^2.3.0"
     xlsx "^0.18.5"
 
-"@delon/acl@14.3.0", "@delon/acl@^14.3.0":
-  version "14.3.0"
-  resolved "https://registry.yarnpkg.com/@delon/acl/-/acl-14.3.0.tgz#d27d78d19354bc6124a8dea65c1853fa2fb8be1b"
-  integrity sha512-U6u5UvYMHdFdD5xDcEBzi/aHECnlBQR+bKblNZ3eHY5pO5FRiL1/uyJRgcmKqU1TcY19cNSufKlcoBeXUmF7Bg==
+"@delon/acl@15.0.0", "@delon/acl@^15.0.0":
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/@delon/acl/-/acl-15.0.0.tgz#4546f0a4da74f086a56962c59eba72eb22e26dc2"
+  integrity sha512-0LtROGgIEpM96LYRCrgO0sQEneVSRbjv3QqkSPzeruSBnNQv8d3O/KxAlOBhvovwoXhNOrXL8yhHDkuLybovSQ==
   dependencies:
-    "@delon/util" "^14.3.0"
+    "@delon/util" "^15.0.0"
     tslib "^2.3.0"
 
-"@delon/auth@14.3.0":
-  version "14.3.0"
-  resolved "https://registry.yarnpkg.com/@delon/auth/-/auth-14.3.0.tgz#1d58a3be9202dc848f262c97f70359088f9da876"
-  integrity sha512-J5WTrdd6wzqUR4LWNEcRiKQ5ui+XN4z2qqeVQDCqkP++00/CheOcVZOEQz5F/PDA1/kJpu+W/F7B1qnk6lyAwQ==
+"@delon/auth@15.0.0":
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/@delon/auth/-/auth-15.0.0.tgz#7b57647fb7c96e99c1b356b5f7cb0a4c0c303b7f"
+  integrity sha512-iXBxZlJJ52N109DFiZhKnpmZUuT7T62bsv+dyP4spW1mDYvkfzbEPChRB52V6+VMInW5bYVqqQ6vwNYn8HfF5g==
   dependencies:
-    "@delon/util" "^14.3.0"
+    "@delon/util" "^15.0.0"
     tslib "^2.3.0"
 
-"@delon/form@14.3.0":
-  version "14.3.0"
-  resolved "https://registry.yarnpkg.com/@delon/form/-/form-14.3.0.tgz#38f329f4d01356bb75f11ae61e6f7b3e2e30c6e6"
-  integrity sha512-cKCP7Sc/qsSIm8fstRjwnajwdd3qKRGUNSvAdo4NA9DW9aPt9rz6fmS7olDui88jqWeCyapzpklpSTn38FwiiQ==
+"@delon/form@15.0.0":
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/@delon/form/-/form-15.0.0.tgz#b9394f11f9cfbcdbd40fc572170c1e60b8e370cd"
+  integrity sha512-nJXVp5Aqc7J4tGRVuydSbAv+b375ERikBs+ufnD0zXJLIUQVLKCa/AesLjFxBbP5KrdOyxIjiBJw4KkV39q4fQ==
   dependencies:
-    "@delon/acl" "^14.3.0"
-    "@delon/theme" "^14.3.0"
-    "@delon/util" "^14.3.0"
-    ajv "^8.11.0"
+    "@delon/acl" "^15.0.0"
+    "@delon/theme" "^15.0.0"
+    "@delon/util" "^15.0.0"
+    ajv "^8.11.2"
     ajv-formats "^2.1.1"
     tslib "^2.3.0"
 
-"@delon/theme@14.3.0", "@delon/theme@^14.3.0":
-  version "14.3.0"
-  resolved "https://registry.yarnpkg.com/@delon/theme/-/theme-14.3.0.tgz#2be665c564d3befe3678ac4fbed6862e1bdf66b7"
-  integrity sha512-I0KmEXszWtz1UqcKFzRYPLL9vmGeHqRuQwX49UzY+ybqTEXDt4gZxh1HS4a4zBBFpNb/6sEjh+ptAc8UXPwaag==
+"@delon/theme@15.0.0", "@delon/theme@^15.0.0":
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/@delon/theme/-/theme-15.0.0.tgz#ea1eb622699246d5ac985423b168c82949b48322"
+  integrity sha512-c4STtlMz44IujUSEE8CiX6WOaapdReaOE1syqeT02E4I2nUC9iPRBW8F8EOEH/D7Qj/51QpqXzdf4flwoeGTjg==
   dependencies:
-    "@delon/acl" "^14.3.0"
-    "@delon/util" "^14.3.0"
-    ng-zorro-antd "^14.0.0"
+    "@delon/acl" "^15.0.0"
+    "@delon/util" "^15.0.0"
+    ng-zorro-antd "^15.0.0"
     tslib "^2.3.0"
 
-"@delon/util@14.3.0", "@delon/util@^14.3.0":
-  version "14.3.0"
-  resolved "https://registry.yarnpkg.com/@delon/util/-/util-14.3.0.tgz#2838d3795fffd0a929cc0e28ad5b91c57e295f1b"
-  integrity sha512-SpQTEjlVQxPErYvv3i5YQMenAQ7QNilg26we4hfR18eHZcrSGfGcit5+hWyiuc7XvYOGI3Ck6c9PIo9y0s6Lxg==
+"@delon/util@15.0.0", "@delon/util@^15.0.0":
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/@delon/util/-/util-15.0.0.tgz#88a8ec22b76f584c34a35c9008e80a3571569019"
+  integrity sha512-9HNjmBs1E9Pq/pijwF/XQH7Vz8dK+NDHbkzLYkfjaDS3Ys0CT9AglUi40glcRQNkVtGejqOzSdlgroi11+BmEQ==
   dependencies:
     extend "^3.0.2"
     tslib "^2.3.0"
@@ -6604,7 +6587,7 @@ ajv@6.9.1:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ajv@8.11.0, ajv@^8.11.0:
+ajv@8.11.0:
   version "8.11.0"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.11.0.tgz#977e91dd96ca669f54a11e23e378e33b884a565f"
   integrity sha512-wGgprdCvMalC0BztXvitD2hC04YffAvtsUn93JbGXYLAtCUO4xd17mCCZQxUOItiBwZvJScWo8NIvQMQ71rdpg==
@@ -6638,6 +6621,16 @@ ajv@^8.0.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.1.0.tgz#45d5d3d36c7cdd808930cc3e603cf6200dbeb736"
   integrity sha512-B/Sk2Ix7A36fs/ZkuGLIR86EdjbgR6fsAcbx9lOP/QBSXujDNbVmIS/U4Itz5k8fPFDeVZl/zQ/gJW4Jrq6XjQ==
+  dependencies:
+    fast-deep-equal "^3.1.1"
+    json-schema-traverse "^1.0.0"
+    require-from-string "^2.0.2"
+    uri-js "^4.2.2"
+
+ajv@^8.11.2:
+  version "8.12.0"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.12.0.tgz#d1a0527323e22f53562c567c00991577dfbe19d1"
+  integrity sha512-sRu1kpcO9yLtYxBKvqfTeh9KzZEwO3STyX1HT+4CaDzC6HpTGYhIhPIzj9XuKU7KYDwnaeh5hcOwjy1QuJzBPA==
   dependencies:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
@@ -8294,10 +8287,10 @@ core-js@^3.19.1:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.19.3.tgz#6df8142a996337503019ff3235a7022d7cdf4559"
   integrity sha512-LeLBMgEGSsG7giquSzvgBrTS7V5UL6ks3eQlUSbN8dJStlLFiRzUm5iqsRyzUB8carhfKjkJ2vzKqE6z1Vga9g==
 
-core-js@^3.22.0:
-  version "3.25.0"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.25.0.tgz#be71d9e0dd648ffd70c44a7ec2319d039357eceb"
-  integrity sha512-CVU1xvJEfJGhyCpBrzzzU1kjCfgsGUxhEvwUV2e/cOedYWHdmluamx+knDnmhqALddMG16fZvIqvs9aijsHHaA==
+core-js@^3.26.1:
+  version "3.27.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.27.1.tgz#23cc909b315a6bb4e418bf40a52758af2103ba46"
+  integrity sha512-GutwJLBChfGCpwwhbYoqfv03LAfmiz7e7D/BNxzeMxwQf10GRSzqiOjx7AmtEk+heiD/JWmBuyBPgFtx0Sg1ww==
 
 core-util-is@1.0.2:
   version "1.0.2"
@@ -9591,11 +9584,6 @@ domino@^2.1.2, domino@^2.1.6:
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/domino/-/domino-2.1.6.tgz#fe4ace4310526e5e7b9d12c7de01b7f485a57ffe"
   integrity sha512-3VdM/SXBZX2omc9JF9nOPCtDaYQ67BGp5CoLpIQlO2KCAPETs8TcDHacF26jXadGbvUteZzRTeos2fhID5+ucQ==
-
-dommatrix@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/dommatrix/-/dommatrix-1.0.3.tgz#e7c18e8d6f3abdd1fef3dd4aa74c4d2e620a0525"
-  integrity sha512-l32Xp/TLgWb8ReqbVJAFIvXmY7go4nTxxlWiAFyhoQw9RKEOHBZNnyGvJWqDVSPmq3Y9HlM4npqF/T6VMOXhww==
 
 dompurify@2.3.8:
   version "2.3.8"
@@ -13839,23 +13827,13 @@ ng-sidebar@9.4.2:
   resolved "https://registry.yarnpkg.com/ng-sidebar/-/ng-sidebar-9.4.2.tgz#3ecc4b06e244eb378d6d1fb5511c17c986698bca"
   integrity sha512-8KmEQYFhn4S5LDjRDXBhDfCgLchJEj+ClBdiTCAQoRjX8vdh85hmKIGN7aBsh1HNOXKN3rzDu0qmd90193/P3Q==
 
-ng-zorro-antd@15.0.0:
+ng-zorro-antd@15.0.0, ng-zorro-antd@^15.0.0:
   version "15.0.0"
   resolved "https://registry.yarnpkg.com/ng-zorro-antd/-/ng-zorro-antd-15.0.0.tgz#e315a267723d921de9f8d3f9dcae17c98aa2927a"
   integrity sha512-txsYpgdI+yevd/zkv/VFRIovrxs+HpYKGjoLt6p6VKWYHyl172C+3Zn3Dwpb54f+JqfClPk9bb/RBG40QrsrWg==
   dependencies:
     "@angular/cdk" "^15.0.0"
     "@ant-design/icons-angular" "^15.0.0"
-    date-fns "^2.16.1"
-    tslib "^2.3.0"
-
-ng-zorro-antd@^14.0.0:
-  version "14.0.0"
-  resolved "https://registry.yarnpkg.com/ng-zorro-antd/-/ng-zorro-antd-14.0.0.tgz#31ae2120a866fca33f348c7e65fc612f788732a7"
-  integrity sha512-KqWyplJDvlHEarWhyAlexFGovQIhMHkwOmsJk0MmC0NFgU+WA9GgclZG3Z6sK8q9o0XXz7zPKmMzufcJyM+ghQ==
-  dependencies:
-    "@angular/cdk" "^14.1.0"
-    "@ant-design/icons-angular" "^14.1.0"
     date-fns "^2.16.1"
     tslib "^2.3.0"
 
@@ -13984,17 +13962,10 @@ ngx-cookie@6.0.1:
   dependencies:
     tslib "^2.0.0"
 
-ngx-countdown@15.0.0:
+ngx-countdown@15.0.0, ngx-countdown@^15.0.0:
   version "15.0.0"
   resolved "https://registry.yarnpkg.com/ngx-countdown/-/ngx-countdown-15.0.0.tgz#e1ea1fbc74e766d84d2d37d0040747d6a0b496a1"
   integrity sha512-AUmdLyqho8zj1hxryW2Zh8xyrvHqtVEH4SYDZHfbeJ3UungSF8SFH4oQlaTTeNAIvuc7oiazuNhqWXKz/m3jnQ==
-  dependencies:
-    tslib "^2.3.0"
-
-ngx-countdown@^14.0.0:
-  version "14.0.0"
-  resolved "https://registry.yarnpkg.com/ngx-countdown/-/ngx-countdown-14.0.0.tgz#f1b8bca696d70f678cc1788124a5f17a44d86202"
-  integrity sha512-XZyRQM7lT174phm15WiqnenYShZ9+RkaSYNsFvM5GREPgAnWE9Yl7tjC6aH4tijdnYPsbAqSIyqhzg/TERiKjQ==
   dependencies:
     tslib "^2.3.0"
 
@@ -15023,7 +14994,7 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
-pdfjs-dist@3.2.146:
+pdfjs-dist@3.2.146, pdfjs-dist@^3.2.146:
   version "3.2.146"
   resolved "https://registry.yarnpkg.com/pdfjs-dist/-/pdfjs-dist-3.2.146.tgz#fffbd26e2da94a03adb43e8324d1c252ed7d46f5"
   integrity sha512-wy1OB/v75usRD1LqgxBUWC+ZOiKTmG5J8c2z9XVFrVSSWiVbSuseNojmvFa/TT0pYtcFmkL4zn6KaxvqfPYMRg==
@@ -15031,14 +15002,6 @@ pdfjs-dist@3.2.146:
     web-streams-polyfill "^3.2.1"
   optionalDependencies:
     canvas "^2.11.0"
-
-pdfjs-dist@^2.15.349:
-  version "2.15.349"
-  resolved "https://registry.yarnpkg.com/pdfjs-dist/-/pdfjs-dist-2.15.349.tgz#b52ced6e667bfe3df72a06b92107f150eedf154d"
-  integrity sha512-EeCfqj6xi4/aegKNS7Bs+TCg3Y5gmKmG0s/5xXI0PqWW66x+Nm7iFXBpVcup7HnR8sNDm+5NESfFr8T6DeWp9Q==
-  dependencies:
-    dommatrix "^1.0.3"
-    web-streams-polyfill "^3.2.1"
 
 perfect-scrollbar@1.5.0:
   version "1.5.0"
@@ -15112,12 +15075,12 @@ pkg-dir@^4.1.0:
   dependencies:
     find-up "^4.0.0"
 
-plyr@^3.7.2:
-  version "3.7.2"
-  resolved "https://registry.yarnpkg.com/plyr/-/plyr-3.7.2.tgz#183d2397e7401a577700c8319fe133692b4aff54"
-  integrity sha512-I0ZC/OI4oJ0iWG9s2rrnO0YFO6aLyrPiQBq9kum0FqITYljwTPBbYL3TZZu8UJQJUq7tUWN18Q7ACwNCkGKABQ==
+plyr@^3.7.3:
+  version "3.7.3"
+  resolved "https://registry.yarnpkg.com/plyr/-/plyr-3.7.3.tgz#31465bb45dc910babed5f05f4cf2667604898fa5"
+  integrity sha512-ORULENBvEvvzMYXRQBALDmEi8P+wZt1Hr/NvHqchu/t7E2xJKNkRYWx0qCA1HETIGZ6zobrOVgqeAUqWimS7fQ==
   dependencies:
-    core-js "^3.22.0"
+    core-js "^3.26.1"
     custom-event-polyfill "^1.0.7"
     loadjs "^4.2.0"
     rangetouch "^2.0.1"
