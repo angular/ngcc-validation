@@ -284,6 +284,15 @@
   optionalDependencies:
     parse5 "^5.0.0"
 
+"@angular/cdk@^15.0.0":
+  version "15.0.4"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-15.0.4.tgz#41598fb9fe82a5259828b21f2c8215e42f9aea89"
+  integrity sha512-I+OedGqv9cBsHMVGl/VfjGItAi8pK7UuYiPnxSB25+m8v3jh7dMzfVGqdqpTSGxd1Zv02ypLZvEbiI30abRykQ==
+  dependencies:
+    tslib "^2.3.0"
+  optionalDependencies:
+    parse5 "^7.1.2"
+
 "@angular/cli@14.0.3":
   version "14.0.3"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-14.0.3.tgz#700709837c3eb2aad872440d6667341cd2969ee5"
@@ -551,6 +560,14 @@
   version "13.0.2"
   resolved "https://registry.yarnpkg.com/@ant-design/icons-angular/-/icons-angular-13.0.2.tgz#9bb74ea93b566fc54c28061afd325ddd6da6ce38"
   integrity sha512-5ub/tVR9Y1xAMeYzrfavL+Cma6SjpMYaKOn7Aa02P9vDEHIAwJHsgB2NbO+hlwyHmGX5MeCCVymrVf9US3W2iQ==
+  dependencies:
+    "@ant-design/colors" "^5.0.0"
+    tslib "^2.0.0"
+
+"@ant-design/icons-angular@^15.0.0":
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/@ant-design/icons-angular/-/icons-angular-15.0.0.tgz#fa6119e6c1f710f2c03ba11aff25bfd87b5a0243"
+  integrity sha512-9DMpuoqZBvS7+VJ0s3tl2g/kI1sTLDQWfykiXYa+AkZ2AvJwHebvR7Cw7/xfiXFDLyZTjPgtC0x0gex13EShuA==
   dependencies:
     "@ant-design/colors" "^5.0.0"
     tslib "^2.0.0"
@@ -9642,6 +9659,11 @@ entities@^2.0.0:
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
   integrity sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==
 
+entities@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/entities/-/entities-4.4.0.tgz#97bdaba170339446495e653cfd2db78962900174"
+  integrity sha512-oYp7156SP8LkeGD0GF85ad1X9Ai79WtRsZ2gxJqtBuzH+98YUV6jkHEKlZkMbcrjJjIVJNIDP/3WL9wQkoPbWA==
+
 env-paths@^2.2.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/env-paths/-/env-paths-2.2.1.tgz#420399d416ce1fbe9bc0a07c62fa68d67fd0f8f2"
@@ -13945,13 +13967,13 @@ ng-sidebar@9.4.2:
   resolved "https://registry.yarnpkg.com/ng-sidebar/-/ng-sidebar-9.4.2.tgz#3ecc4b06e244eb378d6d1fb5511c17c986698bca"
   integrity sha512-8KmEQYFhn4S5LDjRDXBhDfCgLchJEj+ClBdiTCAQoRjX8vdh85hmKIGN7aBsh1HNOXKN3rzDu0qmd90193/P3Q==
 
-ng-zorro-antd@13.3.2:
-  version "13.3.2"
-  resolved "https://registry.yarnpkg.com/ng-zorro-antd/-/ng-zorro-antd-13.3.2.tgz#04d79f884231afdfdb5759919c0fa202f431cc8f"
-  integrity sha512-bmpolaSevoZSVlP2nVpvi/CrFFu7hdaK/vz1k0R84db4AYOYFHcRwlAUBaWVKjWGaCHek+k1atC/pckXZqEgIA==
+ng-zorro-antd@15.0.1:
+  version "15.0.1"
+  resolved "https://registry.yarnpkg.com/ng-zorro-antd/-/ng-zorro-antd-15.0.1.tgz#f0ec69974fc5d30a4b1538215a8114cb6b4aee55"
+  integrity sha512-egamL9n5xhovE2pEkRuEHD67n4f/4Zd82yiPvadWsB9OXdiCHr3lfsifK71hxmDsb8kVuUJby5Enx/OA65IPWA==
   dependencies:
-    "@angular/cdk" "^13.0.1"
-    "@ant-design/icons-angular" "^13.0.1"
+    "@angular/cdk" "^15.0.0"
+    "@ant-design/icons-angular" "^15.0.0"
     date-fns "^2.16.1"
     tslib "^2.3.0"
 
@@ -14986,6 +15008,13 @@ parse5@6.0.1, parse5@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-6.0.1.tgz#e1a1c085c569b3dc08321184f19a39cc27f7c30b"
   integrity sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==
+
+parse5@^7.1.2:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-7.1.2.tgz#0736bebbfd77793823240a23b7fc5e010b7f8e32"
+  integrity sha512-Czj1WaSVpaoj0wbhMzLmWD69anp2WH7FXMB9n1Sy8/ZFF9jolSQVMu1Ij5WIyGmcBmhk7EOndpO4mIpihVqAXw==
+  dependencies:
+    entities "^4.4.0"
 
 parseqs@0.0.6:
   version "0.0.6"
