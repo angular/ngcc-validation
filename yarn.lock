@@ -8299,13 +8299,6 @@ crossvent@1.5.4:
   dependencies:
     custom-event "1.0.0"
 
-crossvent@1.5.5:
-  version "1.5.5"
-  resolved "https://registry.yarnpkg.com/crossvent/-/crossvent-1.5.5.tgz#ad20878e4921e9be73d9d6976f8b2ecd0f71a0b1"
-  integrity sha1-rSCHjkkh6b5z2daXb4suzQ9xoLE=
-  dependencies:
-    custom-event "^1.0.0"
-
 css-loader@6.7.1:
   version "6.7.1"
   resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-6.7.1.tgz#e98106f154f6e1baf3fc3bc455cb9981c1d5fd2e"
@@ -8406,7 +8399,7 @@ custom-event@1.0.0:
   resolved "https://registry.yarnpkg.com/custom-event/-/custom-event-1.0.0.tgz#2e4628be19dc4b214b5c02630c5971e811618062"
   integrity sha1-LkYovhncSyFLXAJjDFlx6BFhgGI=
 
-custom-event@^1.0.0, custom-event@~1.0.0:
+custom-event@~1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/custom-event/-/custom-event-1.0.1.tgz#5d02a46850adf1b4a317946a3928fccb5bfd0425"
   integrity sha1-XQKkaFCt8bSjF5RqOSj8y1v9BCU=
@@ -9522,14 +9515,6 @@ dotenv@~10.0.0:
   version "10.0.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-10.0.0.tgz#3d4227b8fb95f81096cdd2b66653fb2c7085ba81"
   integrity sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==
-
-dragula@^3.7.2:
-  version "3.7.3"
-  resolved "https://registry.yarnpkg.com/dragula/-/dragula-3.7.3.tgz#909460fd0b4acba5409c6dbb1b64d24f5bc9efb6"
-  integrity sha512-/rRg4zRhcpf81TyDhaHLtXt6sEywdfpv1cRUMeFFy7DuypH2U0WUL0GTdyAQvXegviT4PJK4KuMmOaIDpICseQ==
-  dependencies:
-    contra "1.9.4"
-    crossvent "1.5.5"
 
 duplexer@^0.1.1:
   version "0.1.2"
@@ -13632,13 +13617,12 @@ ng2-dnd@5.0.2:
   resolved "https://registry.yarnpkg.com/ng2-dnd/-/ng2-dnd-5.0.2.tgz#862278ac7dedfa14f5783bbf34014d5d73dfefb4"
   integrity sha512-5mWWBePwvEPsNd/HkdbD543Q9mPyJofL6zkNydl8/Ah3qrrvZT2DaEPbknY08OgkXpI2qUGksc01OzzVlRQ9dQ==
 
-ng2-dragula@2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/ng2-dragula/-/ng2-dragula-2.1.1.tgz#350e78978b6f7e1ea0b16c61ba78161c84ec6386"
-  integrity sha512-PSo6N2Ja894KDogVLLBI0Hzpylikay7L1hWqp+qQmW+qsNsNT9J/6J2Qim9XwGzK4VQZjAwBJaJjgJ/TijRkLQ==
+ng2-dragula@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/ng2-dragula/-/ng2-dragula-3.2.0.tgz#aae24335a448a3028415314ad62dbdf040e6c475"
+  integrity sha512-+By83ZGcumnKdAk5fEv8w92S85z3VpParJt/PDDuAOpkErdIq/DjUy4j5/5SymJ30SWADbd+Onie0UKgyxiiOA==
   dependencies:
-    "@types/dragula" "^2.1.34"
-    dragula "^3.7.2"
+    tslib "^2.3.0"
 
 ng2-file-upload@1.4.0:
   version "1.4.0"
